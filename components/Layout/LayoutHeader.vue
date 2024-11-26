@@ -8,7 +8,7 @@
           href="#"
           class="flex flex-row items-center gap-2"
         >
-          Center for systematic Entomology
+          Center for Systematic Entomology
         </a>
 
         <div class="lg:flex flex-row gap-6 text-sm hidden">
