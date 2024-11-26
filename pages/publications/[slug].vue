@@ -5,11 +5,12 @@
         <span class="font-bold">{{ data.title }}</span>
         <template v-if="data?.categories.length">
           <span> - </span>
-          <Tag
+          <VTag
             v-for="category in data?.categories"
             class="bg-green-600 text-white"
-            :label="category"
-          />
+          >
+            {{ category }}
+          </VTag>
         </template>
       </div>
       <ul
