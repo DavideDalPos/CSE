@@ -1,5 +1,7 @@
 <template>
   <LayoutHeader />
-  <slot />
+  <main class="flex-grow">
+    <slot />
+  </main>
   <LayoutFooter />
 </template>
