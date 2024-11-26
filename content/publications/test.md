@@ -2,6 +2,7 @@
 title: 'The Afrotropical and West-Palaearctic species of Ecrizotes Förster (Hymenoptera: Pirenidae)'
 date: '2024-10-25'
 doi: ''
+journal: Insecta Mundi
 issue: '970(1)'
 pagination: '1–16'
 authors:
