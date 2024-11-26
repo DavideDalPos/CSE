@@ -1,20 +1,37 @@
 <template>
-  <div class="container mx-auto px-8">
-    <ContentList path="/publications">
-      <template #default="{ list }">
-        <div
-          v-for="publication in list"
-          :key="publication._path"
-        >
-          <NuxtLink :to="publication._path">
-            <h2 class="text-2xl font-bold">{{ publication.title }}</h2>
-          </NuxtLink>
-          <p>{{ publication.authors?.map(({ name }) => name).join('; ') }}</p>
-        </div>
-      </template>
-      <template #not-found>
-        <p>No articles found.</p>
-      </template>
-    </ContentList>
-  </div>
+  <section>
+    <div class="container mx-auto px-8">
+      <h1 class="text-4xl">Publications</h1>
+      <div class="my-4">
+        <ContentList path="/publications">
+          <template #default="{ list }">
+            <ul>
+              <li
+                v-for="publication in list"
+                :key="publication._path"
+                class="py-4"
+              >
+                <NuxtLink :to="publication._path">
+                  <h2 class="text-xl font-medium">{{ publication.title }}</h2>
+                  <VTag
+                    v-for="category in publication.categories"
+                    :key="category"
+                    class="bg-green-600 text-white inline-block"
+                  >
+                    {{ category }}
+                  </VTag>
+                </NuxtLink>
+                <p>
+                  {{ publication.authors?.map(({ name }) => name).join('; ') }}
+                </p>
+              </li>
+            </ul>
+          </template>
+          <template #not-found>
+            <p>No articles found.</p>
+          </template>
+        </ContentList>
+      </div>
+    </div>
+  </section>
 </template>
