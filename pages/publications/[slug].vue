@@ -13,18 +13,25 @@
           </VTag>
         </template>
       </div>
-      <ul
-        v-if="data.authors"
-        class="my-4"
-      >
-        <li
-          v-for="{ name, affiliation } in data.authors"
-          class="py-2"
-        >
-          <p class="font-bold">{{ name }}</p>
-          <p>{{ affiliation }}</p>
-        </li>
-      </ul>
+      <div class="flex flex-row justify-between my-4">
+        <div class="w-2/3">
+          <ul v-if="data.authors">
+            <li
+              v-for="{ name, affiliation } in data.authors"
+              class="py-2"
+            >
+              <p class="font-bold">{{ name }}</p>
+              <p>{{ affiliation }}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/3">
+          <div class="border px-6 py-4 rounded">
+            <h3 class="text-2xl mb-2">How to cite</h3>
+            <PublicationCite :publication="data" />
+          </div>
+        </div>
+      </div>
 
       <div class="prose">
         <template v-if="data.abstract">
