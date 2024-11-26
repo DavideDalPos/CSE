@@ -25,19 +25,23 @@
         </li>
       </ul>
 
-      <ContentRenderer :value="data">
-        <div class="prose prose-base">
-          <ContentRendererMarkdown :value="data" />
-        </div>
-        <template #empty>
-          <h2>No publication found</h2>
+      <div class="prose">
+        <template v-if="data.abstract">
+          <h3 class="text-2xl">Abstract</h3>
+          <p>{{ data.abstract }}</p>
         </template>
-      </ContentRenderer>
+
+        <template v-if="data.resumen">
+          <h3 class="text-2xl">Resumen</h3>
+          <p>{{ data.resumen }}</p>
+        </template>
+      </div>
+
       <NuxtLink
-        class="uppercase items-center flex my-10"
+        class="uppercase items-center flex my-10 gap-1.5"
         to="/publications"
       >
-        <div class="i-heroicons-arrow-left inline-block mr-1.5"></div>
+        <IconArrowLeft class="h-4 inline-block" />
         <span>Back</span>
       </NuxtLink>
     </article>
