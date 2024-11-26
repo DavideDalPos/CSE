@@ -2,6 +2,8 @@
 title: 'The Afrotropical and West-Palaearctic species of Ecrizotes Förster (Hymenoptera: Pirenidae)'
 date: '2024-10-25'
 doi: ''
+issue: '970(1)'
+how to cite: 'Mitroiu, M.-D., Andriescu, I., & Manic, G. (2024). The Afrotropical and West-Palaearctic species of Ecrizotes Förster (Hymenoptera: Pirenidae). _European Journal of Taxonomy_, 970(1), 1–37. https://doi.org/10.5852/ejt.2024.970.2745'
 authors:
   - name: Mircea-Dan Mitroiu
     affiliation: 'Faculty of Biology, “Alexandru Ioan Cuza” University of Iași, Romania'
