@@ -7,7 +7,7 @@
           <span> - </span>
           <VTag
             v-for="category in data?.categories"
-            class="bg-green-600 text-white"
+            class="bg-green-600 text-white inline-block"
           >
             {{ category }}
           </VTag>

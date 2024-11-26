@@ -16,7 +16,7 @@
                   <VTag
                     v-for="category in publication.categories"
                     :key="category"
-                    class="bg-green-600 text-white"
+                    class="bg-green-600 text-white inline-block"
                   >
                     {{ category }}
                   </VTag>
