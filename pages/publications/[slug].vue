@@ -13,36 +13,47 @@
           </VTag>
         </template>
       </div>
-      <div class="flex flex-row justify-between my-4">
-        <div class="w-2/3">
-          <ul v-if="data.authors">
-            <li
-              v-for="{ name, affiliation } in data.authors"
-              class="py-2"
-            >
-              <p class="font-bold">{{ name }}</p>
-              <p>{{ affiliation }}</p>
-            </li>
-          </ul>
+      <div class="flex flex-row justify-between">
+        <div>
+          <div class="flex flex-row justify-between my-4 gap-4">
+            <div>
+              <ul v-if="data.authors">
+                <li
+                  v-for="{ name, affiliation } in data.authors"
+                  class="py-2"
+                >
+                  <p class="font-bold">{{ name }}</p>
+                  <p>{{ affiliation }}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="prose">
+            <template v-if="data.abstract">
+              <h3 class="text-2xl">Abstract</h3>
+              <p>{{ data.abstract }}</p>
+            </template>
+
+            <template v-if="data.resumen">
+              <h3 class="text-2xl">Resumen</h3>
+              <p>{{ data.resumen }}</p>
+            </template>
+          </div>
         </div>
-        <div class="w-1/3">
+
+        <div class="flex flex-col gap-4 max-w-96">
           <div class="border px-6 py-4 rounded">
             <h3 class="text-2xl mb-2">How to cite</h3>
             <PublicationCite :publication="data" />
           </div>
+          <div
+            v-if="data.download"
+            class="border px-6 py-4 rounded"
+          >
+            <a :href="data.download">Download</a>
+          </div>
         </div>
-      </div>
-
-      <div class="prose">
-        <template v-if="data.abstract">
-          <h3 class="text-2xl">Abstract</h3>
-          <p>{{ data.abstract }}</p>
-        </template>
-
-        <template v-if="data.resumen">
-          <h3 class="text-2xl">Resumen</h3>
-          <p>{{ data.resumen }}</p>
-        </template>
       </div>
 
       <NuxtLink
@@ -53,7 +64,6 @@
         <span>Back</span>
       </NuxtLink>
     </article>
-    <BlogCategories />
   </section>
 </template>
 
