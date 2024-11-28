@@ -21,10 +21,10 @@
             </NuxtLink>
             <span>|</span>
             <div class="flex flex-row gap-4 items-center">
-              <a href="https://www.facebook.com/CSE.InsectaMundi"
+              <a href="https://x.com/CSE_at_FSCA"
                 ><IconX class="h-4"
               /></a>
-              <a href="https://x.com/CSE_at_FSCA"
+              <a href="https://www.facebook.com/CSE.InsectaMundi"
                 ><IconFacebook class="h-4"
               /></a>
             </div>
