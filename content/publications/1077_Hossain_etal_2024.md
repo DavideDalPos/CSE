@@ -107,8 +107,6 @@ references:
 - '__Zia Y. 1964.__ Notes on Chinese trypetid flies III. Acta Zootaxonomica Sinica 1: 42–54.'
 - '__Zia Y. 1965.__ Notes on Chinese trypetid flies IV. Acta Zootaxonomica Sinica 2: 211–217.'
 
-hgf
-
 abstract: 'Tephritidae (Diptera) were sampled in Bangladesh between 2019 and 2023 
 by hand-collecting on bamboo shoots and using traps separately baited with 2-component BioLure 
 (ammonium acetate and putrescine) or torula yeast. We report here results of our surveys that yielded 

@@ -15,7 +15,7 @@ authors:
 download:
 keywords:
   - Coleoptera
-  - Scarabaeoide
+  - Scarabaeoidea
   - Ochodaeidae
   - Ochodaeinae
   - taxonomy
