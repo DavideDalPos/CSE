@@ -21,7 +21,7 @@ keywords:
   - taxonomy
   - Spain
 
-references: maybe
+references:
   - '__Alonso-Zarazaga MA, López-Colón JI. 1996.__ Designación del neotipo de _Ochodaeus montanus_ Fuente (Coleoptera, Ochodeidae). Graellsia 52: 161.'
 - '__Báguena Corella L. 1967.__ Scarabaeoidea de la fauna iberobalear y Pirenaica. Consejo Superior de Investigaciones Cientificas, Instituto Español de Entomologia; Madrid. 576 p.'
 - '__Bameul F. 2001.__ Intérêt du gel K-Y® pour l’observation de petites pièces anatomiques d’insectes. Le Coléoptériste 43: 161–162.'
