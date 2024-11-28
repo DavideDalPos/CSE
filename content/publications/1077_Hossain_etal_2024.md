@@ -8,16 +8,12 @@ pagination: '1–13'
 authors:
   - name: M. Aftab Hossain
     affiliation: 'Insect Biotechnology Division, Institute of Food and Radiation Biology, Bangladesh Atomic Energy Commission, Dhaka-1349, Bangladesh'
-
   - name: Allen L. Norrbom
     affiliation: 'Systematic Entomology Laboratory, USDA, c/o National Museum of Natural History, Washington, DC 20560, USA'
-
   - name: Luc Leblanc
     affiliation: 'Department of Entomology, Plant Pathology and Nematology (EPPN), University of Idaho, 875 Perimeter Drive MS 2329, Moscow, Idaho, USA'
-
   - name: Md. Forhad Hossain
     affiliation: 'Insect Biotechnology Division, Institute of Food and Radiation Biology, Bangladesh Atomic Energy Commission, Dhaka-1349, Bangladesh'
-
   - name: Kajla Seheli
     affiliation: 'Insect Biotechnology Division, Institute of Food and Radiation Biology, Bangladesh Atomic Energy Commission, Dhaka-1349, Bangladesh'
     
