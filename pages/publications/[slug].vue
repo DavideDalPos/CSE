@@ -3,7 +3,7 @@
     <article>
       <div class="text-4xl">
         <span class="font-bold">{{ data.title }}</span>
-        <template v-if="data?.categories.length">
+        <template v-if="data?.categories?.length">
           <span> - </span>
           <VTag
             v-for="category in data?.categories"
