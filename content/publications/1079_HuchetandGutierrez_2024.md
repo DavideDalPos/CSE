@@ -60,9 +60,6 @@ references:
   - '__Paulsen MJ, Ocampo FC. 2012.__ The Ochodaeidae of Argentina (Coleoptera, Scarabaeoidea). ZooKeys 174: 7–30.'
   - '__Scholtz CH, d’Hotman D, Evans AV, Nel A. 1988.__ Phylogeny and systematics of the Ochodaeidae (Insecta: Coleoptera: Scarabaeoidea). Journal of the Entomological Society of South Africa 51: 207–240.'
 
-categories:
-  - example
-
 abstract: 'The combined study of _Ochodaeus montanus_ Fuente, 1912 (Coleoptera: Scarabaeoidea: Ochodaeidae) type material and recently collected specimens from the southeastern Iberian Peninsula provided evidence for the description of new specific morphological characters, and to clarify recurring mistakes present in the literature. A comparative study between _O. montanus_ and its closest representative, _O. inermis_ Reitter, 1892, was completed. An updated distribution map of _O. montanus_ as well as a bilingual identification key for the four taxa occurring within the Iberian Peninsula is given.'
 
 resumen: 'El estudio combinado del material tipo de _Ochodaeus montanus_ Fuente, 1912 (Coleoptera: Scarabaeoidea: Ochodaeidae) y de ejemplares recogidos recientemente en el sureste de la Península Ibérica, ha llevado a evidenciar y describir nuevos caracteres morfológicos específicos y a aclarar errores recurrentes presentes en la bibliografía. Se presenta un estudio comparativo entre _O. montanus_ y su representante más cercano, _O. inermis_ Reitter, 1892. Además, se ofrece un mapa de distribución actualizado de _O. montanus_, así como una clave de identificación bilingüe para los cuatro taxones que se encuentran en la Península Ibérica.'
