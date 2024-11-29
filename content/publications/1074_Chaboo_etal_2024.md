@@ -1,5 +1,6 @@
 ---
 title: 'Biology of *Aproida balyi* Pascoe, 1863 (Coleoptera: Chrysomelidae: Cassidinae: Aproidini) on its host plant, *Eustrephus latifolius* R. Br. ex Ker-Gawl (Asparagaceae) in Australia'
+date: '2024-10-4'
 doi: ''
 issue: '1074'
 journal: Insecta Mundi
