@@ -29,7 +29,7 @@
             </div>
           </div>
 
-          <div class="prose">
+          <div class="prose max-w- max-w-5xl">
             <template v-if="data.abstract">
               <h3 class="text-2xl">Abstract</h3>
               <p>{{ data.abstract }}</p>
@@ -38,6 +38,18 @@
             <template v-if="data.resumen">
               <h3 class="text-2xl">Resumen</h3>
               <p>{{ data.resumen }}</p>
+            </template>
+
+            <template v-if="data.references">
+              <h3 class="text-2xl">References</h3>
+              <ul>
+                <li
+                  v-for="reference in data.references"
+                  :key="reference"
+                >
+                  {{ reference }}
+                </li>
+              </ul>
             </template>
           </div>
         </div>
