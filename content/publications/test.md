@@ -8,7 +8,8 @@ pagination: '1–16'
 authors:
   - name: Mircea-Dan Mitroiu
     affiliation: 'Faculty of Biology, “Alexandru Ioan Cuza” University of Iași, Romania'
-    orcid: 'https://orcid.org/0000-0003-1368-7721'
+    email: 'sajankc143@gmail.com'
+    orcid: 'https://orcid.org/0000-0002-2749-0738'
 
   - name: Ionel Andriescu
     affiliation: 'Faculty of Biology, “Alexandru Ioan Cuza” University of Iași, Romania'
