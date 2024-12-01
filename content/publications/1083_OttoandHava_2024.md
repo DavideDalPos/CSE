@@ -10,8 +10,8 @@ authors:
     affiliation: 'W4806 Chrissie Circle Shawano, WI 54166 U.S.A.'
 
   - name: 'Jiří Háva'
-    affiliation: 'Private Entomological Laboratory & Collection, Rýznerova 37/37, CZ-252 62 Únětice'
-
+    affiliation: 'Private Entomological Laboratory & Collection, Rýznerova 37/37, CZ-252 62 Únětice u Prahy, Prague-west Czech Republic'
+    
 download:
 keywords:
   - Fauna
