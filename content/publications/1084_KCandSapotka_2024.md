@@ -7,11 +7,13 @@ journal: Insecta Mundi
 pagination: '1–6'
 authors:
   - name: 'Sajan KC'
-    affiliation: 'Department of Biology, Eastern New Mexico University, 1500 S Avenue K Portales, NM 88130 sajankc143@gmail.com https://orcid.org/0000-0002-2749-0738'
+    affiliation: 'Department of Biology, Eastern New Mexico University, 1500 S Avenue K Portales, NM 88130'
+    email: 'sajankc143@gmail.com'
     orcid: 'https://orcid.org/0000-0002-2749-0738'
 
   - name: 'Anisha Sapkota'
-    affiliation: 'Department of Biology, Eastern New Mexico University, 1500 S Avenue K Portales, NM 88130 anishasapkota363@gmail.com https://orcid.org/0000-0002-4351-6213'
+    affiliation: 'Department of Biology, Eastern New Mexico University, 1500 S Avenue K Portales, NM 88130'
+    email: 'anishasapkota363@gmail.com'
     orcid: 'https://orcid.org/0000-0002-4351-6213'
 
 download:
