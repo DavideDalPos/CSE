@@ -7,10 +7,12 @@ journal: Insecta Mundi
 pagination: '1–3'
 authors:
   - name: 'Takumasa Kondo'
-    affiliation: 'Corporación Colombiana de Investigación Agropecuaria (Agrosavia), Centro de Investigación Palmira, Calle 23, Carrera 37, Continuo al Penal, Palmira, Valle, Colombia. tkondo@agrosavia.co'
+    affiliation: 'Corporación Colombiana de Investigación Agropecuaria (Agrosavia), Centro de Investigación Palmira, Calle 23, Carrera 37, Continuo al Penal, Palmira, Valle, Colombia'
+    email: 'tkondo@agrosavia.co'
 
   - name: 'Gillian W. Watson'
-    affiliation: 'Department of Life Sciences, the Natural History Museum, Cromwell Road, London SW7 5BD, UK. gillian.watson@nhm.ac.uk'
+    affiliation: 'Department of Life Sciences, the Natural History Museum, Cromwell Road, London SW7 5BD, UK.'
+    email: 'gillian.watson@nhm.ac.uk'
 
 
 download:
