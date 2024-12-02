@@ -2,7 +2,7 @@
 title: 'Review of *Nealyda* Dietz (Lepidoptera: Gelechiidae: Apatetrinae) with description of a new species from the Florida Keys'
 date: '2024-11-29'
 doi: ''
-issue: '1085'
+issue: '1086'
 journal: Insecta Mundi
 pagination: '1–13'
 authors:
@@ -55,7 +55,7 @@ references:
   - '**Robinson GS. 1976.** Preparation of slides of Lepidoptera genitalia with special reference to the Microlepidoptera. Entomologist’s Gazette 27(2): 127–132.'
   - '**Sakamaki Y. 2000.** Japanese species of the genus *Apatetris* (Lepidoptera, Gelechiidae). Tijdschrift Voor Entomologie 143: 211–220.'
   - '**Shorthouse DP. 2010.** SimpleMappr. Available at: https://www.simplemappr.net. (Last accessed 23 April 2024.)'
-  - '**Wunderlin RP, Hansen BF, Franck AR, Essig FB. 2024.** Atlas of Florida Plants. [Landry SM, Campbell KN (application development), USF Water Institute.] Institute for Systematic Bota'
+  - '**Wunderlin RP, Hansen BF, Franck AR, Essig FB. 2024.** Atlas of Florida Plants. [Landry SM, Campbell KN (application development), USF Water Institute.] Institute for Systematic Botany, University of South Florida, Tampa. Available at: http://florida.plantatlas.usf.edu/. (Last accessed 30 May 2024.)'
 
 abstract: '*Nealyda grandipinella* Bennett and Hayden, **new species**, is described from Big Pine Key, Florida, USA. Photographs of the adult and of male and female genitalia are provided for *N. grandipinella* and its congeners within the state of Florida. *Nealyda* Dietz (Lepidoptera: Gelechiidae) is provisionally transferred from Anomologinae to Apatetrinae based on characters of the genitalia. The homology and terminology of the processes arising from the vinculum of gelechiid genitalia are explored. The potential host plant of the new species is discussed, along with other undescribed species of *Nealyda*.'
 
