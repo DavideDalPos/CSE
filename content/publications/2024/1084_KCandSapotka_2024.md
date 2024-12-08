@@ -26,8 +26,8 @@ keywords:
   - Wallacean shortfall
 
 references:
-  - '**Bonebrake TC, Ponisio LC, Boggs CL, Ehrlich PR. 2010.** More than just indicators: A review of tropical butterfly ecology and conservation. Biological Conservation 143(8): 1831–1841.
-  - '**Bordelon C, Knudson E. 2003.** Illustrated checklist of Lepidoptera of the lower Rio Grande Valley. Part 1: Butterflies. TLS PUB. 9a. Texas Lepidoptera Survey; Houston, TX. 54 p.'
+  - '**Bonebrake TC, Ponisio LC, Boggs CL, Ehrlich PR. 2010.** More than just indicators: A review of tropical butterfly ecology and conservation. Biological Conservation 143(8): 1831–1841.'
+  - '**Bordelon C, Knudson E. 2003.** Illustrated checklist of Lepidoptera of the lower Rio Grande Valley Part 1: Butterflies. TLS PUB. 9a. Texas Lepidoptera Survey; Houston, TX. 54 p.'
   - '**Bordelon C, Knudson E. 2006.** Illustrated checklist of Lepidoptera of the lower Rio Grande Valley. Vol. 1: Butterflies. TLS PUB. 9a. Texas Lepidoptera Survey; Houston, TX. 60 p.'
   - '**Braby MF. 2004.** The complete field guide to butterflies of Australia. CSIRO Publishing; Melbourne, Australia. 339 p.'
   - '**Brown KS. 1991.** Conservation of Neotropical environments: insects as indicators. p. 350–404. In: Collines NM, Thomas JA (eds.). The conservation of insects and their habitats. Academic Press; London. 468 p.'
