@@ -2,7 +2,10 @@
   <section class="container mx-auto flex my-10 justify-between px-8">
     <article>
       <div class="text-4xl">
-        <span class="font-bold">{{ publication.title }}</span>
+        <span
+          class="font-bold"
+          v-html="publication.title"
+        />
         <template v-if="publication?.categories?.length">
           <span> - </span>
           <VTag
@@ -32,7 +35,7 @@
           <div class="prose max-w- max-w-5xl">
             <template v-if="publication.abstract">
               <h3 class="text-2xl">Abstract</h3>
-              <p>{{ publication.abstract }}</p>
+              <p v-html="publication.abstract" />
             </template>
 
             <template v-if="publication.resumen">
@@ -47,7 +50,7 @@
                   v-for="reference in publication.references"
                   :key="reference"
                 >
-                  {{ reference }}
+                  <span class="font-bold">{{ reference.authors }} {{ reference.year }}</span> <span v-html="reference.title" /><span v-if="reference.pages">: {{ reference.pages }}</span> <span v-if="reference.doi">DOI: {{ reference.doi }}</span>
                 </li>
               </ul>
             </template>

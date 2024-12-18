@@ -12,7 +12,10 @@
                 class="py-4"
               >
                 <NuxtLink :to="publication._path">
-                  <h2 class="text-xl font-medium">{{ publication.title }}</h2>
+                  <h2
+                    class="text-xl font-medium"
+                    v-html="publication.title"
+                  ></h2>
                   <VTag
                     v-for="category in publication.categories"
                     :key="category"

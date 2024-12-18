@@ -1,5 +1,5 @@
 <template>
-  <span>{{ cite }}</span>
+  <span v-html="cite" />
 </template>
 
 <script setup>

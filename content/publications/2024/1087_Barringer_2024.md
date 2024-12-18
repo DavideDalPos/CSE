@@ -16,15 +16,39 @@ keywords:
   - new records
 
 references:
-  - '**Barringer LE. 2016.** First record of camphor shot borer, *Cnestus mutilatus* (Blandford) (Coleoptera: Curculionidae: Scolytinae) in Pennsylvania. Insecta Mundi 0519: 1–2.'
-  - '**Carlton C, Bayless V. 2011.** A case of *Cnestus mutilatus* (Blandford) (Curculionidae: Scolytinae: Xyleborini) females damaging plastic fuel storage containers in Louisiana, U.S.A. Coleopterists Bulletin 65(3): 290–291.'
-  - '**Gandhi KJK, Audley J, Johnson J, Raines M. 2009.** Camphor shot borer, *Xylosandrus mutilatus* (Blandford) (Coleoptera: Curculionidae), an adventive ambrosia beetle in Georgia. The Coleopterists Bulletin 63(4): 497–500.'
-  - '**Gomez DF, Rabaglia RJ, Fairbanks KEO, Hulcr J. 2018.** North American Xyleborini north of Mexico: a review and key to genera and species (Coleoptera, Curculionidae, Scolytinae). ZooKeys 768: 19–68.'
-  - '**Leavengood JM Jr. 2013.** First record of the camphor shot borer, *Cnestus mutilatus* (Blandford 1894), (Curculionidae: Scolytinae: Xyleborini) in Kentucky. Insecta Mundi 0308: 1–3.'
-  - '**Schiefer TL, Bright DE. 2004.** *Xylosandrus mutilatus* (Blandford), an exotic ambrosia beetle (Coleoptera: Curculionidae: Scolytinae: Xyleborini) new to North America. The Coleopterists Bulletin 58(3): 431–438.'
-  - '**Wood SL, Bright DE. 1992.** A catalog of Scolytidae and Platypodidae (Coleoptera), part 2: Taxonomic index volume A. Great Basin Naturalist Memoirs, No. 13. Brigham Young University; Provo, UT. 833 p.'
+  - authors: Barringer LE.
+    year: 2016
+    title: 'First record of camphor shot borer, *Cnestus mutilatus* (Blandford) (Coleoptera: Curculionidae: Scolytinae) in Pennsylvania. Insecta Mundi 0519'
+    pages: 1–2
 
+  - authors: Carlton C, Bayless V.
+    year: 2011
+    title: 'A case of *Cnestus mutilatus* (Blandford) (Curculionidae: Scolytinae: Xyleborini) females damaging plastic fuel storage containers in Louisiana, U.S.A. Coleopterists Bulletin 65(3)'
+    pages: 290–291
+
+  - authors: Gandhi KJK, Audley J, Johnson J, Raines M.
+    year: 2009
+    title: 'Camphor shot borer, *Xylosandrus mutilatus* (Blandford) (Coleoptera: Curculionidae), an adventive ambrosia beetle in Georgia. The Coleopterists Bulletin 63(4)'
+    pages: 497–500
+
+  - authors: Gomez DF, Rabaglia RJ, Fairbanks KEO, Hulcr J.
+    year: 2018
+    title: 'North American Xyleborini north of Mexico: a review and key to genera and species (Coleoptera, Curculionidae, Scolytinae). ZooKeys 768'
+    pages: 19–68
+
+  - authors: Leavengood JM Jr.
+    year: 2013
+    title: 'First record of the camphor shot borer, *Cnestus mutilatus* (Blandford 1894), (Curculionidae: Scolytinae: Xyleborini) in Kentucky. Insecta Mundi 0308'
+    pages: 1–3
+
+  - authors: Schiefer TL, Bright DE.
+    year: 2004
+    title: '*Xylosandrus mutilatus* (Blandford), an exotic ambrosia beetle (Coleoptera: Curculionidae: Scolytinae: Xyleborini) new to North America. The Coleopterists Bulletin 58(3)'
+    pages: 431–438
+
+  - authors: Wood SL, Bright DE.
+    year: 1992
+    title: 'A catalog of Scolytidae and Platypodidae (Coleoptera), part 2: Taxonomic index volume A. Great Basin Naturalist Memoirs, No. 13. Brigham Young University; Provo, UT. 833 p.'
 
 abstract: '*Cnestus mutilatus* (Blandford) (Coleoptera: Curculionidae: Scolytinae) is reported from Massachusetts for the first time. Brief trapping information is provided.'
-
 ---
