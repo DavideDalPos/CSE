@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container mx-auto px-8">
-      <h1 class="text-4xl">Publications</h1>
+      <h1 class="text-4xl font-black">Publications</h1>
       <div class="my-4">
         <ContentList path="/publications">
           <template #default="{ list }">
