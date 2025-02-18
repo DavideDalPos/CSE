@@ -14,7 +14,12 @@
         collections.
       </p>
 
-      <h2>How to apply</h2>
+      <h2>
+         <router-link to="/how-to-apply" class="text-3xl text-blue-600 hover:underline">
+           How to apply
+         </router-link>
+      </h2>
+    
 
       <p>
         Grant awards are limited, and proposals will be evaluated by the GGE
