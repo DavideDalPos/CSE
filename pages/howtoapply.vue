@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto px-8">
       <div class="prose max-w-full pb-4">
-        <h1 class="text-4xl">Travel grants</h1>
+        <h1 class="text-4xl">How</h1>
       
   
         <p>
