@@ -22,19 +22,28 @@
         </p>
       </div>
 
-
-      
-      
-      <div class="mt-6">
+<!-- Buttons Section (Centered) -->
+<div class="mt-6 flex justify-center space-x-8">
+        <!-- How to Apply Button -->
         <a 
           href="/howtoapply" 
           target="_blank" 
           rel="noopener noreferrer"
-          class="inline-block bg-green-600 text-white text-xl 
-          font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 no-underline"
-          > How to Apply
+          class="inline-block bg-green-600 text-white text-xl font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 no-underline"
+        >
+          How to Apply
         </a>
-        </div>
+        
+        <!-- Previous Proposal Button -->
+        <a 
+          href="/proposal" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-block bg-blue-600 text-white text-xl font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 no-underline"
+        >
+          Previous Proposal
+        </a>
+      </div>
     </div>
   </div>
 </template>

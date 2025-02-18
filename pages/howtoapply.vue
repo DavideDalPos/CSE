@@ -12,17 +12,17 @@
           potential work.
         </p>
   
-        <h3>Eligibility</h3>
+        <h2>Eligibility</h2>
   
         <p>
           Applicants must be CSE members and coordinate with FSCA curators for
           potential work.
         </p>
   
-        <h3>Deadlines</h3>
+        <h2>Deadlines</h2>
         <p>January 15 (First Round) July 15 (Second Round)</p>
   
-        <h3>Proposal Requirements</h3>
+        <h2>Proposal Requirements</h2>
         <span>Submit a 1-2 page proposal including:</span>
         <ol>
           <li>Title</li>
@@ -36,9 +36,10 @@
           </li>
           <li>Budget (up to $2,000)</li>
         </ol>
-        <h3>Submission</h3>
+        
+        <h2>Submission</h2>
         <ol>
-          <li>Email proposals to: csentomology@gmail.com or mail to:</li>
+          <li>Email proposals to: csentomology@gmail.com</li>
           <li>Grants Committee</li>
           <li>Center for Systematic Entomology</li>
           <li>P.O. Box 141874</li>
