@@ -14,6 +14,17 @@
         collections.
       </p>
 
+       <!-- Countdown Section -->
+ <div class="mt-6">
+        <h3 class="text-2xl">Next Deadline: July 15, 2025</h3>
+        <p class="text-xl font-semibold mt-2">
+          ({{ daysRemaining }} days, {{ hoursRemaining }} hours, {{ minutesRemaining }} minutes, {{ secondsRemaining }} seconds remaining)
+        </p>
+      </div>
+
+
+      
+      
       <div class="mt-6">
         <a 
           href="/howtoapply" 
@@ -24,14 +35,6 @@
           > How to Apply
         </a>
         </div>
-
- <!-- Countdown Section -->
- <div class="mt-6">
-        <h3 class="text-2xl">Next Deadline: February 25, 2025</h3>
-        <p class="text-xl font-semibold mt-2">
-          ({{ daysRemaining }} days, {{ hoursRemaining }} hours, {{ minutesRemaining }} minutes, {{ secondsRemaining }} seconds remaining)
-        </p>
-      </div>
     </div>
   </div>
 </template>
@@ -40,7 +43,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2025-02-25T00:00:00Z'), // Set the next deadline
+      deadline: new Date('2025-07-15T00:00:00Z'), // Set the next deadline
       timer: null, // Store the interval ID for the countdown timer
       timeRemaining: { days: 0, hours: 0, minutes: 0, seconds: 0 }, // Store time remaining in a structured way
     };
