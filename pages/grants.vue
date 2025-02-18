@@ -15,7 +15,7 @@
       </p>
 
       <h2>
-         <router-link to="/how-to-apply" class="text-3xl text-blue-600 hover:underline">
+         <router-link to="/howtoapply" class="text-3xl text-blue-600 hover:underline">
            How to apply
          </router-link>
       </h2>
