@@ -14,12 +14,12 @@
             class="text-white my-8 text-lg max-w"
             v-html="slide.description"
           />
-          <a
+          <NuxtLink
             class="bg-green-600 text-white px-4 py-2 no-underline"
-            :href="slide.link.href"
+            :to="slide.link.href"
           >
             {{ slide.link.label }}
-          </a>
+          </NuxtLink>
         </div>
       </div>
       <div
