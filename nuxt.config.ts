@@ -10,5 +10,12 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content']
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/google-fonts'],
+
+  googleFonts: {
+    families: {
+      Roboto: true
+    }
+    // Options
+  }
 })

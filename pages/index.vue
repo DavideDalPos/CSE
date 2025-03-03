@@ -1,1 +1,5 @@
-<template></template>
+<template>
+  <HomeSlider />
+</template>
+
+<script setup></script>
