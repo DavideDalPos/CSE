@@ -8,13 +8,13 @@
 </template>
 
 <script setup>
-import grantImage from '~/assets/images/jarmila_and_stewart_peck.avif'
-import IMLogo from '~/assets/images/IM_logo.png'
+import IMLogo from '~/assets/images/IM_logo1.png'
 import conference2025 from '~/assets/images/conference2025.avif'
+import grantImage from '~/assets/images/jarmila_and_stewart_peck.avif'
 
 const slides = [
   {
-    title: 'Grant Application',
+    title: 'Travel Grant Application',
     description: `
     <p>Made possible by a generous gift from Stewart Peck, Ph.D., and Jarmila Peck, Ph.D., of Ottawa, Canada, through a donation to the Nature Foundation, the Canadian Museum of Nature and the Beaty Centre for Species Discovery are pleased to award the annual Stewart and Jarmila Peck Visiting-Scientist Awards in Entomology.</p>
     <p>These annual travel grants facilitate research in the study of beetle systematics and fossil insects in the museum’s world-class beetle and paleoentomology collections.</p>`,
