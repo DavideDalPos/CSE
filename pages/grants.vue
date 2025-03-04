@@ -25,30 +25,31 @@
 <!-- Buttons Section (Centered) -->
 <div class="mt-6 flex justify-center space-x-8">
         <!-- How to Apply Button -->
-        <a 
+        <NuxtLink 
           href="/howtoapply" 
           target="_blank" 
           rel="noopener noreferrer"
           class="inline-block bg-green-600 text-white text-xl font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 no-underline"
         >
           How to Apply
-        </a>
+        </NuxtLink>
         
         <!-- Previous Proposal Button -->
-        <a 
+        <NuxtLink 
           href="/proposal" 
           target="_blank" 
           rel="noopener noreferrer"
           class="inline-block bg-blue-600 text-white text-xl font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 no-underline"
         >
           Previous Proposal
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
