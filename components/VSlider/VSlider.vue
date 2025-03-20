@@ -28,7 +28,7 @@ const currentSlide = computed(() => [props.slides[currentIndex.value]])
 onMounted(() => {
   interval = setInterval(() => {
     if (currentIndex.value < props.slides.length - 1) {
-      currentIndex.value++
+      //currentIndex.value++
     } else {
       currentIndex.value = 0
     }
