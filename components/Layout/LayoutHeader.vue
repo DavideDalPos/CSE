@@ -1,6 +1,9 @@
 <template>
   <header>
-    <div class="fixed w-full z-50 bg-opacity-50 backdrop-blur-sm" style="background-color: #EAD7BB;">
+    <div
+      class="fixed w-full z-50 bg-opacity-50 backdrop-blur-sm"
+      style="background-color: #ead7bb"
+    >
       <div
         class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
       >
@@ -21,9 +24,7 @@
             </NuxtLink>
             <span>|</span>
             <div class="flex flex-row gap-4 items-center">
-              <a href="https://x.com/CSE_at_FSCA"
-                ><IconX class="h-4"
-              /></a>
+              <a href="https://x.com/CSE_at_FSCA"><IconX class="h-4" /></a>
               <a href="https://www.facebook.com/CSE.InsectaMundi"
                 ><IconFacebook class="h-4"
               /></a>
@@ -33,7 +34,7 @@
         <MobileNavbar :menu="menu" />
       </div>
     </div>
-    <div class="h-24" />
+    <div class="h-16" />
   </header>
 </template>
 
