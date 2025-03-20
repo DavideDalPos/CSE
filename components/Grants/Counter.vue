@@ -4,11 +4,11 @@
       <div class="text-center">
     <!-- Date Box -->
     <div class="date-box">
-      February 15, 2026 | 9:00 AM - Gainesville (FL)
+      July 15, 2025 | 11:59 PM - Eastern Time 
     </div>
   </div>
     <div class="text-center py-8">
-      Begins in...
+      Next Date for Application
     </div>
     <div class="mt--8 gap-5 md:gap-16 text-center text-2xl relative top-[30px]">
       <div class="countdown-item">
@@ -73,7 +73,7 @@ backdrop-filter: blur(4px); /* Slight blur effect */
 export default {
   data() {
     return {
-      deadline: new Date('2026-02-15T00:00:00Z'),
+      deadline: new Date('2025-07-15T00:00:00Z'),
       timer: null,
       timeRemaining: { days: 0, hours: 0, minutes: 0, seconds: 0 },
     };
