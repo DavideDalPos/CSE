@@ -4,7 +4,7 @@
         <div class="text-center">
       <!-- Date Box -->
       <div class="date-box">
-        February 15, 2026 | 9:00 AM - New York
+        February 15, 2026 | 9:00 AM - Gainesville (FL)
       </div>
     </div>
       <div class="text-center py-5">
