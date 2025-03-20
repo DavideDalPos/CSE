@@ -19,6 +19,23 @@
         provides another way that Research Associates can assist.
       </p>
     </div>
+    <div class="flex flex-col gap-4 my-8">
+      <p>
+        Publications of the CSE includes a <b>CSE Newsletter</b> (discontinued after 2003), 
+        the journal <b>Insecta Mundi (IM)</b>, devoted exclusively to arthropod systematics, 
+        as well as the <b>CSE Memoirs Series</b>. 
+      </p>
+    </div>
+    <div class="flex flex-col gap-4 my-8">
+      <p>
+        One of the advantages of membership is 
+        publishing in <b>IM</b> without page charges. We urge all 
+        Research Associates to support the CSE and simultaneously support FSCA 
+        and its various systematics projects. 
+        For $40 you can be an important part of this effort. Please
+      </p>
+    </div>
+
   </section>
 </template>
 
