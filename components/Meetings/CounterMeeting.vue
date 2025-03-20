@@ -7,10 +7,10 @@
         February 15, 2026 | 9:00 AM - Gainesville (FL)
       </div>
     </div>
-      <div class="text-center py-5">
+      <div class="text-center py-8">
         Begins in...
       </div>
-      <div class="mt--8 gap-8 md:gap-16 text-center text-2xl relative top-[60px]">
+      <div class="mt--8 gap-5 md:gap-16 text-center text-2xl relative top-[30px]">
         <div class="countdown-item">
           <span class="number green-number">{{ daysRemaining }}</span>
           <span class="label">Days</span>
@@ -31,8 +31,7 @@
     </section>
   </template>
   
-  <style scoped>
-
+<style scoped>
 /* Transparent Box for Date */
 .date-box {
   display: inline-block;
