@@ -1,8 +1,8 @@
 <template>
   <header>
-    <div class="fixed w-full z-50 bg-white bg-opacity-70 backdrop-blur-sm">
+    <div class="fixed w-full z-50 bg-opacity-50 backdrop-blur-sm" style="background-color: #EAD7BB;">
       <div
-        class="container mx-auto h-24 flex justify-between items-center px-8 z-10"
+        class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
       >
         <a
           href="#"
