@@ -46,7 +46,7 @@ const menu = [
   },
   {
     label: 'About us',
-    link: '/'
+    link: '/about'
   },
   {
     label: 'Insecta Mundi',
