@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-8 py-12">
-    <h1 class="text-4xl">Center for Systematic Entomology</h1>
+    <h1 class="text-4xl">Center for Systematic Entomology (CSE)</h1>
     <div class="flex flex-col gap-4 my-8">
       <p>
         For the past 35+ years the
@@ -20,11 +20,12 @@
       </p>
     </div>
     <div class="flex flex-col gap-4 my-8">
-      <p>
-        Publications of the CSE includes a <b>CSE Newsletter</b> (discontinued after 2003), 
-        the journal <b>Insecta Mundi (IM)</b>, devoted exclusively to arthropod systematics, 
-        as well as the <b>CSE Memoirs Series</b>. 
-      </p>
+      <p>Publications of the CSE include:</p>
+      <ul class="list-disc list-inside pl-6">
+        <li><b>CSE Newsletter</b> (discontinued after 2003)</li>
+        <li><b>Insecta Mundi (IM)</b> - a journal devoted exclusively to arthropod systematics</li>
+        <li><b>CSE Memoirs Series</b></li>
+      </ul>
     </div>
     <div class="flex flex-col gap-4 my-8">
       <p>

@@ -7,7 +7,7 @@
         <VCard class="bg-white"> 
           <VCardContent>
             <h3 class="mt-2 mb-0">New Insecta Mundi Issue</h3>
-            <span class="text-base-soft">2023-10-27</span>
+            <span class="text-gray-400">2023-10-27</span>
             <p>
               Check out our new Issue!
             </p>
@@ -17,7 +17,7 @@
         <VCard class="bg-white">
           <VCardContent>
             <h3 class="mt-2 mb-0">New Video</h3>
-            <span class="text-base-soft">2023-10-27</span>
+            <span class="text-gray-400">2023-10-27</span>
             <p>
               Check out our new Video!
             </p>

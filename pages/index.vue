@@ -2,6 +2,9 @@
   <HomeSlider />
   <HomeWelcome />
   <HomeAnnouncement />
+  <HomeClosing />
 </template>
 
-<script setup></script>
+<script setup>
+
+</script>
