@@ -6,7 +6,10 @@
         
         <VCard class="bg-white"> 
           <VCardContent>
-            <h3 class="mt-2 mb-0">New Insecta Mundi Issue</h3>
+            <h3 class="mt-2 mb-0 flex items-center gap-2">
+    New Insecta Mundi Issue
+    <ExclamationCircleIcon class="text-red-600 w-7 h-7 animate-pulse" />
+  </h3>
             <span class="text-gray-400">2023-10-27</span>
             <p>
               Check out our new Issue!
@@ -29,3 +32,6 @@
   </section>
 </template>
 
+<script setup>
+import { ExclamationCircleIcon } from '@heroicons/vue/24/outline';
+</script>
