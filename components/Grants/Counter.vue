@@ -1,7 +1,7 @@
 <template>
   <!-- Countdown Section -->
-  <section>
-      <div class="text-center">
+  <section class="bg-gray-200 border-t border-b border-gray-300 py-6 px-24">
+      <div class="text-center top-[30px]">
     <!-- Date Box -->
     <div class="date-box">
       July 15, 2025 | 11:59 PM - Eastern Time 
@@ -10,7 +10,7 @@
     <div class="text-center py-8">
       Next Date for Application
     </div>
-    <div class="mt--8 gap-5 md:gap-16 text-center text-2xl relative top-[30px]">
+    <div class="mt--8 gap-5 md:gap-16 text-center text-2xl relative top-[30px] mb-6">
       <div class="countdown-item">
         <span class="number green-number">{{ daysRemaining }}</span>
         <span class="label">Days</span>

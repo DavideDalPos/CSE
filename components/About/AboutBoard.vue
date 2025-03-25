@@ -49,7 +49,8 @@ const executiveMembers = [
 </script>
 
 <template>
-    <section class="container mx-auto px-24 py-4">
+    <section class="bg-gray-100 py-4 border-t border-b border-gray-300 px-24">
+
       <!-- Outer wrapper with vertical lines -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
           
