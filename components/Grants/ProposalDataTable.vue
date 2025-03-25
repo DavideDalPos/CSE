@@ -12,27 +12,29 @@ const props = defineProps({
 });
 
 const filters = ref({
-  year: '',
-  title: ''
+  searchQuery: ''
 });
 
-// Computed property for filtering the table items
 const filteredList = computed(() =>
   props.items.filter((item) => {
-    const yearMatches = item.year.toLowerCase().includes(filters.value.year.toLowerCase());
-    const titleMatches = item.title.toLowerCase().includes(filters.value.title.toLowerCase());
-    return yearMatches && titleMatches; // Apply both filters
+    const searchQuery = filters.value.searchQuery.toLowerCase();
+    return (
+      item.year.toString().toLowerCase().includes(searchQuery) || 
+      item.title.toLowerCase().includes(searchQuery)
+    );
   })
 );
+
+
 </script>
 
 <template>
     <div class="bg-base-foreground rounded-lg">
       <div class="flex items-center justify-between">
-        <SearchForm v-model="filters.year" />
-        <div class="flex items-center justify-end text-sm font-semibold">
-          <FilterDropdown />
-          <FilterRadios />
+        <SearchForm v-model="filters.searchQuery" />
+      <div class="flex items-center justify-end text-sm font-semibold">
+        <FilterDropdown />
+        <FilterRadios />
         </div>
       </div>
   
