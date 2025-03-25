@@ -9,7 +9,7 @@ export default [
     year: '2019',
     researcher: 'Davide',
     title: 'Bracs are awesome',
-    pdf: 'ciao',
+    pdf: '/pdf/DorisLagos_2024report.pdf/',
   }
 ]
   
