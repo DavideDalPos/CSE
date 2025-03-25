@@ -23,7 +23,7 @@ const value = computed({
       <input
         type="text"
         v-model="value"
-        placeholder="Search Year or Title"
+        placeholder="Search Year, Title or Taxon"
         class="bg-base-background border border-gray-300 text-base-contenta sm:w-85 rounded px-4 py-1"
       />
     </div>

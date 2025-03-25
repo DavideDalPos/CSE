@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 import FilterDropdown from './FilterDropdown.vue';
 import FilterRadios from './FilterRadios.vue';
 import SearchForm from './SearchForm.vue';
@@ -21,7 +21,8 @@ const filteredList = computed(() =>
     return (
       item.year.toString().toLowerCase().includes(searchQuery) || 
       item.title.toLowerCase().includes(searchQuery) ||
-      (item.taxon && item.taxon.toLowerCase().includes(searchQuery)) // Add this line for taxon filtering
+      (item.taxon && item.taxon.toLowerCase().includes(searchQuery)) || // Add this line for taxon filtering
+      (item.researcher && item.researcher.toLowerCase().includes(searchQuery)) // Add this line for researcher filtering
     );
   })
 );
@@ -41,7 +42,7 @@ const filteredList = computed(() =>
       </div>
   
       <!-- Table Content -->
-      <table class="w-full text-sm text-left text-gray-500">
+      <table class="w-full text-sm text-left text-gray-700">
         <thead class="text-xs text-base-content uppercase bg-base-background">
           <tr>
             <th class="px-4 py-3">Year</th>
@@ -58,9 +59,9 @@ const filteredList = computed(() =>
             class="border-b border-base-muted"
           >
             <td class="px-4 py-3 font-medium text-base-content wrap-content">{{ item.year }}</td>
-            <td class="px-4 py-3 wrap-content">{{ item.researcher }}</td>
-            <td class="px-4 py-3 wrap-content">{{ item.title }}</td>
-            <td class="px-4 py-3 wrap-content">{{ item.taxon }}</td>
+            <td class="px-4 py-3 wrap-content" v-html="item.researcher"></td>
+            <td class="px-4 py-3 wrap-content" v-html="item.title"></td>
+            <td class="px-4 py-3 wrap-content" v-html="item.taxon"></td>
             <td class="px-4 py-3 wrap-content">
                  <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
                     <img src="/images/PDF_file_icon.svg" alt="PDF" class="w-6 h-6">
@@ -79,16 +80,14 @@ const filteredList = computed(() =>
   white-space: normal;
   word-wrap: break-word;
   word-break: break-word;
-  max-width: 150px; /* Adjust as needed to prevent column stretching */
+  max-width: 650px; /* Adjust as needed to prevent column stretching */
 }
 
 table {
-  table-layout: fixed; /* Ensures columns don't stretch to fit content */
+  table-layout: auto; /* Ensures columns don't stretch to fit content */
 }
 
 th, td {
-  max-width: 150px; /* Limits the width of each column */
   overflow: hidden; /* Ensures overflow text wraps */
 }
 </style>
-
