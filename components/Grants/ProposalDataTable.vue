@@ -1,5 +1,4 @@
 <script setup>
-import { FileText } from 'lucide-vue-next';
 import { computed, ref } from 'vue';
 import FilterDropdown from './FilterDropdown.vue';
 import FilterRadios from './FilterRadios.vue';
@@ -59,10 +58,10 @@ const filteredList = computed(() =>
             <td class="px-4 py-3 wrap-content">{{ item.researcher }}</td>
             <td class="px-4 py-3 wrap-content">{{ item.title }}</td>
             <td class="px-4 py-3 wrap-content">
-    <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
-      <FileText class="w-6 h-6" />
-    </a>
-  </td>
+  <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
+    <i class="fas fa-file-pdf text-xl"></i>
+  </a>
+</td>
           </tr>
         </tbody>
       </table>
