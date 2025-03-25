@@ -20,10 +20,12 @@ const filteredList = computed(() =>
     const searchQuery = filters.value.searchQuery.toLowerCase();
     return (
       item.year.toString().toLowerCase().includes(searchQuery) || 
-      item.title.toLowerCase().includes(searchQuery)
+      item.title.toLowerCase().includes(searchQuery) ||
+      (item.taxon && item.taxon.toLowerCase().includes(searchQuery)) // Add this line for taxon filtering
     );
   })
 );
+
 
 
 </script>
@@ -45,6 +47,7 @@ const filteredList = computed(() =>
             <th class="px-4 py-3">Year</th>
             <th class="px-4 py-3">Researcher</th>
             <th class="px-4 py-3">Title</th>
+            <th class="px-4 py-3">Taxon</th>
             <th class="px-4 py-3">PDF</th>
           </tr>
         </thead>
@@ -57,6 +60,7 @@ const filteredList = computed(() =>
             <td class="px-4 py-3 font-medium text-base-content wrap-content">{{ item.year }}</td>
             <td class="px-4 py-3 wrap-content">{{ item.researcher }}</td>
             <td class="px-4 py-3 wrap-content">{{ item.title }}</td>
+            <td class="px-4 py-3 wrap-content">{{ item.taxon }}</td>
             <td class="px-4 py-3 wrap-content">
                  <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
                     <img src="/images/PDF_file_icon.svg" alt="PDF" class="w-6 h-6">
