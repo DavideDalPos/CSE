@@ -1,21 +1,14 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    rootAttrs: {
-      class: 'flex flex-col min-h-screen'
-    }
+  css: [
+    '@/assets/css/tailwind.css',  // Ensure Tailwind is included in the global styles
+  ],
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
-
-  compatibilityDate: '2024-11-01',
-
-  devtools: { enabled: true },
-
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/google-fonts'],
-
-  googleFonts: {
-    families: {
-      Roboto: true
-    }
-    // Options
-  }
 })
+
