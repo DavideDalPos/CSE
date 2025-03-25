@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/tailwind.css',  // Ensure Tailwind is included in the global styles
   ],
+
   build: {
     postcss: {
       plugins: {
@@ -10,5 +11,6 @@ export default defineNuxtConfig({
       },
     },
   },
-})
 
+  compatibilityDate: '2025-03-25',
+})
