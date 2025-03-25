@@ -1,5 +1,4 @@
 <script setup>
-import { DocumentIcon } from '@heroicons/vue/24/solid';
 import { computed, ref } from 'vue';
 import FilterDropdown from './FilterDropdown.vue';
 import FilterRadios from './FilterRadios.vue';
@@ -20,7 +19,7 @@ const filters = ref({
 // Computed property for filtering the table items
 const filteredList = computed(() =>
   props.items.filter((item) => {
-    const yearMatches = item.id.toLowerCase().includes(filters.value.year.toLowerCase());
+    const yearMatches = item.year.toLowerCase().includes(filters.value.year.toLowerCase());
     const titleMatches = item.title.toLowerCase().includes(filters.value.title.toLowerCase());
     return yearMatches && titleMatches; // Apply both filters
   })
@@ -49,25 +48,14 @@ const filteredList = computed(() =>
         </thead>
         <tbody>
           <tr
-            v-for="item in list"
-            :key="item.id"
+            v-for="item in filteredList"
+            :key="item.year"
             class="border-b border-base-muted"
           >
             <td class="px-4 py-3 font-medium text-base-content wrap-content">{{ item.year }}</td>
             <td class="px-4 py-3 wrap-content">{{ item.researcher }}</td>
             <td class="px-4 py-3 wrap-content">{{ item.title }}</td>
-            <td class="px-4 py-3 wrap-content">
-              <!-- PDF Link with Icon -->
-              <router-link
-                v-if="item.pdf"
-                :to="item.pdf"
-                target="_blank"
-                class="text-indigo-500 hover:underline"
-              >
-                <DocumentIcon class="h-5 w-5 text-blue-500" />
-              </router-link>
-              <span v-else>No PDF</span>
-            </td>
+            <td class="px-4 py-3 wrap-content">{{ item.pdf }}</td>
           </tr>
         </tbody>
       </table>
