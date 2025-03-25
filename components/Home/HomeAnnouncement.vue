@@ -1,8 +1,8 @@
 <template>
   <section class="bg-gray-100 py-6 border-t border-b border-gray-300">
     <div class="mx-auto prose !container dark:prose-invert">
-      <h2 class="px-4 sm:px-0">Highlights</h2>
-      <div class="flex gap-4 flex-col bg-transparent">
+      <h2 class="px-1 sm:px-9">Highlights</h2>
+      <div class="flex gap-4 flex-col bg-transparent px-3">
         
         <VCard class="bg-white"> 
           <VCardContent>
