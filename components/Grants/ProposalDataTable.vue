@@ -58,10 +58,10 @@ const filteredList = computed(() =>
             <td class="px-4 py-3 wrap-content">{{ item.researcher }}</td>
             <td class="px-4 py-3 wrap-content">{{ item.title }}</td>
             <td class="px-4 py-3 wrap-content">
-  <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
-    <img src="/images/PDF_file_icon.svg" alt="PDF" class="w-6 h-6">
-  </a>
-</td>
+                 <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
+                    <img src="/images/PDF_file_icon.svg" alt="PDF" class="w-6 h-6">
+                 </a>
+            </td>
           </tr>
         </tbody>
       </table>
