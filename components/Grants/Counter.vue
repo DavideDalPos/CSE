@@ -1,16 +1,16 @@
 <template>
   <!-- Countdown Section -->
-  <section class="py-10 px-24">
-      <div class="text-center top-[30px]">
-    <!-- Date Box -->
-    <div class="date-box">
-      July 15, 2025 | 11:59 PM - Eastern Time 
+  <section class="pt-3 pb-3">
+    <div class="text-center pt-3 pb-4 deadline-text">
+      Next Deadline:
     </div>
-  </div>
-    <div class="text-center py-8">
-      Next Date for Application
+    <div class="text-center top-[30px]">
+      <!-- Date Box -->
+      <div class="date-box shadow-lg">
+        <b> <span style="color: #D65A5A;">July 15, 2025</span></b> | 11:59 PM - Eastern Time 
+      </div>
     </div>
-    <div class="mt--8 gap-5 md:gap-16 text-center text-2xl relative top-[30px] mb-6">
+    <div class="mt--8 gap-5 md:gap-16 text-center text-xl relative top-[40px] mb-6">
       <div class="countdown-item">
         <span class="number green-number">{{ daysRemaining }}</span>
         <span class="label">Days</span>
@@ -32,17 +32,22 @@
 </template>
 
 <style scoped>
-
 /* Transparent Box for Date */
 .date-box {
-display: inline-block;
-background: rgba(89, 145, 218, 0.39); /* Transparent background */
-padding: 8px 16px;
-border-radius: 10px;
-font-size: 1rem;
-color: #000000; /* Match your existing green color */
-border: 1px solid rgba(255, 255, 255, 0.3);
-backdrop-filter: blur(4px); /* Slight blur effect */
+  display: inline-block;
+  background: rgba(89, 145, 218, 0.39); /* Transparent background */
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 15px; /* Slightly rounded corners */
+  font-size: 1.2rem; /* Larger font size for content */
+  color: #000000; /* Match your existing green color */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px); /* Slight blur effect */
+}
+
+.deadline-text {
+  font-size: 1.5rem; /* Larger font size for the 'Next Deadline' text */
+  font-weight:; /* Bold text */
+  color: #000; /* Change to black or your preferred color */
 }
 
 .countdown-item {
@@ -52,11 +57,11 @@ backdrop-filter: blur(4px); /* Slight blur effect */
 }
 
 .number {
-  color: rgba(185, 83, 24, 0.781);
-  font-size: 1.5em; /* Adjust number size as needed */
-  position: absolute;
-  top: -1em; /* Position above the label */
-  left: 50%;
+  color: rgba(236, 31, 31, 0.781);
+  font-size: 1.7em; /* Larger number size */
+  position: realtive;
+  top: 100px; /* Position above the label */
+  left: 30px;
   transform: translateX(-50%); /* Center horizontally */
   white-space: nowrap; /* Prevent wrapping */
   font-weight: bold;
@@ -64,10 +69,12 @@ backdrop-filter: blur(4px); /* Slight blur effect */
 
 .label {
   display: block; /* Make the label take up its own line */
-  text-align: center; /* Center the label */
-  font-size: 1em; /* Adjust number size as needed */
+  text-align:; /* Center the label */
+  font-size: 1.2em; /* Larger font size for the label */
+  margin-top: 5px;
 }
 </style>
+
 
 <script>
 export default {

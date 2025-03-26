@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center h-[10vh]">
+    <div class="flex items-center justify-center h-[20vh]">
       <div class="flex gap-4">
         <NuxtLink 
           to="/howtoapply" 
