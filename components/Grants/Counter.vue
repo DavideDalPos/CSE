@@ -1,6 +1,6 @@
 <template>
   <!-- Countdown Section -->
-  <section class="bg-gray-200 border-t border-b border-gray-300 py-6 px-24">
+  <section class="py-10 px-24">
       <div class="text-center top-[30px]">
     <!-- Date Box -->
     <div class="date-box">
@@ -36,11 +36,11 @@
 /* Transparent Box for Date */
 .date-box {
 display: inline-block;
-background: rgba(89, 145, 218, 0.822); /* Transparent background */
+background: rgba(89, 145, 218, 0.39); /* Transparent background */
 padding: 8px 16px;
-border-radius: 8px;
+border-radius: 10px;
 font-size: 1rem;
-color: #ffffff; /* Match your existing green color */
+color: #000000; /* Match your existing green color */
 border: 1px solid rgba(255, 255, 255, 0.3);
 backdrop-filter: blur(4px); /* Slight blur effect */
 }
