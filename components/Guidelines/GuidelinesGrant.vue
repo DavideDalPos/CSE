@@ -1,10 +1,8 @@
 <template>
-    <div class="container mx-auto px-8">
-      <div class="prose max-w-full pb-4">
-        <h1 class="text-4xl">Guidelines</h1>
-      
-  
-        <p>
+    <section class="container mx-auto px-8 py-10">
+      <h1 class="text-4xl">Guidelines</h1>
+      <div class="flex flex-col gap-4 my-8"> 
+      <p>
           Grant awards are limited, and proposals will be evaluated by the GGE
           Committee semiannually and approved by the CSE Board of Directors.
           Applicants must be CSE members and should contact the appropriate
@@ -12,7 +10,7 @@
           potential work.
         </p>
   
-        <h2>Eligibility</h2>
+        <h2 class="text-2xl">Eligibility</h2>
   
         <p>
           Applicants must be CSE members and coordinate with FSCA curators for
@@ -51,5 +49,5 @@
           website.
         </p>
       </div>
-    </div>
+    </section>
   </template>

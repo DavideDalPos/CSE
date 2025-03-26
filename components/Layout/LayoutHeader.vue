@@ -62,8 +62,8 @@ const menu = [
   {
     label: 'Insecta Mundi',
     submenu: [  // Submenu items
-      { label: 'Guidelines', link: '/guidelines' },
-      { label: 'Issues', link: '/insecta_mundi' }
+      { label: 'Guidelines', link: '/IMguidelines' },
+      { label: 'Issues', link: '/inseta_mundi' }
     ]
   },
   {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import GuidelinesText from '~/components/Guidelines/GuidelinesText.vue';
+import GuidelinesText from '~/components/Guidelines/GuidelinesGrant.vue';
 </script>
 
 <template>
