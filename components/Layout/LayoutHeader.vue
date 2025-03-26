@@ -78,8 +78,8 @@ const menu = [
     label: 'Travel grants',
     submenu: [  // Submenu items
       { label: 'Peck Grant', link: '/grants' },
-      { label: 'How to Apply', link: '/howtoapply' },
-      { label: 'Previous report', link: '/proposal' },
+      { label: 'Guidelines', link: '/guidelines' },
+      { label: 'Archive', link: '/proposal' },
     ]
   },
   {

@@ -43,7 +43,7 @@
 <style>
 .fsca-link {
   font-weight: bold;
-  color: rgba(58, 168, 91, 0.644);
+  color: rgba(58, 168, 91, 1.744);
   text-decoration: underline;
   transition: transform 0.2s ease-in-out; /* Add a smooth transition */
   display: inline-block; /* Required for transform to work correctly */

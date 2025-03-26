@@ -8,7 +8,7 @@ import GrantTitle from '~/components/Grants/GrantTitle.vue';
 <template>
 <GrantTitle />
 <GrantIntroduction />
-<Counter />
 <GrantButton />
+<Counter />
 </template>
 

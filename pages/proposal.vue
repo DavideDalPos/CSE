@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ProposalData from '~/components/Grants/ProposalData';
-import ProposalDataTable from '~/components/Grants/ProposalDataTable.vue';
+import ProposalData from '~/components/Proposal/ProposalData';
+import ProposalDataTable from '~/components/Proposal/ProposalDataTable.vue';
 
 </script>
 
