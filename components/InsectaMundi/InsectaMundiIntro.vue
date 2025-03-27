@@ -31,7 +31,7 @@
             was published on paper irregularly throughout the year. As manuscripts are completed and published, 
             they are individually, sequentially numbered. There are no longer year-based volume or issue numbers. 
             Further details about our policies and procedures can be found in 
-            <a href="/PDF/0001ProceduresComplete.pdf"  target="_blank" class="fsca-link"><i>2007 Insecta Mundi 0001</i></a>. 
+            <NuxtLink to="/PDF/0001ProceduresComplete.pdf"  target="_blank" style="text-decoration: underline; color: #007bff;">2007 Insecta Mundi 0001</NuxtLink>. 
             </p>
         </div> 
         <div class="flex flex-col gap-4 my-8">
@@ -41,7 +41,7 @@
             <b><i>Insecta Mundi</i></b>'s open accessible electronic publication to be the form validating each articles publication date. 
             In 2014, manuscript submissions to <b><i>Insecta Mundi</i></b> has grown to a volume that we suffered a staffing crisis 
             and had to reorganize our manuscript processing. The primarily difference is that we increased the number of volunteer
-             Editors and changed manuscript submission requirements. Our current staff is listed below.
+             Editors and changed manuscript submission requirements. Our current staff is listed <NuxtLink to="/editorialstaff" style="text-decoration: underline; color: #007bff;">here</NuxtLink>.
             </p>
             </div>
     </section>
