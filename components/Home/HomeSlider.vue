@@ -31,7 +31,7 @@ const slides = [
     img: IMLogo,
     link: {
       label: 'Insecta Mundi Guidelines',
-      href: '/publications'
+      href: '/guidelinesim'
     }
   },
   {

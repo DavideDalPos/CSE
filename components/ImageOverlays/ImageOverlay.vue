@@ -72,7 +72,7 @@ defineProps({
 
 .text-content {
   position: absolute;
-  top: 80%;  /* Move the content down by 50% of the container */
+  top: 85%;  /* Move the content down by 50% of the container */
   left: 50%; /* Move it to the center */
   transform: translate(-50%, -50%); /* Center it perfectly */
   z-index: 10;
