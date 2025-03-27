@@ -63,6 +63,7 @@ const menu = [
     label: 'Insecta Mundi',
     submenu: [  // Submenu items
       { label: 'Our Journal', link: '/introim' },
+      { label: 'Editorial Staff', link: '/editorialstaff' },
       { label: 'Author Instructions', link: '/guidelinesim' },
       { label: 'Editor Infromation', link: '/editorinfo' },
       { label: 'Ethic Statements', link: '/ethicim' },
