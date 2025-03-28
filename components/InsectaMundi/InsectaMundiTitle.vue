@@ -7,6 +7,6 @@ import ImageOverlay from '../ImageOverlays/ImageOverlay.vue';
     <ImageOverlay
       imageSrc="/images/IM_Skelley1.png"
       title="Insecta Mundi"
-      description="Devote to insect systematics"
+      description="A Journal of World Insect Systematics"
      /> 
 </template>

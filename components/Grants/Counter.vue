@@ -104,7 +104,7 @@
 .number {
   font-size: 2.2em;
   font-weight: bold;
-  fill: black;
+  fill: rgb(54, 90, 44);
   text-anchor: middle;
   dominant-baseline: middle;
   transform: rotate(0deg); /* Ensure number stays upright */
@@ -122,7 +122,7 @@
   display: inline-block;
   background: rgba(89, 145, 218, 0.39);
   padding: 12px 24px;
-  border-radius: 15px;
+  border-radius: 8px;
   font-size: 1.2rem;
   color: #000;
   border: 1px solid rgba(255, 255, 255, 0.3);
