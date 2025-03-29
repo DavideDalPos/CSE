@@ -23,7 +23,7 @@ const filteredList = computed(() =>
 </script>
 
 <template>
-  <div class="bg-base-foreground rounded-lg">
+    <div class="bg-base-foreground rounded-lg">
     <div class="flex items-center justify-between">
       <SearchForm v-model="filters.taxon" />
       <div class="flex items-center justify-end text-sm font-semibold">
@@ -57,7 +57,8 @@ const filteredList = computed(() =>
         </tr>
       </tbody>
     </table>
-  </div>
+</div>
+
 </template>
 
 <style scoped>

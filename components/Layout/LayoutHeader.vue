@@ -83,7 +83,7 @@ const menu = [
     submenu: [  // Submenu items
       { label: 'Peck Grant', link: '/grants' },
       { label: 'Guidelines', link: 'grants#grantguidelines' },
-      { label: 'Archive', link: '/proposal' },
+      { label: 'Previous Reports', link: 'grants#reports' },
     ]
   },
   {

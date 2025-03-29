@@ -10,8 +10,7 @@
           <ul class="list-inside list-disc text-base text-gray-700">
             <li>Must be a <a href="/membership" target="_blank" class="internal-link">CSE Member</a></li>
             <li>Expertise in Insect Systematic and Taxonomy</li>
-            <li><b><i>Not</i></b> a CSE Board Member</li>
-            <li><b><i>Not</i></b> a FSCA Employee</li>
+            <li>Must contact a <a href="https://thefsca.org/about/curators/" target="_blank" class="external-link">FSCA Curator</a></li>
           </ul>
         </div>
 
@@ -19,23 +18,25 @@
         <div class="bg-white p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
           <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">Application & Submission</h3>
           <ul class="list-inside list-disc text-base text-gray-700">
-            <li><a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">Download Formal Proposal</a>
+            <li>
+              <a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">Download Formal Proposal</a>
               <!-- PDF Icon -->
               <a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">
-              <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="inline w-5 h-5 ml-1 -mt-2">
+                <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="inline w-5 h-5 ml-1 -mt-2">
               </a>
             </li>
             <li>
               Prepare Formal Proposal (1–2 pages)
             </li>
-            <li>Submit Proposal to the GGE Committee:
-              <button @click="toggleDetails" class="ml-1 text-teal-700 hover:text-teal-900 text-xs">
-                <span :class="{'rotate-90': showDetails}" class="inline-block transition-transform duration-200">▶</span>
+            <li>
+              Submit Proposal to the <a href="about#GGECommittee" target="_blank" class="internal-link">GGE Committee</a>:
+              <button @click="toggleDetails('applicationSubmission')" class="ml-1 text-teal-700 hover:text-teal-900 text-xs">
+                <span :class="{'rotate-90': detailsVisible.applicationSubmission}" class="inline-block transition-transform duration-200">▶</span>
               </button>
             </li>
-            <div v-if="showDetails">
+            <div v-if="detailsVisible.applicationSubmission">
               <p class="pl-10 text-base text-gray-700 text-sm py-2">
-                Mail to: <br> 
+                Mail to: <br>
                 <b>Grants Committee</b> <br>Center for Systematic Entomology,<br>
                 P.O. Box 141874, Gainesville FL 32614-1874
               </p>
@@ -56,9 +57,23 @@
 
         <!-- Submission Section -->
         <div class="bg-white p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-          <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">Report</h3>
+          <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">Final Report</h3>
           <p class="text-base text-gray-700 leading-relaxed">
-            Text about the submission process. This can include steps, guidelines, and deadlines for submitting the necessary materials or documents.
+            <ul class="list-inside list-disc text-base text-gray-700">
+              <li>Prepare final report</li>
+              <li>Send it to the <a href="about#GGECommittee" target="_blank" class="internal-link">GGE Committee</a></li>
+              <li>
+                Report will be posted on the <b>CSE Website</b>:
+                <button @click="toggleDetails('finalReport')" class="ml-1 text-teal-700 hover:text-teal-900 text-xs">
+                  <span :class="{'rotate-90': detailsVisible.finalReport}" class="inline-block transition-transform duration-200">▶</span>
+                </button>
+              </li>
+              <div v-if="detailsVisible.finalReport">
+                <p class="pl-10 text-base text-gray-700 text-sm py-2">
+                  See <a href="#reports" class="internal-link">Reports</a> of previous projects
+                </p>
+              </div>
+            </ul>
           </p>
         </div>
       </div>
@@ -67,11 +82,20 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
-const showDetails = ref(false);
+// Object to track visibility per item
+const detailsVisible = ref({
+  applicationSubmission: false,
+  finalReport: false,
+});
 
-const toggleDetails = () => {
-  showDetails.value = !showDetails.value;
+const toggleDetails = (section) => {
+  // Toggle visibility of the selected section
+  detailsVisible.value[section] = !detailsVisible.value[section];
 };
 </script>
+
+<style scoped>
+/* Optional: Add extra styling if needed */
+</style>

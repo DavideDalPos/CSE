@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-10 pb-3">
+  <section class="pt-10 pb-3 mb-6">
     <div class="text-center">
       <button class="toggle-btn" @click="showCountdown = !showCountdown">
         {{ showCountdown ? "Hide Countdown" : "See Next Deadline" }}
