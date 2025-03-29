@@ -1,7 +1,6 @@
 <template>
   <section class="pt-10 pb-3">
     <div class="fade-in">
-      <div class="text-center pt-3 pb-4 deadline-text" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">Next Deadline:</div>
       <div class="text-center">
         <div class="date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
           <b><span style="color: #D65A5A;">February 15, 2026</span></b> | 09:00 AM - Gainesville
@@ -12,7 +11,9 @@
           <div class="text-xl py-5">Stay tuned for updates!</div>
         </div>
       </div>
-
+      <div class="text-center pt-3 pb-4 deadline-text" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
+        Begins in...
+      </div>
       <!-- Show countdown if timeRemaining is greater than zero -->
       <div v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0" class="mt-6 gap-5 md:gap-16 text-center text-xl relative mb-6 countdown-container">
         <div class="countdown-item" v-for="(value, label) in timeRemaining" :key="label">
@@ -38,7 +39,7 @@
 .countdown-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Countdown Items */
@@ -107,6 +108,7 @@
   color: #000;
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
+  margin-bottom: 50px; /* Adjust this value as needed */
 }
 
 /* Fade-in Animation */
@@ -129,13 +131,21 @@
 .coming-soon .text-xl {
   color: rgba(0, 0, 0, 0.7);
 }
+
+/* Adjust "Begins in..." positioning */
+.deadline-text {
+  padding-top: 0.5rem; /* Reduced padding */
+  padding-bottom: 0.5rem; /* Reduced padding */
+  margin-top: -10px; /* Pull up a little */
+  margin-bottom: 10px; /* Space between the text and countdown */
+}
 </style>
 
 <script>
 export default {
   data() {
     return {
-      deadline: new Date('2025-02-15T00:00:00Z'), // Update to actual deadline
+      deadline: new Date('2026-02-15T00:00:00Z'), // Update to actual deadline
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
     };
