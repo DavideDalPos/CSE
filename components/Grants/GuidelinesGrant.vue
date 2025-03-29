@@ -19,11 +19,11 @@
         <div class="bg-white p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
           <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">Application & Submission</h3>
           <ul class="list-inside list-disc text-base text-gray-700">
-            <li>Download Formal Proposal
+            <li><a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">Download Formal Proposal</a>
               <!-- PDF Icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5 ml-2 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM12 2v8H8m4 8h4"></path>
-      </svg>
+              <a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">
+              <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="inline w-5 h-5 ml-1 -mt-2">
+              </a>
             </li>
             <li>
               Prepare Formal Proposal (1–2 pages)
