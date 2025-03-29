@@ -77,6 +77,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2))
 }
 
 /* SVG Circle */
@@ -89,6 +90,7 @@
   fill: none;
   stroke: rgba(139, 34, 60, 0.2);
   stroke-width: 5;
+  filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 /* Progress Circle */
@@ -115,6 +117,7 @@
   font-size: 1.2em;
   margin-top: 10px;
   text-align: center;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.3));
 }
 
 /* Date Box */

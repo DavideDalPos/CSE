@@ -2,10 +2,10 @@
     <section class="container mx-auto px-8 py-10">
       <h1 class="text-4xl">The Peck Collection Enhancement Endowment</h1>
       <div class="flex flex-col gap-4 my-8">
-        <p>
+        <p class= "justify-text">
             In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> (aka <b>Peck Fund</b>) 
             with the Center for Systematic Entomology (CSE). 
-            <br> The primary purpose of the <b>Peck Fund</b> is to facilitate research travels to 
+            The primary purpose of the <b>Peck Fund</b> is to facilitate research travels to 
             the <a
             href="https://thefsca.org"
             target="_blank"

@@ -49,4 +49,29 @@ useHead({
   opacity: 0;
   transform: translateY(0px);
 }
+
+.external-link {
+  font-weight: bold;
+  color: rgba(58, 168, 91, 1.744);
+  text-decoration: underline;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.external-link:hover {
+  transform: scale(1.01);
+}
+
+.internal-link {
+  font-weight: bold;
+  color: rgba(21, 105, 214, 0.76); /* Pastel blue */
+  text-decoration: underline;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.internal-link:hover {
+  transform: scale(1.03);
+}
 </style>
+

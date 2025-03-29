@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import PreviousProposalIntro from '~/components/Proposal/PreviousProposalIntro.vue';
 import ProposalData from '~/components/Proposal/ProposalData';
-import ProposalDataTable from '~/components/Proposal/ProposalDataTable.vue';
-
 </script>
 
 <template>
+  <PreviousProposalIntro />
   <VCard class="m-8">
     <ProposalDataTable :items="ProposalData" />
   </VCard>
