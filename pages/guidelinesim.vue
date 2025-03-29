@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import GuidelinesIM from '~/components/Guidelines/GuidelinesIM.vue';
+import GuidelinesIM from '~/components/InsectaMundi/GuidelinesIM.vue';
 </script>
 
 <template>

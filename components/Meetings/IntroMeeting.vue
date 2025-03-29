@@ -10,7 +10,7 @@ Historically, the talks are varied, covering a vary of differenct arthropod taxa
      </div>
      <div class="flex flex-col gap-4 my-8">
        <p>
- Start thinkning now about your next talk! 
+ Start thinking now about your next talk! 
        </p>
      </div>
    </section>

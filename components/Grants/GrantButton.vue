@@ -1,5 +1,5 @@
 <template>
-   <section class="container mx-auto px-8 py-0 -mt-9">
+   <section class="container mx-auto px-8 py-0 mt-9">
       <div class="flex gap-3">
         <NuxtLink 
           to="/howtoapply" 

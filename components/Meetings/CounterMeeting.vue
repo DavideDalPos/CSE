@@ -145,7 +145,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2026-02-15T00:00:00Z'), // Update to actual deadline
+      deadline: new Date('2025-02-15T00:00:00Z'), // Update to actual deadline
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
     };
