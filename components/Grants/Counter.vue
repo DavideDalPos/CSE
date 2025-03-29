@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-3 pb-3">
+  <section class="pt-10 pb-3">
     <div class="text-center">
       <button class="toggle-btn" @click="showCountdown = !showCountdown">
         {{ showCountdown ? "Hide Countdown" : "See Next Deadline" }}
@@ -35,9 +35,9 @@
 <style scoped>
 /* Toggle Button */
 .toggle-btn {
-  background: rgba(139, 34, 60, 0.85);
+  background: rgba(202, 29, 29, 0.85);
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   padding: 12px 24px;
   border: none;
@@ -48,7 +48,7 @@
 }
 
 .toggle-btn:hover {
-  background: rgba(139, 34, 60, 0.85);
+  background: rgba(158, 23, 23, 0.85);
   transform: scale(1.05);
 }
 
@@ -126,7 +126,7 @@
   background: rgba(89, 145, 218, 0.39);
   padding: 12px 24px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000;
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);

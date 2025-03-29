@@ -1,121 +1,179 @@
 <template>
-    <!-- Countdown Section -->
-    <section>
-        <div class="text-center">
-      <!-- Date Box -->
-      <div class="date-box">
-        February 15, 2026 | 9:00 AM - Gainesville (FL)
+  <section class="pt-10 pb-3">
+    <div class="fade-in">
+      <div class="text-center pt-3 pb-4 deadline-text" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">Next Deadline:</div>
+      <div class="text-center">
+        <div class="date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
+          <b><span style="color: #D65A5A;">February 15, 2026</span></b> | 09:00 AM - Gainesville
+        </div>
+        <!-- "Coming Soon" Section -->
+        <div v-else class="coming-soon text-center mt-6">
+          <div class="text-4xl font-semibold">Coming Soon!</div>
+          <div class="text-xl py-5">Stay tuned for updates!</div>
+        </div>
+      </div>
+
+      <!-- Show countdown if timeRemaining is greater than zero -->
+      <div v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0" class="mt-6 gap-5 md:gap-16 text-center text-xl relative mb-6 countdown-container">
+        <div class="countdown-item" v-for="(value, label) in timeRemaining" :key="label">
+          <div class="circle-container">
+            <svg class="circle-progress" width="120" height="120" viewBox="0 0 140 140">
+              <circle cx="70" cy="70" r="60" class="bg-circle"></circle>
+              <circle cx="70" cy="70" r="60" class="progress"
+                :stroke-dasharray="376.99"
+                :stroke-dashoffset="getProgress(value, label)">
+              </circle>
+              <text x="70" y="75" class="number">{{ value }}</text>
+            </svg>
+          </div>
+          <span class="label">{{ label }}</span>
+        </div>
       </div>
     </div>
-      <div class="text-center py-8">
-        Begins in...
-      </div>
-      <div class="mt--8 gap-5 md:gap-16 text-center text-2xl relative top-[30px]">
-        <div class="countdown-item">
-          <span class="number green-number">{{ daysRemaining }}</span>
-          <span class="label">Days</span>
-        </div>
-        <div class="countdown-item">
-          <span class="number green-number">{{ hoursRemaining }}</span>
-          <span class="label">Hours</span>
-        </div>
-        <div class="countdown-item">
-          <span class="number green-number">{{ minutesRemaining }}</span>
-          <span class="label">Minutes</span>
-        </div>
-        <div class="countdown-item">
-          <span class="number green-number">{{ secondsRemaining }}</span>
-          <span class="label">Seconds</span>
-        </div>
-      </div>
-    </section>
-  </template>
-  
+  </section>
+</template>
+
 <style scoped>
-/* Transparent Box for Date */
-.date-box {
-  display: inline-block;
-  background: rgba(89, 145, 218, 0.822); /* Transparent background */
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: #ffffff; /* Match your existing green color */
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(4px); /* Slight blur effect */
+/* Countdown Container */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-  .countdown-item {
-    position: relative; /* For positioning the number absolutely */
-    display: inline-block; /* Keep items in a row */
-    margin: 0 15px; /* Adjust spacing between items */
-  }
-  
-  .number {
-    color: rgba(185, 83, 24, 0.781);
-    font-size: 1.5em; /* Adjust number size as needed */
-    position: absolute;
-    top: -1em; /* Position above the label */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    white-space: nowrap; /* Prevent wrapping */
-    font-weight: bold;
-  }
-  
-  .label {
-    display: block; /* Make the label take up its own line */
-    text-align: center; /* Center the label */
-    font-size: 1em; /* Adjust number size as needed */
-  }
-  </style>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        deadline: new Date('2026-02-15T00:00:00Z'),
-        timer: null,
-        timeRemaining: { days: 0, hours: 0, minutes: 0, seconds: 0 },
+/* Countdown Items */
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+/* SVG Circle Wrapper */
+.circle-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2))
+}
+
+/* Background Circle */
+.bg-circle {
+  fill: none;
+  stroke: rgba(139, 34, 60, 0.2);
+  stroke-width: 5;
+  filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Progress Circle */
+.progress {
+  fill: none;
+  stroke-width: 7;
+  stroke:  rgba(211, 129, 53, 0.85);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear;
+}
+
+/* Number Inside the Circle */
+.number {
+  font-size: 2.2em;
+  font-weight: bold;
+  fill: rgb(54, 90, 44);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  transform: rotate(0deg); /* Ensure number stays upright */
+}
+
+/* Label Below the Circle */
+.label {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.3));
+}
+
+/* Date Box */
+.date-box {
+  display: inline-block;
+  background: rgba(89, 145, 218, 0.39);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+/* Fade-in Animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Coming Soon Styling */
+.coming-soon .text-4xl {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(139, 34, 60, 0.8);
+}
+
+.coming-soon .text-xl {
+  color: rgba(0, 0, 0, 0.7);
+}
+</style>
+
+<script>
+export default {
+  data() {
+    return {
+      deadline: new Date('2025-02-15T00:00:00Z'), // Update to actual deadline
+      timer: null,
+      timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
+    };
+  },
+  methods: {
+    calculateTimeRemaining() {
+      const now = new Date();
+      const timeDiff = this.deadline - now;
+
+      if (timeDiff <= 0) {
+        clearInterval(this.timer);
+        return;
+      }
+
+      this.timeRemaining = {
+        Days: Math.floor(timeDiff / (1000 * 60 * 60 * 24)),
+        Hours: Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        Minutes: Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60)),
+        Seconds: Math.floor((timeDiff % (1000 * 60)) / 1000),
       };
     },
-    computed: {
-      daysRemaining() {
-        return this.timeRemaining.days;
-      },
-      hoursRemaining() {
-        return this.timeRemaining.hours;
-      },
-      minutesRemaining() {
-        return this.timeRemaining.minutes;
-      },
-      secondsRemaining() {
-        return this.timeRemaining.seconds;
-      },
+
+    getProgress(value, label) {
+      const maxValues = {
+        Days: 30,
+        Hours: 24,
+        Minutes: 60,
+        Seconds: 60,
+      };
+      return 376.99 - (value / maxValues[label]) * 376.99;
     },
-    methods: {
-      calculateTimeRemaining() {
-        const now = new Date();
-        const timeDiff = this.deadline - now;
-  
-        if (timeDiff <= 0) {
-          clearInterval(this.timer);
-          return;
-        }
-  
-        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-  
-        this.timeRemaining = { days, hours, minutes, seconds };
-      },
-    },
-    mounted() {
-      this.calculateTimeRemaining();
-      this.timer = setInterval(this.calculateTimeRemaining, 1000);
-    },
-    beforeDestroy() {
-      clearInterval(this.timer);
-    },
-  };
-  </script>
-  
+  },
+  mounted() {
+    this.calculateTimeRemaining();
+    this.timer = setInterval(this.calculateTimeRemaining, 1000);
+  },
+  beforeDestroy() {
+    clearInterval(this.timer);
+  },
+};
+</script>
