@@ -23,7 +23,8 @@
         </ul>
       </div>
       <div class="flex flex-col gap-4 my-8">
-      <p>Grant awards are limited, and proposals will be evaluated by the <a href="about#GGECommittee" target="_blank" class="internal-link">Gifts, Grants and Endowment (GGE) Committee</a> semiannually (January 15th and July 15th) 
+        <p>Grant awards are limited, and proposals will be evaluated by the <a href="about#GGECommittee" target="_blank" class="internal-link">Gifts, Grants and Endowment (GGE) Committee</a> 
+        semiannually (<b>January 15th</b> and <b>July 15th</b>) 
         and approved by the CSE Board of Directors. Applicants must be CSE members and should contact the appropriate curator at the FSCA to inquire about potential work.</p>
     </div>
     </section>

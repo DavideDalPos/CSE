@@ -19,9 +19,9 @@
           <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">Application & Submission</h3>
           <ul class="list-inside list-disc text-base text-gray-700">
             <li>
-              <a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">Download Formal Proposal</a>
+              <a href="/PDF/PeckFund_application.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">Download Formal Proposal</a>
               <!-- PDF Icon -->
-              <a href="/PDF/2024_SolomonHendrix.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">
+              <a href="/PDF/PeckFund_application.pdf" target="_blank" class="internal-link" rel="noopener noreferrer">
                 <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="inline w-5 h-5 ml-1 -mt-2">
               </a>
             </li>
