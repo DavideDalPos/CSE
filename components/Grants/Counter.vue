@@ -1,6 +1,7 @@
 <template>
   <section class="pt-10 pb-3 mb-6">
-    <div class="text-center">
+    <!-- Add ID to the container for targeting -->
+    <div id="counter" class="text-center">
       <button class="toggle-btn" @click="showCountdown = !showCountdown">
         {{ showCountdown ? "Hide Countdown" : "See Next Deadline" }}
       </button>
@@ -31,6 +32,7 @@
     </div>
   </section>
 </template>
+
 
 <style scoped>
 /* Toggle Button */
@@ -180,13 +182,29 @@ export default {
       };
       return 376.99 - (value / maxValues[label]) * 376.99;
     },
+
+    // Method to check if hash is #counter and toggle countdown visibility
+    checkHash() {
+      if (window.location.hash === '#counter') {
+        this.showCountdown = true; // Automatically open the countdown
+      }
+    }
   },
   mounted() {
+    // Calculate time remaining initially
     this.calculateTimeRemaining();
     this.timer = setInterval(this.calculateTimeRemaining, 1000);
+
+    // Check for the hash when the component mounts
+    this.checkHash();
+
+    // Listen for hash changes (in case the user navigates via hash links)
+    window.addEventListener('hashchange', this.checkHash);
   },
   beforeDestroy() {
+    // Clean up the timer and hashchange listener when component is destroyed
     clearInterval(this.timer);
+    window.removeEventListener('hashchange', this.checkHash);
   },
 };
 </script>
