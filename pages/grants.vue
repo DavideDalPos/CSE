@@ -1,6 +1,8 @@
-<script setup lang="ts">import Counter from '~/components/Grants/Counter.vue';
+<script setup lang="ts">
+import Counter from '~/components/Grants/Counter.vue';
 import GrantArchive from '~/components/Grants/GrantArchive.vue';
 import GrantGuatemala from '~/components/Grants/GrantGuatemala.vue';
+import GrantGuatemalaSlider from '~/components/Grants/GrantGuatemalaSlider.vue';
 import GrantIntroduction from '~/components/Grants/GrantIntroduction.vue';
 import GrantTitle from '~/components/Grants/GrantTitle.vue';
 import GuidelinesGrant from '~/components/Grants/GuidelinesGrant.vue';
@@ -24,5 +26,6 @@ import ProposalData from '~/components/Proposal/ProposalData';
 <GrantArchive />
   <section class="bg-gray-100 border-t border-b border-gray-300">
     <GrantGuatemala />
-  </section>
+  </section>   
+  <GrantGuatemalaSlider />
 </template>
