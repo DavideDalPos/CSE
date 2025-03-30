@@ -84,6 +84,8 @@ const menu = [
       { label: 'Peck Grant', link: '/grants' },
       { label: 'Guidelines', link: 'grants#grantguidelines' },
       { label: 'Previous Reports', link: 'grants#reports' },
+      { label: 'Archive', link: 'grants#archive' },
+      { label: 'Trip to Guatemala', link: 'grants#guatemala' },
     ]
   },
   {
