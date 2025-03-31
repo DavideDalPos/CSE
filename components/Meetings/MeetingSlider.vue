@@ -1,5 +1,5 @@
 <template>
-    <section class="relative overflow-hidden">
+    <section class="relative overflow-hidden mt-12">
       <VSliderMini
         class="h-[calc(100vh-64px)]"
         :slides="slides"
