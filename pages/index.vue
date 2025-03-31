@@ -1,10 +1,10 @@
-<template>
-  <HomeSlider />
-  <HomeWelcome />
-  <HomeAnnouncement />
-  <HomeClosing />
+<template #root>
+  <div>
+    <HomeSlider />
+    <HomeWelcome />
+    <HomeAnnouncement />
+    <HomeClosing />
+  </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>

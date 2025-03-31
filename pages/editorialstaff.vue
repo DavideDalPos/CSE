@@ -1,7 +1,7 @@
-<script setup lang="ts">
-import InsectaMundiEditorialStaff from '~/components/InsectaMundi/InsectaMundiEditorialStaff.vue';
-</script>
-
 <template>
-    <InsectaMundiEditorialStaff />
+  <InsectaMundiEditorialStaff />
 </template>
+
+<script setup>
+import InsectaMundiEditorialStaff from '~/components/InsectaMundi/InsectaMundiEditorialStaff.vue'
+</script>
