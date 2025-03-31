@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-
 defineProps({
   imageSrc: {
     type: String,
@@ -27,16 +26,8 @@ defineProps({
   description: {
     type: String,
     required: true
-  },
-  buttonText: {
-    type: String,
-    required: true
-  },
-  buttonLink: {
-    type: String,
-    required: true
   }
-});
+})
 </script>
 
 <style scoped>
@@ -72,7 +63,7 @@ defineProps({
 
 .text-content {
   position: absolute;
-  top: 85%;  /* Move the content down by 50% of the container */
+  top: 85%; /* Move the content down by 50% of the container */
   left: 50%; /* Move it to the center */
   transform: translate(-50%, -50%); /* Center it perfectly */
   z-index: 10;
