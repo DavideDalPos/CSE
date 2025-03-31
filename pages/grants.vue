@@ -25,7 +25,7 @@ import ProposalData from '~/components/Proposal/ProposalData';
     </section>
 <GrantArchive />
   <section class="bg-gray-100 border-t border-b border-gray-300">
-    <GrantGuatemala />
-  </section>   
+    <GrantGuatemala />  
   <GrantGuatemalaSlider />
+  </section> 
 </template>
