@@ -5,6 +5,6 @@
 <script setup>
 const route = useRoute()
 const { data } = await useAsyncData('publication', () =>
-  queryContent('publications', route.params.year, route.params.slug).findOne()
+  queryContent('insecta_mundi', route.params.year, route.params.slug).findOne()
 )
 </script>
