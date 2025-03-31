@@ -1,6 +1,7 @@
 <template>
     <section class="container mx-auto px-12 py-12 -mb-10">
-     <h1 class="text-4xl">CSE Annual Meeting and Conference</h1>
+     
+      <h1 class="section-title">CSE Annual Meeting and Conference</h1>
      <div class="flex flex-col gap-4 my-8">
        <p>
 Every year, the CSE orgnaizes its Annual Conference, 
@@ -25,3 +26,14 @@ The <b>2025 Annual Meeting</b> just ended. You can find the entire program here:
       </div>
    </section>
 </template>
+
+<style scoped>
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+</style>
