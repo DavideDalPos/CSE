@@ -79,7 +79,7 @@
 
       <NuxtLink
         class="uppercase items-center flex my-10 gap-1.5"
-        to="/newsletter"
+        to="/insecta_mundi"
       >
         <IconArrowLeft class="h-4 inline-block" />
         <span>Back</span>
