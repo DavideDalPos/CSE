@@ -50,7 +50,13 @@
                   v-for="reference in publication.references"
                   :key="reference"
                 >
-                  <span class="font-bold">{{ reference.authors }} {{ reference.year }}</span> <span v-html="reference.title" /><span v-if="reference.pages">: {{ reference.pages }}</span> <span v-if="reference.doi">DOI: {{ reference.doi }}</span>
+                  <span class="font-bold"
+                    >{{ reference.authors }} {{ reference.year }}</span
+                  >
+                  <span v-html="reference.title" /><span v-if="reference.pages"
+                    >: {{ reference.pages }}</span
+                  >
+                  <span v-if="reference.doi">DOI: {{ reference.doi }}</span>
                 </li>
               </ul>
             </template>
@@ -73,7 +79,7 @@
 
       <NuxtLink
         class="uppercase items-center flex my-10 gap-1.5"
-        to="/publications"
+        to="/newsletter"
       >
         <IconArrowLeft class="h-4 inline-block" />
         <span>Back</span>

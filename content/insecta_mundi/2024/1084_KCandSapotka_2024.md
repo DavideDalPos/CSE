@@ -1,5 +1,5 @@
 ---
-title: 'First record of the Mexican-M hairstreak *Parrhasius moctezuma* (Clench, 1971) (Lepidoptera: Lycaenidae) in Texas, USA, and possible sighting of the tequila giant skipper *Aegiale hesperiaris* (Walker, 1856) (Lepidoptera: Hesperiidae)'
+title: 'First record of the Mexican-M hairstreak <i>Parrhasius moctezuma</i> (Clench, 1971) (Lepidoptera: Lycaenidae) in Texas, USA, and possible sighting of the tequila giant skipper <i>Aegiale hesperiaris</i> (Walker, 1856) (Lepidoptera: Hesperiidae)'
 date: '2024-11-29'
 doi: ''
 issue: '1084'

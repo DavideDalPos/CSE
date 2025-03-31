@@ -1,5 +1,5 @@
 ---
-title: 'New country records for *Macroscython granulosus* Otto, 2016 (Coleoptera: Eucnemidae: Dromaeolinae: Dromaeolini), with redescription of the female'
+title: 'New country records for <i>Macroscython granulosus</i> Otto, 2016 (Coleoptera: Eucnemidae: Dromaeolinae: Dromaeolini), with redescription of the female'
 date: '2024-11-29'
 doi: ''
 issue: '1083'
@@ -55,5 +55,5 @@ references:
     title: 'The false click beetles (Coleoptera: Eucnemidae) of Laos. Entomologica Basiliensia et Collectionis Frey 35'
     pages: 181–427
 
-abstract: 'New country records for *Macroscython granulosus* Otto, 2016 (Coleoptera: Eucnemidae: Dromaeolinae: Dromaeolini), a eucnemid known only from Laos and Thailand, are reported from China and Nepal. A redescription and images of the female are provided.'
+abstract: 'New country records for <i>Macroscython granulosus</i> Otto, 2016 (Coleoptera: Eucnemidae: Dromaeolinae: Dromaeolini), a eucnemid known only from Laos and Thailand, are reported from China and Nepal. A redescription and images of the female are provided.'
 ---

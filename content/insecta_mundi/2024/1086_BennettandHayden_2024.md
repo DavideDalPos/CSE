@@ -1,5 +1,5 @@
 ---
-title: 'Review of *Nealyda* Dietz (Lepidoptera: Gelechiidae: Apatetrinae) with description of a new species from the Florida Keys'
+title: 'Review of <i>Nealyda</i> Dietz (Lepidoptera: Gelechiidae: Apatetrinae) with description of a new species from the Florida Keys'
 date: '2024-11-29'
 doi: ''
 issue: '1086'

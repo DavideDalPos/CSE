@@ -1,5 +1,5 @@
 ---
-title: 'First record of the camphor shot borer, *Cnestus mutilatus* (Blandford) (Coleoptera: Curculionidae: Scolytinae), in Massachusetts'
+title: 'First record of the camphor shot borer, <i>Cnestus mutilatus</i> (Blandford) (Coleoptera: Curculionidae: Scolytinae), in Massachusetts'
 date: '2024-11-29'
 doi: ''
 issue: '1087'
@@ -38,7 +38,7 @@ references:
 
   - authors: Leavengood JM Jr.
     year: 2013
-    title: 'First record of the camphor shot borer, *Cnestus mutilatus* (Blandford 1894), (Curculionidae: Scolytinae: Xyleborini) in Kentucky. Insecta Mundi 0308'
+    title: 'First record of the camphor shot borer, <i>Cnestus mutilatus</i> (Blandford 1894), (Curculionidae: Scolytinae: Xyleborini) in Kentucky. Insecta Mundi 0308'
     pages: 1–3
 
   - authors: Schiefer TL, Bright DE.
