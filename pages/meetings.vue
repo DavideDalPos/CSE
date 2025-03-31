@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Archive from '~/components/Meetings/Archive.vue';
 import CounterMeeting from '~/components/Meetings/CounterMeeting.vue';
 import IntroMeeting from '~/components/Meetings/IntroMeeting.vue';
@@ -17,10 +17,3 @@ import TitleMeeting from '~/components/Meetings/TitleMeeting.vue';
     <MeetingSlider />
     <Archive />
 </template>
-
-<script setup lang="ts">
-import CounterMeeting from '~/components/Meetings/CounterMeeting.vue'
-import IntroMeeting from '~/components/Meetings/IntroMeeting.vue'
-import MeetingSlider from '~/components/Meetings/MeetingSlider.vue'
-import TitleMeeting from '~/components/Meetings/TitleMeeting.vue'
-</script>
