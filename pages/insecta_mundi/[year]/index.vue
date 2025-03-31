@@ -3,7 +3,7 @@
     <div class="container mx-auto px-8 my-10">
       <h1 class="text-4xl font-black">Publications</h1>
       <div class="my-4">
-        <ContentList path="/insecta_mundi">
+        <ContentList :query="query">
           <template #default="{ list }">
             <ul>
               <li
@@ -38,3 +38,11 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const route = useRoute()
+
+const query = {
+  path: `/insecta_mundi/${route.params.year}`
+}
+</script>
