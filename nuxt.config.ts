@@ -6,10 +6,7 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2024-11-01',
-
   devtools: { enabled: true },
-
   modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/google-fonts'],
 
   googleFonts: {
@@ -17,5 +14,7 @@ export default defineNuxtConfig({
       Roboto: true
     }
     // Options
-  }
+  },
+
+  compatibilityDate: '2025-03-31'
 })
