@@ -13,7 +13,7 @@
               >
                 <NuxtLink :to="publication._path">
                   <h2
-                    class="text-xl font-medium"
+                    class="text-xl font-bold"
                     v-html="publication.title"
                   ></h2>
                   <VTag
@@ -25,7 +25,7 @@
                   </VTag>
                 </NuxtLink>
                 <p>
-                  {{ publication.authors?.map(({ name }) => name).join('; ') }}
+                  {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
                 </p>
               </li>
             </ul>

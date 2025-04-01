@@ -14,10 +14,14 @@ const props = defineProps({
 
 const cite = computed(() => {
   const year = new Date(props.publication.date).getFullYear()
-  const { title, journal, authors, issue } = props.publication
+  const { title, journal, authors, issue, pages } = props.publication
 
   return `${authors
-    .map((item) => item.name)
-    .join(', ')}. ${year}. ${title}. ${journal}. ${issue || ''}`
+    .map((item) => {const initials = item.first_name.split(' ')
+            .map((name) => name.charAt(0))
+            .join('. ') + '.'
+          return `${item.last_name}, ${initials}`
+        })
+    .join(', ')} (${year}). ${title}. <i>${journal}</i>, ${issue || ''}: ${pages}`
 })
 </script>

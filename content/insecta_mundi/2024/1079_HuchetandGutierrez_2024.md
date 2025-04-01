@@ -1,5 +1,5 @@
 ---
-title: 'New insights and comparative morphology of the rare Western Palearctic species _Ochodaeus montanus_ Fuente, 1912, and its closest relative, O. inermis Reitter, 1893 (Coleoptera: Scarabaeoidea: Ochodaeidae)'
+title: 'New insights and comparative morphology of the rare Western Palearctic species <i>Ochodaeus montanus</i> Fuente, 1912, and its closest relative, O. inermis Reitter, 1893 (Coleoptera: Scarabaeoidea: Ochodaeidae)'
 date: '2024-10-25'
 doi: ''
 issue: '1079'

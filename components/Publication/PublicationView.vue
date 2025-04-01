@@ -22,11 +22,12 @@
             <div>
               <ul v-if="publication.authors">
                 <li
-                  v-for="{ name, affiliation } in publication.authors"
+                  v-for="{ first_name, last_name, affiliation, orcid } in publication.authors"
                   class="py-2"
                 >
-                  <p class="font-bold">{{ name }}</p>
-                  <p>{{ affiliation }}</p>
+                  <p class="font-bold">{{ first_name }} {{ last_name }}</p>
+                  <p class="text-sm">{{ affiliation }}</p>
+                  <p class="text-sm">{{orcid}}</p>
                 </li>
               </ul>
             </div>
@@ -51,10 +52,10 @@
                   :key="reference"
                 >
                   <span class="font-bold"
-                    >{{ reference.authors }} {{ reference.year }}</span
+                    >{{ reference.authors }} {{ reference.year }}. </span
                   >
                   <span v-html="reference.title" /><span v-if="reference.pages"
-                    >: {{ reference.pages }}</span
+                    >: {{ reference.pages }}.</span
                   >
                   <span v-if="reference.doi">DOI: {{ reference.doi }}</span>
                 </li>

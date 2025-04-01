@@ -1,20 +1,23 @@
 ---
-title: 'The Afrotropical and West-Palaearctic species of Ecrizotes Förster (Hymenoptera: Pirenidae)'
+title: 'XXX Afrotropical and West-Palaearctic species of Ecrizotes Förster (Hymenoptera: Pirenidae)'
 date: '2024-10-25'
 doi: ''
 journal: Insecta Mundi
 issue: '970(1)'
 pagination: '1–16'
 authors:
-  - name: Mircea-Dan Mitroiu
+  - first_name: Mircea-Dan
+    last_name: Mitroiu
     affiliation: 'Faculty of Biology, “Alexandru Ioan Cuza” University of Iași, Romania'
     email: 'sajankc143@gmail.com'
     orcid: 'https://orcid.org/0000-0002-2749-0738'
 
-  - name: Ionel Andriescu
+  - first_name: Ionel 
+    last_name: Andriescu
     affiliation: 'Faculty of Biology, “Alexandru Ioan Cuza” University of Iași, Romania'
 
-  - name: Jean-Bernard Huchet
+  - first_name: Jean-Bernard
+    last_name: Huchet
     affiliation: '“Codrii” Natural Reserve, Lozova, Republic of Moldova'
 
 download: https://europeanjournaloftaxonomy.eu/index.php/ejt/article/view/2745/12583
