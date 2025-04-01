@@ -34,6 +34,7 @@
           </div>
 
           <div class="prose max-w- max-w-5xl">
+
             <template v-if="publication.abstract">
               <h3 class="text-2xl">Abstract</h3>
               <p v-html="publication.abstract" />
@@ -65,8 +66,8 @@
         </div>
 
         <div class="flex flex-col gap-4 max-w-96 mt-6">
-          <div class="border px-6 py-4 rounded">
-            <h3 class="text-2xl mb-2">How to cite</h3>
+          <div class="border px-6 py-4 rounded bg-gray-100">
+            <h3 class="text-2xl mb-2 border-b border-black">How to cite</h3>
             <PublicationCite :publication="publication" />
           </div>
           <div
