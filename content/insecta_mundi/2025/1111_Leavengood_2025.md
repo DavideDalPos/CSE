@@ -24,7 +24,8 @@ authors:
     affiliation: 'Kanuga Conference Center 130 Kanuga Chapel Drive, Hendersonville, NC 28739, USA'
     email: 'mkbrown@kanuga.org'
 
-download: https://europeanjournaloftaxonomy.eu/index.php/ejt/article/view/2745/12583
+download: ''
+supplementary: ''
 keywords:
   - Elateroidea
   - new records
