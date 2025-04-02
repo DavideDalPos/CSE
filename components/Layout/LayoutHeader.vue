@@ -1,8 +1,6 @@
 <template>
   <header>
-    <div
-      class="fixed w-full z-50 bg-[#e6d7b9] bg-opacity-50 backdrop-blur-sm shadow-lg"
-    >
+    <div class="fixed w-full z-50 bg-[#e6d7b9]/50 backdrop-blur-sm shadow-lg">
       <div
         class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
       >
@@ -46,7 +44,7 @@
                     >
                       <NuxtLink
                         :to="link"
-                        class="block px-4 py-2 hover:bg-opacity-75 hover:bg-gray-200"
+                        class="block px-4 py-2 hover:bg-gray-200/75"
                       >
                         {{ label }}
                       </NuxtLink>
@@ -88,7 +86,7 @@ const menu = [
       { label: 'Author Instructions', link: '/authorguidelines' },
       { label: 'Editor Infromation', link: '/editorinfo' },
       { label: 'Ethic Statements', link: '/ethicim' },
-      { label: 'Current Issue', link: '/insecta_mundi' },
+      { label: 'Current Issue', link: '/insecta_mundi' }
     ]
   },
   {

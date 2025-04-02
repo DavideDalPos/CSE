@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   app: {
     rootAttrs: {
@@ -7,13 +9,18 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/google-fonts'],
+  modules: ['@nuxt/content', '@nuxtjs/google-fonts'],
+
+  css: ['~/assets/css/main.css'],
 
   googleFonts: {
     families: {
       Roboto: true
     }
-    // Options
+  },
+
+  vite: {
+    plugins: [tailwindcss()]
   },
 
   compatibilityDate: '2025-03-31'

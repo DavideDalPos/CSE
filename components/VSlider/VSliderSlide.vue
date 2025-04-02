@@ -6,7 +6,7 @@
         class="w-screen absolute object-cover h-full -z-10"
       />
 
-      <div class="absolute w-full h-full bg-black bg-opacity-65 -z-10" />
+      <div class="absolute w-full h-full bg-black/65 -z-10" />
       <div class="container mx-auto px-8 z-20 h-full relative flex items-end">
         <div class="prose max-w-max md:max-w-5xl bottom-4 py-12">
           <h1 class="text-white">{{ slide.title }}</h1>

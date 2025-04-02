@@ -4,12 +4,6 @@ import colors from 'tailwindcss/colors'
 
 export default {
   content: ['./content/**/*.md', './nuxt.config.ts'],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: 'Roboto'
-      }
-    }
-  },
+
   plugins: [typography]
 }
