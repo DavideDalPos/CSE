@@ -88,7 +88,7 @@ const menu = [
       { label: 'Author Instructions', link: '/guidelinesim' },
       { label: 'Editor Infromation', link: '/editorinfo' },
       { label: 'Ethic Statements', link: '/ethicim' },
-      { label: 'Issues', link: '/insecta_mundi' }
+      { label: 'Current Issue', link: '/insecta_mundi' },
     ]
   },
   {

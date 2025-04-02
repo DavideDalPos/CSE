@@ -25,9 +25,9 @@
                   v-for="{ first_name, last_name, affiliation, orcid } in publication.authors"
                   class="py-2"
                 >
-                  <p class="font-bold">{{ first_name }} {{ last_name }}</p>
+                  <p class="font-bold text-lg">{{ first_name }} {{ last_name }}</p>
                   <p class="text-sm">{{ affiliation }}</p>
-                  <p class="text-sm">{{orcid}}</p>
+                  <a :href="orcid" class="text-sm" target="_blank">{{orcid}}</a>
                 </li>
               </ul>
             </div>
@@ -74,7 +74,7 @@
             v-if="publication.download"
             class="border px-6 py-4 rounded"
           >
-            <a :href="publication.download">Download</a>
+            <a :href="publication.download" target="_blank">Download</a>
           </div>
         </div>
       </div>

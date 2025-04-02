@@ -19,7 +19,7 @@ const cite = computed(() => {
   return `${authors
     .map((item) => {const initials = item.first_name.split(' ')
             .map((name) => name.charAt(0))
-            .join('. ') + '.'
+            .join('.') + '.'
           return `${item.last_name}, ${initials}`
         })
     .join(', ')} (${year}). ${title}. <i>${journal}</i>, ${issue || ''}: ${pagination}. ${doi}`

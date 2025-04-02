@@ -11,10 +11,15 @@ authors:
     affiliation: 'Division of Entomology, Pennsylvania Department of Agriculture, 2301 N. Cameron Street, Harrisburg, PA 17110 USA'
     email: 'lbarringer@pa.gov'
 
-download:
+download: 'https://journals.flvc.org/mundi/article/view/0399/81426'
 keywords:
   - Ambrosia beetle
   - new records
+
+categories:
+  - Coleoptera
+  - Curculionidae
+  - Scolytinae
 
 references:
   - authors: Barringer LE.
@@ -29,7 +34,7 @@ references:
 
   - authors: Gandhi KJK, Audley J, Johnson J, Raines M.
     year: 2009
-    title: 'Camphor shot borer, *Xylosandrus mutilatus* (Blandford) (Coleoptera: Curculionidae), an adventive ambrosia beetle in Georgia. The Coleopterists Bulletin 63(4)'
+    title: 'Camphor shot borer, <i>Xylosandrus mutilatus</i> (Blandford) (Coleoptera: Curculionidae), an adventive ambrosia beetle in Georgia. The Coleopterists Bulletin 63(4)'
     pages: 497–500
 
   - authors: Gomez DF, Rabaglia RJ, Fairbanks KEO, Hulcr J.
@@ -44,12 +49,12 @@ references:
 
   - authors: Schiefer TL, Bright DE.
     year: 2004
-    title: '*Xylosandrus mutilatus* (Blandford), an exotic ambrosia beetle (Coleoptera: Curculionidae: Scolytinae: Xyleborini) new to North America. The Coleopterists Bulletin 58(3)'
+    title: '<i>Xylosandrus mutilatus</i> (Blandford), an exotic ambrosia beetle (Coleoptera: Curculionidae: Scolytinae: Xyleborini) new to North America. The Coleopterists Bulletin 58(3)'
     pages: 431–438
 
   - authors: Wood SL, Bright DE.
     year: 1992
     title: 'A catalog of Scolytidae and Platypodidae (Coleoptera), part 2: Taxonomic index volume A. Great Basin Naturalist Memoirs, No. 13. Brigham Young University; Provo, UT. 833 p.'
 
-abstract: '*Cnestus mutilatus* (Blandford) (Coleoptera: Curculionidae: Scolytinae) is reported from Massachusetts for the first time. Brief trapping information is provided.'
+abstract: '<i>Cnestus mutilatus</i> (Blandford) (Coleoptera: Curculionidae: Scolytinae) is reported from Massachusetts for the first time. Brief trapping information is provided.'
 ---

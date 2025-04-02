@@ -13,18 +13,18 @@
               >
                 <NuxtLink :to="publication._path">
                   <h2
-                    class="text-xl font-bold"
+                    class="font-bold"
                     v-html="publication.title"
                   ></h2>
                   <VTag
                     v-for="category in publication.categories"
                     :key="category"
-                    class="bg-green-600 text-white inline-block"
+                    class="bg-green-600 text-white inline-block mr-0.5"
                   >
                     {{ category }}
                   </VTag>
                 </NuxtLink>
-                <p>
+                <p class="text-gray-600">
                   {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
                 </p>
               </li>
