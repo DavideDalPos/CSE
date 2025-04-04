@@ -10,7 +10,7 @@
           <span> - </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-green-600 text-white inline-block"
+            class="bg-green-600 text-white inline-block mr-0.5"
           >
             {{ category }}
           </VTag>
@@ -74,7 +74,7 @@
             v-if="publication.download"
             class="border px-6 py-4 rounded"
           >
-            <a :href="publication.download" target="_blank">Download</a>
+            <a :href="publication.download">Download</a>
           </div>
         </div>
       </div>
