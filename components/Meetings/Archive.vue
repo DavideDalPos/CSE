@@ -1,14 +1,14 @@
 <template>
-    <section class="container mx-auto px-12 py-12">
+    <section class="container mx-auto px-12 py-12 -mt-60">
       <!-- Meeting Archive Section -->
       <div class="archive-section">
-        <h2 class="section-title"> CSE Archive</h2>
+        <h1 class="text-4xl mb-10"> CSE Archive</h1>
         <MeetingArchive :meetings="meetings" />
       </div>
   
       <!-- Poster Archive Section -->
       <div class="archive-section">
-        <h2 class="section-title"> Poster Archive</h2>
+        <h1 class="text-4xl"> Poster Archive</h1>
         <PosterArchive :posters="posters" />
       </div>
     </section>
@@ -47,7 +47,7 @@ import PosterArchive from './PosterArchive.vue';
   <style scoped>
   /* General Section Styles */
   .archive-section {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
   
   /* Section Title Style */
@@ -55,7 +55,6 @@ import PosterArchive from './PosterArchive.vue';
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #333;
-    border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
     font-weight: bold;
   }
@@ -63,7 +62,7 @@ import PosterArchive from './PosterArchive.vue';
   /* Make the section titles more prominent */
   .archive-section h2 {
     font-size: 2rem;
-    margin-bottom: 25px;
+
   }
   
   /* Adjust space between sections */
