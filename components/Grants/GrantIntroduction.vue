@@ -59,7 +59,7 @@
   </div>
       <div class="flex flex-col gap-3 my-8 py-5 text-center items-center">
         <p>
-          <span class="font-bold pulsating-text flex items-center text-red-600 text-center">
+          <span class="font-bold pulsating-text flex items-center text-red-600 text-center text-xl">
         <ExclamationCircleIcon class="h-6 w-6 text-red-600 inline-block mr-2" />
         The CSE and Peck Endowment are to be acknowledged in any ensuing publication 
         <ExclamationCircleIcon class="h-6 w-6 text-red-600 inline-block ml-2" />

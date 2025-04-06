@@ -11,7 +11,7 @@
       <div class="text-center pt-3 pb-4 deadline-text">Next Deadline:</div>
       <div class="text-center">
         <div class="date-box shadow-lg">
-          <b><span style="color: #D65A5A;">July 15, 2025</span></b> | 11:59 PM - Eastern Time
+          <b><span style="color: rgba(202, 29, 29, 0.85);">July 15, 2025</span></b> | 11:59 PM - Eastern Time
         </div>
       </div>
       <div class="mt-6 gap-5 md:gap-16 text-center text-xl relative mb-6 countdown-container">
@@ -99,7 +99,7 @@
 .progress {
   fill: none;
   stroke-width: 7;
-  stroke:  rgba(211, 129, 53, 0.85);
+  stroke:  rgba(236, 119, 9, 0.85);
   stroke-linecap: round;
   transition: stroke-dashoffset 1s linear;
 }
@@ -108,7 +108,7 @@
 .number {
   font-size: 2.2em;
   font-weight: bold;
-  fill: rgb(54, 90, 44);
+  fill: rgb(107, 167, 92);
   text-anchor: middle;
   dominant-baseline: middle;
   transform: rotate(0deg); /* Ensure number stays upright */
@@ -132,11 +132,12 @@
   color: #000;
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
+  border-color: rgba(22, 6, 245, 0.212);
 }
 
 /* Fade-in Animation */
 .fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 @keyframes fadeIn {
