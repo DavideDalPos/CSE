@@ -1,6 +1,11 @@
 <template>
-  <div class="flex flex-col gap-3 my-8">
-    <div v-for="meeting in meetings" :key="meeting.year" class="bg-white p-3 rounded-lg flex flex-col justify-between items-start shadow-lg">
+  <div class="my-8">
+    <div class="flex flex-col gap-3 w-full max-w-2xl">
+      <div
+        v-for="meeting in meetings"
+        :key="meeting.year"
+        class="bg-white p-5 rounded-lg flex flex-col justify-between items-start shadow-lg"
+      >
       
       <div class="flex justify-between items-center w-full">
         <h3>{{ meeting.year }} - {{ meeting.title }}</h3>
@@ -27,6 +32,7 @@
         </a>
       </div>
     </div>
+  </div>
   </div>
 </template>
 

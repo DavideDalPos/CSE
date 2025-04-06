@@ -2,11 +2,12 @@
   <div>
     <TitleMeeting />
     <IntroMeeting />
-    <section class="bg-gray-100 border-t border-b border-gray-300">
       <CounterMeeting />
-    </section>
-    <MeetingSlider />
+    
+    <section class="bg-gray-100 border-t border-b border-gray-300">
     <Archive />
+  </section>
+  <MeetingSlider />
   </div>
 </template>
 

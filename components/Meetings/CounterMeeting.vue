@@ -1,7 +1,7 @@
 <template>
   <section id="datemeeting" class="pt-10 pb-3 mb-7">
     <div class="fade-in">
-      <div class="text-center">
+      <div class="text-center ">
         <div class="date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
           <b><span style="color: #D65A5A;">February 15, 2026</span></b> | 09:00 AM - Gainesville
         </div>

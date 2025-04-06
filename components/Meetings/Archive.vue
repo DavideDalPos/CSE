@@ -1,13 +1,13 @@
 <template>
-    <section class="container mx-auto px-12 py-12 -mt-60">
+    <section class="container mx-auto px-12 py-11">
       <!-- Meeting Archive Section -->
-      <div class="archive-section">
+      <div class="archive-section border-b">
         <h1 class="text-4xl mb-10"> CSE Archive</h1>
         <MeetingArchive :meetings="meetings" />
       </div>
   
       <!-- Poster Archive Section -->
-      <div class="archive-section">
+      <div class="archive-section ">
         <h1 class="text-4xl"> Poster Archive</h1>
         <PosterArchive :posters="posters" />
       </div>

@@ -2,7 +2,7 @@
   <section class="container mx-auto px-8 py-12">
     <h1 class="text-4xl">Center for Systematic Entomology (CSE)</h1>
     <div class="flex flex-col gap-4 my-8">
-      <p class= "justify-text">
+      <p class= "text-justify">
         For the past 35+ years the
         <b>Center for Systematic Entomology (CSE)</b> has served as a non-profit
         organization designed to further systematics in its broadest sense. It
@@ -28,12 +28,12 @@
       </ul>
     </div>
     <div class="flex flex-col gap-4 my-8">
-      <p class= "justify-text">
+      <p class= "text-justify">
         One of the advantages of membership is 
         publishing in <b><i>Insecta Mundi</i></b> without page charges. We urge all 
         Research Associates to support the CSE and simultaneously support FSCA 
         and its various systematics projects. 
-        For $40 you can be an important part of this effort. Please
+        For $40 you can be an important part of this effort. 
       </p>
     </div>
 
