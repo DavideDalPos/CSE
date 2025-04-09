@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-8 py-10 -mb-7">
+    <section class="container mx-auto px-8 py-10 -mb-7 text-justify">
       <h1 class="text-4xl">The Peck Collection Enhancement Endowment</h1>
       <div class="flex flex-col gap-4 my-8">
         <p class= "justify-text">
