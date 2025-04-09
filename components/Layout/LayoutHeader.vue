@@ -16,7 +16,7 @@
             <template v-for="{ label, link, submenu } in menu">
               <div
                 v-if="submenu"
-                class="relative group flex items-center gap-1"
+                class="relative group"
               >
                 <button class="hover:underline flex items-center gap-1">
                   {{ label }}
@@ -33,10 +33,8 @@
                     />
                   </svg>
                 </button>
-                <div
-                  class="absolute left-0 top-full mt-1 shadow-md opacity-0 group-hover:opacity-100 transition-opacity bg-secondary"
-                >
-                  <ul class="flex flex-col w-40 py-0">
+                <div class="pt-2 absolute hidden group-hover:block">
+                  <ul class="w-40 py-0 left-0 top-full shadow-md bg-secondary">
                     <li
                       v-for="{ label, link } in submenu"
                       :key="link"
