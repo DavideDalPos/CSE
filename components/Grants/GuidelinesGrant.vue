@@ -2,7 +2,7 @@
   <section class="bg-gray-100 border-t border-b border-gray-300">
     <div
       id="grantguidelines"
-      class="container mx-auto px-12 py-5 mb-8"
+      class="container mx-auto px-12 py-5 mb-8 scroll-m-18"
     >
       <h1 class="text-4xl text-gray-900 mb-12">Guidelines</h1>
 

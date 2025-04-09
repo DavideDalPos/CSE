@@ -3,7 +3,8 @@
     <NuxtPage
       :transition="{
         name: 'page',
-        mode: 'out-in'
+        mode: 'out-in',
+        onAfterEnter
       }"
     />
   </NuxtLayout>
@@ -32,6 +33,18 @@ useHead({
     class: `bg-background-color`
   }
 })
+
+async function onAfterEnter() {
+  const route = useRoute()
+
+  if (route.hash) {
+    await nextTick()
+    const element = document.querySelector(route.hash)
+    if (element) {
+      element.scrollIntoView()
+    }
+  }
+}
 </script>
 
 <style>
