@@ -1,7 +1,7 @@
 <template>
-    <section id="archive" class="container mx-auto px-8 py-10 -mb-8">
+    <section class="container mx-auto px-8 py-10 -mb-8">
       <h1 class="text-4xl">Archive</h1>
-      <div class="flex flex-col gap-4 my-8">
+      <div id="archive" class="flex flex-col gap-4 my-8">
         <p>
           Since 1991, numerous other grants have been awarded. Recipients include:
         </p>
