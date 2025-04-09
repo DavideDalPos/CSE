@@ -64,26 +64,30 @@ async function onAfterEnter() {
 }
 
 .external-link {
-  font-weight: bold;
+  font-weight: normal;
   color: rgba(58, 168, 91, 1.744);
-  text-decoration: underline;
-  transition: transform 0.2s ease-in-out;
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.2s ease-in-out;
   display: inline-block;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 }
 
 .external-link:hover {
-  transform: scale(1.01);
+  text-decoration: underline; /* Underline on hover */
 }
 
+
 .internal-link {
-  font-weight: bold;
+  font-weight: normal;
   color: rgba(21, 105, 214, 0.76); /* Pastel blue */
-  text-decoration: underline;
-  transition: transform 0.2s ease-in-out;
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.2s ease-in-out;
   display: inline-block;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 }
 
 .internal-link:hover {
-  transform: scale(1.03);
+  text-decoration: underline; /* Underline on hover */
 }
+
 </style>
