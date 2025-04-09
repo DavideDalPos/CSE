@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="fixed w-full z-50 bg-[#e6d7b9]/50 backdrop-blur-sm shadow-lg">
+    <div class="fixed w-full z-50 bg-primary backdrop-blur-sm shadow-lg">
       <div
         class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
       >
@@ -34,8 +34,7 @@
                   </svg>
                 </button>
                 <div
-                  class="absolute left-0 top-full mt-1 shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
-                  style="background-color: #ead7bb"
+                  class="absolute left-0 top-full mt-1 shadow-md opacity-0 group-hover:opacity-100 transition-opacity bg-secondary"
                 >
                   <ul class="flex flex-col w-40 py-0">
                     <li

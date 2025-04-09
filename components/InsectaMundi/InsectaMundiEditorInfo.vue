@@ -89,7 +89,7 @@
             </p>
         </div>
         <div class="flex my-10">
-  <img src="/Images/workflow_InsectaMundi.png" alt="Workflow" class="max-w-4xlg">
+  <img src="/images/Workflow_InsectaMundi.png" alt="Workflow" class="max-w-4xlg">
 </div>      
         </section>
 </template>

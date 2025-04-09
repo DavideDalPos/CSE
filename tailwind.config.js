@@ -3,7 +3,7 @@ import typography from '@tailwindcss/typography'
 import colors from 'tailwindcss/colors'
 
 export default {
-  content: ['./content/**/*.md', './nuxt.config.ts'],
+  //content: ['./content/**/*.md', './nuxt.config.ts'],
 
   plugins: [typography]
 }

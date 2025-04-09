@@ -6,4 +6,12 @@
 
 @theme {
   --font-sans: 'Roboto', sans-serif;
+  --color-background: #ffffff;
+  --color-foreground: oklch(98.5% 0 0);
+  --color-primary: #7ca2a1;
+  --color-primary-content: #ffffff;
+  --color-secondary: #c1d5c9;
+  --color-tertiary: #ecd2a1;
+  --color-quaternary: #dfa75a;
+  --color-quinary: #b0b182;
 }
