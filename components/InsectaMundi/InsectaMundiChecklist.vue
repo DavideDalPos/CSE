@@ -1,35 +1,43 @@
 <template>
-    <div class="container mx-auto px-8 my-10">
-      <div class="flex items-center justify-center">
-        <!-- Connector Line -->
-        <div class="flex-1 h-1 bg-gray-300"></div>
-        <!-- Timeline Items -->
-        <div class="flex items-center space-x-8">
-          <div v-for="(item, index) in checklistItems" :key="item.id" class="flex flex-col items-center">
-            <!-- Number -->
-            <div class="w-8 h-8 bg-red-500 text-white font-semibold rounded flex items-center justify-center">
-              {{ index + 1 }}
-            </div>
-            <!-- Text -->
-            <div class="text-sm text-gray-800 border mt-2">{{ item.text }}</div>
-          </div>
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <h2 class="text-3xl text-center mb-4 text-slate-800 font-bold">Manuscript Submission Checklist</h2>
+    <p class="text-center text-slate-600 mb-10 text-sm">
+      Each submitted manuscript must include the following documents
+    </p>
+
+    <div class="relative border-l-4 border-slate-300 pl-6 space-y-8">
+      <div
+        v-for="(item, index) in checklistItems"
+        :key="item.id"
+        class="relative group fade-in-up"
+        :style="{ animationDelay: `${index * 120}ms` }"
+      >
+        <!-- Dot -->
+        <span class="absolute -left-2 top-2 w-3 h-3 rounded-full bg-slate-500"></span>
+
+        <!-- Content -->
+        <div class="bg-slate-50 p-4 rounded-lg shadow-sm border border-slate-200 transition group-hover:shadow-md">
+          <h3 class="font-semibold text-base text-slate-900 mb-1">Document {{ index + 1 }}</h3>
+          <p class="text-slate-700 text-sm leading-snug">{{ item.text }}</p>
         </div>
-        <!-- Connector Line -->
-        <div class="flex-1 h-1 bg-gray-300"></div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
+
+
+
   
   <script>
   export default {
     data() {
       return {
         checklistItems: [
-          { id: 1, text: 'Manuscript and associated appendices or other files.' },
-          { id: 2, text: 'Images arranged into plates, each plate submitted as a separate TIF, JPG, or PDF file.' },
-          { id: 3, text: 'Copies of two critical reviews, showing reviewer comments.' },
-          { id: 4, text: 'Copies of Reviewer Report forms, one for each reviewer in addition to the manuscript with comments.' },
-          { id: 5, text: 'Copy of the signed Submission Contract, attesting that the manuscript is ready to go.' },
+          { id: 1, text: 'Manuscript and associated appendices or other files' },
+          { id: 2, text: 'Images arranged into plates, each plate submitted as a separate TIF, JPG, or PDF file' },
+          { id: 3, text: 'Copies of two critical reviews, showing reviewer comments' },
+          { id: 4, text: 'Copies of Reviewer Report forms, one for each reviewer in addition to the manuscript with comments' },
+          { id: 5, text: 'Copy of the signed Submission Contract, attesting that the manuscript is ready to go' },
         ],
       };
     },
@@ -37,6 +45,23 @@
   </script>
   
   <style scoped>
-  /* Additional styling can be added here if necessary */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 1.6s ease forwards;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+
   </style>
   

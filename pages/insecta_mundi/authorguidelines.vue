@@ -1,6 +1,8 @@
 <template>
   <InsectaMundiAuthorGuide />
+  <section class="bg-gray-100 border-t border-b border-gray-300">
   <InsectaMundiChecklist />
+  </section>
 </template>
 
 <script setup lang="ts">
