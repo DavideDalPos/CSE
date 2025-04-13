@@ -4,7 +4,7 @@
     <IntroMeeting />
       <CounterMeeting />
     
-    <section class="bg-gray-100 border-t border-b border-gray-300">
+    <section class="bg-secondary border-t border-b border-gray-300">
     <Archive />
   </section>
   <MeetingSlider />

@@ -1,24 +1,24 @@
 <template>
-  <section id="datemeeting" class="pt-10 pb-3 mb-7">
+  <section id="datemeeting" class="bg-foreground pt-10 pb-3">
     <div class="fade-in">
       <div class="text-center ">
-        <div class="date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
-          <b><span style="color: #D65A5A;">February 15, 2026</span></b> | 09:00 AM - Gainesville
+        <div class="bg-tertiary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
+          <b><span class="text-black-500">February 15, 2026</span></b> | 09:00 AM - Gainesville
         </div>
         <!-- "Coming Soon" Section -->
         <div v-else class="coming-soon text-center mt-6">
-          <div class="text-4xl font-semibold">Coming Soon!</div>
+          <div class="text-quaternary text-4xl font-semibold">Coming Soon!</div>
           <div class="text-xl py-5">Stay tuned for updates!</div>
         </div>
       </div>
-      <div class="text-center pt-3 pb-4 deadline-text" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
+      <div class="text-center text-2xl pt-3 pb-4 deadline-text" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
         Begins in...
       </div>
       <!-- Show countdown if timeRemaining is greater than zero -->
       <div v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0" class="mt-6 gap-5 md:gap-16 text-center text-xl relative mb-6 countdown-container">
         <div class="countdown-item" v-for="(value, label) in timeRemaining" :key="label">
           <div class="circle-container">
-            <svg class="circle-progress" width="120" height="120" viewBox="0 0 140 140">
+            <svg class="circle-progress" width="90" height="90" viewBox="0 0 140 140">
               <circle cx="70" cy="70" r="60" class="bg-circle"></circle>
               <circle cx="70" cy="70" r="60" class="progress"
                 :stroke-dasharray="376.99"
@@ -48,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 140px;
+  width: 110px;
   height: 140px;
 }
 
@@ -82,7 +82,7 @@
 
 /* Number Inside the Circle */
 .number {
-  font-size: 2.2em;
+  font-size: 2.0em;
   font-weight: bold;
   fill: rgb(54, 90, 44);
   text-anchor: middle;
@@ -101,7 +101,6 @@
 /* Date Box */
 .date-box {
   display: inline-block;
-  background: rgba(89, 145, 218, 0.39);
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 1.5rem;
@@ -125,7 +124,6 @@
 .coming-soon .text-4xl {
   font-size: 3rem;
   font-weight: bold;
-  color: rgba(139, 34, 60, 0.8);
 }
 
 .coming-soon .text-xl {
@@ -145,7 +143,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2025-02-15T00:00:00Z'), // Update to actual deadline
+      deadline: new Date('2026-02-15T00:00:00Z'), // Update to actual deadline
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
     };
