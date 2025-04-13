@@ -2,12 +2,12 @@
   <section id="datemeeting" class=" pt-10 pb-3">
     <div class="fade-in">
       <div class="text-center ">
-        <div class="bg-tertiary border border-quaternary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
+        <div class="bg-secondary border border-primary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
           <b><span class="text-black-500">February 15, 2026</span></b> | 09:00 AM - Gainesville
         </div>
         <!-- "Coming Soon" Section -->
-        <div v-else class="coming-soon text-center mt-6">
-          <div class="text-quaternary text-4xl font-semibold">Coming Soon!</div>
+        <div v-else class="coming-soon text-center">
+          <div class="text-primary text-4xl font-semibold">Coming Soon!</div>
           <div class="text-xl py-5">Stay tuned for updates!</div>
         </div>
       </div>
@@ -142,7 +142,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2026-02-15T00:00:00Z'), // Update to actual deadline
+      deadline: new Date('2025-02-15T00:00:00Z'), // Update to actual deadline
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
     };

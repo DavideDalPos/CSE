@@ -1,6 +1,12 @@
 // ArchivePosterData.js (Your Data File)
 export default {
     posters: [
+        {
+            year: 2025,
+            title: "Darwin Wasp sex",
+            authors: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
+            pdf: "poster1.pdf"
+          },
       {
         year: 2025,
         title: "Darwin Wasp",
@@ -9,8 +15,8 @@ export default {
       },
       {
         year: 2024,
-        title: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
-        authors: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
+        title: "Diversity of Isoptera in Livestock Areas of the Espinal Region of Northeast Argentina",
+        authors: "Araujo, Ivana Lorena; Coronel, Juan Manuel & Etcheverry, Clara",
         pdf: "poster1.pdf"
       },
       {

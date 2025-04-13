@@ -3,17 +3,18 @@
     <section class="bg-foreground">
     <TitleMeeting />
     <IntroMeeting />
-
+    </section>
+    <section class="bg-gray-100 border-t border-gray-300">
       <CounterMeeting />
     </section>  
     
-    <section class="bg-secondary">
+    <section class="bg-tertiary border-t border-b border-yellow-600">
     <Archive />
   </section>  
-  <section class="bg-tertiary">
+  <section class="bg-foreground">
     <ArchivePoster />
   </section>
-  <section class="bg-foreground">
+  <section class="bg-gray-100 border-t border-gray-300">
   <MeetingSlider />
   </section>
   </div>

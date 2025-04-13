@@ -1,39 +1,70 @@
 <template>
-    <section class="container mx-auto px-12 py-11">
-     <div class= "my-8">
-        <h1 class="text-4xl"> Meeting Archive</h1>
-        <MeetingArchive :meetings="meetings" />
-      </div>
-    <!-- Loop through each grouped year -->
-    <div v-for="([year, yearPosters]) in groupedPosters" :key="`year-${year}`" class="mb-8">
-  <h2 class="text-2xl font-bold py-2">{{ year }}</h2>
-  <div class="flex flex-col gap-4">
-    <div
-      v-for="poster in yearPosters"
-      :key="poster.title"
-      class="bg-white p-4 rounded-lg shadow-md"
-    >
-      <a
-        :href="poster.pdf"
-        target="_blank"
-        class="flex items-center gap-2 mb-2 text-red-700 hover:underline"
-      >
-        <img src="/images/PDF_file_icon.svg" alt="PDF" class="w-5 h-5" />
-        <h3 class="text-md font-semibold">{{ poster.title }}</h3>
-      </a>
-      <p class="text-sm text-gray-700">{{ poster.authors }}</p>
-      <span
-        v-if="poster.award"
-        class="inline-block mt-2 bg-yellow-400 py-1 px-3 rounded-md font-semibold text-xs"
-      >
-        {{ poster.award }}
-      </span>
+  <section class="container mx-auto px-12 py-11">
+    <div class="my-8">
+      <h1 class="text-4xl">Poster Archive</h1>
+      <MeetingArchive :meetings="meetings" />
     </div>
-  </div>
-</div>
 
-</section>
+    <!-- Grid layout for years -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Loop through each grouped year -->
+      <div
+        v-for="([year, yearPosters]) in groupedPosters"
+        :key="`year-${year}`"
+        class="mb-8"
+      >
+        <!-- Year Title -->
+        <h2 class="text-3xl font-bold py-2 text-center text-yellow-600" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">{{ year }}</h2>
+
+
+
+
+        <!-- Poster List for the Year -->
+        <div class="flex flex-col gap-3">
+          <div
+            v-for="poster in yearPosters"
+            :key="poster.title"
+             class="bg-secondary p-4 rounded-lg shadow-md border border-primary"
+          >
+            <div class="flex items-center justify-between mb-2">
+              <a
+                :href="poster.pdf"
+                target="_blank"
+                class="text-gray-800 hover:underline hover:text-yellow-600"
+              >
+                <h3 class="text-xl">{{ poster.title }}</h3>
+              </a>
+              <!-- Replace the PDF image with the SVG link -->
+              <a
+                :href="poster.pdf"
+                target="_blank"
+                class="internal-link flex items-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     viewBox="0 0 24 24" 
+                     fill="none" 
+                     stroke="currentColor" 
+                     class="w-6 h-6 text-yellow-800 hover:text-quaternary transition duration-200">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-sm text-yellow-800">{{ poster.authors }}</p>
+            <span
+              v-if="poster.award"
+              class="inline-block mt-2 bg-yellow-400 py-1 px-3 rounded-md font-semibold text-xs"
+            >
+              {{ poster.award }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
+
+
 
 <script setup>
 // Importing computed from Vue to handle reactive data
@@ -73,14 +104,4 @@ const groupedPosters = computed(() => {
 
 <style scoped>
 /* Styling for the Archive Section */
-.archive-section {
-  margin-bottom: 80px;
-}
-
-.poster-card {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 </style>
