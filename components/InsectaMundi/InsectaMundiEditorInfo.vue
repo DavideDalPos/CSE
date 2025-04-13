@@ -3,7 +3,7 @@
     <h1 class="text-4xl">Editor Information</h1>
     <div class="flex justify-between gap-x-4 my-6">
       <!-- Left-side content for the text -->
-      <div class="flex flex-col gap-4 w-full sm:max-w-[60%] lg:max-w-[70%] mt-2">
+      <div class="flex flex-col gap-4 w-full sm:max-w-[60%] lg:max-w-[70%] mt-2 text-justify">
           <p>
             In 2014, key members of our small Editorial staff had life-altering events and had to step back from assisting. 
             This put excessive strain on those that remained, who were unable to keep up with manuscript flow. 
@@ -46,7 +46,7 @@
       <div class="flex flex-col gap-4 w-full sm:max-w-[30%] lg:max-w-[25%] mt-3">
         <div class="border border-gray-300 px-6 py-4 rounded bg-white-200 shadow-lg">
           <h3 class="text-2xl font-bold mb-2 border-b border-black">Resources</h3>
-          <ul class="text-base text-[16px] text-gray-800">
+          <ul class="text-base text-sm text-gray-800 space-y-2">
             <li class="flex items-center space-x-2">
               <a href="/PDF/insectamundi/InsectaMundi_FlowChart_2014.pdf" target="_blank" class="internal-link">
                 2014 Manuscript Processing Flow

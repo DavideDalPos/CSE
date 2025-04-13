@@ -3,62 +3,58 @@
     <h1 class="text-4xl">Author Instructions</h1>
 
     <!-- Resources and Contacts boxes placed here between the title and text -->
-    <div class="flex flex-col gap-4 my-6">
+    <div class="flex flex-col lg:flex-row items-start gap-6 mt-6">
       <!-- Resources Box -->
-      <div class="border border-gray-300 px-6 py-4 rounded bg-white-200 shadow-lg">
-        <h3 class="text-2xl font-bold mb-2 border-b border-black">Resources</h3>
-        <ul class="text-base text-[15px] text-gray-800">
-          <li class="flex items-center space-x-2">
-            <a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="internal-link">
-              Manuscript Preparation Rules & Guidelines (updated 2024)
-            </a>
-            <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="w-5 h-5">
-          </li>
-          <li class="flex items-center space-x-2">
-            <a href="/PDF/insectamundi/InsectaMundi_CommonProblemsChecklist_2014.pdf" target="_blank" class="internal-link">Common Problems Checklist (Lista de Problemas Frecuentes)</a>
-            <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="w-5 h-5">
-          </li>
-          <li class="flex items-center space-x-2">
-            <a href="/PDF/insectamundi/InsectaMundi_ReviewerReportForm_2022.doc" target="_blank" class="internal-link">Review Report Form</a>
-            <img src="/images/docx_icon.png" alt="PDF icon" class="w-5 h-5">
-          </li>
-          <li class="flex items-center space-x-2">
-            <a href="/PDF/insectamundi/InsectaMundi_ReviewerReportForm_2021_Spanish.doc" target="_blank" class="internal-link">Informe Crítico del Revisor</a>
-            <img src="/images/docx_icon.png" alt="PDF icon" class="w-5 h-5">
-          </li>
-          <li class="flex items-center space-x-2">
-            <a href="/PDF/insectamundi/InsectaMundi_SubmissionContract_2014.doc" target="_blank" class="internal-link">Submission Contract</a>
-            <img src="/images/docx_icon.png" alt="PDF icon" class="w-5 h-5">
-          </li>
-          <li class="flex items-center space-x-2">
-            <a href="/PDF/insectamundi/InsectaMundi_SubmissionContract_2014_Spanish.doc" target="_blank" class="internal-link">Carta de Compromiso</a>
-            <img src="/images/docx_icon.png" alt="PDF icon" class="w-5 h-5">
-          </li>
-        </ul>
-      </div>
+      <div class="w-full lg:basis-[35%] bg-white border border-gray-300 rounded-lg shadow-md p-6 self-start ">
+        <!-- half width on large screens -->
+    <h3 class="text-2xl font-semibold mb-3 border-b pb-1 border-gray-400 text-gray-800">Resources</h3>
+    <ul class="text-[15px] text-gray-800 space-y-1">
+      <li class="flex items-center space-x-2">
+        <a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="text-blue-700 hover:underline">
+          Manuscript Preparation Rules & Guidelines (updated 2024)
+        </a>
+        <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="w-5 h-5">
+      </li>
+      <li class="flex items-center space-x-2">
+        <a href="/PDF/insectamundi/InsectaMundi_CommonProblemsChecklist_2014.pdf" target="_blank" class="text-blue-700 hover:underline">
+          Common Problems Checklist (Lista de Problemas Frecuentes)
+        </a>
+        <img src="/images/PDF_file_icon.svg" alt="PDF icon" class="w-5 h-5">
+      </li>
+      <li class="flex items-center space-x-2">
+        <a href="/PDF/insectamundi/InsectaMundi_ReviewerReportForm_2022.doc" target="_blank" class="text-blue-700 hover:underline">
+          Review Report Form
+        </a>
+        <img src="/images/docx_icon.png" alt="DOC icon" class="w-5 h-5">
+      </li>
+      <li class="flex items-center space-x-2">
+        <a href="/PDF/insectamundi/InsectaMundi_ReviewerReportForm_2021_Spanish.doc" target="_blank" class="text-blue-700 hover:underline">
+          Informe Crítico del Revisor
+        </a>
+        <img src="/images/docx_icon.png" alt="DOC icon" class="w-5 h-5">
+      </li>
+      <li class="flex items-center space-x-2">
+        <a href="/PDF/insectamundi/InsectaMundi_SubmissionContract_2014.doc" target="_blank" class="text-blue-700 hover:underline">
+          Submission Contract
+        </a>
+        <img src="/images/docx_icon.png" alt="DOC icon" class="w-5 h-5">
+      </li>
+      <li class="flex items-center space-x-2">
+        <a href="/PDF/insectamundi/InsectaMundi_SubmissionContract_2014_Spanish.doc" target="_blank" class="text-blue-700 hover:underline">
+          Carta de Compromiso
+        </a>
+        <img src="/images/docx_icon.png" alt="DOC icon" class="w-5 h-5">
+      </li>
+    </ul>
+  </div>
 
       <!-- Contacts Box -->
-      <div class="border border-gray-300 px-6 py-4 rounded bg-white-200 shadow-lg">
-        <h3 class="text-2xl font-bold mb-2 border-b border-black">Contacts</h3>
-        <ul class="text-[15px] text-gray-800">
-          <li> 
-            <b>Chief Editor:</b> Davide Plotnik
-          </li>
-          <li> 
-            <b>Assistant Editor:</b> Paul E. Skelley
-          </li>
-          <li> 
-            <b>Email:</b> <a href="mailto:insectamundi@gmail.com" class="text-blue-600 hover:underline transition ml-1">insectamundi@gmail.com</a>
-          </li>
-          <li> 
-            <b>Address:</b> Center for Systematic Entomology, P.O. Box 141874, Gainesville, FL 32614-1874 USA
-          </li>
-        </ul>
-      </div>
-    </div>
+
+    
 
     <!-- Left-side content for the text -->
-    <div class="flex flex-col gap-4 w-full sm:max-w-[60%] lg:max-w-[70%] mt-3">
+    <div class="w-full lg:flex-1 flex flex-col gap-4 text-justify mt-3">
+
       <p>
         <b>Insecta Mundi</b> is a continuing experiment in publication. 
         Our goal is to publish taxonomic works not only free to the author, 
@@ -75,6 +71,7 @@
         Papers not adequately reviewed, or which have not been subjected to the presubmission processes, 
         will be returned or rejected.
       </p>
+    </div>      
     </div>
   </section>
 </template>

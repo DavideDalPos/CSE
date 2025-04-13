@@ -17,7 +17,7 @@
 
         <!-- Content -->
         <div class="bg-slate-50 p-4 rounded-lg shadow-sm border border-slate-200 transition group-hover:shadow-md">
-          <h3 class="font-semibold text-base text-slate-900 mb-1">Document {{ index + 1 }}</h3>
+          <h3 class="font-semibold text-base text-slate-900 mb-1"> {{ item.id }}</h3>
           <p class="text-slate-700 text-sm leading-snug">{{ item.text }}</p>
         </div>
       </div>
@@ -33,11 +33,11 @@
     data() {
       return {
         checklistItems: [
-          { id: 1, text: 'Manuscript and associated appendices or other files' },
-          { id: 2, text: 'Images arranged into plates, each plate submitted as a separate TIF, JPG, or PDF file' },
-          { id: 3, text: 'Copies of two critical reviews, showing reviewer comments' },
-          { id: 4, text: 'Copies of Reviewer Report forms, one for each reviewer in addition to the manuscript with comments' },
-          { id: 5, text: 'Copy of the signed Submission Contract, attesting that the manuscript is ready to go' },
+          { id: "1. Manuscript", text: 'Manuscript and associated appendices or other files' },
+          { id: "2. Images", text: 'Images arranged into plates, each plate submitted as a separate TIF, JPG, or PDF file' },
+          { id: "3. Reviews", text: 'Copies of two critical reviews, showing reviewer comments' },
+          { id: "4. Reviewer Report Forms", text: 'Copies of Reviewer Report forms, one for each reviewer in addition to the manuscript with comments' },
+          { id: "5. Submission Contract", text: 'Copy of the signed Submission Contract, attesting that the manuscript is ready to go' },
         ],
       };
     },
