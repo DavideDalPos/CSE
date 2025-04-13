@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-100 border-t border-b border-gray-300">
+  <section class="bg-secondary border-t border-b border-primary">
     <div
       id="grantguidelines"
       class="container mx-auto px-12 py-5 mb-8 scroll-m-18"
@@ -60,13 +60,17 @@
                 class="internal-link"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="/images/PDF_file_icon.svg"
-                  alt="PDF icon"
-                  class="inline w-5 h-5 ml-1 -mt-2"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                     viewBox="0 0 24 24" 
+                     fill="none" 
+                     stroke="currentColor" 
+                     class="w-5 h-5 text-yellow-800 hover:text-quaternary transition duration-200">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+                </svg>
               </a>
             </li>
+
             <li>Prepare Formal Proposal (1–2 pages)</li>
             <li>
               Submit Proposal to the
