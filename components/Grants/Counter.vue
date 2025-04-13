@@ -2,7 +2,7 @@
   <section class="pt-10 pb-3 mb-6">
     <!-- Add ID to the container for targeting -->
     <div id="counter" class="text-center">
-      <button class="toggle-btn" @click="showCountdown = !showCountdown">
+      <button class="toggle-btn bg-red-900 hover:bg-tertiary border border-quinary" @click="showCountdown = !showCountdown">
         {{ showCountdown ? "Hide Countdown" : "See Next Deadline" }}
       </button>
     </div>
@@ -10,7 +10,7 @@
     <div v-if="showCountdown" class="fade-in">
       <div class="text-center pt-3 pb-4 deadline-text">Next Deadline:</div>
       <div class="text-center">
-        <div class="date-box shadow-lg">
+        <div class="date-box bg-secondary border border-primary shadow-lg">
           <b><span style="color: rgba(202, 29, 29, 0.85);">July 15, 2025</span></b> | 11:59 PM - Eastern Time
         </div>
       </div>
@@ -37,21 +37,13 @@
 <style scoped>
 /* Toggle Button */
 .toggle-btn {
-  background: rgba(202, 29, 29, 0.85);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 12px 24px;
-  border: none;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.toggle-btn:hover {
-  background: rgba(158, 23, 23, 0.85);
-  transform: scale(1.05);
 }
 
 /* Countdown Container */
@@ -125,14 +117,11 @@
 /* Date Box */
 .date-box {
   display: inline-block;
-  background: rgba(89, 145, 218, 0.39);
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 1.5rem;
   color: #000;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
-  border-color: rgba(22, 6, 245, 0.212);
 }
 
 /* Fade-in Animation */
