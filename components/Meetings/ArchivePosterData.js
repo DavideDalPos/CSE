@@ -3,7 +3,7 @@ export default {
     posters: [
       {
         year: 2025,
-        title: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
+        title: "Darwin Wasp",
         authors: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
         pdf: "poster1.pdf"
       },
