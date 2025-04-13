@@ -65,7 +65,7 @@ async function onAfterEnter() {
 
 .external-link {
   font-weight: normal;
-  color: rgba(58, 168, 91, 1.744);
+  color: #7ca2a1;
   text-decoration: none; /* Remove default underline */
   transition: text-decoration 0.2s ease-in-out;
   display: inline-block;
@@ -73,13 +73,14 @@ async function onAfterEnter() {
 }
 
 .external-link:hover {
+  color: #c68f4d; /* Slightly darker version of #dfa75a */
   text-decoration: underline; /* Underline on hover */
 }
 
 
 .internal-link {
   font-weight: normal;
-  color: rgba(21, 105, 214, 0.76); /* Pastel blue */
+  color: #dfa75a; /* Pastel blue */
   text-decoration: none; /* Remove default underline */
   transition: text-decoration 0.2s ease-in-out;
   display: inline-block;
@@ -87,6 +88,7 @@ async function onAfterEnter() {
 }
 
 .internal-link:hover {
+  color: #6b8f8e; /* Slightly darker version of #dfa75a */
   text-decoration: underline; /* Underline on hover */
 }
 
