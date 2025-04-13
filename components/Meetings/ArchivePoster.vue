@@ -1,56 +1,20 @@
 <template>
-    <section class="container mx-auto px-12 py-11">
-      <div class="archive-section ">
-        <h1 class="text-4xl"> Poster Archive</h1>
-        <PosterArchive :posters="posters" />
-      </div>
-    </section>
+    <PosterArchive :posters="posters" />
+
   </template>
   
-  <script>
+<script>
+  import ArchivePosterData from './ArchivePosterData.js';
 import PosterArchive from './PosterArchive.vue';
   
   export default {
-    components: { PosterArchive },
+    components: {
+      PosterArchive
+    },
     data() {
       return {
-        posters: [
-          { authors: "2024 - Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry", pdf: "poster1.pdf" },
-          { authors: "2024 - Florencia Monti Areco and Juan Manuel Coronel", pdf: "poster2.pdf" },
-          { authors: "2024 - Guillermo Luis Avalos, Darío Daniel Larrea, and Juan Manuel Coronel", pdf: "poster3.pdf" },
-          { authors: "2024 - Kaloyan Ivanov, Liberty Hightower, Jaclspm Means, and Nathan Jones", pdf: "poster4.pdf" },
-          { authors: "2024 - Alex Rodriguez, David Serrano, and Sebastian Palmieri", pdf: "poster5.pdf" },
-          { authors: "2024 - Jacqueline Y. Miller", pdf: "poster6.pdf", award: "CSE Lifetime Achievement Award" },
-        ]
+        posters: ArchivePosterData.posters
       };
     }
   };
-  </script>
-  
-  <style scoped>
-  /* General Section Styles */
-  .archive-section {
-    margin-bottom: 80px;
-  }
-  
-  /* Section Title Style */
-  .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-    padding-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  /* Make the section titles more prominent */
-  .archive-section h2 {
-    font-size: 2rem;
-
-  }
-  
-  /* Adjust space between sections */
-  .archive-section + .archive-section {
-    margin-top: 50px;
-  }
-  </style>
-  
+</script>
