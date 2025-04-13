@@ -1,25 +1,19 @@
 <template>
     <section class="container mx-auto px-12 py-11">
       <!-- Meeting Archive Section -->
-      <div class="archive-section border-b">
-        <h1 class="text-4xl mb-10"> Meeting Archive</h1>
+      <div>
+        <h1 class="text-4xl"> Meeting Archive</h1>
         <MeetingArchive :meetings="meetings" />
       </div>
-  
-      <!-- Poster Archive Section -->
-      <div class="archive-section ">
-        <h1 class="text-4xl"> Poster Archive</h1>
-        <PosterArchive :posters="posters" />
-      </div>
+
     </section>
   </template>
   
   <script>
   import MeetingArchive from './MeetingArchive.vue';
-import PosterArchive from './PosterArchive.vue';
   
   export default {
-    components: { MeetingArchive, PosterArchive },
+    components: { MeetingArchive },
     data() {
       return {
         meetings: [
@@ -30,14 +24,6 @@ import PosterArchive from './PosterArchive.vue';
           { year: 2020, title: "CSE Annual Meeting", link: "youtube_link_2020", pdfLink: "pdf_link_2020" },
           { year: 2019, title: "CSE Annual Meeting", link: "youtube_link_2019", pdfLink: "pdf_link_2019" },
         ],
-        posters: [
-          { authors: "2024 - Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry", pdf: "poster1.pdf" },
-          { authors: "2024 - Florencia Monti Areco and Juan Manuel Coronel", pdf: "poster2.pdf" },
-          { authors: "2024 - Guillermo Luis Avalos, Darío Daniel Larrea, and Juan Manuel Coronel", pdf: "poster3.pdf" },
-          { authors: "2024 - Kaloyan Ivanov, Liberty Hightower, Jaclspm Means, and Nathan Jones", pdf: "poster4.pdf" },
-          { authors: "2024 - Alex Rodriguez, David Serrano, and Sebastian Palmieri", pdf: "poster5.pdf" },
-          { authors: "2024 - Jacqueline Y. Miller", pdf: "poster6.pdf", award: "CSE Lifetime Achievement Award" },
-        ]
       };
     }
   };
@@ -45,9 +31,6 @@ import PosterArchive from './PosterArchive.vue';
   
   <style scoped>
   /* General Section Styles */
-  .archive-section {
-    margin-bottom: 80px;
-  }
   
   /* Section Title Style */
   .section-title {

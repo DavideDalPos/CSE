@@ -1,7 +1,7 @@
 <template>
-    <section class="relative overflow-hidden mt-12">
+    <section class="relative overflow-hidden">
       <VSliderMini
-        class="h-[calc(100vh-64px)]"
+        class="h-[calc(80vh-100px)]"
         :slides="slides"
       />
     </section>

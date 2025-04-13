@@ -30,13 +30,6 @@
     </svg>
   </a>
 </div>
-
-
-
-
-
-
-
           <!-- Second PDF Link with Icon -->
           <div v-if="meeting.secondPdfLink" class="flex items-center gap-1 text-sm">
             
@@ -78,14 +71,6 @@ export default {
 
 <style scoped>
 /* Ensure the internal links look nice */
-.internal-link {
-  transition: color 0.3s ease;
-}
-
-.internal-link:hover {
-  text-decoration: underline;
-  color: #1d4ed8; /* Custom blue for hover effect */
-}
 
 /* Optionally, adjust the layout */
 .flex-wrap {

@@ -1,5 +1,5 @@
 <template>
-  <section id="datemeeting" class="bg-foreground pt-10 pb-3">
+  <section id="datemeeting" class=" pt-10 pb-3">
     <div class="fade-in">
       <div class="text-center ">
         <div class="bg-tertiary border border-quaternary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
