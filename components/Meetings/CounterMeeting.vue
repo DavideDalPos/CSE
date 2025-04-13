@@ -2,7 +2,7 @@
   <section id="datemeeting" class="bg-foreground pt-10 pb-3">
     <div class="fade-in">
       <div class="text-center ">
-        <div class="bg-tertiary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
+        <div class="bg-tertiary border border-quaternary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
           <b><span class="text-black-500">February 15, 2026</span></b> | 09:00 AM - Gainesville
         </div>
         <!-- "Coming Soon" Section -->
@@ -105,7 +105,6 @@
   border-radius: 8px;
   font-size: 1.5rem;
   color: #000;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
   margin-bottom: 50px; /* Adjust this value as needed */
 }
