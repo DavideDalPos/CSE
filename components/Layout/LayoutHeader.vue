@@ -83,7 +83,8 @@ const menu = [
       { label: 'Author Instructions', link: '/insecta_mundi/authorguidelines' },
       { label: 'Editor Information', link: '/insecta_mundi/editorinfo' },
       { label: 'Ethic Statements', link: '/insecta_mundi/ethic' },
-      { label: 'Current Issue', link: '/insecta_mundi' }
+      { label: 'Archive', link: '/insecta_mundi' },
+      { label: 'Current Issue', link: '/insecta_mundi/current_issue' }
     ]
   },
   {
