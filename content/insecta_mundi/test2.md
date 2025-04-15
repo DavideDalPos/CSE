@@ -1,6 +1,6 @@
 ---
 title: 'XXX Wonderful Paper'
-date: '2024-10-25'
+date: '2026-11-25'
 doi: ''
 journal: Insecta Mundi
 issue: '970(1)'
@@ -12,7 +12,7 @@ authors:
     email: 'sajankc143@gmail.com'
     orcid: 'https://orcid.org/0000-0002-2749-0738'
 
-  - first_name: Ionel 
+  - first_name: Ionel
     last_name: Andriescu
     affiliation: 'Faculty of Biology, “Alexandru Ioan Cuza” University of Iași, Romania'
 
