@@ -1,6 +1,6 @@
 ---
 title: 'First record of the camphor shot borer, <i>Cnestus mutilatus</i> (Blandford) (Coleoptera: Curculionidae: Scolytinae), in Massachusetts'
-date: '2026-11-29'
+date: '2024-11-29'
 doi: ''
 issue: '1087'
 journal: Insecta Mundi

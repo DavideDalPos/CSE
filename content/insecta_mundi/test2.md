@@ -1,6 +1,6 @@
 ---
 title: 'XXX Wonderful Paper'
-date: '2026-11-25'
+date: '2024-11-25'
 doi: ''
 journal: Insecta Mundi
 issue: '970(1)'
