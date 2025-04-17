@@ -3,7 +3,7 @@ title: 'Distributional records of false click beetles (Coleoptera: Eucnemidae) f
 date: '2025-03-28'
 doi: ''
 journal: Insecta Mundi
-issue: '1111(1)'
+issue: '1111'
 pagination: '1–4'
 zoobank: 'urn:lsid:zoobank.org:pub:B6D65C7C-20E2-46C3-9DA0-A720571A55A4'
 authors:
