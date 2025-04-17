@@ -10,7 +10,7 @@
           <span> - </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-green-600 text-white inline-block mr-0.5"
+            class="bg-quaternary text-white inline-block mr-0.5"
           >
             {{ category }}
           </VTag>
