@@ -37,12 +37,12 @@
 
             <template v-if="publication.abstract">
               <h3 class="text-2xl">Abstract</h3>
-              <p v-html="publication.abstract" />
+              <p v-html="publication.abstract" class="text-justify" />
             </template>
 
             <template v-if="publication.resumen">
               <h3 class="text-2xl">Resumen</h3>
-              <p>{{ publication.resumen }}</p>
+              <pv v-html="publication.resumen" class="text-justify" />
             </template>
 
             <template v-if="publication.references">
