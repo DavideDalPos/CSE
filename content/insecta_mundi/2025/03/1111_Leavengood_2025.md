@@ -1,7 +1,7 @@
 ---
 title: 'Distributional records of false click beetles (Coleoptera: Eucnemidae) from western North Carolina'
 date: '2025-03-28'
-doi: ''
+doi: 'https://doi.org/10.11646/zootaxa.1636.1.2'
 journal: Insecta Mundi
 issue: '1111'
 pagination: '1–4'
@@ -42,6 +42,7 @@ references:
     year: 2007
     title: 'The Eucnemidae (Coleoptera) of the Maritime Provinces of Canada: new records, observations on composition and zoogeography, and comments on the rarity of saproxylic beetles. Zootaxa 1636'
     pages: 33-46
+    doi: https://doi.org/10.11646/zootaxa.1636.1.2
 
 abstract: 'Two new state records (North Carolina) and eight total species of false click beetles (Coleoptera: Eucnemidae) are reported from a survey site in western North Carolina. Updated distributions are provided for each species.'
 ---

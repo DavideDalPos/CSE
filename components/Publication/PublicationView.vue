@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto flex my-10 justify-between px-8">
+  <section class="bg-foreground container mx-auto flex my-10 justify-between px-8">
     <article>
       <div class="text-4xl">
         <span
@@ -10,7 +10,7 @@
           <span> - </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-quaternary text-white inline-block mr-0.5"
+            class="bg-primary text-white inline-block mr-0.5"
           >
             {{ category }}
           </VTag>
@@ -26,12 +26,39 @@
                   class="py-2"
                 >
                   <p class="font-bold text-lg">{{ first_name }} {{ last_name }}</p>
-                  <p class="text-sm">{{ affiliation }}</p>
-                  <a :href="orcid" class="text-sm" target="_blank">{{orcid}}</a>
+                  <p class="text-sm text-gray-600">{{ affiliation }}</p>
+                  <a
+                    v-if="orcid"
+                    :href="orcid"
+                    class="text-xs text-quinary hover:underline hover:text-quaternary inline-flex items-center gap-1"
+                    target="_blank"
+                                    >
+                    <img src="/images/orcid.svg" alt="ORCID icon" class="w-4 h-4">
+                    {{ orcid }}
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
+          <div v-if="publication.doi" class="flex flex-row justify-between my-4 gap-4">
+            <p>
+              <span class="text-gray-700 font-bold">DOI: </span>
+              <span class="text-quinary hover:text-quaternary hover:underline cursor-pointer">
+                {{ publication.doi }}
+              </span>
+            </p>
+          </div>
+          
+          <template v-if="publication?.keywords?.length">
+            <div class="mb-10">
+              <span class="text-gray-700 font-bold">Keywords: </span>
+                <span class="text-gray-500">
+                  <template v-for="(keyword, index) in publication.keywords">
+                    {{ keyword }}<span v-if="index < publication.keywords.length - 1">, </span>
+                  </template>
+                </span>
+            </div>
+          </template>
 
           <div class="prose max-w- max-w-5xl">
 
@@ -42,7 +69,7 @@
 
             <template v-if="publication.resumen">
               <h3 class="text-2xl">Resumen</h3>
-              <pv v-html="publication.resumen" class="text-justify" />
+              <p v-html="publication.resumen" class="text-justify" />
             </template>
 
             <template v-if="publication.references">
@@ -56,9 +83,9 @@
                     >{{ reference.authors }} {{ reference.year }}. </span
                   >
                   <span v-html="reference.title" /><span v-if="reference.pages"
-                    >: {{ reference.pages }}.</span
+                    >: {{ reference.pages }}. </span
                   >
-                  <span v-if="reference.doi">DOI: {{ reference.doi }}</span>
+                  <span v-if="reference.doi" class="text-quinary hover:text-quaternary hover:underline cursor-pointer">{{ reference.doi }}</span>
                 </li>
               </ul>
             </template>
