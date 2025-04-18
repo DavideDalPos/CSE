@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container mx-auto px-8 my-10">
-      <h1 class="text-4xl font-black">Current issue</h1>
+      <h1 class="text-4xl text-gray-700 font-bold">Current issue</h1>
       <div class="my-4">
         <ContentList :query="query">
           <template #default="{ list }">
@@ -13,20 +13,20 @@
               >
                 <NuxtLink :to="publication._path">
                   <h2
-                    class="text-sm font-bold"
+                    class="text-primary font-bold text-lg hover:text-secondary"
                     v-html="publication.title"
                   ></h2>
                   <div class="flex flex-row gap-1">
                     <VTag
                       v-for="category in publication.categories"
                       :key="category"
-                      class="bg-primary text-white inline-block"
+                      class="bg-tertiary text-white inline-block"
                     >
                       {{ category }}
                     </VTag>
                   </div>
                 </NuxtLink>
-                <p>
+                <p class="text-sm">
                   {{
                     publication.authors
                       ?.map(
