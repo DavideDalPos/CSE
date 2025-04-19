@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="bg-foreground">
     <div class="container mx-auto px-8 my-10">
       <h1 class="text-4xl text-gray-700 font-bold">Current issue</h1>
       <div class="my-4">
@@ -20,13 +20,13 @@
                     <VTag
                       v-for="category in publication.categories"
                       :key="category"
-                      class="bg-tertiary text-white inline-block"
+                      class="bg-quaternary text-foreground inline-block"
                     >
                       {{ category }}
                     </VTag>
                   </div>
                 </NuxtLink>
-                <p class="text-sm">
+                <p class="text-sm text-gray-700">
                   {{
                     publication.authors
                       ?.map(

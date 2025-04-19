@@ -19,7 +19,7 @@
                   <VTag
                     v-for="category in publication.categories"
                     :key="category"
-                    class="bg-tertiary text-white text-sm inline-block mr-0.5"
+                    class="bg-quaternary text-foreground text-sm inline-block mr-0.5"
                   >
                     {{ category }}
                   </VTag>
