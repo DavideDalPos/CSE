@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-foreground container mx-auto flex my-10 justify-between px-8">
+  <section class="container mx-auto flex my-10 justify-between px-8">
     <article>
-      <div class="text-4xl">
+      <div class="text-3xl">
         <span
           class="font-bold"
           v-html="publication.title"
@@ -15,7 +15,7 @@
             {{ category }}
           </VTag>
         </template>
-      </div>
+</div>
       <div class="flex flex-row justify-between">
         <div>
           <div class="flex flex-row justify-between my-4 gap-4">
@@ -39,7 +39,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div>      
           <div v-if="publication.doi" class="flex flex-row justify-between my-4 gap-4">
             <p>
               <span class="text-gray-700 font-bold">DOI: </span>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="flex flex-col gap-4 max-w-96 mt-6">
-          <div class="border px-6 py-4 rounded bg-gray-100">
+          <div class="border px-6 py-4 rounded bg-quinary">
             <h3 class="text-2xl mb-2 border-b border-black">How to cite</h3>
             <PublicationCite :publication="publication" />
           </div>

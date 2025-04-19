@@ -26,7 +26,7 @@
                     </VTag>
                   </div>
                 </NuxtLink>
-                <p class="text-sm text-gray-700">
+                <p class="text-sm text-gray-700 mt-1">
                   {{
                     publication.authors
                       ?.map(
@@ -36,6 +36,14 @@
                       .join('; ')
                   }}
                 </p>
+                <div v-if="publication.doi" class="flex flex-row text-sm justify-between mt-1">
+            <p>
+              <span class="text-gray-700">DOI: </span>
+              <span class="text-primary hover:text-secondary hover:underline cursor-pointer">
+                {{ publication.doi }}
+              </span>
+            </p>
+          </div>
               </li>
             </ul>
           </template>

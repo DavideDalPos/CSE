@@ -27,6 +27,14 @@
                 <p class="text-gray-600 text-sm">
                   {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
                 </p>
+                <div v-if="publication.doi" class="flex flex-row text-sm justify-between mt-1">
+            <p>
+              <span class="text-gray-700">DOI: </span>
+              <span class="text-primary hover:text-secondary hover:underline cursor-pointer">
+                {{ publication.doi }}
+              </span>
+            </p>
+          </div>
               </li>
             </ul>
           </template>
