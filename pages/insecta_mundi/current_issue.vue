@@ -4,8 +4,11 @@
       <div class="flex flex-col lg:flex-row gap-8">
         <!-- LEFT COLUMN: Publications -->
         <div class="flex-1">
-          <h1 class="text-4xl text-gray-700 font-bold">Current Volume</h1>
-          <h2 class=" px-3 text-[23px] text-gray-800 font-bold mt-4 bg-gray-200 border-b border-gray-300">{{ formattedDate }}</h2>
+          <h1 class="text-4xl text-gray-700 font-bold mb-10">Current Volume</h1>
+          <h2 class="px-4 py-2 text-lg text-gray-800 font-medium mt-4 bg-gray-100 border-l-4 border-primary/80">
+  <span class="text-sm text-gray-600">Published:</span> {{ formattedDate }}
+</h2>
+
           <div class="px-4">
             <ContentList :query="query">
               <template #default="{ list }">
@@ -21,15 +24,15 @@
                         v-html="publication.title"
                       ></h2>
                       <div class="flex justify-between items-center flex-wrap gap-y-1">
-                      <div class="flex flex-row flex-wrap gap-1">
-                        <VTag
-                          v-for="category in publication.categories"
-                          :key="category"
-                          class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
-                        >
-                          {{ category }}
-                        </VTag>
-                      </div>
+                        <div class="flex flex-row flex-wrap gap-1">
+                          <VTag
+                            v-for="category in publication.categories"
+                            :key="category"
+                            class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
+                          >
+                            {{ category }}
+                          </VTag>
+                        </div>
                         <span class="text-xs text-gray-500 whitespace-nowrap ml-2">
                           {{ publication.pagination }}
                         </span>
@@ -118,39 +121,38 @@
         </div>
 
         <!-- RIGHT COLUMN: Contact box -->
-        <div class="w-full lg:w-[300px] shrink-0 bg-gray-500 p-4 mt-20">
-  <!-- Contact box inside the column -->
-  <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
-    <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
-    <p class="text-sm text-gray-600 font-medium mt-3">David Plotnik</p>
-    <p class="text-sm text-gray-600 italic">Chief Editor</p>
-    <p class="text-sm text-gray-600 mt-2">
-      <p class="text-sm text-gray-600 font-medium">Paul E. Skelley</p>
-      <p class="text-sm text-gray-600 italic">Assistant Editor</p>
-    </p>
-    <p class="text-sm text-gray-600 mt-2">
-      Email:
-      <a href="mailto:insectamundi@gmail.com" class="text-yellow-700 hover:underline">
-        insectamundi@gmail.com
-      </a>
-    </p>
-    <p class="text-sm text-gray-600 mt-2">
-      Center for Systematic Entomology<br />
-      P.O. Box 141874<br />
-      Gainesville, FL 32614-1874 USA
-    </p>
-  </div>
-  <a href="/insecta_mundi/authorguidelines" class="block w-full">
-  <div class="bg-tertiary/90 p-2 border border-quaternary rounded shadow-md mt-3 h-max hover:bg-primary">
-    <h2 class="text-base text-gray-700 font-medium hover:text-yellow-700">Author Guidelines</h2>
-  </div>
-</a>
-</div>
+        <div class="w-full lg:w-[300px] shrink-0 bg-gray-200 p-4 mt-20">
+          <!-- Contact box inside the column -->
+          <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
+            <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
+            <p class="text-sm text-gray-600 font-medium mt-3">David Plotnik</p>
+            <p class="text-sm text-gray-600 italic">Chief Editor</p>
+            <p class="text-sm text-gray-600 mt-2">
+              <p class="text-sm text-gray-600 font-medium">Paul E. Skelley</p>
+              <p class="text-sm text-gray-600 italic">Assistant Editor</p>
+            </p>
+            <p class="text-sm text-gray-600 mt-2">
+              Email:
+              <a href="mailto:insectamundi@gmail.com" class="text-yellow-700 hover:underline">
+                insectamundi@gmail.com
+              </a>
+            </p>
+            <p class="text-sm text-gray-600 mt-2">
+              Center for Systematic Entomology<br />
+              P.O. Box 141874<br />
+              Gainesville, FL 32614-1874 USA
+            </p>
+          </div>
+          <a href="/insecta_mundi/authorguidelines" class="block w-full">
+            <div class="bg-tertiary/90 p-2 border border-quaternary rounded shadow-md mt-3 h-max hover:bg-primary">
+              <h2 class="text-base text-gray-700 font-medium hover:text-yellow-700">Author Guidelines</h2>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 </template>
-
 
 <script setup>
 const latestPublication = await queryContent('insecta_mundi')
@@ -160,11 +162,11 @@ const latestPublication = await queryContent('insecta_mundi')
   .only(['date'])
   .findOne()
 
+// Convert the date to a Date object
 const dateObj = new Date(latestPublication.date)
-const formattedDate = dateObj.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long'
-})
+
+// Format the date as YYYY-MM-DD
+const formattedDate = dateObj.toISOString().split('T')[0]
 
 const yearAndMonth = latestPublication.date.slice(
   0,
