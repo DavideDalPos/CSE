@@ -4,7 +4,8 @@
       <div class="flex flex-col lg:flex-row gap-8">
         <!-- LEFT COLUMN: Publications -->
         <div class="flex-1">
-          <h1 class="text-4xl text-gray-700 font-bold">Current issue</h1>
+          <h1 class="text-4xl text-gray-700 font-bold">Current Volume</h1>
+          <h2 class="text-xl text-yellow-700 font-medium mt-4 border-b -mb-3">{{ formattedDate }}</h2>
           <div class="my-4">
             <ContentList :query="query">
               <template #default="{ list }">
@@ -141,7 +142,7 @@
   </div>
   <a href="/insecta_mundi/authorguidelines" class="block w-full">
   <div class="bg-tertiary/90 p-2 border border-quaternary rounded shadow-md mt-3 h-max hover:bg-primary">
-    <h2 class="text-base text-gray-700 hover:text-yellow-700">Author Guidelines</h2>
+    <h2 class="text-base text-gray-700 font-medium hover:text-yellow-700">Author Guidelines</h2>
   </div>
 </a>
 </div>
@@ -158,6 +159,12 @@ const latestPublication = await queryContent('insecta_mundi')
   .limit(1)
   .only(['date'])
   .findOne()
+
+const dateObj = new Date(latestPublication.date)
+const formattedDate = dateObj.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long'
+})
 
 const yearAndMonth = latestPublication.date.slice(
   0,
