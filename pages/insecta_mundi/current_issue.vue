@@ -5,8 +5,8 @@
         <!-- LEFT COLUMN: Publications -->
         <div class="flex-1">
           <h1 class="text-4xl text-gray-700 font-bold">Current Volume</h1>
-          <h2 class="text-xl text-yellow-700 font-medium mt-4 border-b -mb-3">{{ formattedDate }}</h2>
-          <div class="my-4">
+          <h2 class=" px-2 text-[23px] text-yellow-700 font-bold mt-4 border-b border-gray-300">{{ formattedDate }}</h2>
+          <div class="bg-foreground px-2">
             <ContentList :query="query">
               <template #default="{ list }">
                 <ul>
@@ -17,7 +17,7 @@
                   >
                     <NuxtLink :to="publication._path">
                       <h2
-                        class="text-primary text-justify font-bold text-[20px] hover:text-quaternary"
+                        class="text-gray-600 text-justify font-bold text-[17px] hover:text-tertiary pr-20"
                         v-html="publication.title"
                       ></h2>
                       <div class="flex justify-between items-center flex-wrap gap-y-1">
@@ -30,7 +30,7 @@
                           {{ category }}
                         </VTag>
                       </div>
-                        <span class="text-xs text-gray-500 whitespace-nowrap ml-2">
+                        <span class="text-xs text-gray-500 whitespace-nowrap ml-2 pr-1">
                           {{ publication.pagination }}
                         </span>
                       </div>
@@ -118,7 +118,7 @@
         </div>
 
         <!-- RIGHT COLUMN: Contact box -->
-        <div class="w-full lg:w-[300px] shrink-0 bg-gray-200 p-4 mt-20">
+        <div class="w-full lg:w-[300px] shrink-0 bg-gray-500 p-4 mt-20">
   <!-- Contact box inside the column -->
   <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
     <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
@@ -130,7 +130,7 @@
     </p>
     <p class="text-sm text-gray-600 mt-2">
       Email:
-      <a href="mailto:insectamundi@gmail.com" class="text-yellow-600 hover:underline">
+      <a href="mailto:insectamundi@gmail.com" class="text-yellow-700 hover:underline">
         insectamundi@gmail.com
       </a>
     </p>

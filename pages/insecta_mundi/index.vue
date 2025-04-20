@@ -7,37 +7,36 @@
           <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
           <div class="my-6">
             <ContentList path="/insecta_mundi">
-  <template #default="{ list }">
-    <ul>
-      <template v-for="([monthYear, group]) in Object.entries(groupByMonthYear(list)).reverse()" :key="monthYear">
-
-        <h2 class="text-xl text-gray-600 font-medium border border-quinary rounded bg-quinary/40 px-2 mt-8">
-          {{ formatMonthYear(monthYear) }}
-        </h2>
-        <li
-          v-for="publication in group"
-          :key="publication._path"
-          class="py-4 px-3"
-        >
-          <NuxtLink :to="publication._path" class="flex justify-between items-center">
-            <div class="flex-1">
-              <h2 class="font-bold text-primary text-[20px] text-justify hover:text-quaternary" v-html="publication.title"></h2>
-              <div class="flex flex-row flex-wrap gap-1">
-                <VTag
-                  v-for="category in publication.categories"
-                  :key="category"
-                  class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
+              <template #default="{ list }">
+                <ul>
+                  <template v-for="([monthYear, group]) in Object.entries(groupByMonthYear(list)).reverse()" :key="monthYear">
+                    <h2 class="text-[23px] text-yellow-700 font-bold border-b border-gray-300 px-2 mt-8">
+                      {{ formatMonthYear(monthYear) }}
+                    </h2>
+                <li
+                  v-for="publication in group"
+                  :key="publication._path"
+                  class="py-3 px-2 bg-foreground "
                 >
-                  {{ category }}
-                </VTag>
-              </div>
-            </div>
-            <div class="ml-4 flex items-center">
-              <span class="text-xs text-gray-500 whitespace-nowrap">
-                {{ publication.pagination }}
-              </span>
-            </div>
-          </NuxtLink>
+                  <NuxtLink :to="publication._path" class="flex justify-between items-center">
+                    <div class="flex-1">
+                      <h2 class="font-bold text-gray-600 text-[17px] text-justify hover:text-tertiary pr-20" v-html="publication.title"></h2>
+                        <div class="flex flex-row flex-wrap gap-1">
+                          <VTag
+                            v-for="category in publication.categories"
+                            :key="category"
+                            class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
+                          >
+                            {{ category }}
+                          </VTag>
+                        </div>
+                    </div>
+                    <div class="ml-4 flex items-center">
+                      <span class="text-xs text-gray-500 whitespace-nowrap pr-1">
+                        {{ publication.pagination }}
+                      </span>
+                    </div>
+                  </NuxtLink>
           <p class="text-gray-600 text-sm mt-1">
             {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
           </p>
@@ -95,7 +94,7 @@
 
         <!-- RIGHT COLUMN: Contact box -->
 <!-- RIGHT COLUMN: Contenitore della colonna destra con sfondo grigio -->
-<div class="w-full lg:w-[300px] shrink-0 bg-gray-200 p-4 mt-20">
+<div class="w-full lg:w-[300px] shrink-0 bg-gray-500 p-4 mt-20">
   <!-- Contact box inside the column -->
   <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
     <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
@@ -107,7 +106,7 @@
     </p>
     <p class="text-sm text-gray-600 mt-2">
       Email:
-      <a href="mailto:insectamundi@gmail.com" class="text-yellow-600 hover:underline">
+      <a href="mailto:insectamundi@gmail.com" class="text-yellow-700 hover:underline">
         insectamundi@gmail.com
       </a>
     </p>
