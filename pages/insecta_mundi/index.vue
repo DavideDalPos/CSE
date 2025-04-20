@@ -33,7 +33,7 @@
                       </span>
                     </div>
                   </NuxtLink>
-                    <p class="text-gray-600 text-sm">
+                    <p class="text-gray-600 text-sm mt-1">
                       {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
                     </p>
                     <div v-if="publication.doi" class="flex flex-row text-sm justify-between mt-1">
