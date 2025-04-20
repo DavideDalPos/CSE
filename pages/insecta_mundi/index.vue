@@ -88,7 +88,7 @@
 
         <!-- RIGHT COLUMN: Contact box -->
 <!-- RIGHT COLUMN: Contenitore della colonna destra con sfondo grigio -->
-<div class="w-full lg:w-[300px] shrink-0 bg-foreground p-4 mt-20">
+<div class="w-full lg:w-[300px] shrink-0 bg-gray-200 p-4 mt-20">
   <!-- Contact box inside the column -->
   <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
     <h2 class="text-lg font-semibold text-gray-700 mb-2">Contact</h2>

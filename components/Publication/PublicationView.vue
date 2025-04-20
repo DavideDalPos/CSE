@@ -111,7 +111,8 @@
           </div>
         </div>
 
-        <div class="flex flex-col gap-3 max-w-96 mt-6">
+        <!-- RIGHT COLUMN with gray background -->
+        <div class="flex flex-col gap-3 max-w-96 mt-6 bg-gray-200 p-4">
           <div v-if="publication.date"
               class="border border-quaternary bg-tertiary/50 px-4 rounded shadow max-w-[300px]">
               <p class="text-black bg-quaternary/90 px-4 w-[calc(100%+2rem)] border-b -mx-4 border-quaternary py-1 mb-1">Published</p> 
