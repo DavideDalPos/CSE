@@ -10,7 +10,7 @@
           <span> - </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-tertiary text-gray-700 inline-block border border-quaternary py-1 inline-block mr-0.5"
+            class="bg-tertiary/60 text-gray-700 inline-block border border-quaternary py-1 inline-block mr-0.5"
           >
             {{ category }}
           </VTag>
@@ -18,7 +18,7 @@
 </div>
       <div class="flex flex-row justify-between">
         <div>
-          <div class="flex flex-row justify-between my-4 gap-4">
+          <div class="flex flex-row justify-between my-4 gap-4 text-gray-800">
             <div>
               <ul v-if="publication.authors">
                 <li
@@ -30,7 +30,7 @@
                   <a
                     v-if="orcid"
                     :href="orcid"
-                    class="text-xs text-quinary hover:underline hover:text-quaternary inline-flex items-center gap-1"
+                    class="text-sm text-quinary hover:underline hover:text-quaternary inline-flex items-center gap-1"
                     target="_blank"
                                     >
                     <img src="/images/orcid.svg" alt="ORCID icon" class="w-4 h-4">
@@ -92,26 +92,38 @@
           </div>
         </div>
 
-        <div class="flex flex-col gap-4 max-w-96 mt-6">
-          <div class="border border-primary px-6 py-4 rounded bg-secondary shadow">
-            <h3 class="text-xl mb-2 border-b border-black">How to cite</h3>
-            <PublicationCite class="text-sm" :publication="publication" />
+        <div class="flex flex-col gap-3 max-w-96 mt-6">
+          <div v-if="publication.date"
+              class="border border-quaternary bg-tertiary/50 px-4 rounded shadow max-w-[300px]">
+              <p class="text-black bg-quaternary/90 px-4 w-[calc(100%+2rem)] border-b -mx-4 border-quaternary py-1 mb-1">Published</p> 
+              <div class="mb-1">
+                <span class="text-[15px] text-gray-700">{{ publication.date }}</span>
+              </div>
+          </div>
+          <div class="border border-primary px-4 rounded bg-secondary/70 shadow max-w-[300px] ">
+            <h3 class="text-lg text-black bg-primary/90 px-4 w-[calc(100%+2rem)] border-b -mx-4 border-primary py-1 mb-2">
+              How to cite
+            </h3>
+            <div class="mb-2">
+              <PublicationCite class="text-sm text-gray-700 mt-2" :publication="publication" />
+            </div>
           </div>
           <div
             v-if="publication.download"
-            class="group border border-primary bg-secondary px-6 py-2 rounded flex items-center space-x-1 hover:bg-primary transition duration-200 text-yellow-800 hover:text-quaternary w-max shadow"
+            class="group border border-quaternary text-gray-700 bg-quaternary/90 px-4 py-[0.5px] text-lg rounded flex items-center space-x-2 hover:bg-quaternary/40  transition duration-200 max-w-[300px] shadow"
           >
           <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 
               fill="none" 
               stroke="currentColor" 
-              class="w-4 h-4 text-yellow-800 group-hover:text-quaternary transition duration-200">
+              class="w-4 h-4 transition font-semibold duration-200">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                 d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
             </svg>
             <a :href="publication.download">PDF</a>
           </div>
         </div>
+
       </div>
 
       <NuxtLink
