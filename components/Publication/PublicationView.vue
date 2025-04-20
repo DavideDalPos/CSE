@@ -1,21 +1,21 @@
 <template>
   <section class="container mx-auto flex my-10 justify-between px-8">
     <article>
-      <div class="text-3xl">
+      <div class="text-[35px]">
         <span
           class="font-bold"
           v-html="publication.title"
         />
         <template v-if="publication?.categories?.length">
-          <span> - </span>
+          <span class="mr-4"> </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-tertiary/60 text-gray-700 inline-block border border-quaternary py-1 inline-block mr-0.5"
+            class="bg-quinary/60 text-gray-700 inline-block text-[12px] border border-quinary py-1 inline-block mr-1"
           >
             {{ category }}
           </VTag>
         </template>
-</div>
+      </div>
       <div class="flex flex-row justify-between">
         <div>
           <div class="flex flex-row justify-between my-4 gap-4 text-gray-800">
@@ -25,8 +25,8 @@
                   v-for="{ first_name, last_name, affiliation, orcid } in publication.authors"
                   class="py-2"
                 >
-                  <p class="font-bold text-lg">{{ first_name }} {{ last_name }}</p>
-                  <p class="text-sm text-gray-600">{{ affiliation }}</p>
+                  <p class="font-bold text-[20px]">{{ first_name }} {{ last_name }}</p>
+                  <p class="text-[15px] text-gray-500 prose max-w- max-w-3xl leading-tight">{{ affiliation }}</p>
                   <a
                     v-if="orcid"
                     :href="orcid"
@@ -43,9 +43,28 @@
           <div v-if="publication.doi" class="flex flex-row justify-between my-4 gap-4">
             <p>
               <span class="text-gray-700 font-bold">DOI: </span>
-              <span class="text-quinary hover:text-quaternary hover:underline cursor-pointer">
+              <a
+                :href="publication.doi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-quinary hover:text-quaternary hover:underline cursor-pointer"
+                >
                 {{ publication.doi }}
-              </span>
+              </a>  
+            </p>
+          </div>
+
+          <div v-if="publication.zoobank" class="flex flex-row justify-between my-4 gap-4">
+            <p>
+              <span class="text-gray-700 font-bold">Zoobank: </span>
+              <a
+                :href="zoobankUrl(publication.zoobank)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-quinary hover:text-quaternary hover:underline cursor-pointer"
+              >
+                {{ publication.zoobank }}
+              </a>  
             </p>
           </div>
           
@@ -110,7 +129,7 @@
           </div>
           <div
             v-if="publication.download"
-            class="group border border-quaternary text-gray-700 bg-quaternary/90 px-4 py-[0.5px] text-lg rounded flex items-center space-x-2 hover:bg-quaternary/40  transition duration-200 max-w-[300px] shadow"
+            class="group border border-quaternary/50 text-gray-700 bg-quaternary/80 px-4 py-[0.5px] text-lg rounded flex items-center space-x-2 hover:bg-quaternary/40  transition duration-200 max-w-[300px] shadow"
           >
           <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 
@@ -122,6 +141,29 @@
             </svg>
             <a :href="publication.download">PDF</a>
           </div>
+          <div
+             v-for="(supp, index) in publication.supplementary"
+            :key="index"
+            class="group border border-quinary/50 text-gray-800 bg-quinary/80 px-4 py-[0.5px] rounded
+            flex items-center space-x-2 hover:bg-quinary/40 transition duration-200 max-w-[300px] shadow text-[17px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                class="w-4 h-4 transition font-semibold duration-200"
+              >
+              <path
+               stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+              />
+              </svg>
+                <a :href="supp" target="_blank" rel="noopener">Suppl. Material {{ index + 1 }}</a>
+          </div>
+
         </div>
 
       </div>
@@ -143,5 +185,10 @@ defineProps({
     type: Object,
     required: true
   }
-})
+});
+const zoobankUrl = (lsid) => {
+  const parts = lsid.split(':');
+  const idPart = parts.slice(4).join(':');
+  return `https://zoobank.org/References/${idPart}`;
+};
 </script>

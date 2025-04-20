@@ -25,7 +25,10 @@ authors:
     email: 'mkbrown@kanuga.org'
 
 download: 'https://drive.google.com/file/d/1Q2bxixDY6kDTSFPjD1U7kI2TZyGTMaLx/view?usp=drive_link'
-supplementary: ''
+
+supplementary:
+  - 'https://drive.google.com/file/d/1Q2bxixDY6kDTSFPjD1U7kI2TZyGTMaLx/view?usp=drive_link'
+
 keywords:
   - Elateroidea
   - new records
