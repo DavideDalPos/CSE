@@ -4,12 +4,12 @@
       <div class="flex-1">
         <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
       <!-- 🔍 BANNER SEARCH + FILTER -->
-      <div class="bg-quinary/20 border border-quinary/60 p-2 rounded shadow mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between mt-8">
+      <div class="bg-quinary/20 border border-quinary/60 p-3 rounded shadow mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between mt-8">
         <input
           type="text"
           v-model="searchQuery"
           placeholder="Search by title, author, or category..."
-          class="w-full lg:w-1/2 p-1 border border-gray-300 rounded text-sm bg-white"
+          class="w-full lg:w-1/4 p-1 border border-gray-300 rounded text-sm bg-white"
         />
         <select
           v-model="selectedMonth"
