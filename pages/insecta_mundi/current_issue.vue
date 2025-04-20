@@ -46,7 +46,7 @@
           </div>
           <div
             v-if="publication.download"
-            class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+            class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-quaternary transition duration-200 mt-1"
           >
             <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 

@@ -93,15 +93,23 @@
         </div>
 
         <div class="flex flex-col gap-4 max-w-96 mt-6">
-          <div class="border px-6 py-4 rounded bg-quinary">
-            <h3 class="text-2xl mb-2 border-b border-black">How to cite</h3>
-            <PublicationCite :publication="publication" />
+          <div class="border border-primary px-6 py-4 rounded bg-secondary shadow">
+            <h3 class="text-xl mb-2 border-b border-black">How to cite</h3>
+            <PublicationCite class="text-sm" :publication="publication" />
           </div>
           <div
             v-if="publication.download"
-            class="border px-6 py-4 rounded"
+            class="group border border-primary bg-secondary px-6 py-2 rounded flex items-center space-x-1 hover:bg-primary transition duration-200 text-yellow-800 hover:text-quaternary w-max shadow"
           >
-            <a :href="publication.download">Download</a>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              class="w-4 h-4 text-yellow-800 group-hover:text-quaternary transition duration-200">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+            </svg>
+            <a :href="publication.download">PDF</a>
           </div>
         </div>
       </div>
