@@ -5,15 +5,15 @@
         <!-- LEFT COLUMN: Publications -->
         <div class="flex-1">
           <h1 class="text-4xl text-gray-700 font-bold">Current Volume</h1>
-          <h2 class=" px-2 text-[23px] text-yellow-700 font-bold mt-4 border-b border-gray-300">{{ formattedDate }}</h2>
-          <div class="bg-foreground px-2">
+          <h2 class=" px-3 text-[23px] text-yellow-700 font-bold mt-4 border-b border-gray-300">{{ formattedDate }}</h2>
+          <div class="bg-secondary/20 px-2">
             <ContentList :query="query">
               <template #default="{ list }">
                 <ul>
                   <li
                     v-for="publication in list"
                     :key="publication._path"
-                    class="py-4"
+                    class="px-3 py-4"
                   >
                     <NuxtLink :to="publication._path">
                       <h2
@@ -30,7 +30,7 @@
                           {{ category }}
                         </VTag>
                       </div>
-                        <span class="text-xs text-gray-500 whitespace-nowrap ml-2 pr-1">
+                        <span class="text-xs text-gray-500 whitespace-nowrap ml-2">
                           {{ publication.pagination }}
                         </span>
                       </div>
