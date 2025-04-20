@@ -91,8 +91,8 @@
 <div class="w-full lg:w-[300px] shrink-0 bg-gray-200 p-4 mt-20">
   <!-- Contact box inside the column -->
   <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
-    <h2 class="text-lg font-semibold text-gray-700 mb-2">Contact</h2>
-    <p class="text-sm text-gray-600 font-medium">Davide Dal Pos</p>
+    <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
+    <p class="text-sm text-gray-600 font-medium mt-3">David Plotnik</p>
     <p class="text-sm text-gray-600 italic">Chief Editor</p>
     <p class="text-sm text-gray-600 mt-2">
       <p class="text-sm text-gray-600 font-medium">Paul E. Skelley</p>
@@ -110,6 +110,13 @@
       Gainesville, FL 32614-1874 USA
     </p>
   </div>
+<!-- Author Guidelines box (entire box clickable) -->
+<a href="/insecta_mundi/authorguidelines" class="block w-full">
+  <div class="bg-tertiary/90 p-2 border border-quaternary rounded shadow-md mt-3 h-max hover:bg-primary transition">
+    <h2 class="text-base text-gray-700 hover:text-yellow-700">Author Guidelines</h2>
+  </div>
+</a>
+
 </div>
 
       </div>
