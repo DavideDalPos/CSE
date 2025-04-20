@@ -5,84 +5,91 @@
         <!-- LEFT COLUMN: Publications -->
         <div class="flex-1">
           <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
-          <div class="my-4">
+          <div class="my-6">
             <ContentList path="/insecta_mundi">
-              <template #default="{ list }">
-                <ul>
-                  <li
-                    v-for="publication in list"
-                    :key="publication._path"
-                    class="py-4"
-                  >
-                  <NuxtLink :to="publication._path" class="flex justify-between items-center">
-                    <div class="flex-1">
-                      <h2 class="font-bold text-primary text-[20px] text-justify hover:text-quaternary" v-html="publication.title"></h2>
-                        <div class="flex flex-row flex-wrap gap-1">
-                        <VTag
-                          v-for="category in publication.categories"
-                          :key="category"
-                          class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
-                          >
-                          {{ category }}
-                        </VTag>
-                      </div>
-                    </div>
-                    <div class="ml-4 flex items-center">
-                      <span class="text-xs text-gray-500 whitespace-nowrap">
-                        {{ publication.pagination }}
-                      </span>
-                    </div>
-                  </NuxtLink>
-                    <p class="text-gray-600 text-sm mt-1">
-                      {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
-                    </p>
-                    <div v-if="publication.doi" class="flex flex-row text-sm justify-between mt-1">
-                      <p>
-                        <span class="text-gray-700">DOI: </span>
-                        <span class="text-primary hover:text-tertiary hover:underline cursor-pointer">
-                          {{ publication.doi }}
-                        </span>
-                      </p>
-                    </div>
-                    <div class="flex flex-wrap gap-1 mt-1">
-                      <div
-                        v-if="publication.download"
-                        class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                          d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-                        </svg>
-                        <a :href="publication.download">PDF</a>
-                      </div>
-                      <div
-                        v-for="(supp, index) in publication.supplementary"
-                        :key="index"
-                        class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 
-                        hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                          d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-                        </svg>
-                        <a :href="supp" target="_blank" rel="noopener">Suppl. Material {{ index + 1 }}</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </template>
-              <template #not-found>
-                <p>No articles found.</p>
-              </template>
-            </ContentList>
+  <template #default="{ list }">
+    <ul>
+      <template v-for="([monthYear, group]) in Object.entries(groupByMonthYear(list)).reverse()" :key="monthYear">
+
+        <h2 class="text-xl text-gray-600 font-medium border border-quinary rounded bg-quinary/40 px-2 mt-8">
+          {{ formatMonthYear(monthYear) }}
+        </h2>
+        <li
+          v-for="publication in group"
+          :key="publication._path"
+          class="py-4 px-3"
+        >
+          <NuxtLink :to="publication._path" class="flex justify-between items-center">
+            <div class="flex-1">
+              <h2 class="font-bold text-primary text-[20px] text-justify hover:text-quaternary" v-html="publication.title"></h2>
+              <div class="flex flex-row flex-wrap gap-1">
+                <VTag
+                  v-for="category in publication.categories"
+                  :key="category"
+                  class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
+                >
+                  {{ category }}
+                </VTag>
+              </div>
+            </div>
+            <div class="ml-4 flex items-center">
+              <span class="text-xs text-gray-500 whitespace-nowrap">
+                {{ publication.pagination }}
+              </span>
+            </div>
+          </NuxtLink>
+          <p class="text-gray-600 text-sm mt-1">
+            {{ publication.authors?.map(({ first_name, last_name }) => `${first_name} ${last_name}`).join('; ') }}
+          </p>
+          <div v-if="publication.doi" class="flex flex-row text-sm justify-between mt-1">
+            <p>
+              <span class="text-gray-700">DOI: </span>
+              <span class="text-primary hover:text-tertiary hover:underline cursor-pointer">
+                {{ publication.doi }}
+              </span>
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1 mt-1">
+            <div
+              v-if="publication.download"
+              class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+              </svg>
+              <a :href="publication.download">PDF</a>
+            </div>
+            <div
+              v-for="(supp, index) in publication.supplementary"
+              :key="index"
+              class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 
+              hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+              </svg>
+              <a :href="supp" target="_blank" rel="noopener">Suppl. Material {{ index + 1 }}</a>
+            </div>
+          </div>
+        </li>
+      </template>
+    </ul>
+  </template>
+  <template #not-found>
+    <p>No articles found.</p>
+  </template>
+</ContentList>
+
           </div>
         </div>
 
@@ -123,3 +130,24 @@
     </div>
   </section>
 </template>
+<script setup>
+// Group publications by year and month
+const groupByMonthYear = (list) => {
+  return list.reduce((acc, pub) => {
+    if (!pub.date) return acc
+    const date = pub.date.slice(0, 7) // "YYYY-MM"
+    if (!acc[date]) acc[date] = []
+    acc[date].push(pub)
+    return acc
+  }, {})
+}
+
+// Format "YYYY-MM" to "Month YYYY"
+const formatMonthYear = (str) => {
+  const [year, month] = str.split('-')
+  const date = new Date(year, parseInt(month) - 1)
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
+}
+
+
+</script>
