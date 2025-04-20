@@ -5,19 +5,19 @@
         <!-- LEFT COLUMN: Publications -->
         <div class="flex-1">
           <h1 class="text-4xl text-gray-700 font-bold">Current Volume</h1>
-          <h2 class=" px-3 text-[23px] text-yellow-700 font-bold mt-4 border-b border-gray-300">{{ formattedDate }}</h2>
-          <div class="bg-secondary/20 px-2">
+          <h2 class=" px-3 text-[23px] text-gray-800 font-bold mt-4 bg-gray-200 border-b border-gray-300">{{ formattedDate }}</h2>
+          <div class="px-4">
             <ContentList :query="query">
               <template #default="{ list }">
                 <ul>
                   <li
                     v-for="publication in list"
                     :key="publication._path"
-                    class="px-3 py-4"
+                    class="py-4"
                   >
                     <NuxtLink :to="publication._path">
                       <h2
-                        class="text-gray-600 text-justify font-bold text-[17px] hover:text-tertiary pr-20"
+                        class="text-gray-500 text-justify font-bold text-[17px] hover:text-primary/60 pr-20"
                         v-html="publication.title"
                       ></h2>
                       <div class="flex justify-between items-center flex-wrap gap-y-1">

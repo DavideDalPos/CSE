@@ -4,16 +4,16 @@
       <div class="flex-1">
         <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
       <!-- 🔍 BANNER SEARCH + FILTER -->
-      <div class="bg-secondary/20 border border-primary/40 p-4 rounded shadow mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between mt-8">
+      <div class="bg-quinary/20 border border-quinary/60 p-2 rounded shadow mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between mt-8">
         <input
           type="text"
           v-model="searchQuery"
           placeholder="Search by title, author, or category..."
-          class="w-full lg:w-1/2 p-2 border border-gray-300 rounded text-sm bg-white"
+          class="w-full lg:w-1/2 p-1 border border-gray-300 rounded text-sm bg-white"
         />
         <select
           v-model="selectedMonth"
-          class="w-full lg:w-1/4 p-2 border border-gray-300 bg-white rounded text-sm"
+          class="w-full lg:w-1/4 p-1 border border-gray-300 bg-white rounded text-sm"
         >
           <option value="">All Dates</option>
           <option
@@ -36,13 +36,13 @@
                     v-for="([monthYear, group]) in Object.entries(groupByMonthYear(filteredList(list))).reverse()"
                     :key="monthYear"
                   >
-                    <h2 class="text-[23px] text-yellow-700 font-bold border-b border-gray-300 px-2 mt-8">
+                    <h2 class="text-[23px] text-gray-800 bg-gray-200 font-bold border-b border-gray-300 px-3 mt-8">
                       {{ formatMonthYear(monthYear) }}
                     </h2>
                     <li
                       v-for="publication in group"
                       :key="publication._path"
-                      class="py-3 px-3 bg-secondary/20"
+                      class="py-3 px-4"
                     >
                       <NuxtLink
                         :to="publication._path"
@@ -50,7 +50,7 @@
                       >
                         <div class="flex-1">
                           <h2
-                            class="font-bold text-gray-600 text-[17px] text-justify hover:text-tertiary pr-20"
+                            class="font-bold text-gray-500 text-[17px] text-justify hover:text-primary/60 pr-20"
                             v-html="publication.title"
                           ></h2>
                           <div class="flex flex-row flex-wrap gap-1">
@@ -127,7 +127,7 @@
           </div>
 
         <!-- RIGHT COLUMN: Contact + Author Guidelines -->
-        <div class="w-full lg:w-[300px] shrink-0 bg-gray-500 p-4 mt-20">
+        <div class="w-full lg:w-[300px] shrink-0 bg-gray-500 p-4 mt-14">
           <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
             <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
             <p class="text-sm text-gray-600 font-medium mt-3">David Plotnik</p>
