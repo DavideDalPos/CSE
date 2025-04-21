@@ -1,15 +1,17 @@
 <template>
   <section>
     <div class="container mx-auto px-8 my-10">
+      <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
       <div class="flex-1">
-        <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
         <!-- 🔍 BANNER SEARCH + FILTER -->
-        <div class="bg-gray-100 border border-gray-300 p-3 rounded shadow mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between mt-8">
+        <div
+          class="bg-gray-100 border border-gray-300 p-3 rounded shadow mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between mt-8"
+        >
           <input
             type="text"
             v-model="searchQuery"
             placeholder="Search by title, author, or category..."
-            class="w-full lg:w-1/4 p-1 border border-gray-300 rounded text-sm bg-white"
+            class="px-2 w-full lg:w-1/4 p-1 border border-gray-300 rounded text-sm bg-white"
           />
           <select
             v-model="selectedMonth"
@@ -21,149 +23,49 @@
               :key="month"
               :value="month"
             >
-              {{ formatMonthYear(month) }}
+              {{ month }}
             </option>
           </select>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row gap-8 -mt-15">
+      <div class="flex flex-col lg:flex-row gap-8">
         <!-- LEFT COLUMN: Publications -->
-        <div class="my-6">
-          <ContentList path="/insecta_mundi">
-            <template #default="{ list }">
-  <ul>
-    <!-- Group by Year -->
-    <template v-for="([year, yearGroup]) in Object.entries(groupByYear(filteredList(list)))" :key="year">
-      <h2 class="px-4 py-2 text-lg text-gray-800 font-medium mt-4 bg-gray-100 border-l-4 border-primary/80">
-        {{ year }}
-      </h2>
-
-      <!-- Group by Month-Year for each year -->
-      <template
-        v-for="([monthYear, group]) in Object.entries(groupByMonthYear(yearGroup)).reverse()"
-        :key="monthYear"
-      >
-        <h2 class="px-4 py-2 text-lg text-gray-800 font-medium mt-4 bg-gray-100 border-l-4 border-primary/80">
-          <span class="text-sm text-gray-600">Published:</span> {{ formatMonthYear(monthYear) }}
-        </h2>
-
-        <li
-          v-for="publication in group"
-          :key="publication._path"
-          class="py-3 px-4"
-        >
-          <NuxtLink
-            :to="publication._path"
-            class="flex justify-between items-center"
-          >
-            <div class="flex-1">
+        <div>
+          <ul>
+            <!-- Group by Year -->
+            <template
+              v-for="[year, yearGroup] in groupByYear"
+              :key="year"
+            >
               <h2
-                class="font-bold text-gray-500 text-[17px] text-justify hover:text-primary/60 pr-20"
-                v-html="publication.title"
-              ></h2>
-              <div class="flex flex-row flex-wrap gap-1">
-                <VTag
-                  v-for="category in publication.categories"
-                  :key="category"
-                  class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
-                >
-                  {{ category }}
-                </VTag>
-              </div>
-            </div>
-            <div class="ml-4 flex items-center">
-              <span class="text-xs text-gray-500 whitespace-nowrap pr-1">
-                {{ publication.pagination }}
-              </span>
-            </div>
-          </NuxtLink>
-          <p class="text-gray-600 text-sm mt-1">
-            {{
-              publication.authors
-                ?.map(({ first_name, last_name }) => `${first_name} ${last_name}`)
-                .join("; ")
-            }}
-          </p>
-          <div v-if="publication.doi" class="flex flex-row text-sm justify-between mt-1">
-            <p>
-              <span class="text-gray-700">DOI: </span>
-              <span class="text-primary hover:text-tertiary hover:underline cursor-pointer">
-                {{ publication.doi }}
-              </span>
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1 mt-1">
-            <div
-              v-if="publication.download"
-              class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-              </svg>
-              <a :href="publication.download">PDF</a>
-            </div>
-            <div
-              v-for="(supp, index) in publication.supplementary"
-              :key="index"
-              class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 
-              hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-              </svg>
-              <a :href="supp" target="_blank" rel="noopener">Suppl. Material {{ index + 1 }}</a>
-            </div>
-          </div>
-        </li>
-      </template>
-    </template>
-  </ul>
-</template>
+                class="px-4 py-2 text-lg text-gray-800 font-medium bg-gray-100 border-l-4 border-primary/80"
+              >
+                {{ year }}
+              </h2>
 
-            <template #not-found>
-              <p>No articles found.</p>
+              <!-- Group by Month-Year for each year -->
+              <template
+                v-for="[monthYear, group] in Object.entries(
+                  groupByMonthYear(yearGroup)
+                ).reverse()"
+                :key="monthYear"
+              >
+                <TablePublications
+                  class="my-2"
+                  :list="group"
+                  :date="monthYear"
+                />
+              </template>
             </template>
-          </ContentList>
+          </ul>
+
+          <template v-if="!publications.length">
+            <p>No articles found.</p>
+          </template>
         </div>
 
         <!-- RIGHT COLUMN: Contact + Author Guidelines -->
-        <div class="w-full lg:w-[300px] shrink-0 bg-gray-200 p-4 mt-14">
-          <div class="bg-secondary/90 border-gray-200 p-4 border border-primary rounded shadow-md h-max">
-            <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
-            <p class="text-sm text-gray-600 font-medium mt-3">David Plotnik</p>
-            <p class="text-sm text-gray-600 italic">Chief Editor</p>
-            <p class="text-sm text-gray-600 mt-2">
-              <p class="text-sm text-gray-600 font-medium">Paul E. Skelley</p>
-              <p class="text-sm text-gray-600 italic">Assistant Editor</p>
-            </p>
-            <p class="text-sm text-gray-600 mt-2">
-              Email:
-              <a href="mailto:insectamundi@gmail.com" class="text-yellow-700 hover:underline">
-                insectamundi@gmail.com
-              </a>
-            </p>
-            <p class="text-sm text-gray-600 mt-2">
-              Center for Systematic Entomology<br />
-              P.O. Box 141874<br />
-              Gainesville, FL 32614-1874 USA
-            </p>
-          </div>
-          <a href="/insecta_mundi/authorguidelines" class="block w-full">
-            <div class="bg-tertiary/90 p-2 border border-quaternary rounded shadow-md mt-3 h-max hover:bg-primary transition">
-              <h2 class="text-base text-gray-700 hover:text-yellow-700">Author Guidelines</h2>
-            </div>
-          </a>
-        </div>
+        <InsectaMundiRightColumn />
       </div>
     </div>
   </section>
@@ -172,19 +74,14 @@
 <script setup>
 import { computed, ref } from 'vue'
 
+const publications = await queryContent('insecta_mundi')
+  .where({ date: { $ne: null } })
+  .sort({ date: -1 })
+  .find()
+
 // State for search and filter
 const searchQuery = ref('')
 const selectedMonth = ref('')
-
-// Format a YYYY-MM string into "Month YYYY"
-const formatMonthYear = (monthStr) => {
-  const [year, month] = monthStr.split('-')
-  const date = new Date(parseInt(year), parseInt(month) - 1)
-  
-  // Get the formatted date in YYYY-MM-DD format
-  const formattedDate = date.toISOString().split('T')[0]  // This gives us the 'YYYY-MM-DD' part of the ISO string
-  return formattedDate
-}
 
 // Group publications by their month/year
 const groupByMonthYear = (list) => {
@@ -197,67 +94,48 @@ const groupByMonthYear = (list) => {
 }
 
 // Group publications by year
-const groupByYear = (list) => {
+const groupByYear = computed(() => {
   // Step 1: Group by year
-  const grouped = list.reduce((acc, item) => {
-    const year = item.date?.slice(0, 4); // assumes 'YYYY-MM-DD'
-    if (!acc[year]) acc[year] = [];
-    acc[year].push(item);
-    return acc;
-  }, {});
+  const grouped = filteredList.value.reduce((acc, item) => {
+    const year = item.date?.slice(0, 4) // assumes 'YYYY-MM-DD'
+    if (!acc[year]) acc[year] = []
+    acc[year].push(item)
+    return acc
+  }, {})
 
-  // Step 2: Sort the years in descending order (so 2025 comes first)
-  const sortedYears = Object.keys(grouped).sort((a, b) => b - a);  // Sort years in descending order
+  const sortedGrouped = Object.entries(grouped).sort(([a], [b]) => b - a)
 
-  // Step 3: Create a new object based on sorted years
-  const sortedGrouped = {};
-  sortedYears.forEach(year => {
-    sortedGrouped[year] = grouped[year];
-  });
-
-  return sortedGrouped;
-};
-
-
+  return sortedGrouped
+})
 
 // Get list of month-year options available in the data
 const monthYearOptions = computed(() => {
-  const months = new Set()
-  
-  // Gather all unique YYYY-MM strings
-  allItems.value.forEach((item) => {
-    const monthYear = item.date?.slice(0, 7) // Extract 'YYYY-MM' from 'YYYY-MM-DD'
-    if (monthYear) months.add(monthYear)
-  })
-  
-  // Sort the monthYear strings lexicographically in ascending order
-  return Array.from(months).sort()  // Sort in ascending order (default sort)
+  const months = publications.map(
+    (item) => item.date?.slice(0, 7) // Extract 'YYYY-MM' from 'YYYY-MM-DD'
+  )
+
+  return [...new Set(months)].sort() // Sort in ascending order (default sort)
 })
 
 // Placeholder to hold the full list (used in monthYearOptions)
 const allItems = ref([])
-
-// Filtered list based on search query and selected month
-const filteredList = (list) => {
+const filteredList = computed(() => {
   // Keep track of full list for filtering month-year dropdown
-  if (allItems.value.length === 0) allItems.value = list
+  const inputValue = searchQuery.value.toLowerCase()
 
-  return list.filter((item) => {
+  return publications.filter((item) => {
     const matchesQuery =
       searchQuery.value === '' ||
-      item.title?.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
-      item.categories?.some((cat) =>
-        cat.toLowerCase().includes(searchQuery.value.toLowerCase())
-      ) ||
+      item.title?.toLowerCase().includes(inputValue) ||
+      item.categories?.some((cat) => cat.toLowerCase().includes(inputValue)) ||
       item.authors?.some(({ first_name, last_name }) =>
-        `${first_name} ${last_name}`.toLowerCase().includes(searchQuery.value.toLowerCase())
+        `${first_name} ${last_name}`.toLowerCase().includes(inputValue)
       )
 
     const matchesMonth =
-      selectedMonth.value === '' ||
-      item.date?.startsWith(selectedMonth.value)
+      selectedMonth.value === '' || item.date?.startsWith(selectedMonth.value)
 
     return matchesQuery && matchesMonth
   })
-}
+})
 </script>

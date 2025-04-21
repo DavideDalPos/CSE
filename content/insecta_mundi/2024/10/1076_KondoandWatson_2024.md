@@ -1,6 +1,6 @@
 ---
 title: 'Encyclopedia of Scale Insect Pests: Corrigenda and additions'
-date: '2024-10-4'
+date: '2024-10-04'
 doi: ''
 issue: '1076'
 journal: Insecta Mundi
