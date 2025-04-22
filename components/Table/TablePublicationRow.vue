@@ -6,7 +6,7 @@
     >
       <div class="flex-1">
         <h2
-          class="font-bold text-gray-500 text-[17px] text-justify hover:text-primary/60 pr-20"
+          class="font-bold text-gray-600 text-[17px] text-justify hover:text-primary/60 pr-20"
           v-html="publication.title"
         ></h2>
         <div class="flex flex-row flex-wrap gap-1">
@@ -88,7 +88,7 @@
 </template>
 
 <script setup>
-import { makeAuthorsLabel } from '~/helpers'
+import { makeAuthorsLabel } from '~/helpers';
 
 const props = defineProps({
   publication: {
