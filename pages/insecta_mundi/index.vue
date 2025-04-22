@@ -34,7 +34,7 @@
           <ul>
             <!-- Group by Year -->
             <template
-              v-for="[year, yearGroup] in groupByYear"
+              v-for="[year, yearGroup] in groupByYearAndMonth"
               :key="year"
             >
               <h2
@@ -45,9 +45,7 @@
 
               <!-- Group by Month-Year for each year -->
               <template
-                v-for="[monthYear, group] in Object.entries(
-                  groupByMonthYear(yearGroup)
-                ).reverse()"
+                v-for="[monthYear, group] in yearGroup"
                 :key="monthYear"
               >
                 <TablePublications
@@ -83,30 +81,31 @@ const publications = await queryContent('insecta_mundi')
 const searchQuery = ref('')
 const selectedMonth = ref('')
 
-// Group publications by their month/year
-const groupByMonthYear = (list) => {
-  return list.reduce((acc, item) => {
-    const monthYear = item.date?.slice(0, 7) // assumes 'YYYY-MM-DD'
-    if (!acc[monthYear]) acc[monthYear] = []
-    acc[monthYear].push(item)
-    return acc
-  }, {})
-}
 
-// Group publications by year
-const groupByYear = computed(() => {
-  // Step 1: Group by year
-  const grouped = filteredList.value.reduce((acc, item) => {
-    const year = item.date?.slice(0, 4) // assumes 'YYYY-MM-DD'
+const groupByYearAndMonth = computed(() => {
+  const sortedGrouped = groupByDate(filteredList.value, 4)
+
+  sortedGrouped.forEach(group => {
+    group[1] = groupByDate(group[1], 7)
+  })
+
+  return sortedGrouped
+})
+
+function groupByDate(list, sliceEnd) {
+  const grouped = list.reduce((acc, item) => {
+    const year = item.date?.slice(0, sliceEnd)
+
     if (!acc[year]) acc[year] = []
     acc[year].push(item)
+
     return acc
   }, {})
 
   const sortedGrouped = Object.entries(grouped).sort(([a], [b]) => b - a)
 
   return sortedGrouped
-})
+}
 
 // Get list of month-year options available in the data
 const monthYearOptions = computed(() => {
