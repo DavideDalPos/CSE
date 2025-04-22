@@ -129,9 +129,11 @@ references:
 
   - authors: Geist L.
     year: 2024
-    title: 'First Case of Corn Stunt Confirmed in Missouri | MU Extension. Available at https://extension.missouri.edu/news/first-case-of-corn-stunt-confirmed-in-missouri (Last accessed 21 January 2025)'
+    title: 'First Case of Corn Stunt Confirmed in Missouri | MU Extension.'
     pages: 
-    doi: 
+    doi:
+    url: https://extension.missouri.edu/news/first-case-of-corn-stunt-confirmed-in-missouri
+    access: (Last accessed 21 January 2025.)
 
   - authors: Faris AM, Rodrigues Duffeck M, Olson JD, Espindola AS, Muller L, Velasco SE, Zambiasi JM.
     year: 2024
@@ -162,6 +164,8 @@ references:
     title: 'New records of aphids (Hemiptera: Aphididae) on hemp found in the Midwest USA. The Great Lake Entomologist 54(2)'
     pages: 193–199
     doi: 
+    url: 
+    access: 
 
   - authors: Lagos-Kutz D, Potter B, DiFonzo C, Russell H, Hartman GL.
     year: 2018
@@ -174,6 +178,134 @@ references:
     title: 'Dispersal records of the sugarcane aphid, <i>Melanaphis sacchari</i> (Zehntner) (Hemiptera: Aphididae), through the Midwest Suction Trap Network. Florida Entomologist 101(3)'
     pages: 508–510
     doi: 
+
+  - authors: Lagos-Kutz D, Voegtlin DJ, Onstad D, Hogg D, Ragsdale D, Tilmon K, Hodgson E, DiFonzo C, Groves R, Krupke C, LaForest J, Seiter NJ, Duerr E, Bradford B, Hartman GL.
+    year: 2020
+    title: 'The soybean aphid suction trap network: Sampling the aerobiological “Soup”. American Entomologist 66(1)'
+    pages: 48–55
+    doi: 
+    url: 
+    access: 
+
+  - authors: Muturi EJ, Lagos-Kutz D, Dunlap C, Ramirez JL, Rooney AP, Hartman GL, Fields CJ, Rendon G, Kim CH.
+    year: 2018
+    title: 'Mosquito microbiota cluster by host sampling location. Parasites Vectors 11(1)'
+    pages: 468
+    doi: 
+    url: 
+    access: 
+
+  - authors: Nault LR.
+    year: 1980
+    title: 'Maize bushy stunt and corn stunt: a comparison of disease symptoms, pathogen host ranges, and vectors. Phytopathology 70'
+    pages: 659–662
+    doi: 
+    url: 
+    access: 
+
+  - authors: Nault LR.
+    year: 1990
+    title: 'Evolution of an insect pest: maize and the corn leafhopper, a case study. Maydica 35'
+    pages: 165–175
+    doi: 
+    url: 
+    access: 
+
+  - authors: Nault LR, Knoke JK.
+    year: 1981
+    title: 'Maize vectors [Virus]. p. 77–84. In: Gordon DT, Knoke JK, Scott GE (eds.). Virus and virus like diseases of maize in the United States. Southern Cooperative Series Bulletin 247. Southern Regional Research Center; New Orleans, LA. 218 p.'
+    pages: 
+    doi: 
+    url: 
+    access: 
+
+  - authors: Nelson S.
+    year: 2024
+    title: 'Kansas Corn Hit By Corn Stunt Disease Outbreak.'
+    pages: 
+    doi: 
+    url: https://kansasagconnection.com/news/
+    access: (Last accessed 9 January 2025.)
+
+  - authors: Oliveira CM, Frizzas MR.
+    year: 2021
+    title: 'Eight decades of <i>Dalbulus maidis </i> (DeLong & Wolcott) (Hemiptera, Cicadellidae) in Brazil: What we know and what we need to know. Neotropical Entomology 51'
+    pages: 1–17
+    doi: 
+    url: 
+    access: 
+
+  - authors: Onofre R, McCornack B, Zukoff A, Day C.
+    year: 2024
+    title: 'Agronomy eUpdate October 3rd, 2024 : Issue 1023. Corn Stunt Spiroplasma: a New Threat to Corn.'
+    pages: 
+    doi: 
+    url: https://eupdate.agronomy.ksu.edu/article/corn-stunt-spiroplasma-a-newthreat-
+    access: (Last accessed 9 January 2025.)
+
+  - authors: Schmidt NP, O’Neal ME, Anderson PF, Lagos DM, Voegtlin DJ, Bailey W, Caragea PC, Cullen EM, Difonzo CD, Elliott K, Gratton C, Johnson D, Krupke C, McCornack BP, O’Neil R, Ragsdale DW, Tilmon KJ, Witworth J.
+    year: 2012
+    title: 'Spatial distribution of <i>Aphis glycines </i> (Hemiptera: Aphididae): A summary of the suction trap network. Journal of Economic Entomology 105'
+    pages: 259–271
+    doi: 
+    url: 
+    access: 
+
+  - authors: Stoner WN, Ullstrup AJ.
+    year: 1964
+    title: 'Corn stunt disease. Information sheet 844. Mississippi Agricultural Experimentation Station; Mississippi State, MS. 5 p.'
+    pages: 
+    doi: 
+    url: 
+    access: 
+
+  - authors: Thekke-Veetil T, Lagos-Kutz DM, Domier LL, McCoppin NK, Hartman GL, Clough SJ.
+    year: 2024
+    title: 'Exploring virus diversity in the potato leafhopper (<i>Empoasca fabae</i> ), an economically important agricultural pest. Viruses 16'
+    pages: 1305
+    doi: 
+    url: 
+    access: 
+
+  - authors: Thekke-Veetil T, Lagos-Kutz D, McCoppin NK, Hartman GL, Ju H, Lim H, Domier LL.
+    year: 2020
+    title: 'Soybean thrips (Thysanoptera: Thripidae) harbor highly diverse populations of arthropod, fungal and plant viruses. Viruses 12'
+    pages: 1376
+    doi: 
+    url: 
+    access: 
+
+  - authors: Triplehorn BW, Nault LR.
+    year: 1985
+    title: 'Phylogenetic classification of the genus <i>Dalbulus </i> (Homoptera: Cicadellidae), and notes on the phylogeny of the Macrostelini. Annals of the Entomological Society of America 78'
+    pages: 291–315
+    doi: 
+    url: 
+    access: 
+
+  - authors: Tsai JH, Miller JW.
+    year: 1995
+    title: 'Corn stunt spiroplasma. Plant Pathology Circular 373'
+    pages: 1–3
+    doi: 
+    url: 
+    access: 
+
+  - authors: Virla EG.
+    year: 2024
+    title: '<i>Dalbulus maidis </i> (Hemiptera: Cicadellidae), vector del “achaparramiento or raquitismo” del maíz. Miscelanea 152'
+    pages: 1–49
+    doi: 
+    url: 
+    access: 
+
+  - authors: Wang Y, Yang F.
+    year: 2024
+    title: 'First Detection of Corn Leafhopper in Minnesota in 2024.'
+    pages: 
+    doi: 
+    url: https://blog-crop-news.extension.umn.edu/2024/10/first-detection-of-corn-leafhopper-in.
+    access: (Last accessed 21 January 2025.)
 
 
 

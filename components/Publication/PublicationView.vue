@@ -97,6 +97,7 @@
                 <li
                   v-for="reference in publication.references"
                   :key="reference"
+                  class="text-justify"
                 >
                   <span class="font-bold"
                     >{{ reference.authors }} {{ reference.year }}. </span
@@ -108,7 +109,7 @@
                     <a :href="reference.doi" target="_blank" rel="noopener noreferrer" class="text-quinary hover:text-quaternary hover:underline cursor-pointer">{{ reference.doi }}</a>
                   </span>
                   <span v-if="reference.url">
-                    Available at <a :href="reference.url" target="_blank" rel="noopener noreferrer"
+                     Available at <a :href="reference.url" target="_blank" rel="noopener noreferrer"
                      class="text-quinary hover:text-quaternary hover:underline cursor-pointer">{{ reference.url }} </a> 
                   </span>&nbsp;
                   <span v-if="reference.access">{{ reference.access }}</span>
