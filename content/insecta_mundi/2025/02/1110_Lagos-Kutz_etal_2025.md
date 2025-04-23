@@ -77,7 +77,6 @@ authors:
 download: ''
 
 supplementary:
-  - ''
 
 keywords:
   - Host plant
