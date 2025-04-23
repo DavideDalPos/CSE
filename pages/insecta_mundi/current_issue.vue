@@ -23,7 +23,7 @@
                   >
                     <NuxtLink :to="publication._path">
                       <h2
-                        class="text-gray-500 text-justify font-bold text-[17px] hover:text-primary/60 pr-20"
+                        class="text-senary text-justify font-bold text-[17px] hover:text-quaternary/80 pr-20"
                         v-html="publication.title"
                       ></h2>
                       <div
@@ -33,7 +33,7 @@
                           <VTag
                             v-for="category in publication.categories"
                             :key="category"
-                            class="bg-tertiary/60 text-gray-600 inline-block border border-quaternary"
+                            class="bg-primary/70 text-white inline-block"
                           >
                             {{ category }}
                           </VTag>
@@ -75,14 +75,14 @@
                     <div class="flex flex-wrap gap-1 mt-1">
                       <div
                         v-if="publication.download"
-                        class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+                        class="group shadow px-2 py-1 text-xs rounded bg-primary/70 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
-                          class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200"
+                          class="w-4 h-4 text-white group-hover:text-tertiary transition duration-200"
                         >
                           <path
                             stroke-linecap="round"
@@ -97,14 +97,14 @@
                       <div
                         v-for="(supp, index) in publication.supplementary"
                         :key="index"
-                        class="group border border-primary shadow px-2 py-1 text-xs rounded bg-secondary w-max text-yellow-700 hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+                        class="group px-2 py-1 text-xs rounded bg-primary/70 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
-                          class="w-4 h-4 text-yellow-700 group-hover:text-tertiary transition duration-200"
+                          class="w-4 h-4 text-white group-hover:text-tertiary transition duration-200"
                         >
                           <path
                             stroke-linecap="round"
