@@ -13,7 +13,7 @@
           <VTag
             v-for="category in publication.categories"
             :key="category"
-            class="bg-primary/70 text-white inline-block"
+            class="bg-quinary/45 text-gray-700 inline-block"
           >
             {{ category }}
           </VTag>
@@ -39,7 +39,7 @@
     <div class="flex flex-wrap gap-1 mt-1">
       <div
         v-if="publication.download"
-        class="group shadow px-2 py-1 text-xs rounded bg-primary/70 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+        class="group shadow px-2 py-1 text-xs rounded bg-quaternary/80 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@
       <div
         v-for="(supp, index) in publication.supplementary"
         :key="index"
-        class="group shadow px-2 py-1 text-xs rounded bg-primary/70 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+        class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
