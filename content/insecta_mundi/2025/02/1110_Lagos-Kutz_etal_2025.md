@@ -96,68 +96,88 @@ references:
     title: 'Factors inducing migratory forms of soybean aphid and an examination of North American spatial dynamics of this species in the context of migratory behavior. Agriculture and Forest Entomology 16(3)'
     pages: 240–250
     doi: 
+    url: 
+    access: 
 
   - authors: Bradfute OE, Tsai JH, Gordon DT.
     year: 1981
     title: 'Spiroplasma and viruses associated with maize epidemic in southern Florida. Plant Disease 65'
     pages: 837–841
     doi: 
+    url: 
+    access: 
 
   - authors: Crossley MS, Hogg DB.
     year: 2015
-    title: 'Potential overwintering locations of <i>soybean aphid</i> (Hemiptera: Aphididae) colonizing soybean in Ohio and Wisconsin. Environmental Entomology 44(2)'
+    title: 'Potential overwintering locations of soybean aphid (Hemiptera: Aphididae) colonizing soybean in Ohio and Wisconsin. Environmental Entomology 44(2)'
     pages: 210–222
     doi: 
+    url: 
+    access: 
 
   - authors: Crossley MS, Lagos-Kutz DM, Davis TS, Eigenbrode SD, Hartman GL, Voegtlin DJ, Snyder WE.
     year: 2022
-    title: 'Precipitation change accentuates or reverses temperature effects on aphid dispersal. Ecological Applications 32(5)'
-    pages: e2593
+    title: 'Precipitation change accentuates or reverses temperature effects on aphid dispersal. Ecological Applications 32(5): e2593.'
+    pages: 
     doi: 
+    url: 
+    access: 
 
   - authors: Crossley MS, Meier AR, Baldwin EM, Berry LL, Crenshaw LC, Hartman GL, Lagos-Kutz D, Nichols DH, Patel K, Varriano S, Snyder WE, Moran MD.
     year: 2020
     title: 'No net insect abundance and diversity decline across US long term ecological research sites. Nature Ecology and Evolution 4'
     pages: 1368–1376
     doi: 
+    url: 
+    access: 
 
   - authors: Crossley MS, Smith OM, Davis TS, Eigenbrode SD, Hartman GL, Lagos-Kutz DM, Halbert SE, Voegtlin DJ, Moran MD, Snyder WE.
     year: 2021
     title: 'Complex life histories predispose aphids to recent abundance declines. Global Change Biology 27(18)'
     pages: 4283–4293
     doi: 
+    url: 
+    access: 
 
   - authors: Geist L.
     year: 2024
     title: 'First Case of Corn Stunt Confirmed in Missouri | MU Extension.'
     pages: 
-    doi:
-    url: https://extension.missouri.edu/news/first-case-of-corn-stunt-confirmed-in-missouri
+    doi: 
+    url: https://extension.missouri.edu/
     access: (Last accessed 21 January 2025.)
 
   - authors: Faris AM, Rodrigues Duffeck M, Olson JD, Espindola AS, Muller L, Velasco SE, Zambiasi JM.
     year: 2024
-    title: 'First report of <i>Dalbulus maidis</i> (DeLong and Wolcott) (Hemiptera: Cicadellidae) in Oklahoma. Insects 15'
+    title: 'First report of <i>Dalbulus maidis </i>(DeLong and Wolcott) (Hemiptera: Cicadellidae) in Oklahoma. Insects 15'
     pages: 778
     doi: 
+    url: 
+    access: 
 
   - authors: Frazier NW.
     year: 1945
     title: 'A streak disease of corn in California. Plant Disease Reporter 29'
     pages: 212–213
     doi: 
+    url: 
+    access: 
 
   - authors: Keough S, Danielson J, Marshall JM, Lagos-Kutz D, Voegtlin DJ, Srinivasan R, Nachappa P.
     year: 2018
     title: 'Factors affecting population dynamics of thrips vectors of soybean vein necrosis virus. Environmental Entomology 47(3)'
     pages: 734–740
     doi: 
+    url: 
+    access: 
 
   - authors: Lagos-Kutz DM, Clark RB, Seiter N, Clough SJ, Hartman GL, Crossley M.
     year: 2024
     title: 'Tracking flight activity of potato leafhoppers (Hemiptera: Cicadellidae) with the Midwest Suction Trap Network. Environmental Entomology 53(3)'
     pages: 433–441
     doi: 
+    url: 
+    access: 
 
   - authors: Lagos-Kutz D, DiFonzo C, Hartman GL.
     year: 2021
@@ -168,16 +188,20 @@ references:
     access: 
 
   - authors: Lagos-Kutz D, Potter B, DiFonzo C, Russell H, Hartman GL.
-    year: 2018
-    title: 'Two aphid species, <i>Phorodon cannabis</i> and <i>Rhopalosiphum rufiabdominale</i>, identified as potential pests on industrial hemp, <i>Cannabis sativa</i> L., in the US Midwest. Crop, Forage & Turfgrass Management 4'
+    year: 2018a
+    title: 'Two aphid species, <i>Phorodon cannabis </i>and <i>Rhopalosiphum rufiabdominale</i>, identified as potential pests on industrial hemp, <i>Cannabis sativa </i>L., in the US Midwest. Crop, Forage & Turfgrass Management 4'
     pages: 180032
     doi: 
+    url: 
+    access: 
 
-  - authors: Lagos-Kutz D, Voegtlin D, Davis J., Hartman G.
-    year: 2018
-    title: 'Dispersal records of the sugarcane aphid, <i>Melanaphis sacchari</i> (Zehntner) (Hemiptera: Aphididae), through the Midwest Suction Trap Network. Florida Entomologist 101(3)'
+  - authors: Hartman G.
+    year: 2018b
+    title: 'Dispersal records of the sugarcane aphid, <i>Melanaphis sacchari </i>(Zehntner) (Hemiptera: Aphididae), through the Midwest Suction Trap Network. Florida Entomologist 101(3)'
     pages: 508–510
     doi: 
+    url: 
+    access: 
 
   - authors: Lagos-Kutz D, Voegtlin DJ, Onstad D, Hogg D, Ragsdale D, Tilmon K, Hodgson E, DiFonzo C, Groves R, Krupke C, LaForest J, Seiter NJ, Duerr E, Bradford B, Hartman GL.
     year: 2020
@@ -229,7 +253,7 @@ references:
 
   - authors: Oliveira CM, Frizzas MR.
     year: 2021
-    title: 'Eight decades of <i>Dalbulus maidis </i> (DeLong & Wolcott) (Hemiptera, Cicadellidae) in Brazil: What we know and what we need to know. Neotropical Entomology 51'
+    title: 'Eight decades of <i>Dalbulus maidis </i>(DeLong & Wolcott) (Hemiptera, Cicadellidae) in Brazil: What we know and what we need to know. Neotropical Entomology 51'
     pages: 1–17
     doi: 
     url: 
@@ -245,7 +269,7 @@ references:
 
   - authors: Schmidt NP, O’Neal ME, Anderson PF, Lagos DM, Voegtlin DJ, Bailey W, Caragea PC, Cullen EM, Difonzo CD, Elliott K, Gratton C, Johnson D, Krupke C, McCornack BP, O’Neil R, Ragsdale DW, Tilmon KJ, Witworth J.
     year: 2012
-    title: 'Spatial distribution of <i>Aphis glycines </i> (Hemiptera: Aphididae): A summary of the suction trap network. Journal of Economic Entomology 105'
+    title: 'Spatial distribution of <i>Aphis glycines </i>(Hemiptera: Aphididae): A summary of the suction trap network. Journal of Economic Entomology 105'
     pages: 259–271
     doi: 
     url: 
@@ -261,7 +285,7 @@ references:
 
   - authors: Thekke-Veetil T, Lagos-Kutz DM, Domier LL, McCoppin NK, Hartman GL, Clough SJ.
     year: 2024
-    title: 'Exploring virus diversity in the potato leafhopper (<i>Empoasca fabae</i> ), an economically important agricultural pest. Viruses 16'
+    title: 'Exploring virus diversity in the potato leafhopper (<i>Empoasca fabae</i>), an economically important agricultural pest. Viruses 16'
     pages: 1305
     doi: 
     url: 
@@ -277,7 +301,7 @@ references:
 
   - authors: Triplehorn BW, Nault LR.
     year: 1985
-    title: 'Phylogenetic classification of the genus <i>Dalbulus </i> (Homoptera: Cicadellidae), and notes on the phylogeny of the Macrostelini. Annals of the Entomological Society of America 78'
+    title: 'Phylogenetic classification of the genus <i>Dalbulus </i>(Homoptera: Cicadellidae), and notes on the phylogeny of the Macrostelini. Annals of the Entomological Society of America 78'
     pages: 291–315
     doi: 
     url: 
@@ -293,7 +317,7 @@ references:
 
   - authors: Virla EG.
     year: 2024
-    title: '<i>Dalbulus maidis </i> (Hemiptera: Cicadellidae), vector del “achaparramiento or raquitismo” del maíz. Miscelanea 152'
+    title: '<i>Dalbulus maidis </i>(Hemiptera: Cicadellidae), vector del “achaparramiento or raquitismo” del maíz. Miscelanea 152'
     pages: 1–49
     doi: 
     url: 
@@ -306,8 +330,6 @@ references:
     doi: 
     url: https://blog-crop-news.extension.umn.edu/2024/10/first-detection-of-corn-leafhopper-in.
     access: (Last accessed 21 January 2025.)
-
-
 
 abstract: 'Corn leafhopper, <i>Dalbulus maidis</i> (DeLong and Wolcott) (Hemiptera: Cicadellidae), is native to Central and South America, but invasive in the United States. This species is a threat to corn, <i>Zea mays</i> L., one of the main crops of economic importance in the US, because it is also a vector of three pathogens responsible for corn stunt diseases complex: corn stunt spiroplasma (CSS), maize bushy stunt phytoplasma (MBSP), and maize rayado fino virus (MRFV). Therefore, monitoring the dispersal of this pest is necessary to document its geographic expansion and anticipate the incidence of corn stunt disease. Based on trap catches obtained from the Midwest Suction Trap Network in 2024, corn leafhopper populations increased late in the growing season in Illinois, Indiana, Iowa, Kansas, Kentucky, Michigan, Minnesota, Missouri, Nebraska, and Wisconsin. We will continue to monitor the dispersal of this invasive species through the Midwest Suction Trap Network to provide information to researchers, extension agents, and producers regarding this agronomically important pest.'
 ---
