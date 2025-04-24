@@ -28,43 +28,48 @@
           </select>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row gap-8">
-        <!-- LEFT COLUMN: Publications -->
-        <div>
-          <ul>
-            <!-- Group by Year -->
-            <template
-              v-for="[year, yearGroup] in groupByYearAndMonth"
-              :key="year"
+      <div class="flex flex-col lg:flex-row lg:items-stretch gap-8">
+  <!-- LEFT COLUMN: Publications -->
+  <div class="w-full">
+    <ul class="w-full space-y-4">
+      <template v-for="[year, yearGroup] in groupByYearAndMonth" :key="year">
+        <li>
+          <!-- Year header with toggle -->
+          <div
+            class="flex items-center justify-between min-w-[1140px] px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
+            @click="toggleYear(year)"
+          >
+            <h2 class="text-lg text-gray-800 font-medium">{{ year }}</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 transform transition-transform duration-300"
+              :class="{ 'rotate-180': openYears.has(year) }"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <h2
-                class="px-4 py-2 text-lg text-gray-800 font-medium bg-gray-100 border-l-4 border-primary/80"
-              >
-                {{ year }}
-              </h2>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+          </div>
 
-              <!-- Group by Month-Year for each year -->
-              <template
-                v-for="[monthYear, group] in yearGroup"
-                :key="monthYear"
-              >
-                <TablePublications
-                  class="my-2"
-                  :list="group"
-                  :date="monthYear"
-                />
-              </template>
+          <!-- Conditionally rendered month/year groups -->
+          <div v-show="openYears.has(year)">
+            <template v-for="[monthYear, group] in yearGroup" :key="monthYear">
+              <TablePublications class="my-2" :list="group" :date="monthYear" />
             </template>
-          </ul>
+          </div>
+        </li>
+      </template>
+    </ul>
 
-          <template v-if="!publications.length">
-            <p>No articles found.</p>
-          </template>
-        </div>
+    <template v-if="!publications.length">
+      <p>No articles found.</p>
+    </template>
+  </div>
 
-        <!-- RIGHT COLUMN: Contact + Author Guidelines -->
-        <InsectaMundiRightColumn />
-      </div>
+  <!-- RIGHT COLUMN: Contact + Author Guidelines -->
+  <InsectaMundiRightColumn />
+</div>
     </div>
   </section>
 </template>
@@ -80,6 +85,15 @@ const publications = await queryContent('insecta_mundi')
 // State for search and filter
 const searchQuery = ref('')
 const selectedMonth = ref('')
+const openYears = ref(new Set())
+
+function toggleYear(year) {
+  if (openYears.value.has(year)) {
+    openYears.value.delete(year)
+  } else {
+    openYears.value.add(year)
+  }
+}
 
 
 const groupByYearAndMonth = computed(() => {
