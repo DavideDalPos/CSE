@@ -72,8 +72,8 @@
             <div class="mb-10">
               <span class="text-gray-700 font-bold">Keywords: </span>
                 <span class="text-gray-500">
-                  <template v-for="(keyword, index) in publication.keywords">
-                    {{ keyword }}<span v-if="index < publication.keywords.length - 1">, </span>
+                  <template v-for="(keyword, index) in publication.keywords" :key="index">
+                    <span v-html="keyword"></span><span v-if="index < publication.keywords.length - 1">, </span>
                   </template>
                 </span>
             </div>
