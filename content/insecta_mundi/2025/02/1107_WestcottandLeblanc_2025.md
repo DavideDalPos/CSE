@@ -37,7 +37,7 @@ references:
   - authors: Barr WF.
     year: 1971
     title: 'Family Buprestidae. p. 55–89. In: Hatch MH. Beetles of the Pacific Northwest, part V. University of Washington Press; Seattle, WA'
-    pages: 662 p.
+    pages: 662 p
     doi: 
     url: 
     access: 
