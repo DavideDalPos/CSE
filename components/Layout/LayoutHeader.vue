@@ -91,10 +91,9 @@ const menu = [
     label: 'Other Publications',
     submenu: [
       // Submenu items
-      { label: 'CSE Memoirs', link: '/memoirs' },
-      { label: 'CSE Newsletter', link: '/newsletter' },
-      { label: 'FSCA Arthropods', link: '/other_publications/FSCAArthropods' },
-      { label: 'FSCA Occasional', link: '/other_publications/FSCAOccasional' }
+      { label: 'CSE Publications', link: '/other_publications/CSE' },
+      { label: 'FSCA Arthropods of Florida', link: '/other_publications/FSCAArthropods' },
+      { label: 'FSCA Occasional Papers', link: '/other_publications/FSCAOccasional' }
     ]
   },
   {
