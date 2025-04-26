@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CSE_PapersButton from './CSE_PapersButton.vue';
 import FSCA_OccasionalButton from './FSCA_OccasionalButton.vue';
 import InsectaMundiButton from './InsectaMundiButton.vue';
 import InsectaMundiButtonNew from './InsectaMundiButtonNew.vue';
@@ -15,5 +16,6 @@ import InsectaMundiButtonNew from './InsectaMundiButtonNew.vue';
       <FSCA_OccasionalButton />
       <InsectaMundiButton />
       <InsectaMundiButtonNew />
+      <CSE_PapersButton />
     </div>
   </template>
