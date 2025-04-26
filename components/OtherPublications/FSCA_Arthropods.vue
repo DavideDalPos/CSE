@@ -30,8 +30,8 @@
               </div>
   
               <!-- Title and Year -->
-              <h2 class="text-lg font-medium text-gray-800 break-words">
-                <span v-html="book.title"></span>
+              <h2 class="text font-medium text-gray-800 break-words">
+                <span v-html="book.title" class="font-bold"></span>
                 <span class="block text-sm text-gray-500">({{ book.year }})</span>
               </h2>
   
@@ -59,14 +59,14 @@
                     d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
                   />
                 </svg>
-                <a :href="book.pdf" target="_blank">Dowloand PDF</a>
+                <a :href="book.pdf" target="_blank">Download PDF</a>
               </div>
             </div>
           </div>
         </div>
   
         <!-- Right Column: InsectaMundiRightColumn Component -->
-        <InsectaMundiRightColumn />
+        <FSCA_ArhtropodsRightColumn />
       </div>
   
       <!-- Modal for Enlarged Image -->
@@ -94,8 +94,8 @@
   
   <script setup>
   import { ref } from 'vue';
-import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue';
 import FSCA_ArthropodsData from '~/components/OtherPublications/FSCA_ArthropodsData.js';
+import FSCA_ArhtropodsRightColumn from './FSCA_ArhtropodsRightColumn.vue';
   
   const books = FSCA_ArthropodsData;
   

@@ -14,7 +14,7 @@
                 v-if="book.image"
                 :src="book.image"
                 alt="Cover image"
-                class="max-h-[135px] w-auto object-contain cursor-pointer transition-transform duration-300 group-hover:scale-105"
+                class="max-h-[145px] w-auto object-contain cursor-pointer transition-transform duration-300 group-hover:scale-105"
                 @click="openModal(book.image)"
               />
               <div v-else class="text-gray-400 text-center text-xs">
@@ -30,8 +30,8 @@
               </div>
   
               <!-- Title and Year -->
-              <h2 class="text-lg font-medium text-gray-800 break-words">
-                <span v-html="book.title"></span>
+              <h2 class="text-sm text-gray-800 break-words">
+                <span v-html="book.title" class="font-bold"></span>
                 <span class="block text-sm text-gray-500">({{ book.year }})</span>
               </h2>
   
@@ -59,14 +59,14 @@
                     d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
                   />
                 </svg>
-                <a :href="book.pdf" target="_blank">Dowloand PDF</a>
+                <a :href="book.pdf" target="_blank">Download PDF</a>
               </div>
             </div>
           </div>
         </div>
   
         <!-- Right Column: InsectaMundiRightColumn Component -->
-        <InsectaMundiRightColumn />
+        <FSCA_OccasionalRightColumn />
       </div>
   
       <!-- Modal for Enlarged Image -->
@@ -94,8 +94,8 @@
   
   <script setup>
   import { ref } from 'vue';
-import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue';
 import FSCA_OccasionalData from '~/components/OtherPublications/FSCA_OccasionalData.js';
+import FSCA_OccasionalRightColumn from './FSCA_OccasionalRightColumn.vue';
   
   const books = FSCA_OccasionalData;
   
