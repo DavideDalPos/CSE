@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-6 py-8 bg-background text-foreground font-sans">
+    <section class="container mx-auto px-6 py-1 bg-background text-foreground font-sans">
       <div class="flex flex-col md:flex-row gap-4">
         <!-- Left Column: Book Cards -->
         <div class="flex-1 space-y-4">
@@ -31,7 +31,9 @@
   
               <!-- Title and Year -->
               <h2 class="text font-medium text-gray-800 break-words">
+                <a :href="book.pdf" target="_blank" class="font-bold text-gray-800 hover:text-quinary transition-colors">
                 <span v-html="book.title" class="font-bold"></span>
+                </a>
                 <span class="block text-sm text-gray-500">({{ book.year }})</span>
               </h2>
   
