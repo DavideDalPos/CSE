@@ -93,7 +93,8 @@ const menu = [
       // Submenu items
       { label: 'CSE Memoirs', link: '/memoirs' },
       { label: 'CSE Newsletter', link: '/newsletter' },
-      { label: 'FSCA Publications', link: '/other_publications/FSCAindex' }
+      { label: 'FSCA Arthropods', link: '/other_publications/FSCAArthropods' },
+      { label: 'FSCA Occasional', link: '/other_publications/FSCAOccasional' }
     ]
   },
   {

@@ -60,14 +60,14 @@
       <div
         v-for="(supp, index) in publication.supplementary"
         :key="index"
-        class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-tertiary flex items-center space-x-1 hover:bg-primary transition duration-200 mt-1"
+        class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          class="w-4 h-4 text-white group-hover:text-tertiary transition duration-200"
+          class="w-4 h-4 text-white group-hover:text-primary transition duration-200"
         >
           <path
             stroke-linecap="round"
