@@ -6,6 +6,7 @@ export default [
       year: '1981',
       image: '/images/otherpubs/AFNLA_1965_001.png',
       pdf: '/PDF/2024_DorisLagos.pdf',
+      pdfhigh: '/PDF/2024_DorisLagos.pdf',
     },
     {
         volume: 'Vol. 2',
@@ -14,6 +15,7 @@ export default [
         year: '1965',
         image: '/images/otherpubs/AFNLA_1965_002.png',
         pdf: '/PDF/2024_DorisLagos.pdf',
+        pdfhigh: '/PDF/2024_DorisLagos.pdf',
       },
   ]
     
