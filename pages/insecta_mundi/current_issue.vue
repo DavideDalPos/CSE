@@ -29,7 +29,7 @@
                       <div
                         class="flex justify-between items-center flex-wrap gap-y-1"
                       >
-                        <div class="flex flex-row flex-wrap gap-1">
+                        <div class="flex flex-row flex-wrap gap-1 mt-1">
                           <VTag
                             v-for="category in publication.categories"
                             :key="category"
