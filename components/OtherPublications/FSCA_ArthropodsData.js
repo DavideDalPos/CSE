@@ -41,7 +41,7 @@ export default [
       },
       {
         volume: 'Vol. 6',
-        author: 'M.H. Muma & Denmark H.A.',
+        author: 'Muma, M.H. & Denmark, H.A.',
         title: 'Phytoseiidae of Florida',
         year: '1970',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1970_006.png',
@@ -49,7 +49,7 @@ export default [
       },
       {
         volume: 'Vol. 7',
-        author: 'K.A. Spencer',
+        author: 'Spencer, K.A.',
         title: 'Agromyzidae of Florida',
         year: '1973',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_007.png',
@@ -57,7 +57,7 @@ export default [
       },
       {
         volume: 'Vol. 8',
-        author: 'R.E. Woodruff',
+        author: 'Woodruff, R.E.',
         title: 'Scarab Beetles of Florida, Part. I, The Laparosticti',
         year: '1973',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_008.png',
@@ -65,7 +65,7 @@ export default [
       },
       {
         volume: 'Vol. 9',
-        author: 'G.H. Heinrich',
+        author: 'Heinrich, G.H.',
         title: 'Ichneumoninae of Florida and Neighboring States',
         year: '1977',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1977_009.png',
@@ -73,7 +73,7 @@ export default [
       },
       {
         volume: 'Vol. 10',
-        author: 'F.S. Blanton',
+        author: 'Blanton, F.S.',
         title: 'Sand Flies of Florida',
         year: '1979',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1979_010.png',
@@ -81,7 +81,7 @@ export default [
       },
       {
         volume: 'Vol. 11',
-        author: 'A.B. Hamon & Williams M.L.',
+        author: 'Hamon, A.B. & Williams, M.L.',
         title: 'Soft Scale Insects of Florida',
         year: '1984',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1984_011.png',
@@ -89,7 +89,7 @@ export default [
       },
       {
         volume: 'Vol. 12',
-        author: 'R.M. Baranowski & Slater J.A.',
+        author: 'Baranowski, R.M. & Slater, J.A.',
         title: 'Coreidae of Florida',
         year: '1986',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1986_012.png',
@@ -97,7 +97,7 @@ export default [
       },
       {
         volume: 'Vol. 13',
-        author: 'R.E. Woodruff & Beck B.M.',
+        author: 'Woodruff, R.E. & Beck, B.M.',
         title: 'Scarab Beetles of Florida, Part II, May or June Beetles (Genus Phyllophaga)',
         year: '1989',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1989_013.png',
@@ -105,7 +105,7 @@ export default [
       },
       {
         volume: 'Vol. 14',
-        author: 'J.A. Slater & Baranowski R.M.',
+        author: 'Slater, J.A. & Baranowski, R.M.',
         title: 'Lygaeidae of Florida (Hemiptera: Heteroptera)',
         year: '1990',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1990_014.png',
@@ -113,7 +113,7 @@ export default [
       },
       {
         volume: 'Vol. 15',
-        author: 'M.C. Thomas',
+        author: 'Thomas, M.C.',
         title: 'The Flat Bark Beetles of Florida',
         year: '1993',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1993_015.png',
@@ -121,7 +121,7 @@ export default [
       },
       {
         volume: 'Vol. 16',
-        author: 'S.B. Peck & Thomas M.C.',
+        author: 'Peck, S.B. & Thomas, M.C.',
         title: 'A Distributional Checklist of the Beetles (Coleoptera) of Florida',
         year: '1998',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1998_016.png',
@@ -129,7 +129,7 @@ export default [
       },
       {
         volume: 'Vol. 17',
-        author: 'SJ.B. Heppner',
+        author: 'Heppner, J.B.',
         title: 'Lepidoptera of Florida. Part 1. Introduction and Catalog',
         year: 'released 2003, printed 2007',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_2003_017.png',
@@ -137,7 +137,7 @@ export default [
       },
       {
         volume: 'Vol. 18',
-        author: 'S.B. Peck',
+        author: 'Peck, S.B.',
         title: 'A Checklist of the Beetles of Cuba with Data on Distributions and Bionomics (Insecta Coleoptera)',
         year: '2005',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_2005_018.jpg',
