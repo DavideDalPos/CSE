@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-6 py-1 bg-background text-foreground font-sans mb-10">
+    <section class="container mx-auto px-6 py-1 bg-background text-foreground font-sans">
       <div class="flex flex-col md:flex-row gap-4">
         <!-- Left Column: Book Cards -->
         <div class="flex-1 space-y-4">
@@ -68,7 +68,7 @@
         </div>
   
         <!-- Right Column: InsectaMundiRightColumn Component -->
-        <FSCA_ArhtropodsRightColumn />
+        <CSE_MemoirsRightColumn />
       </div>
   
       <!-- Modal for Enlarged Image -->
@@ -96,10 +96,10 @@
   
   <script setup>
   import { ref } from 'vue';
-import FSCA_ArthropodsData from '~/components/OtherPublications/FSCA_ArthropodsData.js';
-import FSCA_ArhtropodsRightColumn from './FSCA_ArhtropodsRightColumn.vue';
+import CSE_MemoirsData from '~/components/OtherPublications/CSE_MemoirsData.js';
+import CSE_MemoirsRightColumn from './CSE_MemoirsRightColumn.vue';
   
-  const books = FSCA_ArthropodsData;
+  const books = CSE_MemoirsData;
   
   // Modal state
   const isModalOpen = ref(false);
