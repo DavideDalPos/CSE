@@ -4,7 +4,7 @@ export default [
       author: 'Kuznetsov, V. N.',
       title: 'Lady beetles of the Russian Far East',
       year: '1997',
-      image: '/images/otherpubs/CSE_Memoirs/Memoirs_1.png',
+      image: '/images/otherpubs/AFNLA_1965_001.png',
       pdf: '/PDF/2024_DorisLagos.pdf',
     },
     {
@@ -12,7 +12,7 @@ export default [
         author: 'Kuznetsov, V. N.',
         title: 'Lady beetles of the Russian Far East',
         year: '1997',
-        image: '/images/otherpubs/CSE_Memoirs/Memoirs_2.png',
+        image: '/images/otherpubs/AFNLA_1965_001.png',
         pdf: '/PDF/2024_DorisLagos.pdf',
       },
   ]
