@@ -1,19 +1,17 @@
 export default [
     {
-      volume: 'Memoirs 1',
-      author: 'Kuznetsov, V. N.',
-      title: 'Lady beetles of the Russian Far East',
-      year: '1997',
-      image: '/images/otherpubs/AFNLA_1965_001.png',
-      pdf: '/PDF/2024_DorisLagos.pdf',
-    },
-    {
-        volume: 'Memoirs 2',
-        author: 'Kuznetsov, V. N.',
-        title: 'Lady beetles of the Russian Far East',
-        year: '1997',
-        image: '/images/otherpubs/AFNLA_1965_001.png',
+        title: 'R.E. Woodruff Festschrift',
+        year: 'February 24, 2022',
+        image: '/images/otherpubs/FestSchrift/Woodruff.jpg',
         pdf: '/PDF/2024_DorisLagos.pdf',
+        link: '/home'
       },
+    {
+      title: 'M.C. Thomas Festschrift',
+      year: 'December 25, 2020',
+      image: '/images/otherpubs/FestSchrift/ThomasMC.jpg',
+      pdf: '/PDF/2024_DorisLagos.pdf',
+      link: '/home'
+    },
   ]
     
