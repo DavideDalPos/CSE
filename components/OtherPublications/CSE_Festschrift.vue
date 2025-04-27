@@ -20,14 +20,13 @@
   
           <div class="mt-6 space-y-2">
                 <h2 class="text-lg font-semibold text-gray-800 leading-tight">
-                    <a
-                        v-if="book.link"
-                        :href="book.link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="hover:underline hover:text-senary transition-colors"
-                        v-html="book.title"
-                    ></a>
+                  <RouterLink
+  v-if="book.link"
+  :to="book.link"
+  class="hover:underline hover:text-senary transition-colors"
+  v-html="book.title"
+  target="_blank"
+></RouterLink>
                     <span v-else v-html="book.title"></span>
                 </h2>
                 <p class="text-sm text-gray-500">{{ book.year }}</p>
@@ -43,13 +42,14 @@
             </a>
           </div>
           <div v-if="book.link" class="mt-1">
-            <a
-              :href="book.linf"
+            <RouterLink
+              v-if="book.link"
+              :to="book.link"
               target="_blank"
               class="inline-block text-[12px] bg-quinary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
             >
               See Full Festschrift
-            </a>
+           </RouterLink>
           </div>
         </div>
       </div>
@@ -94,5 +94,6 @@ import CSE_Festchrift from './CSE_Festchrift';
     isModalOpen.value = false;
     modalImage.value = '';
   }
+  
   </script>
   
