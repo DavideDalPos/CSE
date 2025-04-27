@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-6 py-1 bg-background text-foreground font-sans">
+           <h2 class= "text-3xl font-semibold text-senary leading-relaxed max-w-3xl mb-7">CSE Memoirs</h2>
       <div class="flex flex-col md:flex-row gap-4">
         <!-- Left Column: Book Cards -->
         <div class="flex-1 space-y-4">
@@ -68,7 +68,6 @@
         </div>
   
         <!-- Right Column: InsectaMundiRightColumn Component -->
-        <CSE_MemoirsRightColumn />
       </div>
   
       <!-- Modal for Enlarged Image -->
@@ -91,13 +90,11 @@
           />
         </div>
       </div>
-    </section>
   </template>
   
   <script setup>
   import { ref } from 'vue';
 import CSE_MemoirsData from '~/components/OtherPublications/CSE_MemoirsData.js';
-import CSE_MemoirsRightColumn from './CSE_MemoirsRightColumn.vue';
   
   const books = CSE_MemoirsData;
   

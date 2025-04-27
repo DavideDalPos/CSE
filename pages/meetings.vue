@@ -8,13 +8,13 @@
       <CounterMeeting />
     </section>  
     
-    <section class="bg-tertiary border-t border-b border-yellow-600">
+    <section class="bg-tertiary/30 border-t border-b border-yellow-600">
     <Archive />
   </section>  
   <section class="bg-foreground">
     <ArchivePoster />
   </section>
-  <section class="bg-gray-100 border-t border-gray-300">
+  <section class="bg-senary/20 border-t border-gray-300">
   <MeetingSlider />
   </section>
   </div>
