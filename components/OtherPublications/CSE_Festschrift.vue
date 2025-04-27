@@ -1,5 +1,6 @@
 <template>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+         <h2 class= "text-3xl font-semibold text-senary leading-relaxed max-w-3xl mb-2 mt-10">Festschrift - Insecta Mundi Special</h2>
+        <div class=" mt-4 grid grid-cols-2 md:grid-cols-3 gap-10">
         <div
           v-for="(book, index) in books"
           :key="index"
@@ -36,7 +37,7 @@
             <a
               :href="book.pdf"
               target="_blank"
-              class="inline-block text-[12px] bg-primary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition"
+              class="inline-block text-[12px] bg-primary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
             >
               Cover & Table of Contents
             </a>
@@ -45,7 +46,7 @@
             <a
               :href="book.linf"
               target="_blank"
-              class="inline-block text-[12px] bg-quinary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition"
+              class="inline-block text-[12px] bg-quinary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
             >
               See Full Festschrift
             </a>
