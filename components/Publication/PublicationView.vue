@@ -10,13 +10,13 @@
           <span> – </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-setenary/90 text-white inline-block text-[11px] py-1 inline-block mr-1"
+            class="bg-setenary/90 text-white inline-block text-[11px] py-1 mr-1"
           >
             {{ category }}
           </VTag>
         </template>
       </div>
-      <div class="flex flex-row justify-between">
+      <div class="flex flex-row justify-between gap-4">
         <div>
           <div class="flex flex-row justify-between my-4 gap-4 text-gray-800">
             <div>
@@ -26,7 +26,7 @@
                   class="py-2"
                 >
                   <p class="font-bold text-[20px]">{{ first_name }} {{ last_name }}</p>
-                  <p class="text-[15px] text-gray-500 prose max-w- max-w-3xl leading-tight">{{ affiliation }}</p>
+                  <p class="text-[15px] text-gray-500 prose leading-tight">{{ affiliation }}</p>
                   <a
                     v-if="orcid"
                     :href="orcid"

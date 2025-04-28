@@ -13,7 +13,7 @@
             and in the 
             <a href="/PDF/insectamundi/InsectaMundi_ReorganizationDetails_2014.pdf" target="_blank" class="internal-link">2014 Reorganization proposal</a>.
           </p>
-          <p class="mt-4">
+          <div class="mt-4">
             The two biggest changes are:
             <ul class="list-decimal pl-10">
               <li> 
@@ -25,7 +25,7 @@
                 of the <i>Review Editors</i> (previously called Subject Editors)
               </li>
             </ul>
-          </p>
+          </div>
           <p class="mt-4">
             Our Review Editors work with authors to confirm the quality of the work as do other 
             journal's Subject Editors, but they also work to make sure the document is clean both in presentation and 
