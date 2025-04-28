@@ -6,7 +6,7 @@
       <!-- LEFT COLUMN: Publications -->
       <div>
         <div
-          class="flex items-center justify-between min-w-[1140px] px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
+          class="flex items-center justify-between px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
         >
           <h2 class="text-lg text-gray-800 font-medium">
             {{ formattedDate }}
