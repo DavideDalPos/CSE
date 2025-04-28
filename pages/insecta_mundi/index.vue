@@ -123,12 +123,23 @@ function groupByDate(list, sliceEnd) {
 
 // Get list of month-year options available in the data
 const monthYearOptions = computed(() => {
+  // Extract 'YYYY-MM' from 'YYYY-MM-DD'
   const months = publications.map(
-    (item) => item.date?.slice(0, 7) // Extract 'YYYY-MM' from 'YYYY-MM-DD'
-  )
+    (item) => item.date?.slice(0, 7)
+  );
 
-  return [...new Set(months)].sort() // Sort in ascending order (default sort)
-})
+  // Get unique months and sort by the full 'YYYY-MM' format
+  const sortedMonths = [...new Set(months)].sort((a, b) => b.localeCompare(a));
+
+  // Now, format them as "Month YYYY"
+  const formattedMonths = sortedMonths.map(month => {
+    const date = new Date(`${month}-01`); // Append "01" to make it a valid date
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+  });
+
+  return formattedMonths;
+});
+
 
 // Placeholder to hold the full list (used in monthYearOptions)
 const allItems = ref([])

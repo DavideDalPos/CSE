@@ -79,12 +79,12 @@ const menu = [
     submenu: [
       // Submenu items
       { label: 'Our Journal', link: '/insecta_mundi/journal' },
+      { label: 'New Publications', link: '/insecta_mundi/current_issue' },
+      { label: 'Archive', link: '/insecta_mundi' },
       { label: 'Editorial Staff', link: '/insecta_mundi/editorialstaff' },
       { label: 'Author Instructions', link: '/insecta_mundi/authorguidelines' },
       { label: 'Editor Information', link: '/insecta_mundi/editorinfo' },
-      { label: 'Ethic Statements', link: '/insecta_mundi/ethic' },
-      { label: 'Archive', link: '/insecta_mundi' },
-      { label: 'Current Volume', link: '/insecta_mundi/curren_issue_trial' }
+      { label: 'Ethic Statements', link: '/insecta_mundi/ethic' }
     ]
   },
   {

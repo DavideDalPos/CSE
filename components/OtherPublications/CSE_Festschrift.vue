@@ -35,21 +35,19 @@
           <div v-if="book.pdf" class="mt-3">
             <a
               :href="book.pdf"
-              target="_blank"
               class="inline-block text-[12px] bg-primary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
             >
               Cover & Table of Contents
             </a>
           </div>
           <div v-if="book.link" class="mt-1">
-            <RouterLink
+            <NuxtLink
               v-if="book.link"
               :to="book.link"
-              target="_blank"
               class="inline-block text-[12px] bg-quinary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
             >
               See Full Festschrift
-           </RouterLink>
+           </NuxtLink>
           </div>
         </div>
       </div>

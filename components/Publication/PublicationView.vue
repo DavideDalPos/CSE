@@ -123,7 +123,7 @@
         <div class="flex flex-col gap-3 max-w-96 mt-6 bg-setenary/10 p-4">
           <div v-if="publication.date"
               class="border border-senary bg-senary/10 px-4 rounded shadow max-w-[300px]">
-              <p class="text-white bg-senary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1">Issue</p> 
+              <p class="text-white bg-senary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1">Publication</p> 
               <div class="mb-1">
                 <span class="text-[15px] text-black/80">{{ publication.issue }}</span>
               </div>

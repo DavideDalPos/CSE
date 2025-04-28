@@ -2,7 +2,7 @@
   <div>
     <HomeSlider />
     <HomeWelcome />
-    <section class="bg-secondary">
+    <section class="bg-quinary/20">
     <HomeAnnouncement />
     </section>
     <HomeClosing />
