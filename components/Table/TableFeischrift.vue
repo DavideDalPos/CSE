@@ -2,9 +2,9 @@
     <table>
       <thead class="text-left">
         <tr class="px-4 text-gray-800 mt-4 bg-gray-100 border-l-4 border-primary/80 text-sm">
-          <th class="px-4 py-2 font-normal w-full">Published: Date</th>
+          <th class="px-4 py-2 font-normal w-full">Published: {{ list[0]?.date }}</th>
           <th class="px-2 py-2 font-normal">Pages</th>
-          <th class="px-2 py-2 font-normal">Date</th>
+          <th class="px-2 py-2 font-normal">Issue</th>
         </tr>
       </thead>
       <tbody>
@@ -16,7 +16,7 @@
             <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.pagination" />
           </td>
           <td class="px-2">
-            <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.date" />
+            <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.issue" />
           </td>
         </tr>
       </tbody>

@@ -1,20 +1,17 @@
 <template>
-  <section>
-    <div class="container mx-auto px-8 my-10">
-      <h1 class="text-4xl text-gray-700 font-bold mb-10">Michael C. Thomas Festschrift: 0829–0843</h1>
+  <section class="container mx-auto px-8 my-10">
+      <h1 class="text-4xl text-gray-700 font-bold mb-10">Michael C. Thomas Festschrift</h1>
       <div class="flex flex-col lg:flex-row gap-8">
         
         <!-- LEFT COLUMN: Publications -->
         <div>
+          <div
+            class="flex items-center justify-between min-w-[1140px] px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
+          >
+            <h2 class="text-lg text-gray-800 font-medium"> Insecta Mundi Issues: 0829–0843 </h2>
+           </div> 
           <!-- Table Component that accepts list data -->
           <TableFeischrift :list="list" class="my-2" />
-
-          <!-- Section for Insecta Mundi Issues -->
-          <h2
-            class="px-4 py-2 text-lg text-gray-800 font-medium bg-gray-100 border-l-4 border-primary/80"
-          >
-            <span class="text-sm text-gray-600">Insecta Mundi Issues: 0829–0843</span>
-          </h2>
 
           <!-- Fallback message when no articles are found -->
           <div class="px-4">
@@ -25,7 +22,6 @@
         <!-- RIGHT COLUMN: Contact box or other sidebar -->
         <InsectaMundiRightColumn />
       </div>
-    </div>
   </section>
 </template>
 
@@ -38,14 +34,30 @@ const list = ref([]);
 
 // Fetch data for publications when the component is mounted
 onMounted(async () => {
-  const response = await fetch('your_api_endpoint'); // Replace with actual API
-  const data = await response.json();
+  const query = {
+    path: '/insecta_mundi',  // Path of the content you want to query (update based on your content structure)
+    where: [
+      {
+        issue: {  // Assuming 'issue' is a field in your content files
+          $in: [
+            '0829', '0830', '0831', '0832', '0833', '0834', '0835',
+            '0836', '0837', '0838', '0839', '0840', '0841', '0842', '0843'
+          ]
+        }
+      }
+    ]
+  };
 
-  const allowedIssues = [
-    '0829', '0830', '0831', '0832', '0833', '0834', '0835',
-    '0836', '0837', '0838', '0839', '0840', '0841', '0842', '0843'
-  ];
+  try {
+    // Query the content directly without needing an API
+    const response = await queryContent('insecta_mundi')  // Replace with your actual collection name
+      .where(query.where)  // Apply the filtering criteria
+      .find();
 
-  list.value = data.filter(pub => allowedIssues.includes(pub.issue));
+    list.value = response;  // Assign the response to the list
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
 });
+
 </script>

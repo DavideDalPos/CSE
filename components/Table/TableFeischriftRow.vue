@@ -1,13 +1,15 @@
 <template>
   <div class="py-1">
-    <NuxtLink :to="publication._path">
-      <h2
-        class="text-senary text-justify font-bold text-[17px] hover:text-quaternary/80 pr-20"
+    <NuxtLink
+      :to="publication._path"
+      class="flex justify-between items-center"
+    >
+      <div class="flex-1">
+        <h2
+        class="text-senary text-justify font-bold text-[17px] hover:text-quaternary/80 pr-10"
         v-html="publication.title"
       ></h2>
-
-      <div class="flex justify-between items-center flex-wrap gap-y-1">
-        <div class="flex flex-row flex-wrap gap-1 mt-1">
+      <div class="flex flex-row flex-wrap gap-1">
           <VTag
             v-for="category in publication.categories"
             :key="category"
@@ -16,16 +18,10 @@
             {{ category }}
           </VTag>
         </div>
-        <span
-          v-if="publication.issue"
-          class="text-xs text-gray-500 whitespace-nowrap ml-2"
-        >
-          Issue: {{ publication.issue }}
-        </span>
       </div>
     </NuxtLink>
 
-    <p class="text-sm text-gray-700 mt-1 flex items-center flex-wrap gap-2">
+    <p class="text-gray-600 text-sm mt-1">
       {{
         publication.authors
           ?.map(({ first_name, last_name }) => `${first_name} ${last_name}`)
