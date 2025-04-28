@@ -19,11 +19,11 @@
           >
             <option value="">All Dates</option>
             <option
-              v-for="month in monthYearOptions"
+              v-for="({ date, label }) in monthYearOptions"
               :key="month"
-              :value="month"
+              :value="date"
             >
-              {{ month }}
+              {{ label }}
             </option>
           </select>
         </div>
@@ -75,7 +75,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 
 const publications = await queryContent('insecta_mundi')
   .where({ date: { $ne: null } })
@@ -94,7 +94,6 @@ function toggleYear(year) {
     openYears.value.add(year)
   }
 }
-
 
 const groupByYearAndMonth = computed(() => {
   const sortedGrouped = groupByDate(filteredList.value, 4)
@@ -134,7 +133,10 @@ const monthYearOptions = computed(() => {
   // Now, format them as "Month YYYY"
   const formattedMonths = sortedMonths.map(month => {
     const date = new Date(`${month}-01`); // Append "01" to make it a valid date
-    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+    return {
+      label: date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' }),
+      date: month
+    }
   });
 
   return formattedMonths;
@@ -142,7 +144,7 @@ const monthYearOptions = computed(() => {
 
 
 // Placeholder to hold the full list (used in monthYearOptions)
-const allItems = ref([])
+
 const filteredList = computed(() => {
   // Keep track of full list for filtering month-year dropdown
   const inputValue = searchQuery.value.toLowerCase()
@@ -161,5 +163,17 @@ const filteredList = computed(() => {
 
     return matchesQuery && matchesMonth
   })
+})
+
+
+watch(groupByYearAndMonth, newVal => {
+  openYears.value = new Set()
+  newVal.forEach(([year]) => {
+    if (!openYears.value.has(year)) {
+    openYears.value.add(year)
+    }
+  })
+}, {
+  deep: true
 })
 </script>
