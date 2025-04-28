@@ -3,8 +3,8 @@
     to="/insecta_mundi/authorguidelines"
     class="block w-full"
   >
-  <div class="group bg-tertiary/50 p-2 border border-quaternary rounded shadow-md mt-3 h-max hover:bg-primary hover:border-secondary transition">
-  <h2 class="text-base text-gray-700 group-hover:text-yellow-500">
+  <div class="group bg-primary p-2  rounded shadow-md mt-3 h-max hover:bg-primary/60 border border-primary transition">
+  <h2 class="text-base text-center text-white">
     Author Guidelines
   </h2>
 </div>
