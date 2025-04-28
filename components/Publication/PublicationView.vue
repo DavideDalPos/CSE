@@ -7,10 +7,10 @@
           v-html="publication.title"
         />
         <template v-if="publication?.categories?.length">
-          <span class="mr-4"> </span>
+          <span> – </span>
           <VTag
             v-for="category in publication?.categories"
-            class="bg-quinary/60 text-gray-700 inline-block text-[12px] border border-quinary py-1 inline-block mr-1"
+            class="bg-setenary/90 text-white inline-block text-[11px] py-1 inline-block mr-1"
           >
             {{ category }}
           </VTag>
@@ -120,20 +120,27 @@
         </div>
 
         <!-- RIGHT COLUMN with gray background -->
-        <div class="flex flex-col gap-3 max-w-96 mt-6 bg-gray-200 p-4">
+        <div class="flex flex-col gap-3 max-w-96 mt-6 bg-setenary/10 p-4">
           <div v-if="publication.date"
-              class="border border-quaternary bg-tertiary/50 px-4 rounded shadow max-w-[300px]">
-              <p class="text-black bg-quaternary/90 px-4 w-[calc(100%+2rem)] border-b -mx-4 border-quaternary py-1 mb-1">Published</p> 
+              class="border border-senary bg-senary/10 px-4 rounded shadow max-w-[300px]">
+              <p class="text-white bg-senary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1">Issue</p> 
               <div class="mb-1">
-                <span class="text-[15px] text-gray-700">{{ publication.date }}</span>
+                <span class="text-[15px] text-black/80">{{ publication.issue }}</span>
+              </div>
+          </div>
+          <div v-if="publication.date"
+              class="border border-quaternary bg-tertiary/40 px-4 rounded shadow max-w-[300px]">
+              <p class="text-white bg-quaternary/90 px-4 w-[calc(100%+2rem)]  -mx-4 border-quaternary py-1 mb-1">Published</p> 
+              <div class="mb-1">
+                <span class="text-[15px] text-black/80">{{ publication.date }}</span>
               </div>
           </div>
           <div class="border border-primary px-4 rounded bg-secondary/70 shadow max-w-[300px] ">
-            <h3 class="text-lg text-black bg-primary/90 px-4 w-[calc(100%+2rem)] border-b -mx-4 border-primary py-1 mb-2">
+            <h3 class="text-lg text-white bg-primary/70 px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2">
               How to cite
             </h3>
             <div class="mb-2">
-              <PublicationCite class="text-sm text-gray-700 mt-2" :publication="publication" />
+              <PublicationCite class="text-sm text-black/80 mt-2" :publication="publication" />
             </div>
           </div>
           <div
