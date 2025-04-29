@@ -8,7 +8,7 @@
           href="#"
           class="flex flex-row items-center gap-2 text-white"
         >
-          Center for Systematic Entomology
+          Center for Systematic Entomology (CSE)
         </a>
 
         <div class="lg:flex flex-row gap-6 text-sm hidden text-white">
@@ -34,7 +34,7 @@
                   </svg>
                 </button>
                 <div class="pt-2 absolute hidden group-hover:block">
-                  <ul class="w-40 py-0 left-0 top-full shadow-md bg-secondary text-black">
+                  <ul class="w-40 py-0 left-0 top-full shadow-md bg-secondary text-gray-800">
                     <li
                       v-for="{ label, link } in submenu"
                       :key="link"

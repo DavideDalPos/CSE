@@ -8,28 +8,28 @@
 
       <div class="flex justify-center gap-6 flex-wrap">
         <!-- Contact Us -->
-        <a
+        <NuxtLink
           href="/about"
           class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/70 transition duration-200 shadow"
         >
           📬 Contact Us
-        </a>
+      </NuxtLink>
 
         <!-- Join Us -->
-        <a
+        <NuxtLink
           href="/membership"
           class="inline-block px-6 py-3 bg-quinary text-white rounded-lg hover:bg-quinary/60 transition duration-200 shadow"
         >
           🤝 Become a Member
-        </a>
+      </NuxtLink>
 
         <!-- Newsletter or Follow Us (optional) -->
-        <a
+        <NuxtLink
           href="/insecta_mundi/journal"
           class="inline-block px-6 py-3 bg-quaternary text-white rounded-lg hover:bg-tertiary transition duration-200 shadow"
         >
           📰 Publish with Us
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>

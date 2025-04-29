@@ -5,7 +5,7 @@
       Each submitted manuscript must include the following documents
     </p>
 
-    <div class="relative border-l-4 border-slate-300 pl-6 space-y-8">
+    <div class="relative border-l-4 border-quaternary/60 pl-6 space-y-8">
       <div
         v-for="(item, index) in checklistItems"
         :key="item.id"
@@ -13,11 +13,11 @@
         :style="{ animationDelay: `${index * 120}ms` }"
       >
         <!-- Dot -->
-        <span class="absolute -left-2 top-2 w-3 h-3 rounded-full bg-slate-500"></span>
+        <span class="absolute -left-2 top-2 w-3 h-3 rounded-full bg-quaternary/80"></span>
 
         <!-- Content -->
         <div class="bg-slate-50 p-4 rounded-lg shadow-sm border border-slate-200 transition group-hover:shadow-md">
-          <h3 class="font-semibold text-base text-slate-900 mb-1"> {{ item.id }}</h3>
+          <h3 class="font-semibold text-base text-senary/90 mb-1"> {{ item.id }}</h3>
           <p class="text-slate-700 text-sm leading-snug">{{ item.text }}</p>
         </div>
       </div>
