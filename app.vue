@@ -64,32 +64,26 @@ async function onAfterEnter() {
 }
 
 .external-link {
-  font-weight: normal;
-  color: #7ca2a1;
-  text-decoration: none; /* Remove default underline */
-  transition: text-decoration 0.2s ease-in-out;
-  display: inline-block;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  font-weight: 500;
+  color: #b45309; /* Tailwind amber-700 */
 }
 
 .external-link:hover {
-  color: #c68f4d; /* Slightly darker version of #dfa75a */
-  text-decoration: underline; /* Underline on hover */
+  color: #fbbf24; /* Tailwind amber-400 */
+  text-decoration: underline;
 }
+
 
 
 .internal-link {
-  font-weight: normal;
-  color: #dfa75a; /* Pastel blue */
-  text-decoration: none; /* Remove default underline */
-  transition: text-decoration 0.2s ease-in-out;
-  display: inline-block;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  color: #c2410c; /* Tailwind's orange-700 */
+  font-weight: 600;
 }
 
 .internal-link:hover {
-  color: #6b8f8e; /* Slightly darker version of #dfa75a */
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
+  color: #dfa75a; /* brighter orange for hover */
 }
+
 
 </style>

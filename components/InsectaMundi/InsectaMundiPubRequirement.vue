@@ -1,6 +1,6 @@
 <template>
 <section class="container mx-auto px-8 my-10">
-    <h1 class="text-4xl mb-6">Publication Requirements</h1>
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Publication Requirements</h1>
   
     <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 space-y-6">
   
@@ -21,7 +21,7 @@
         <p class="text-[15px] text-gray-800 mt-2">
           To assist with this, please refer to:
         </p>
-        <ul class="list-disc list-inside text-[15px] text-blue-700">
+        <ul class="list-disc list-inside text-[15px] text-senary">
           <li><a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="hover:underline">Manuscript Preparation Rules & Guidelines</a></li>
           <li><a href="/PDF/insectamundi/InsectaMundi_CommonProblemsChecklist_2014.pdf" target="_blank" class="hover:underline">Common Problems Checklist</a></li>
         </ul>

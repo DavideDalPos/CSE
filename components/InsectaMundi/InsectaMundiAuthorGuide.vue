@@ -1,16 +1,43 @@
 <template>
-  <section class="container mx-auto px-8 my-16">
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-8 ">Author Instructions</h1>
+  <section class="container mx-auto px-8 my-15">
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Author Instructions</h1>
 
     <!-- Resources and Contacts boxes placed here between the title and text -->
-    <div class="flex flex-col lg:flex-row items-start gap-12 mt-8">
+    <div class="flex flex-col lg:flex-row items-start gap-12 mt-5">
       <!-- Left-side content for the text -->
-      <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify mt-8">
+      <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
         <p class="leading-relaxed text-lg">
-          <b>Insecta Mundi</b> is a continuing experiment in publication. Our goal is to publish taxonomic works not only free to the author but also openly accessible. This can only be done with authors submitting manuscripts publishable by journal standards, not just in quality, but also in technical details. The length of time needed to publish any manuscript is inversely proportional to the amount of time, effort, and attention to details the author and reviewers spend prior to submission. Authors who understand how to build and clean manuscripts with word processing and photo editing programs will have no difficulty following our requirements and publishing in Insecta Mundi.
+          <b>Insecta Mundi</b> is more than a journal — it is a collaborative, open-access platform built for taxonomists, by taxonomists. 
+          Our mission is to make scientific knowledge accessible to everyone, without charging publication fees to authors. 
+          This vision can only succeed with the help of contributors who are just as dedicated to excellence as we are.
         </p>
-        <p class="mt-6 leading-relaxed text-lg">
-          If you wish to publish in <b>Insecta Mundi</b>, we have various guides available to help you through manuscript preparation processes. Papers not adequately reviewed, or which have not been subjected to the presubmission processes, will be returned or rejected.
+
+        <p class="leading-relaxed text-lg">
+          To ensure smooth and timely publication, authors are expected to prepare their manuscripts with care and attention to detail. 
+          High-quality submissions — both scientifically and technically — move through the review and editing process much faster. 
+          On the other hand, incomplete or poorly formatted submissions may face significant delays or rejection.
+        </p>
+
+        <p class="leading-relaxed text-lg">
+          We strongly encourage authors to familiarize themselves with our formatting standards, especially those involving 
+          <span class="font-semibold">word processing, figures, citations, and layout requirements</span>. 
+          The better your manuscript adheres to our guidelines, the more efficient the publication process will be.
+        </p>
+
+        <p class="leading-relaxed text-lg">
+          If you're new to publishing with us, don't worry — we’ve created a set of easy-to-follow resources that walk you through 
+          each step of manuscript preparation. From document formatting to high-resolution image guidelines, our tools are designed 
+          to help you succeed.
+        </p>
+
+        <p class="leading-relaxed text-lg">
+          Before submission, all manuscripts should be carefully reviewed — ideally by colleagues or mentors — and should comply with 
+          our presubmission checklist. Submissions that do not meet these basic requirements will be returned without review.
+        </p>
+
+        <p class="leading-relaxed text-lg">
+          Publishing with <b>Insecta Mundi</b> means joining a global community of entomologists committed to rigorous, open, and equitable science. 
+          We look forward to working with you and helping bring your research to the world.
         </p>
       </div>
 
@@ -19,6 +46,7 @@
     </div>
   </section>
 </template>
+
 
 <script>
 // Import the ResourcesBox component
