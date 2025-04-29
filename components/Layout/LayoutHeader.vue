@@ -6,12 +6,12 @@
       >
         <a
           href="#"
-          class="flex flex-row items-center gap-2"
+          class="flex flex-row items-center gap-2 text-white"
         >
           Center for Systematic Entomology
         </a>
 
-        <div class="lg:flex flex-row gap-6 text-sm hidden">
+        <div class="lg:flex flex-row gap-6 text-sm hidden text-white">
           <nav class="flex flex-row gap-8 items-center">
             <template v-for="{ label, link, submenu } in menu">
               <div
@@ -34,7 +34,7 @@
                   </svg>
                 </button>
                 <div class="pt-2 absolute hidden group-hover:block">
-                  <ul class="w-40 py-0 left-0 top-full shadow-md bg-secondary">
+                  <ul class="w-40 py-0 left-0 top-full shadow-md bg-secondary text-black">
                     <li
                       v-for="{ label, link } in submenu"
                       :key="link"

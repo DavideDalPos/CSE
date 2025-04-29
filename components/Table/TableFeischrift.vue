@@ -12,10 +12,10 @@
           <td class="py-2 px-4">
             <TableFeischriftRow :publication="item" />
           </td>
-          <td class="px-2">
+          <td class="px-2 text-center">
             <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.pagination" />
           </td>
-          <td class="px-2">
+          <td class="px-2 text-center">
             <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.issue" />
           </td>
         </tr>
