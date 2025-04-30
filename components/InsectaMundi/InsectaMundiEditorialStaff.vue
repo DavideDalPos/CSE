@@ -56,7 +56,7 @@ const executiveMembers = [
           
           <!-- Board Members Section -->
           <div>
-            <h2 class="text-2xl font-bold mb-4">Board Members</h2>
+            <h2 class="text-2xl font-bold mb-4">Editors</h2>
             <div v-for="(member, index) in boardMembers" :key="member.name" class="flex items-center gap-6 mb-6">
               <img :src="member.imageUrl" alt="Image of {{ member.name }}" class="w-24 h-24 object-cover" />
               <div>

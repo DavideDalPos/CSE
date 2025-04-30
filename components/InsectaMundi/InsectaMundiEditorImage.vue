@@ -7,7 +7,7 @@
       </h2>
       <!-- Brief Description with Styling -->
       <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
-        This workflow provides a structured approach to the manuscript submission and review process, ensuring high standards and scientific integrity. Follow the steps outlined to understand how your contributions will shape the publication process.
+        This workflow provides a structured approach to the manuscript submission and review process 
       </p>
 
       <!-- Image Section with Subtle Animation on Hover -->
@@ -17,13 +17,6 @@
           alt="Insecta Mundi Workflow" 
           class="w-full max-w-3xl mx-auto rounded-xl shadow-md border border-gray-200"
         />
-      </div>
-
-      <!-- Additional Context Below the Image -->
-      <div class="mt-6 text-center">
-        <p class="text-md text-gray-700">
-          Explore each step of our editorial process, designed to maintain the highest standards in entomological research publishing. Our dedicated team of editors ensures clarity, precision, and consistency in every article.
-        </p>
       </div>
     </div>
   </section>

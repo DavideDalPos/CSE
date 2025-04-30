@@ -2,7 +2,7 @@
   <!-- Sidebar Wrapper with Decorative Left Border -->
   <div class="flex w-full sm:max-w-[30%] lg:max-w-[25%] mt-3">
     <!-- Left Border Accent -->
-    <div class="border-l-2 border-gray-300 mr-5"></div>
+    <div class="mr-5"></div>
 
     <!-- Content Boxes -->
     <div class="flex flex-col gap-6 w-full">

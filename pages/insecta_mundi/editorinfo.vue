@@ -7,7 +7,7 @@ import InsectaMundiEditorInfo from '~/components/InsectaMundi/InsectaMundiEditor
 
 <template>
   <InsectaMundiEditorInfo />
-  <section class="bg-quaternary/30 border-b border-t border-quaternary">
+  <section class="bg-secondary/50 border-b border-t border-primary">
   <InsectaMundiEditorImage />
 </section>
   <InsectaMundiBottomButtons />
