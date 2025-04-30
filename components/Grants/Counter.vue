@@ -1,12 +1,6 @@
 <template>
   <section class="pt-10 pb-3 mb-6">
-    <div id="counter" class="text-center">
-      <button @click="showCountdown = !showCountdown" class="toggle-btn">
-        {{ showCountdown ? "Hide Countdown" : "See Next Deadline" }}
-      </button>
-    </div>
-
-    <div v-if="showCountdown" class="fade-in">
+    <div class="fade-in">
       <div class="text-center pt-3 pb-4 deadline-text">Next Deadline:</div>
       <div class="text-center">
         <div class="date-box">
@@ -33,7 +27,6 @@
 export default {
   data() {
     return {
-      showCountdown: false,
       deadline: new Date('2025-07-15T00:00:00Z'),
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
@@ -60,22 +53,13 @@ export default {
     getDigits(value) {
       return String(value).padStart(2, '0').split('');
     },
-
-    checkHash() {
-      if (window.location.hash === '#counter') {
-        this.showCountdown = true;
-      }
-    }
   },
   mounted() {
     this.calculateTimeRemaining();
     this.timer = setInterval(this.calculateTimeRemaining, 1000);
-    this.checkHash();
-    window.addEventListener('hashchange', this.checkHash);
   },
   beforeDestroy() {
     clearInterval(this.timer);
-    window.removeEventListener('hashchange', this.checkHash);
   },
 };
 </script>
@@ -85,23 +69,6 @@ export default {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--color-background);
-}
-
-/* Button Styling */
-.toggle-btn {
-  color: var(--color-primary-content);
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 12px 24px;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: var(--color-quaternary);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.toggle-btn:hover {
-  background-color: var(--color-senary);
 }
 
 /* Countdown Container */
