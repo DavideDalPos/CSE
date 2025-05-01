@@ -13,7 +13,7 @@ authors:
     email: 'titanusgiganteus@hotmail.com'
     orcid: 'https://orcid.org/0000-0003-2263-6643'
 
-  - first_name: 'tatsuya'
+  - first_name: 'Tatsuya'
     last_name: 'Niisato'
     affiliation: 'Nukuiminamichô 4–26–11, Koganei City, Tokyo, 184–0014 Japan'
     email: 'xinlidaye@gmail.com'
