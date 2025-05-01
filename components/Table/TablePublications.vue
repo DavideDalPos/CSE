@@ -37,9 +37,10 @@
 <script setup>
 function formatMonthYear(dateStr) {
   if (!dateStr) return ''
-  const date = new Date(dateStr)
+  const date = new Date(dateStr + 'T00:00:00') // Forces local timezone
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
 }
+
 
 defineProps({
   list: {
