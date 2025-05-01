@@ -1,6 +1,6 @@
 ---
 title: 'Descripción de una nueva especie de <i>Tegmaleurodes</i> Martin (Hemiptera: Aleyrodidae) de Guatemala'
-date: '2022-02-24'
+date: '2022-02-25'
 doi: ''
 journal: Insecta Mundi
 issue: '0920'
