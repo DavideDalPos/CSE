@@ -132,7 +132,7 @@ const monthYearOptions = computed(() => {
 
   // Now, format them as "Month YYYY"
   const formattedMonths = sortedMonths.map(month => {
-    const date = new Date(`${month}-01`); // Append "01" to make it a valid date
+    const date = new Date(`${month}-01T00:00:00`); // Append "01" to make it a valid date
     return {
       label: date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' }),
       date: month
