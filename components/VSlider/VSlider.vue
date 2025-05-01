@@ -2,7 +2,7 @@
   <div class="relative w-full min-h-screen">
     <!-- Banner Block -->
     <div class="absolute top-1/3 left-0 right-0 z-30 flex flex-col items-center text-center 
-    bg-black/30 backdrop-blur-sm px-6 py-6 shadow-md animate-fade-in rounded-md mx-auto max-w-6xl">
+    bg-senary/30 backdrop-blur-sm px-6 py-6 shadow-md animate-fade-in rounded-md mx-auto max-w-6xl">
       <!-- Title -->
       <div class="text-white/90 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-wide whitespace-nowrap">
   Center for Systematic Entomology (CSE)
