@@ -70,19 +70,9 @@
       </p>
     </div>
 
-    <!-- Acknowledgment Notice -->
-    <div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-setenary/20 border-l-4 border-setenary rounded-lg p-6 shadow-lg">
-  <div class="flex justify-center mb-3">
-    <svg class="h-8 w-8 text-yellow-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path d="M12 2L2 22h20L12 2z"></path> <!-- Exclamation mark inside a triangle for alert -->
-      <path d="M12 16v-2M12 12h0"></path> <!-- Exclamation mark -->
-    </svg>
-  </div>
-  <p class="text-xl font-serif text-yellow-900">
-    Acknowledgment of the CSE and Peck Endowment is required in any subsequent publications derived from this grant
-  </p>
+<div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-setenary/20 border-l-4 border-setenary rounded-lg p-6 shadow-lg">
+<GrantAcknowledge />
 </div>
-
 
 
 
@@ -125,11 +115,12 @@
 
 
 <script>
-import { ExclamationCircleIcon } from '@heroicons/vue/24/outline';
+
+import GrantAcknowledge from '@/components/Grants/GrantAcknowledge.vue';
 
 export default {
   components: {
-    ExclamationCircleIcon
+    GrantAcknowledge
   }
 }
 </script>

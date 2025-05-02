@@ -4,7 +4,7 @@
       id="grantguidelines"
       class="container mx-auto px-12 py-5 mb-8 scroll-m-18"
     >
-      <h1 class="text-4xl text-gray-900 mb-12">Guidelines</h1>
+      <h1 class="text-4xl font-semibold text-gray-800 mb-8">Guidelines</h1>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Eligibility Section -->
