@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-secondary/60 border-gray-200 p-4 border border-primary rounded w-max shadow-md h-max">
+    <div class="bg-quinary/30 border border-primary p-4 rounded w-max shadow-md h-max">
       <h2 class="text-lg font-semibold text-gray-700 mb-3 border-b pb-1">GGE Committee</h2>
   
       <div class="mb-3">

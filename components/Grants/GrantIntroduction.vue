@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto px-8 py-12 text-justify">
     <h1 class="text-4xl font-semibold text-gray-800 mb-8">The Peck Collection Enhancement Endowment</h1>
-    <div class="flex flex-col lg:flex-row items-start gap-12 mt-5">
+    <div class="flex gap-10">
       <!-- Left-side content for the text -->
       <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
       <p class="text-lg text-gray-700 leading-relaxed">
@@ -59,11 +59,12 @@
       </p>
     </div>
 <GrantRightColumn />
-    </div>
+  </div>
+
   <div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-quinary/20 border-l-4 border-quinary rounded-lg p-6 shadow-lg">
 <Counter />
   </div>
-<div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-setenary/20 border-l-4 border-setenary rounded-lg p-6 shadow-lg">
+<div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-senary/20 border-l-4 border-senary rounded-lg p-6 shadow-lg">
 <GrantAcknowledge />
 </div>
 

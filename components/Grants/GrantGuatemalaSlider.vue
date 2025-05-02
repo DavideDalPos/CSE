@@ -33,14 +33,14 @@
       <button
         @click="prevPage"
         :disabled="currentPage === 0"
-        class="px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition disabled:opacity-30"
+        class="px-6 py-2 bg-setenary text-white rounded hover:bg-setenary/50 transition"
       >
         Previous
       </button>
       <button
         @click="nextPage"
         :disabled="currentPage >= slideChunks.length - 1"
-        class="px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition disabled:opacity-30"
+        class="px-6 py-2 bg-senary text-white rounded hover:bg-quaternary transition "
       >
         Next
       </button>

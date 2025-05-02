@@ -3,7 +3,7 @@
     <div class="flex justify-center">
       <button
         @click="showCitations = !showCitations"
-        class="px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition disabled:opacity-30 flex items-center space-x-2"
+        class="px-6 py-2 bg-setenary text-white rounded hover:bg-quaternary transition shadow-lg disabled:opacity-30 flex items-center space-x-2"
       >
         {{ showCitations ? 'Hide citations' : 'Publications output from the Peck Fund' }}
       </button>
