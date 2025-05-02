@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="fixed w-full z-50 bg-primary backdrop-blur-sm shadow-lg">
+    <div class="fixed w-full z-50 bg-primary backdrop-blur-xl shadow-lg">
       <div
         class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
       >
@@ -18,7 +18,7 @@
                 v-if="submenu"
                 class="relative group"
               >
-                <button class="hover:underline flex items-center gap-1">
+                <button class="hover:underline flex items-center gap-1 hover:text-yellow-900">
                   {{ label }}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +52,7 @@
               <NuxtLink
                 v-else
                 :to="link"
+                class="hover:underline hover:text-yellow-900"
                 >{{ label }}</NuxtLink
               >
             </template>

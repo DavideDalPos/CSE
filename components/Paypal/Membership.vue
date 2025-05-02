@@ -22,7 +22,7 @@
     <div>
       <label class="block">Select membership year</label>
       <select
-        class="border px-2"
+        class="border px-2 bg-foreground"
         name="os0"
       >
         <option
@@ -39,7 +39,7 @@
       />
       <label class="block">Optional invoice # or comments</label>
       <input
-        class="border"
+        class="border bg-foreground"
         type="text"
         name="os2"
         maxlength="60"
@@ -51,9 +51,9 @@
       />
     </div>
     <div class="my-2">
-      <span>New member?</span>
+      <span>New member? </span>
       <select
-        class="border px-2"
+        class="border px-2 ml-2 bg-foreground"
         name="os1"
       >
         <option value="no">No</option>

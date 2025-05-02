@@ -1,6 +1,6 @@
 <template>
-  <section class="container mx-auto px-8">
-    <h1 class="text-4xl">CSE Membership</h1>
+  <section class="container mx-auto px-6 py-10 font-sans text-justify">
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-8">CSE Membership</h1>
 
     <div class="prose max-w-max py-4">
       <p>
@@ -21,7 +21,8 @@
       <p>
         CSE membership form is available
         <a
-          href="https://www.dropbox.com/s/ecko2b8fcta7bhv/CSE_MembershipForm_2021.pdf?dl=0"
+          href="/PDF/CSE_MembershipForm_2021.pdf?dl=0"
+          target="_blank"
           >here</a
         >.
       </p>
@@ -34,13 +35,13 @@
     </div>
 
     <div class="flex flex-row gap-4">
-      <VCard class="w-1/3">
-        <h2 class="text-2xl pb-2">New or Existing Members</h2>
+      <VCard class="w-1/3 bg-quinary/30 border border-quinary">
+        <h2 class="text-2xl pb-2 text-gray-800">New or Existing Members</h2>
         <PaypalMembership />
       </VCard>
-      <VCard class="flex flex-col justify-between w-1/3">
+      <VCard class="flex flex-col justify-between w-1/3 bg-primary/20 border border-primary">
         <div>
-          <h2 class="text-2xl pb-2">Donations</h2>
+          <h2 class="text-2xl pb-2 text-gray-800">Donations</h2>
           <p>
             The Center for Systematic Entomology welcomes all donations to
             support its research efforts in the area of arthropod systematics.
