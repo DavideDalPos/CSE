@@ -39,86 +39,86 @@
 
         <!-- Application & Submission Section -->
         <div
-          class="bg-white p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+  class="bg-white p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+>
+  <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">
+    Application & Submission
+  </h3>
+  <ul class="list-inside list-disc text-base text-gray-700">
+    <li>
+      <a
+        href="/PDF/PeckFund_application.pdf"
+        target="_blank"
+        class="internal-link"
+        rel="noopener noreferrer"
+      >
+        Download Formal Proposal
+      </a>
+      <a
+        href="/PDF/PeckFund_application.pdf"
+        target="_blank"
+        class="internal-link"
+        rel="noopener noreferrer"
+        aria-label="Download PDF"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             viewBox="0 0 24 24" 
+             fill="none" 
+             stroke="currentColor" 
+             class=" w-4 h-4 text-yellow-800 hover:text-quaternary transition duration-200">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+        </svg>
+      </a>
+    </li>
+
+    <li>Prepare Formal Proposal (1–2 pages)</li>
+    <li>
+      Submit Proposal to the
+      <a
+        href="about#GGECommittee"
+        target="_blank"
+        class="internal-link"
+        >GGE Committee</a
+      >:
+      <button
+        @click="toggleDetails('applicationSubmission')"
+        class="ml-1 text-teal-700 hover:text-teal-900 text-xs"
+      >
+        <span
+          :class="{ 'rotate-90': detailsVisible.applicationSubmission }"
+          class="inline-block transition-transform duration-200"
+          >▶</span
         >
-          <h3 class="text-xl text-center font-semibold text-gray-800 mb-4">
-            Application & Submission
-          </h3>
-          <ul class="list-inside list-disc text-base text-gray-700">
-            <li>
-              <a
-                href="/PDF/PeckFund_application.pdf"
-                target="_blank"
-                class="internal-link"
-                rel="noopener noreferrer"
-                >Download Formal Proposal</a
-              >
-              <!-- PDF Icon -->
-              <a
-                href="/PDF/PeckFund_application.pdf"
-                target="_blank"
-                class="internal-link"
-                rel="noopener noreferrer"
-              >
-              <svg xmlns="http://www.w3.org/2000/svg" 
-                     viewBox="0 0 24 24" 
-                     fill="none" 
-                     stroke="currentColor" 
-                     class="w-5 h-5 text-yellow-800 hover:text-quaternary transition duration-200">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-                </svg>
-              </a>
-            </li>
+      </button>
+    </li>
+    <div v-if="detailsVisible.applicationSubmission">
+      <p class="pl-10 text-base text-gray-700 text-sm py-2">
+        Mail to: <br />
+        <b>Grants Committee</b> <br />Center for Systematic
+        Entomology,<br />
+        P.O. Box 141874, Gainesville FL 32614-1874
+      </p>
 
-            <li>Prepare Formal Proposal (1–2 pages)</li>
-            <li>
-              Submit Proposal to the
-              <a
-                href="about#GGECommittee"
-                target="_blank"
-                class="internal-link"
-                >GGE Committee</a
-              >:
-              <button
-                @click="toggleDetails('applicationSubmission')"
-                class="ml-1 text-teal-700 hover:text-teal-900 text-xs"
-              >
-                <span
-                  :class="{ 'rotate-90': detailsVisible.applicationSubmission }"
-                  class="inline-block transition-transform duration-200"
-                  >▶</span
-                >
-              </button>
-            </li>
-            <div v-if="detailsVisible.applicationSubmission">
-              <p class="pl-10 text-base text-gray-700 text-sm py-2">
-                Mail to: <br />
-                <b>Grants Committee</b> <br />Center for Systematic
-                Entomology,<br />
-                P.O. Box 141874, Gainesville FL 32614-1874
-              </p>
+      <!-- Centered OR -->
+      <div class="flex items-center">
+        <hr class="flex-grow border-gray-300" />
+        <span class="px-3 text-gray-600 text-sm font-semibold py-0.5">or</span>
+        <hr class="flex-grow border-gray-300" />
+      </div>
 
-              <!-- Centered OR -->
-              <div class="flex items-center">
-                <hr class="flex-grow border-gray-300" />
-                <span class="px-3 text-gray-600 text-sm font-semibold py-0.5"
-                  >or</span
-                >
-                <hr class="flex-grow border-gray-300" />
-              </div>
+      <p class="pl-10 text-base text-gray-700 text-sm py-1">
+        Email to: <br />
+        <a
+          href="mailto:csentomology@gmail.com"
+          class="text-blue-600 hover:underline"
+          >csentomology@gmail.com</a
+        >
+      </p>
+    </div>
+  </ul>
+</div>
 
-              <p class="pl-10 text-base text-gray-700 text-sm py-1">
-                Email to: <br />
-                <a
-                  href="mailto:csentomology@gmail.com"
-                  class="text-blue-600 hover:underline"
-                  >csentomology@gmail.com</a
-                >
-              </p>
-            </div>
-          </ul>
-        </div>
 
         <!-- Submission Section -->
         <div

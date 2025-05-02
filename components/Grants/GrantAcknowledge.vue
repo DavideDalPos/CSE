@@ -1,4 +1,4 @@
-<template>    
+<template> 
     <div class="flex justify-center mb-3">
       <svg class="h-8 w-8 text-yellow-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path d="M12 2L2 22h20L12 2z"></path> <!-- Exclamation mark inside a triangle for alert -->

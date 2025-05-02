@@ -4,7 +4,6 @@
     <GrantTitle />
     <GrantIntroduction />
     <GuidelinesGrant />
-    <Counter />
     <section class="bg-gray-100 border-t border-b border-gray-300">
       <PreviousProposalIntro />
       <VCard
@@ -25,7 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import Counter from '~/components/Grants/Counter.vue'
 import GrantArchive from '~/components/Grants/GrantArchive.vue'
 import GrantButton from '~/components/Grants/GrantButton.vue'
 import GrantCitation from '~/components/Grants/GrantCitation.vue'
