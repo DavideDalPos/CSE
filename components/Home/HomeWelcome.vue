@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-8 py-1">
-    <h1 class="text-4xl font-semibold text-gray-800 mb-10 text-center">
+    <h1 class="text-4xl lg:text-5xl font-semibold text-senary mb-10 text-center relative">
       Center for Systematic Entomology (CSE)
     </h1>
 

@@ -1,6 +1,6 @@
 <template>
   <ImageOverlay
-    imageSrc="/images/IM_Skelley1.png"
+    imageSrc="/images/InsectaMundi1.png"
     overlayTitle="Insecta Mundi"
     description="A Journal of World Insect Systematics"
   />

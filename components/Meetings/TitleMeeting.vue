@@ -1,7 +1,7 @@
 <template>
     <div>
       <ImageOverlay
-        imageSrc="/images/conference2025.avif"
+        imageSrc="/images/conference2020.jpg"
         overlayTitle="CSE Annual Conference"
         description="Live from Gainesville (FL)"
       />
