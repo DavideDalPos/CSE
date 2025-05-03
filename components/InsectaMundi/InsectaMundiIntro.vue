@@ -1,14 +1,13 @@
 <template>
     <section class="container mx-auto px-8 py-10 text-justify">
       <h1 class="text-4xl">Our Journal</h1>
-      <div class="flex flex-col gap-4 my-8">
+      <div class="flex gap-10">
+      <!-- Left-side content for the text -->
+      <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
         <p class= "justify-text">
             <b><i>Insecta Mundi</i></b> is a journal primarily devoted to <b>insect systematics</b>, 
             but articles can be published on any <b>non-marine arthropod</b>. 
         </p>
-        </div>    
-            
-            <div class="flex flex-col gap-4 my-8">
             <p>    
             Manuscripts considered for publication include, but are not limited to:</p> 
             <ul class="list-disc list-inside pl-7">
@@ -23,8 +22,6 @@
             <p>For papers describing new taxa, Insecta Mundi provides authors rapid 
             publication so the names may be included in other publications.
         </p>
-        </div>
-        <div class="flex flex-col gap-4 my-8">
             <p class= "justify-text">
             From 1985 to 2006, <b><i>Insecta Mundi</i></b> was produced with yearly volume numbers and printed on paper quarterly. 
             As of 2007, <b><i>Insecta Mundi</i></b> (paper ISSN 0749-6737, CD-ROM ISSN 1942-1362, online ISSN 1942-1354) 
@@ -33,8 +30,6 @@
             Further details about our policies and procedures can be found in 
             <a href="/PDF/0001ProceduresComplete.pdf"  target="_blank" class="internal-link">2007 Insecta Mundi 0001</a>. 
             </p>
-        </div> 
-        <div class="flex flex-col gap-4 my-8">
             <p>
             Recent changes in the <a href="https://www.iczn.org/the-code/the-code-online/"  target="_blank" class="external-link">International 
                 Code of Zoological Nomenclature</a>, starting in 2012, allowed 
@@ -45,7 +40,12 @@
              <a href="/insecta_mundi/editorialstaff" class="internal-link">here</a>.
             </p>
             </div>
+            <InsectaMundiIntroRightColumn />
+            </div>
     </section>
   </template>
 
-<script></script>
+<script>
+import InsectaMundiIntroRightColumn from './InsectaMundiIntroRightColumn.vue';
+
+</script>

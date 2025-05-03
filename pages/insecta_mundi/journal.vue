@@ -2,6 +2,10 @@
   <div>
     <InsectaMundiTitle />
     <InsectaMundiIntro />
+    <InsectaMundiBottomButtons />
   </div>
 </template>
-<script></script>
+<script>
+import InsectaMundiBottomButtons from '~/components/InsectaMundi/InsectaMundiBottomButtons.vue';
+
+</script>
