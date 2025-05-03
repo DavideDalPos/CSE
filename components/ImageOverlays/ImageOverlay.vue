@@ -1,17 +1,23 @@
 <template>
-  <section class="image-overlay-container">
+  <section class="relative w-full h-[60vh] flex items-center justify-center">
     <div
-      class="image-overlay"
+      class="absolute inset-0 bg-cover bg-center bg-no-repeat"
       :style="{ backgroundImage: `url(${imageSrc})` }"
     >
-      <div class="overlay-bg"></div>
-      <div class="text-content">
-        <h1 class="text-4xl overlay-text">{{ title }}</h1>
-        <p class="text-white my-8 text-lg max-w">{{ description }}</p>
+      <div class="absolute inset-0 bg-black/65"></div>
+
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-10">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wide">
+          {{ title }}
+        </h1>
+        <p class="mt-6 text-lg md:text-xl max-w-xl text-white/90">
+          {{ description }}
+        </p>
       </div>
     </div>
   </section>
 </template>
+
 
 <script setup>
 defineProps({
@@ -30,60 +36,3 @@ defineProps({
 })
 </script>
 
-<style scoped>
-.image-overlay-container {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* Adjust height as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; /* Ensure image is not repeated */
-}
-
-.overlay-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.65); /* Semi-transparent dark overlay */
-  z-index: 1;
-}
-
-.text-content {
-  position: absolute;
-  top: 85%; /* Move the content down by 50% of the container */
-  left: 50%; /* Move it to the center */
-  transform: translate(-50%, -50%); /* Center it perfectly */
-  z-index: 10;
-  text-align: center;
-  color: white;
-  padding: 0 0px;
-}
-
-h1 {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-  white-space: nowrap; /* Prevents text from breaking onto a new line */
-  overflow: hidden; /* Hides any text that overflows the container */
-  text-overflow: ellipsis; /* Adds "..." at the end if the text overflows */
-}
-
-p {
-  font-size: 1.25rem;
-  max-width: 2000px;
-  line-height: 0.5;
-}
-</style>

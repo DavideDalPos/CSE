@@ -4,10 +4,6 @@
     <TitleMeeting />
     <IntroMeeting />
     </section>
-    <section class="bg-gray-100 border-t border-gray-300">
-      <CounterMeeting />
-    </section>  
-    
     <section class="bg-tertiary/30 border-t border-b border-yellow-600">
     <Archive />
   </section>  
@@ -24,7 +20,6 @@
 <script setup>
 import Archive from '~/components/Meetings/Archive.vue'
 import ArchivePoster from '~/components/Meetings/ArchivePoster.vue'
-import CounterMeeting from '~/components/Meetings/CounterMeeting.vue'
 import IntroMeeting from '~/components/Meetings/IntroMeeting.vue'
 import MeetingSlider from '~/components/Meetings/MeetingSlider.vue'
 import TitleMeeting from '~/components/Meetings/TitleMeeting.vue'

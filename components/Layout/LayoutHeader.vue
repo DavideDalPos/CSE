@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="fixed w-full z-50 bg-primary backdrop-blur-xl shadow-lg">
+    <div class="fixed w-full z-50 bg-primary/80 backdrop-blur-xl shadow-xl">
       <div
         class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
       >
@@ -97,7 +97,7 @@ const menu = [
     ]
   },
   {
-    label: 'Travel grants',
+    label: 'Travel Grants',
     submenu: [
       // Submenu items
       { label: 'Peck Grant', link: '/grants' },
@@ -108,16 +108,18 @@ const menu = [
     ]
   },
   {
-    label: 'Annual meetings',
-    link: '/meetings'
+    label: 'Annual Conference',
+    submenu: [
+      // Submenu items
+      { label: 'CSE Conference', link: '/meetings' },
+      { label: '2026 Conference', link: 'meetings#counter' },
+      { label: 'Conference Archive', link: 'meetings#meetingarchive' },
+      { label: 'Poster Archive', link: 'meetings#posterarchive' }
+    ]
   },
   {
-    label: 'Membership',
+    label: 'Membership & Donations',
     link: '/membership'
-  },
-  {
-    label: 'Donations',
-    link: '/donations'
   }
 ]
 </script>

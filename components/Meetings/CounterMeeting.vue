@@ -1,5 +1,5 @@
 <template>
-  <section id="datemeeting" class=" pt-10 pb-3">
+  <section id="counter" class=" pt-10 pb-3">
     <div class="fade-in">
       <div class="text-center ">
         <div class="bg-secondary border border-primary date-box shadow-lg" v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0">
@@ -7,7 +7,7 @@
         </div>
         <!-- "Coming Soon" Section -->
         <div v-else class="coming-soon text-center">
-          <div class="text-primary text-4xl font-semibold">Coming Soon!</div>
+          <div class="text-setenary text-4xl font-semibold">2026 Conference Date Coming Soon!</div>
           <div class="text-xl py-5">Stay tuned for updates!</div>
         </div>
       </div>

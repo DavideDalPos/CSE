@@ -1,7 +1,7 @@
 <template>
-  <section class="container mx-auto px-12 py-11">
+  <section id="posterarchive" class="container mx-auto px-12 py-11">
     <div class="my-8">
-      <h1 class="text-4xl">Poster Archive</h1>
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Poster Archive</h1>
       <MeetingArchive :meetings="meetings" />
     </div>
 

@@ -2,7 +2,7 @@
     <div>
       <ImageOverlay
         imageSrc="/images/conference2025.avif"
-        title="CSE Annual Meeting & Conference"
+        title="CSE Annual Conference"
         description="Live from Gainesville (FL)"
       />
     </div>
