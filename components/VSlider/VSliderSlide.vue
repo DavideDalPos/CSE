@@ -9,13 +9,13 @@
       <div class="absolute w-full h-full bg-black/65 -z-10" />
       <div class="container mx-auto px-8 z-20 h-full relative flex items-end">
         <div class="prose max-w-max md:max-w-5xl bottom-4 py-12">
-          <h1 class="text-white">{{ slide.title }}</h1>
+          <h1 class="text-quaternary">{{ slide.title }}</h1>
           <div
             class="text-white my-8 text-lg max-w"
             v-html="slide.description"
           />
           <NuxtLink
-            class="bg-quaternary text-white px-4 py-2 no-underline"
+            class="bg-senary text-white px-4 py-2 no-underline hover:bg-quaternary"
             :to="slide.link.href"
           >
             {{ slide.link.label }}

@@ -1,14 +1,14 @@
 <template>
   <section class="relative w-full h-[60vh] flex items-center justify-center">
     <div
-      class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      :class="['absolute inset-0 bg-cover bg-center bg-no-repeat']"
       :style="{ backgroundImage: `url(${imageSrc})` }"
     >
       <div class="absolute inset-0 bg-black/65"></div>
 
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-10">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wide">
-          {{ title }}
+          {{ overlayTitle }}
         </h1>
         <p class="mt-6 text-lg md:text-xl max-w-xl text-white/90">
           {{ description }}
@@ -25,7 +25,7 @@ defineProps({
     type: String,
     required: true
   },
-  title: {
+  overlayTitle: {
     type: String,
     required: true
   },
