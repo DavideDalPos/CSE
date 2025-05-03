@@ -43,8 +43,9 @@ const slides = [
   {
     title: 'Insecta Mundi Journal',
     description: `
-    <p>A journal of World Insect Systematics since 1985. Openly accessible and free for authors. </p>
-    <p>Openly accessible and free for authors</p> `,
+    <p>Insecta Mundi is a peer-reviewed scientific journal primarily devoted to the systematics, taxonomy, and biodiversity of insects and other terrestrial arthropods. 
+      It provides a platform for the rapid dissemination of research, including new species descriptions, faunal surveys, and taxonomic revisions from around the world. </p>
+    <p>Check out our guidelines and our publications</p> `,
     img: IMLogo,
     link: {
       label: 'Guidelines',
