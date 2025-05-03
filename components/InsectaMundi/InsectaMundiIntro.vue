@@ -1,6 +1,6 @@
 <template>
     <section class="container mx-auto px-8 py-10 text-justify">
-      <h1 class="text-4xl">Our Journal</h1>
+      <h1 class="text-4xl font-semibold text-gray-800 mb-8">Our Journal</h1>
       <div class="flex gap-10">
       <!-- Left-side content for the text -->
       <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
