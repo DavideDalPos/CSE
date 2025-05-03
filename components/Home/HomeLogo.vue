@@ -2,7 +2,7 @@
     <div class="w-full lg:w-[400px] shrink-0">
       <!-- Thumbnail Image -->
       <img
-        src="/images/Logo_CSE.png"
+        :src="modalImage"
         alt="CSE Logo"
         class="rounded shadow-md w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
         @click="isModalOpen = true"
@@ -32,10 +32,15 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue';
+  import { onMounted, ref } from 'vue';
   
   const isModalOpen = ref(false);
   const modalImage = ref('/images/Logo_CSE.png');
+  
+  // Ensure the image loads on page mount
+  onMounted(() => {
+    modalImage.value = '/images/Logo_CSE.png';
+  });
   
   function closeModal() {
     isModalOpen.value = false;
