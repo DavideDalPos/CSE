@@ -79,7 +79,7 @@
             </div>
           </template>
 
-          <div class="prose max-w- max-w-6xl">
+          <div class="prose max-w- max-w-[65rem]">
 
             <template v-if="publication.abstract">
               <h3 class="text-2xl">Abstract</h3>

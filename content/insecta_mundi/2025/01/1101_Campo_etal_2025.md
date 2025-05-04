@@ -7,7 +7,7 @@ issue: '1101'
 pagination: '1–2'
 zoobank: 'urn:lsid:zoobank.org:pub:A7F62908-80A0-41ED-9B79-1AAD64C3BA04'
 authors:
-  - first_name: 'Rhys J.L.'
+  - first_name: 'Rhys J. L.'
     last_name: 'Campo'
     affiliation: 'Division of Plant Industry, Florida State Collection of Arthropods, 1911 SW 34th St., Gainesville, FL 32608, USA'
     email: 'rhys.campo@fdacs.gov'
