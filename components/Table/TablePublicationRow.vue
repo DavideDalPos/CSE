@@ -6,7 +6,7 @@
     >
       <div class="flex-1">
         <h2
-          class="font-bold text-senary text-[17px] text-justify hover:text-quaternary/80 pr-20"
+          class="font-bold text-senary text-[17px] text-justify hover:text-quaternary/80 pr-5"
           v-html="publication.title"
         ></h2>
         <div class="flex flex-row flex-wrap gap-1">
