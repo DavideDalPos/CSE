@@ -2,14 +2,12 @@
   <div>
     <AboutIntroduction />
     <AboutBoard />
-    <AboutGGE />
-    <InsectaMundiEditorialStaff />
+    <AboutFormerMembers />
   </div>
 </template>
 
 <script setup lang="ts">
 import AboutBoard from '~/components/About/AboutBoard.vue';
-import AboutGGE from '~/components/About/AboutGGE.vue';
+import AboutFormerMembers from '~/components/About/AboutFormerMembers.vue';
 import AboutIntroduction from '~/components/About/AboutIntroduction.vue';
-import InsectaMundiEditorialStaff from '~/components/InsectaMundi/InsectaMundiEditorialStaff.vue';
 </script>

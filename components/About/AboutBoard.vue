@@ -1,93 +1,141 @@
 <script setup>
-const boardMembers = [
-  {
-    name: "Davide Dal Pos",
-    role: "President",
-    period: "2020-2024", // Added period
-    imageUrl: "/images/DavideDalPos.jpg", // Replace with actual image URLs
-    profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ", // Link to the individual's profile page
-  },
-  {
-    name: "John Doe",
-    role: "Vice President",
-    period: "2018-2022", // Added period
-    imageUrl: "/images/DavideDalPos.jpg", // Replace with actual image URLs
-    profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ", // Link to the individual's profile page
-  },
-  {
-    name: "Jane Smith",
-    role: "Secretary",
-    period: "2019-2023", // Added period
-    imageUrl: "/images/DavideDalPos.jpg", // Replace with actual image URLs
-    profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ", // Link to the individual's profile page
-  },
-];
+import AboutData from '@/components/About/AboutData.js';
 
-const executiveMembers = [
-  {
-    name: "Sam Brown",
-    role: "Treasurer",
-    period: "2021-2025", // Added period
-    imageUrl: "/images/DavideDalPos.jpg", // Replace with actual image URLs
-    profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ", // Link to the individual's profile page
-  },
-  {
-    name: "Emily White",
-    role: "Board Member",
-    period: "2020-2024", // Added period
-    imageUrl: "/images/DavideDalPos.jpg", // Replace with actual image URLs
-    profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ", // Link to the individual's profile page
-  },
-  {
-    name: "James Green",
-    role: "Board Member",
-    period: "2022-2026", // Added period
-    imageUrl: "/images/DavideDalPos.jpg", // Replace with actual image URLs
-    profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ", // Link to the individual's profile page
-  },
-];
+const { officers, insectamundiTeam, boardMembers } = AboutData;
 </script>
 
 <template>
-    <section class="bg-gray-100 py-4 border-t border-b border-gray-300 px-24">
-      <div id="board" class="container mx-auto px-12 py-5">
-      <!-- Outer wrapper with vertical lines -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
-          
-          <!-- Board Members Section -->
-          <div>
-            <h2 class="text-2xl font-bold mb-4">Board Members</h2>
-            <div v-for="(member, index) in boardMembers" :key="member.name" class="flex items-center gap-6 mb-6">
-              <img :src="member.imageUrl" alt="Image of {{ member.name }}" class="w-24 h-24 object-cover" />
-              <div>
-                <h3 class="text-xl font-semibold">
-                  <a :href="member.profileUrl" class="text-gray-700 hover:underline">{{ member.name }}</a>
-                </h3>
-                <p class="text-gray-500">{{ member.role }} ({{ member.period }})</p>
+  <section class="bg-gray-50 py-12 border-t border-gray-200 px-6 sm:px-12 lg:px-24">
+    <div class="container mx-auto space-y-12">
+
+      <!-- Officers Section -->
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Officers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            v-for="member in officers"
+            :key="member.name"
+            class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center gap-6"
+          >
+            <div class="flex-shrink-0">
+              <img
+                v-if="member.imageUrl"
+                :src="member.imageUrl"
+                :alt="`Image of ${member.name}`"
+                class="w-20 h-20 object-cover rounded-full"
+              />
+              <div
+                v-else
+                class="w-20 h-20 rounded-full bg-gray-300 text-white flex items-center justify-center text-xl font-bold"
+              >
+                {{ member.name.split(' ').map(n => n[0]).join('') }}
               </div>
             </div>
-          </div>
-  
-          <!-- Executive Members Section -->
-          <div>
-            <h2 class="text-2xl font-bold mb-4">Executive Members</h2>
-            <div v-for="(member, index) in executiveMembers" :key="member.name" class="flex items-center gap-6 mb-6">
-              <img :src="member.imageUrl" alt="Image of {{ member.name }}" class="w-24 h-24 object-cover" />
-              <div>
-                <h3 class="text-xl font-semibold">
-                  <a :href="member.profileUrl" class="text-gray-700 hover:underline">{{ member.name }}</a>
-                </h3>
-                <p class="text-gray-500">{{ member.role }} ({{ member.period }})</p>
-              </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  :href="member.profileUrl"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  {{ member.name }}
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                {{ member.role }} ({{ member.period }})
+              </p>
             </div>
           </div>
-  
         </div>
       </div>
-    </section>
-  </template>
-  
+
+      
+      <!-- Board Members -->
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Board Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            v-for="member in boardMembers"
+            :key="member.name"
+            class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center gap-6"
+          >
+            <div class="flex-shrink-0">
+              <img
+                v-if="member.imageUrl"
+                :src="member.imageUrl"
+                :alt="`Image of ${member.name}`"
+                class="w-20 h-20 object-cover rounded-full"
+              />
+              <div
+                v-else
+                class="w-20 h-20 rounded-full bg-gray-300 text-white flex items-center justify-center text-xl font-bold"
+              >
+                {{ member.name.split(' ').map(n => n[0]).join('') }}
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  :href="member.profileUrl"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  {{ member.name }}
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                ({{ member.period }})
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insecta Mundi Editorial Team Section -->
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Insecta Mundi Editorial Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            v-for="member in insectamundiTeam"
+            :key="member.name"
+            class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center gap-6"
+          >
+            <div class="flex-shrink-0">
+              <img
+                v-if="member.imageUrl"
+                :src="member.imageUrl"
+                :alt="`Image of ${member.name}`"
+                class="w-20 h-20 object-cover rounded-full"
+              />
+              <div
+                v-else
+                class="w-20 h-20 rounded-full bg-gray-300 text-white flex items-center justify-center text-xl font-bold"
+              >
+                {{ member.name.split(' ').map(n => n[0]).join('') }}
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  :href="member.profileUrl"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  {{ member.name }}
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                {{ member.role }} ({{ member.period }})
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</template>
 
 <style scoped>
-/* You can add custom styling here */
+/* Optional: Add custom styles if needed */
 </style>
