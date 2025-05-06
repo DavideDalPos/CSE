@@ -1,17 +1,31 @@
 <script setup>
+import { computed } from 'vue';
 import AboutData from '@/components/About/AboutData.js';
 
 const { officers, insectamundiTeam, boardMembers } = AboutData;
+
+const groupedMembers = computed(() => {
+  return boardMembers.reduce((groups, member) => {
+    if (!groups[member.period]) {
+      groups[member.period] = [];
+    }
+    groups[member.period].push(member);
+    return groups;
+  }, {});
+});
+
+
 </script>
 
+
 <template>
-  <section class="bg-gray-50 py-12 border-t border-gray-200 px-6 sm:px-12 lg:px-24">
+  <section class="bg-quinary/20 py-12 border-t border-b border-quinary px-6 sm:px-12 lg:px-24">
     <div class="container mx-auto space-y-12">
 
       <!-- Officers Section -->
       <div>
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Officers</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">CSE Officers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div
             v-for="member in officers"
             :key="member.name"
@@ -35,14 +49,14 @@ const { officers, insectamundiTeam, boardMembers } = AboutData;
               <h3 class="text-lg font-semibold text-gray-900">
                 <a
                   :href="member.profileUrl"
-                  class="hover:underline"
+                  class="text-senary hover:underline hover:text-senary/60"
                   target="_blank"
                 >
                   {{ member.name }}
                 </a>
               </h3>
               <p class="text-sm text-gray-600">
-                {{ member.role }} ({{ member.period }})
+                <i>{{ member.role }}</i> ({{ member.period }})
               </p>
             </div>
           </div>
@@ -51,50 +65,55 @@ const { officers, insectamundiTeam, boardMembers } = AboutData;
 
       
       <!-- Board Members -->
-      <div>
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Board Members</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div
-            v-for="member in boardMembers"
-            :key="member.name"
-            class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center gap-6"
-          >
-            <div class="flex-shrink-0">
-              <img
-                v-if="member.imageUrl"
-                :src="member.imageUrl"
-                :alt="`Image of ${member.name}`"
-                class="w-20 h-20 object-cover rounded-full"
-              />
-              <div
-                v-else
-                class="w-20 h-20 rounded-full bg-gray-300 text-white flex items-center justify-center text-xl font-bold"
-              >
-                {{ member.name.split(' ').map(n => n[0]).join('') }}
-              </div>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900">
-                <a
-                  :href="member.profileUrl"
-                  class="hover:underline"
-                  target="_blank"
-                >
-                  {{ member.name }}
-                </a>
-              </h3>
-              <p class="text-sm text-gray-600">
-                ({{ member.period }})
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="border-t border-primary">
+  <h2 class="text-3xl font-bold text-gray-800 mb-6 mt-8">Board Members</h2>
+  <div v-for="(members, period) in groupedMembers" :key="period" class="mb-10">
+    <h3 class="text-xl font-bold text-gray-700 mb-4">{{ period }}</h3>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div
+  v-for="member in members"
+  :key="member.name"
+  class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-start gap-4"
+>
+  <div class="flex-shrink-0">
+    <img
+      v-if="member.imageUrl"
+      :src="member.imageUrl"
+      :alt="`Image of ${member.name}`"
+      class="w-20 h-20 object-cover rounded-full"
+    />
+    <div
+      v-else
+      class="w-20 h-20 rounded-full bg-gray-300 text-white flex items-center justify-center text-xl font-bold"
+    >
+      {{ member.name.split(' ').map(n => n[0]).join('') }}
+    </div>
+  </div>
+
+  <div class="flex flex-col justify-center">
+    <h4 class="text-lg font-semibold text-gray-900">
+      <a
+        :href="member.profileUrl"
+        class="text-senary hover:underline hover:text-senary/60"
+        target="_blank"
+      >
+        {{ member.name }}
+      </a>
+    </h4>
+    <p class="text-sm text-gray-500 italic mb-1">{{ member.period }}</p>
+    <p class="text-sm text-gray-700">{{ member.comment }}</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
 
       <!-- Insecta Mundi Editorial Team Section -->
-      <div>
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Insecta Mundi Editorial Team</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="border-t border-primary">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 mt-8"><i>Insecta Mundi</i> Editorial Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
             v-for="member in insectamundiTeam"
             :key="member.name"
@@ -118,14 +137,14 @@ const { officers, insectamundiTeam, boardMembers } = AboutData;
               <h3 class="text-lg font-semibold text-gray-900">
                 <a
                   :href="member.profileUrl"
-                  class="hover:underline"
+                  class="text-senary hover:underline hover:text-senary/60"
                   target="_blank"
                 >
                   {{ member.name }}
                 </a>
               </h3>
               <p class="text-sm text-gray-600">
-                {{ member.role }} ({{ member.period }})
+                <i>{{ member.role }}</i> ({{ member.period }})
               </p>
             </div>
           </div>
