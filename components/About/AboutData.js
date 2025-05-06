@@ -31,6 +31,30 @@ export default {
     ],
     boardMembers: [
       {
+        name: "Alexander Orfinger",
+        period: "2025-2027",
+        imageUrl: null,
+        profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+      },
+      {
+        name: "David Plotkin",
+        period: "2025-2027",
+        imageUrl: null,
+        profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+      },
+      {
+        name: "Emily Roeder",
+        period: "2025-2027",
+        imageUrl: null,
+        profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+      },
+      {
+        name: "Felipe Soto-Adames",
+        period: "2025-2027",
+        imageUrl: null,
+        profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+      },
+      {
         name: "Sandor Kelly ",
         period: "2024-2026",
         imageUrl: null,

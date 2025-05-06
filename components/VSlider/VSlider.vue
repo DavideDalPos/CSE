@@ -2,21 +2,23 @@
   <div class="relative w-full min-h-screen">
     <!-- Banner Block -->
     <div
-      class="absolute top-1/4 left-0 right-0 z-30 flex flex-col items-center text-center 
-      bg-quinary/40 backdrop-blur-sm px-6 py-6 shadow-md animate-fade-in rounded-md mx-auto max-w-6xl shadow-4xl"
-    >
-      <!-- Title -->
-      <div
-        class="text-white/90 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-wide whitespace-nowrap"
-      >
-        Center for Systematic Entomology (CSE)
-      </div>
+  class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
+  bg-gradient-to-r from-black/50 via-black/30 to-black/50 backdrop-blur-sm 
+  px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto max-w-6xl shadow-xl shadow-black/40 animate-fade-in"
+>
+  <!-- Title -->
+  <div
+    class="text-primary text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-wide whitespace-nowrap"
+  >
+    Center for Systematic Entomology (CSE)
+  </div>
 
-      <!-- Subtitle -->
-      <div class="mt-3 text-white/80 md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
-        Advancing Insect Systematics
-      </div>
-    </div>
+  <!-- Subtitle -->
+  <div class="mt-3 text-white/80 md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
+    Advancing Insect Systematics
+  </div>
+</div>
+
 
     <!-- Main Content (Slider) -->
     <div class="relative w-full h-[95%]">

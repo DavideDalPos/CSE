@@ -11,7 +11,7 @@
 import CSELogo from '~/assets/images/IM_Skelley.png'
 import IMLogo from '~/assets/images/IM_logo2.png'
 import conference2025 from '~/assets/images/conference2025.avif'
-import grantImage from '~/assets/images/jarmila_and_stewart_peck.avif'
+import grantImage from '~/assets/images/collection.webp'
 
 const slides = [
 {
@@ -21,7 +21,7 @@ const slides = [
       and you can publish for free on our journal Insecta Mundi.</p>
     <p>We also accept donations to support research efforts in the area of arthropod systematics</p>`,
     img: CSELogo,
-    copyright: 'Pierre Poirier © Canadian Museum of Nature',
+    copyright: '',
     link: {
       label: 'Become a Member',
       href: '/membership'
@@ -34,7 +34,7 @@ const slides = [
       Canadian Museum of Nature and the Beaty Centre for Species Discovery are pleased to award the annual Stewart and Jarmila Peck Visiting-Scientist Awards in Entomology.</p>
     <p>These annual travel grants facilitate research in the study of beetle systematics and fossil insects in the museum’s world-class beetle and paleoentomology collections.</p>`,
     img: grantImage,
-    copyright: 'Pierre Poirier © Canadian Museum of Nature',
+    copyright: '',
     link: {
       label: 'Apply',
       href: '/grants'
