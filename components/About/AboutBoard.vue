@@ -71,7 +71,7 @@ const groupedMembers = computed(() => {
     <h3 class="text-xl font-bold text-gray-700 mb-4">{{ period }}</h3>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div
-  v-for="member in members"
+  v-for="member in members.slice().sort((a, b) => a.name.localeCompare(b.name))"
   :key="member.name"
   class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-start gap-4"
 >
