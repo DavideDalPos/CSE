@@ -5,18 +5,28 @@ doi: ''
 issue: '1081'
 journal: Insecta Mundi
 pagination: '1–12'
+zoobank: 'urn:lsid:zoobank.org:pub:CBC93E5B-B1A0-4D2C-9624-A197FFD9BF22'
+
 authors:
-  - name: 'Frank E. Kurczewski'
+  - first_name: 'Frank E.'
+    last_name: 'Kurczewski'
     affiliation: '1188 Converse Drive NE Atlanta, GA 30324, USA'
+    email: 'kurczewskifrank@gmail.com'
 
-  - name: 'Rick C. West'
+  - first_name: 'Rick C.'
+    last_name: 'West'
     affiliation: '6365 Willowpark Way Sooke, BC, Canada V9Z 1L9'
+    email: 'rickcwest3@gmail.com'
 
-  - name: 'Dionne Newell'
+  - first_name: 'Dionne'
+    last_name: 'Newell'
     affiliation: 'Natural History Museum of Jamaica Institute of Jamaica 10–16 East Street Kingston, Jamaica'
+    email: 'dnewell@nhmj-ioj.org.jm'
 
-  - name: 'Scott Johnson'
+  - first_name: 'Scott'
+    last_name: 'Johnson'
     affiliation: 'Wild Bahamas Nassau, the Bahamas'
+    email: 'scottswildbahamas@gmail.com'
 
 download:
 keywords:
