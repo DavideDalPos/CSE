@@ -37,7 +37,9 @@
   
       <!-- Literature Cited Update -->
       <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Update: Literature Cited Format</h3>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+  <span class="text-red-800 font-bold text-2xl underline">Update</span> Literature Cited Format
+</h3>
         <p class="text-[15px] text-gray-800">
           <b>(Effective April 2020)</b> The editorial board of Insecta Mundi has adopted minor changes to the formatting of the Literature Cited section. These include:
         </p>

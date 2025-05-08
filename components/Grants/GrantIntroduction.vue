@@ -4,7 +4,7 @@
     <div class="flex gap-10">
       <!-- Left-side content for the text -->
       <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
-      <p class="text-lg text-gray-700 leading-relaxed">
+      <p class="text leading-relaxed">
         In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> 
         (aka the <b>Peck Fund</b>) with the Center for Systematic Entomology (CSE). 
         The primary purpose of the <b>Peck Fund</b> is to facilitate research travels to 
@@ -13,24 +13,24 @@
       </p>
 
     <!-- Enhanced Curation Section -->
-      <p class="text-lg text-gray-700 mb-4">Enhanced curation could include:</p>
-      <ul class="list-disc list-inside pl-7 text-lg text-gray-700">
+      <p class="-mb-5">Enhanced curation could include:</p>
+      <ul class="list-disc list-inside pl-7 mb-3">
         <li><b>Specimen sorting and identification</b></li>
         <li><b>Designation of types</b></li>
         <li><b>Updated taxonomy</b></li>
       </ul>
 
     <!-- Grant Proposal Evaluation -->
-      <p class="text-lg text-gray-700">
-        Grant awards are limited, and proposals will be evaluated by the <a href="about#GGECommittee" target="_blank" class="internal-link">Gifts, Grants and Endowment (GGE) Committee</a> 
+      <p>
+        Grant awards are limited, and proposals will be evaluated by the <NuxtLink href="/about#gge" target="_blank" class="internal-link">Gifts, Grants and Endowment (GGE) Committee</NuxtLink> 
         semiannually (<b>January 15th</b> and <b>July 15th</b>) and approved by the <a href="about#board" target="_blank" class="internal-link">CSE Board of Directors</a>.
         Applicants must be CSE members and should contact the appropriate curator at the FSCA to inquire about potential work.
       </p>
 
 
     <!-- Proposal Requirements -->
-      <p class="text-lg text-gray-700">Applicants should submit a short (1–2 pages) formal proposal composed of the following:</p>
-      <ul class="roman-list list-inside pl-7 text-lg text-gray-700">
+      <p class="-mb-5">Applicants should submit a short (1–2 pages) formal proposal composed of the following:</p>
+      <ul class="roman-list list-inside pl-7">
         <li><b>Title</b></li>
         <li><b>Author(s)</b></li>
         <li><b>Author’s Affiliation & Contact Information</b> – major professor if a student</li>
@@ -41,20 +41,20 @@
       </ul>
 
     <!-- Proposal Submission Info -->
-      <p class="text-lg text-gray-700">
-        The proposal must be sent to the <a href="about#GGECommittee" target="_blank" class="internal-link">GGE Committee</a>. 
+      <p>
+        The proposal must be sent to the <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. 
         See under <a href="#grantguidelines" class="internal-link">Guidelines</a> (below) the mail and email address.
       </p>
 
     <!-- Report Submission -->
-      <p class="text-lg text-gray-700">
+      <p>
         After the project is completed, a <b>report</b> of the accomplished work with some <b>photographs</b> should be sent to the 
-        <a href="about#GGECommittee" target="_blank" class="internal-link">GGE Committee</a>. 
+        <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. 
         <br>This report will be formatted and posted on the CSE website (See <a href="#reports" class="internal-link">Reports</a> of previous projects). 
       </p>
 
     <!-- Process Summary -->
-      <p class="text-lg text-gray-700">
+      <p>
         A summary of this entire process is also posted below under <a href="#grantguidelines" class="internal-link">Guidelines</a>.
       </p>
     </div>
