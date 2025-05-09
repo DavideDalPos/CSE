@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import CounterMeeting from './CounterMeeting.vue';
-
 </script>
 
 <template>
@@ -26,7 +24,7 @@ The <b>2025 Annual Conference</b> just ended. You can find the entire program he
       </p>
       </div>
       <div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-quinary/20 border-l-4 border-quinary rounded-lg p-6 shadow-lg">
-      <CounterMeeting />
+
     </div>
    </section>
 </template>
