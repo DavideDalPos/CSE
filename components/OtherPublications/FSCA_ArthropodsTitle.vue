@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-6 py-10 bg-background text-foreground font-sans">
+    <section class="container mx-auto px-6 py-10 bg-background text-foreground font-serif">
       <!-- Section Titles -->
       <div>
         <!-- Larger Title -->

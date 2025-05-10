@@ -4,7 +4,7 @@ import ComingSoonBanner from './ComingSoonBanner.vue';
 </script>
 
 <template>
-    <section class="container mx-auto px-12 py-12 -mb-10">
+    <section class="container mx-auto px-12 py-12 -mb-10 font-serif">
      
       <h1 class="text-4xl font-extrabold text-gray-800 mb-8">CSE Annual Conference</h1>
      <div class="flex flex-col gap-4 my-8">

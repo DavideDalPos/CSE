@@ -1,5 +1,5 @@
 <template>
-    <section id="meetingarchive" class="container mx-auto px-12 py-11">
+    <section id="meetingarchive" class="container mx-auto px-12 py-11 font-serif">
       <!-- Meeting Archive Section -->
       <div>
         <h1 class="text-4xl font-extrabold text-gray-800 mb-8"> Conference Archive</h1>

@@ -1,5 +1,5 @@
 <template>
-           <h2 class= "text-3xl font-semibold text-senary leading-relaxed max-w-3xl mb-7">CSE Memoirs</h2>
+           <h2 class= "text-3xl font-semibold text-senary leading-relaxed max-w-3xl mb-7 font-serif">CSE Memoirs</h2>
       <div class="flex flex-col md:flex-row gap-4">
         <!-- Left Column: Book Cards -->
         <div class="flex-1 space-y-4">

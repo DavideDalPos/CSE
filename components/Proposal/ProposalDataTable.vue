@@ -23,7 +23,7 @@ const filteredList = computed(() =>
 </script>
 
 <template>
-    <div class="bg-base-foreground rounded-lg">
+    <div class="bg-base-foreground rounded-lg font-serif">
     <div class="flex items-center justify-between">
       <SearchForm v-model="filters.taxon" />
       <div class="flex items-center justify-end text-sm font-semibold">

@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 py-10 relative overflow-hidden">
+  <section class="container mx-auto px-8 py-10 relative overflow-hidden font-serif">
     <div class="relative">
       <!-- Slide container -->
       <div class="flex transition-transform duration-500 ease-in-out"

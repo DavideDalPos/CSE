@@ -1,15 +1,18 @@
 <script setup lang="ts">
+import Counter from './Counter.vue';
 import GrantContact from './GrantContact.vue';
 import GrantSubmission from './GrantSubmission.vue';
-
 </script>
 
 <template>
-    <div class="w-full lg:w-[325px] shrink-0 p-4 border-l-2 border-gray-300 flex flex-col gap-4">
     <!-- Section Title -->
-<GrantContact />
+    <GrantContact />
+    
+    <!-- Grant Submission Section -->
+    <GrantSubmission />
 
-<GrantSubmission />
-    </div>
-  </template>
+    <!-- Counter Section -->
+      <Counter />
+</template>
+
   

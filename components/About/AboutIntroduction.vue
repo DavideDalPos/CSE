@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-12 py-12">
+  <section class="container mx-auto px-12 py-12 font-serif">
     <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">About us</h1>
     <div class="flex flex-col gap-4 text-lg text-gray-700 text-justify">
       <p>

@@ -1,5 +1,5 @@
 <template>
-   <section class="container mx-auto px-8 py-0 -mt-10">
+   <section class="container mx-auto px-8 py-0 -mt-10 font-erif">
       <div class="flex gap-3">
         <a 
         href="/PDF/2009_DipteraReport.pdf" 

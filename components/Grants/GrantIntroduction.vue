@@ -1,9 +1,9 @@
 <template>
-  <section class="container mx-auto px-8 py-12 text-justify">
+  <section class="container mx-auto px-8 py-12 text-justify font-serif">
     <h1 class="text-4xl font-semibold text-gray-800 mb-8">The Peck Collection Enhancement Endowment</h1>
     <div class="flex gap-10">
       <!-- Left-side content for the text -->
-      <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
+      <div class="w-full lg:w-3/4 flex flex-col gap-8 text-justify ">
       <p class="text leading-relaxed">
         In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> 
         (aka the <b>Peck Fund</b>) with the Center for Systematic Entomology (CSE). 
@@ -58,15 +58,13 @@
         A summary of this entire process is also posted below under <a href="#grantguidelines" class="internal-link">Guidelines</a>.
       </p>
     </div>
-<GrantRightColumn />
+<div class="flex flex-col gap-4 flex-1"> <!-- Right column, now takes 1/3 of the space -->
+        <GrantRightColumn />
+      </div>
   </div>
-
-  <div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-quinary/20 border-l-4 border-quinary rounded-lg p-6 shadow-lg">
-<Counter />
+ <div class="flex flex-col gap-5 my-8 py-6 text-center items-center bg-gradient-to-r from-gray-100 to-gray-200 border-l-4 border-gray-600/50 rounded-lg p-8 shadow-2xl transform transition duration-300 hover:scale-105">
+    <GrantAcknowledge />
   </div>
-<div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-senary/20 border-l-4 border-senary rounded-lg p-6 shadow-lg">
-<GrantAcknowledge />
-</div>
 
 
   </section>

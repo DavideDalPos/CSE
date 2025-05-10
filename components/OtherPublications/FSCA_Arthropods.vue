@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-6 py-1 bg-background text-foreground font-sans mb-10">
+    <section class="container mx-auto px-6 py-1 bg-background text-foreground font-serif mb-10">
       <div class="flex flex-col md:flex-row gap-4">
         <!-- Left Column: Book Cards -->
         <div class="flex-1 space-y-4">

@@ -6,7 +6,7 @@ import CSE_NewsLetter from '~/components/OtherPublications/CSE_NewsLetter.vue';
 </script>
 
 <template>
-   <section class="container mx-auto px-6 py-10 bg-background text-foreground font-sans">
+   <section class="container mx-auto px-6 py-10 bg-background text-foreground font-serif">
     <div>
         <!-- Larger Title -->
         <h1 class="text-4xl font-extrabold text-gray-800 tracking-tight mb-10">Center for Systematic Entomolocy (CSE) Publications</h1>

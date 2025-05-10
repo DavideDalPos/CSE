@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-primary/30 border border-quinary p-4 rounded w-full shadow-md">
+    <div class="bg-primary/30 border border-quinary p-4 rounded w-full shadow-md font-serif">
 
-      <h2 class="text-lg font-semibold text-gray-700 mb-3 border-b pb-1">Submit your Application</h2>
+      <h2 class="text-lg font-semibold text-gray-700 mb-3 border-b pb-1 text-center">Submit your Application</h2>
       <div class="mb-3">
-        <p class="text-sm text-gray-700 mb-1">There are two way by which you can submit your grant travel applicaiton: </p>
+        <p class="text-gray-700 mb-1 text-center">There are two way by which you can submit your grant travel applicaiton: </p>
       </div>
-<div class="mb-3">
+<div class="mb-3 text-center">
     <p class="text-sm text-gray-700 font-semibold">Email:</p>
     <a href="mailto:csentomology@gmail.com" class="text-yellow-700 text-sm hover:underline">
       csentomology@gmail.com
@@ -17,7 +17,7 @@
         <hr class="flex-grow border-gray-300" />
       </div>
 
-      <div>
+      <div class="text-center">
     <p class="text-sm text-gray-700 font-semibold mb-1">Mail to:</p>
     <address class="not-italic text-sm text-gray-600 leading-snug">
       Grants Committee <br />

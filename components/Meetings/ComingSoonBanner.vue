@@ -1,5 +1,5 @@
 <template>
-  <section id="counter" class="pt-16 pb-8 bg-gray-50">
+  <section id="counter" class="pt-16 pb-8 bg-gray-50 font-serif">
     <div class="fade-in max-w-3xl mx-auto text-center">
       <!-- Show button if date is in the future -->
 <div
@@ -16,7 +16,7 @@
     href="/comingsoon"
     target="_blank"
     rel="noopener"
-    class="register-button bg-primary/60 border border-primary hover:bg-tertiary text-gray-100 px-6 py-3 rounded-md shadow-md transform transition-all duration-300"
+    class="inline-block px-6 py-3 bg-quaternary/90 text-white rounded-lg hover:bg-tertiary transition duration-200 shadow"
   >
     Learn More
   </NuxtLink>
@@ -49,7 +49,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2025-02-15T14:00:00Z'), // 09:00 AM Gainesville (UTC-5) = 14:00 UTC
+      deadline: new Date('2026-02-15T14:00:00Z'), // 09:00 AM Gainesville (UTC-5) = 14:00 UTC
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
     };
@@ -92,11 +92,6 @@ section {
 
 /* Button Styling */
 .register-button {
-  padding: 14px 32px;
-  font-size: 1.125rem;
-
-
-  border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;

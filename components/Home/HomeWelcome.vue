@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 py-1">
+  <section class="container mx-auto px-8 py-1 font-serif">
     <h1 class="text-4xl lg:text-5xl font-semibold text-senary mb-10 text-center relative">
       Center for Systematic Entomology (CSE)
     </h1>

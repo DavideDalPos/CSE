@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-6 py-10 font-sans text-justify">
+  <section class="container mx-auto px-6 py-10 font-sans text-justify font-serif">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-8">CSE Membership</h1>
 
     <div class="prose max-w-max py-4">

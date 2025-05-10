@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-8 py-10 -mt-7 text-justify">
+    <section class="container mx-auto px-8 py-10 -mt-7 text-justify font-serif">
     <div class="flex justify-center">
       <button
         @click="showCitations = !showCitations"

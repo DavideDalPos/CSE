@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-8 py-10 -mb-8">
+    <section class="container mx-auto px-8 py-10 -mb-8 font-serif">
       <h1 class="text-4xl font-semibold text-gray-800 mb-8">Other Grants Archive</h1>
       <div class="flex flex-col gap-4 my-8">
         <p>

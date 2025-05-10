@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 py-12 border-t border-gray-200">
+  <section class="container mx-auto px-8 py-12 border-t border-gray-200 font-serif">
     <div class="flex flex-col gap-6 my-8 text-center">
       <h2 class="text-2xl font-bold text-quaternary">Want to Join or Get in Touch?</h2>
       <p class="text-gray-700 text-lg">

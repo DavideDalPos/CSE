@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 border-t border-b border-quinary">
+  <section class="py-12 border-t border-b border-quinary font-serif">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center text-gray-700 mb-10">Monthly Publication Updates</h2>
 
