@@ -1,9 +1,12 @@
 <template>
   <section class="container mx-auto px-8 my-10 font-serif">
-      <div class="mb-10">
-  <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
-  <h2 class="text-xl text-gray-500 mt-1 tracking-wide mb">Current Publications</h2>
-</div>
+  <div>
+    <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
+    <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">Current Publications</h2>
+  </div>
+  <div class="mt-2 text-sm text-gray-400 italic mb-10">
+    paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
+  </div>
     <div class="flex flex-col lg:flex-row gap-8">
       
       <!-- LEFT COLUMN: Publications -->

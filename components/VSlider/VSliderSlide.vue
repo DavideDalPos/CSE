@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full absolute">
+  <div class="w-full h-full absolute font-serif">
     <div class="relative overflow-hidden h-full">
       <img
         :src="slide.img"

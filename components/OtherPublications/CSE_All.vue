@@ -18,7 +18,7 @@ import CSE_NewsLetter from '~/components/OtherPublications/CSE_NewsLetter.vue';
       <div class="mb-10">
         <CSE_Memoirs />
       </div>
-      <div class="border-t border-gray-300 mb-10">
+      <div id="festschrifts" class="border-t border-gray-300 mb-10">
       <CSE_Festschrift />
         </div>
       <div class="border-t border-gray-300 mb-5">
