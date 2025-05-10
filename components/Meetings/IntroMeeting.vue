@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CounterMeeting from './CounterMeeting.vue';
+import ComingSoonBanner from './ComingSoonBanner.vue';
 
 </script>
 
@@ -25,9 +25,9 @@ The <b>2025 Annual Conference</b> just ended. You can find the entire program he
       Check below when <b>2026 Annual Conference</b> will take place! 
       </p>
       </div>
-      <div class="flex flex-col gap-3 my-8 py-5 text-center items-center bg-quinary/20 border-l-4 border-quinary rounded-lg p-6 shadow-lg">
-      <CounterMeeting />
-    </div>
+      
+       <ComingSoonBanner />
+
    </section>
 </template>
 

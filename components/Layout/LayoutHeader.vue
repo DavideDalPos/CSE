@@ -103,7 +103,7 @@ const menu = [
       { label: 'Peck Grant', link: '/grants' },
       { label: 'Guidelines', link: 'grants#grantguidelines' },
       { label: 'Previous Reports', link: 'grants#reports' },
-      { label: 'Archive', link: 'grants#reports' },
+      { label: 'Other Grants Archive', link: 'grants#reports' },
       { label: 'Trip to Guatemala', link: 'grants#guatemala' }
     ]
   },
@@ -112,7 +112,7 @@ const menu = [
     submenu: [
       // Submenu items
       { label: 'CSE Conference', link: '/meetings' },
-      { label: '2026 Conference', link: 'meetings#counter' },
+      { label: '2026 Conference', link: '/comingsoon' },
       { label: 'Conference Archive', link: 'meetings#meetingarchive' },
       { label: 'Poster Archive', link: 'meetings#posterarchive' }
     ]

@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-12 py-12">
-    <h1 class="text-4xl font-bold text-gray-800 mb-6">Who Are We?</h1>
+    <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">About us</h1>
     <div class="flex flex-col gap-4 text-lg text-gray-700 text-justify">
       <p>
         The Center for Systematic Entomology (CSE) is a non-profit organization dedicated to advancing the study and dissemination of insect systematics. 

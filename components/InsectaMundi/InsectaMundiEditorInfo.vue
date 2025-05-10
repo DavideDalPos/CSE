@@ -19,7 +19,7 @@
           <ul class="list-decimal pl-10 mt-2">
             <li>
               <b>Author Participation</b> – Authors now play a more active role in preparing their submissions. 
-              See our <NuxtLink to="/authorguidelines" class="internal-link">Author Instructions</NuxtLink> for full details.
+              See our <NuxtLink to="/insecta_mundi/authorguidelines" class="internal-link">Author Instructions</NuxtLink> for full details.
             </li>
             <li>
               <b>Review Editors</b> – We expanded the number and responsibilities of our <i>Review Editors</i> 

@@ -6,7 +6,7 @@
       <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify ">
         <p class= "justify-text">
             <b><i>Insecta Mundi</i></b> is a journal primarily devoted to <b>insect systematics</b>, 
-            but articles can be published on any <b>non-marine arthropod</b>. 
+            but articles can be published on any <b>non-marine arthropods</b>. 
         </p>
             <p>    
             Manuscripts considered for publication include, but are not limited to:</p> 
@@ -36,8 +36,8 @@
             <b><i>Insecta Mundi</i></b>'s open accessible electronic publication to be the form validating each articles publication date. 
             In 2014, manuscript submissions to <b><i>Insecta Mundi</i></b> has grown to a volume that we suffered a staffing crisis 
             and had to reorganize our manuscript processing. The primarily difference is that we increased the number of volunteer
-             Editors and changed manuscript submission requirements. Our current staff is listed 
-             <a href="/insecta_mundi/editorialstaff" class="internal-link">here</a>.
+             Editors and changed manuscript submission requirements. Our current editorial staff is listed also
+             <NuxtLink href="/about#editorialstaff" class="internal-link">here</NuxtLink>.
             </p>
             </div>
             <InsectaMundiIntroRightColumn />
@@ -46,6 +46,5 @@
   </template>
 
 <script>
-import InsectaMundiIntroRightColumn from './InsectaMundiIntroRightColumn.vue';
 
 </script>
