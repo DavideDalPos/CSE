@@ -2,7 +2,7 @@
   <div>
     <InsectaMundiTitle />
     <InsectaMundiIntro />
-    <section class="bg-quinary/20 border-t border-b border-quinary">
+    <section class="bg-gradient-to-br from-gray-100 to-primary/30 border-t border-b border-primary">
     <InsectaMundiIntro2 />
     </section>
     <InsectaMundiIntro3 />
