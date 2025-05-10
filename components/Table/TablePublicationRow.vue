@@ -6,7 +6,7 @@
     >
       <div class="flex-1">
         <h2
-          class="font-bold text-senary text-[17px] text-justify hover:text-quaternary/80 pr-5"
+          class="font-bold text-senary/90 text-[18px] text-justify hover:text-quaternary/80 pr-5"
           v-html="publication.title"
         ></h2>
         <div class="flex flex-row flex-wrap gap-1">
@@ -39,7 +39,7 @@
     <div class="flex flex-wrap gap-1 mt-1">
       <div
         v-if="publication.download"
-        class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
+        class="group shadow px-2 py-1 text-xs rounded bg-setenary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
