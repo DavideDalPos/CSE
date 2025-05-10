@@ -13,7 +13,7 @@
                 {{ meeting.year }} - {{ meeting.title }}
             </h3>
           </a>
-          <span v-if="meeting.isNew" class="bg-quaternary text-white py-1 px-2 text-xs rounded-md">NEW</span>
+          <span v-if="meeting.isNew" class="bg-red-600 text-white py-1 px-2 text-xs rounded-full animate-pulse">NEW</span>
         </div>
 
         <!-- Links Section with Flexbox for horizontal alignment -->
