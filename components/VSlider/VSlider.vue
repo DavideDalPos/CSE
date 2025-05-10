@@ -3,7 +3,7 @@
     <!-- Banner Block -->
     <div
   class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
-  bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 backdrop-blur-sm 
+  bg-gradient-to-r from-gray-700/60 via-gray-500/60 to-gray-700/60 backdrop-blur-sm 
   px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto max-w-6xl shadow-xl shadow-black/40 animate-fade-in"
 >
   <!-- Title -->
