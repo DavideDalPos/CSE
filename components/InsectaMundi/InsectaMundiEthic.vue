@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-8 py-10">
+    <section class="container mx-auto px-8 py-10 font-serif">
       <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Ethics Statement</h1>
       <div class="flex flex-col gap-4 my-8 text-justify">
         <p class= "justify-text">

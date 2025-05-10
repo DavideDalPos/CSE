@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 my-10">
+  <section class="container mx-auto px-8 my-10 font-serif">
       <h1 class="text-4xl text-gray-700 font-bold mb-10">Michael C. Thomas Festschrift</h1>
       <div class="flex flex-col lg:flex-row gap-8">
         

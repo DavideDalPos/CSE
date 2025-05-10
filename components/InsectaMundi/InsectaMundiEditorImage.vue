@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 my-15">
+  <section class="container mx-auto px-8 my-15 font-serif">
     <div class="mt-8">
       <!-- Title Section -->
       <h2 class="text-4xl font-extrabold text-gray-800 mb-8 text-center leading-tight">

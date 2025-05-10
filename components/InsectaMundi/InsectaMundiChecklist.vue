@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-2xl mx-auto px-6 py-12">
+  <div class="max-w-2xl mx-auto px-6 py-12 font-serif">
     <h2 class="text-3xl text-center mb-4 text-slate-800 font-bold">Manuscript Submission Checklist</h2>
     <p class="text-center text-slate-600 mb-10 text-sm">
       Each submitted manuscript must include the following documents

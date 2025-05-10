@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container mx-auto px-8 my-10">
+    <div class="container mx-auto px-8 my-10 font-serif">
       <h1 class="text-4xl text-gray-700 font-bold">Publications</h1>
       <div class="flex-1">
         <!-- 🔍 BANNER SEARCH + FILTER -->

@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 my-15">
+  <section class="container mx-auto px-8 my-15 font-serif">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Editor Information</h1>
     <div class="flex justify-between gap-x-4 my-6">
       <!-- Left-side content for the text -->

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-6 sm:px-10 py-12 space-y-12">
+  <div class="container mx-auto px-6 sm:px-10 py-12 space-y-12 font-serif">
     <EditorListSection title="Editorial Board" :items="sortedEditorialBoard" />
     <EditorSingleLineSection title="Chief Editor" :item="chiefEditor" />
     <EditorListSection title="Founding Editors" :items="sortedFoundingEditors" />
@@ -20,11 +20,11 @@
 import {
   chiefEditor,
   layoutEditors,
-  webmaster,
   postProduction,
   sortedEditorialBoard,
   sortedFoundingEditors,
-  sortedReviewEditors
+  sortedReviewEditors,
+  webmaster
 } from './InsectaMundiIntro3Data';
 
 import EditorListSection from './EditorListSection.vue';

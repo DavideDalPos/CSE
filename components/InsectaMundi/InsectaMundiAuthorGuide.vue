@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 my-15">
+  <section class="container mx-auto px-8 my-15 font-serif">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Author Instructions</h1>
 
     <!-- Resources and Contacts boxes placed here between the title and text -->

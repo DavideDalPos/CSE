@@ -1,5 +1,5 @@
 <template>
-<section class="container mx-auto px-8 my-10">
+<section class="container mx-auto px-8 my-10 font-serif">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Publication Requirements</h1>
   
     <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 space-y-6">

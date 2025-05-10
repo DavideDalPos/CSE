@@ -1,10 +1,10 @@
 <template>
-<section class="container mx-auto px-6 py-16 text-gray-800 max-w-6xl">
+<section class="container mx-auto px-6 py-16 text-gray-800 max-w-6xl font-serif">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
     <!-- Card 1 -->
     <div class="bg-white rounded-xl shadow-xl p-6 border border-gray-200 w-[80%] ">
-  <h2 class="text-2xl font-semibold mb-4 text-gray-900">Author Requirements</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-gray-900 text-center">Author Requirements</h2>
   <ul class="list-disc list-outside pl-6 space-y-2 text-gray-800 ">
     <li>
       Potential authors must have their manuscript reviewed by <b>two peer reviewers</b> prior to submission.
@@ -27,7 +27,7 @@
 </div>
 
 <div class="bg-white rounded-xl shadow-xl p-6 border border-gray-200 space-y-6 w-[80%] ">
-  <h2 class="text-2xl font-semibold text-gray-900">Publication Model</h2>
+  <h2 class="text-2xl font-semibold text-gray-900 text-center">Publication Model</h2>
 
   <p class="text-gray-800 text-justify">
     <span class="font-semibold">Insecta Mundi</span> is not in the printing business. Thus, we offer no reprints for sale. Our intent is to publish articles for 
@@ -48,7 +48,7 @@
 
 <!-- Card 4 -->
 <div class="bg-white rounded-xl shadow-xl p-6 border border-gray-200 w-[80%] ">
-  <h2 class="text-2xl font-semibold mb-4 text-gray-900">Archiving and Access</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-gray-900 text-center">Archiving and Access</h2>
   <p class="text-gray-800 text-justify">
     Printed copies of each issue are deposited in several international libraries, as listed on the inside cover of each article. These are printed and mailed once a year.
   </p>
@@ -69,7 +69,7 @@
 <!-- Card 5 -->
 <!-- Card 5 -->
 <div class="bg-white rounded-xl shadow-xl p-6 border border-gray-200 w-[80%] ">
-  <h2 class="text-2xl font-semibold mb-4 text-gray-900">Copyright & Permissions</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-gray-900 text-center">Copyright & Permissions</h2>
   <p class="text-gray-800 text-justify">
     Copyright for any article published in <span class="font-semibold">Insecta Mundi</span> follows terms of the 
     <span class="font-semibold">Creative Commons, Attribution Non-Commercial License (cc by-nc)</span>. By submitting and publishing articles in 

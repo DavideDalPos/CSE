@@ -1,6 +1,6 @@
 <template>
   <!-- Sidebar Wrapper with Decorative Left Border -->
-  <div class="flex w-full sm:max-w-[30%] lg:max-w-[25%]">
+  <div class="flex w-full sm:max-w-[30%] lg:max-w-[25%] font-serif">
     <!-- Left Border Accent -->
     <div class="mr-5"></div>
 

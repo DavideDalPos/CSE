@@ -1,5 +1,5 @@
 <template>
-    <section class="container mx-auto px-8 py-10 text-justify">
+    <section class="container mx-auto px-8 py-10 text-justify font-serif">
       <h1 class="text-4xl font-semibold text-gray-800 mb-8">Our Journal</h1>
       <div class="flex gap-10">
       <!-- Left-side content for the text -->
