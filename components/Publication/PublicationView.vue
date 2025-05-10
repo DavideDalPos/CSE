@@ -145,7 +145,7 @@
           </div>
           <div
             v-if="publication.download"
-            class="group border border-quaternary/50 text-gray-700 bg-quaternary/80 px-4 py-[0.5px] text-lg rounded flex items-center space-x-2 hover:bg-quaternary/40  transition duration-200 max-w-[300px] shadow"
+            class="group border border-gray-500 text-foreground bg-gray-500 px-4 py-[0.5px] text-lg rounded flex items-center space-x-2 hover:bg-gray-400  transition duration-200 max-w-[300px] shadow"
           >
           <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 
@@ -155,7 +155,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                 d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
             </svg>
-            <a :href="publication.download">PDF</a>
+            <a :href="publication.download">Dowload PDF</a>
           </div>
           <div
              v-for="(supp, index) in publication.supplementary"
