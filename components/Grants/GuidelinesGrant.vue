@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-secondary/70 border-t border-b border-primary">
+  <section class="bg-gradient-to-br from-gray-100 to-secondary/70 border-t border-b border-primary">
     <div
       id="grantguidelines"
       class="container mx-auto px-12 py-5 mb-8 scroll-m-18"

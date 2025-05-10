@@ -1,10 +1,10 @@
 <template>
   <div>
     <InsectaMundiAuthorGuide />
-    <section class="bg-tertiary/30 border-t border-b border-quaternary">
+    <section class="bg-gradient-to-br from-gray-100 to-quaternary/30 border-t border-b border-quaternary">
     <InsectaMundiPubRequirement />
 </section>
-    <section class="bg-secondary/30 border-b border-primary">
+    <section class="bg-gradient-to-br from-gray-100 to-primary/30 border-b border-primary">
       <InsectaMundiChecklist />
     </section>
   </div>

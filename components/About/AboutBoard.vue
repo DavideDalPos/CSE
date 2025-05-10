@@ -19,7 +19,7 @@ const groupedMembers = computed(() => {
 
 
 <template>
-  <section class="bg-quinary/20 py-12 border-t border-b border-quinary px-6 sm:px-12 lg:px-24">
+  <section class="bg-gradient-to-br from-gray-100 to-primary/30 py-12 border-t border-b border-quinary px-6 sm:px-12 lg:px-24">
     <div class="container mx-auto space-y-12">
 
       <!-- Officers Section -->

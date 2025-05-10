@@ -2,7 +2,7 @@
   <div>
     <HomeSlider />
     <HomeWelcome />
-    <section class="bg-quinary/20">
+    <section class="bg-gradient-to-br from-gray-100 to-quaternary/30">
     <HomeAnnouncement />
     </section>
     <HomeClosing />
