@@ -24,10 +24,9 @@ authors:
     affiliation: 'Kanuga Conference Center 130 Kanuga Chapel Drive, Hendersonville, NC 28739, USA'
     email: 'mkbrown@kanuga.org'
 
-download: 'https://drive.google.com/file/d/1Q2bxixDY6kDTSFPjD1U7kI2TZyGTMaLx/view?usp=drive_link'
+download: 'https://drive.google.com/drive/folders/1ocA1H6fReItLDMrWD0NjNHVfOvXejIcJ'
 
 supplementary:
-  - 'https://drive.google.com/file/d/1Q2bxixDY6kDTSFPjD1U7kI2TZyGTMaLx/view?usp=drive_link'
 
 keywords:
   - Elateroidea
