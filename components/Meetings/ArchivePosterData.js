@@ -29,7 +29,7 @@ export default {
         title: "Beyond the roots: Unraveling the insect (and other invertebrates) fauna associated with Podostemaceae in northeast Argentina",
         pdf: "https://drive.google.com/file/d/1R8IAI7we8SyX3IGBEO3oMe5fwy4DgxIE/view?usp=sharing",
         authors: "Monti Areco, F. & Coronel, J.M.",
-        image: "/images/meetings/Posters/CSE_2024_poster_Areco.png",
+        image: "/images/meetings/Posters/CSE_2024_poster_Areco.jpg",
         award: "",
         year: 2024
       },
