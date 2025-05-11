@@ -1,15 +1,18 @@
 <template>
   <section class="container mx-auto px-8 py-1 font-serif">
-    <h1 class="text-4xl lg:text-5xl font-semibold text-senary mb-10 text-center relative">
-      Center for Systematic Entomology (CSE)
+    <h1 class="text-5xl font-extrabold text-gray-800 mb-2 text-center">
+      Welcome to the Center for Systematic Entomology (CSE)
     </h1>
+    <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
+      Advancing Arthropod Systematics Since 1985
+    </h2>
 
     <!-- Flex container: text left, image right -->
     <div class="flex flex-col lg:flex-row gap-8 items-start mb-10">
       <!-- Left side: text -->
       <div class="flex-1 space-y-8 mt-5">
-        <div>
-          <p class="text-justify">
+        <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
+          <p>
             For the past 35+ years the
             <b>Center for Systematic Entomology (CSE)</b> has served as a non-profit
             organization designed to further systematics in its broadest sense. It
@@ -25,18 +28,14 @@
             systematics in many of the same ways, we believe that membership in CSE
             provides another way that Research Associates can assist.
           </p>
-        </div>
 
-        <div>
           <p>Publications of the CSE include:</p>
           <ul class="list-disc list-inside pl-6">
             <li><b>CSE Newsletter</b> (discontinued after 2003)</li>
             <li><b>Insecta Mundi (IM)</b> - a journal devoted exclusively to arthropod systematics</li>
             <li><b>CSE Memoirs Series</b></li>
           </ul>
-        </div>
 
-        <div>
           <p class="text-justify">
             One of the advantages of membership is 
             publishing in <b><i>Insecta Mundi</i></b> without page charges. We urge all 
@@ -53,8 +52,6 @@
   </section>
 </template>
 
-
 <script setup lang="ts">
 import HomeLogo from './HomeLogo.vue';
-
 </script>

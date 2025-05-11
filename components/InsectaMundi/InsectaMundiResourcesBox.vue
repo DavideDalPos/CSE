@@ -7,7 +7,7 @@
     <!-- Content Boxes -->
     <div class="flex flex-col gap-6 w-full">
       <!-- Resource Box -->
-      <div class="bg-gray-300 border border-gray-600 rounded shadow-md p-5">
+      <div class="bg-gray-200 border border-gray-400 rounded shadow-md p-5">
         <h3 class="text-xl font-semibold  text-gray-700 mb-4 border-b pb-2">
           Resources
         </h3>
@@ -28,7 +28,7 @@
       <!-- Text -->
       <a :href="item.link"
          target="_blank"
-         class="text-sm font-medium text-senary group-hover:text-gray-600 transition duration-200">
+         class="text-sm font-medium text-otenary group-hover:text-gray-600 transition duration-200">
         {{ item.text }}
       </a>
     </div>

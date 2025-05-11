@@ -1,54 +1,63 @@
 <template>
-<section class="container mx-auto px-8 my-10 font-serif">
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Publication Requirements</h1>
+  <section class="container mx-auto px-8 my-10 font-serif">
+    <h1 class="text-4xl font-extrabold text-gray-800">Publication Requirements</h1>
+        <h2 class="text-xl font-medium text-gray-500 mb-8">Insecta Mundi</h2>
   
     <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 space-y-6">
   
       <!-- Requirement 1 -->
       <div>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">1. Required Reviews</h3>
-        <p class="text-[15px] text-gray-800">
-          Authors must obtain critical reviews from <b>two outside reviewers</b>. Those review comments and Reviewer Report Forms must be submitted along with the manuscript. If these are not included, the manuscript will be returned.
-        </p>
+        <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
+          <p class="text-[15px] text-gray-800">
+            Authors must obtain critical reviews from <b>two outside reviewers</b>. Those review comments and Reviewer Report Forms must be submitted along with the manuscript. If these are not included, the manuscript will be returned.
+          </p>
+        </div>
       </div>
   
       <!-- Requirement 2 -->
       <div>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">2. Manuscript Cleaning</h3>
-        <p class="text-[15px] text-gray-800">
-          We require authors to clean their manuscript to ensure compatibility with the software used to produce the final paper. All manuscript files are essentially programs, composed of underlying code that can introduce compatibility issues. Hidden or non-standard formatting often causes errors during production.
-        </p>
-        <p class="text-[15px] text-gray-800 mt-2">
-          To assist with this, please refer to:
-        </p>
-        <ul class="list-disc list-inside text-[15px] text-senary">
-          <li><a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="hover:underline">Manuscript Preparation Rules & Guidelines</a></li>
-          <li><a href="/PDF/insectamundi/InsectaMundi_CommonProblemsChecklist_2014.pdf" target="_blank" class="hover:underline">Common Problems Checklist</a></li>
-        </ul>
+        <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
+          <p class="text-[15px] text-gray-800">
+            We require authors to clean their manuscript to ensure compatibility with the software used to produce the final paper. All manuscript files are essentially programs, composed of underlying code that can introduce compatibility issues. Hidden or non-standard formatting often causes errors during production.
+          </p>
+          <p class="text-[15px] text-gray-800 mt-2 -mb-5">
+            To assist with this, please refer to:
+          </p>
+          <ul class="list-disc list-inside text-[15px] text-senary px-3">
+            <li><a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="hover:underline">Manuscript Preparation Rules & Guidelines</a></li>
+            <li><a href="/PDF/insectamundi/InsectaMundi_CommonProblemsChecklist_2014.pdf" target="_blank" class="hover:underline">Common Problems Checklist</a></li>
+          </ul>
+        </div>
       </div>
   
       <!-- Requirement 3 -->
       <div>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">3. Submission Contract</h3>
-        <p class="text-[15px] text-gray-800">
-          Authors must submit a signed <b>Submission Contract</b> confirming they have followed the manuscript preparation guidelines. Authors are fully responsible for the content, organization, and technical accuracy of their manuscript.
-        </p>
+        <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
+          <p class="text-[15px] text-gray-800">
+            Authors must submit a signed <b>Submission Contract</b> confirming they have followed the manuscript preparation guidelines. Authors are fully responsible for the content, organization, and technical accuracy of their manuscript.
+          </p>
+        </div>
       </div>
   
       <!-- Literature Cited Update -->
       <div>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">
-  <span class="text-red-800 font-bold text-2xl underline">Update</span> Literature Cited Format
-</h3>
-        <p class="text-[15px] text-gray-800">
-          <b>(Effective April 2020)</b> The editorial board of Insecta Mundi has adopted minor changes to the formatting of the Literature Cited section. These include:
-        </p>
-        <ul class="list-disc list-inside text-[15px] text-gray-800 mt-2 space-y-1">
-          <li>No periods between initials</li>
-          <li>No comma between surnames and initials</li>
-          <li>Omission of the word <i>"and"</i> in author/editor lists</li>
-          <li>Editor names in book chapters now listed surname-first</li>
-        </ul>
+          <span class="text-red-800 font-bold text-2xl underline">Update</span> Literature Cited Format
+        </h3>
+        <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
+          <p class="text-[15px] text-gray-800">
+            <b>(Effective April 2020)</b> The editorial board of Insecta Mundi has adopted minor changes to the formatting of the Literature Cited section. These include:
+          </p>
+          <ul class="list-disc list-inside text-[15px] text-gray-800 mt-2 space-y-1">
+            <li>No periods between initials</li>
+            <li>No comma between surnames and initials</li>
+            <li>Omission of the word <i>"and"</i> in author/editor lists</li>
+            <li>Editor names in book chapters now listed surname-first</li>
+          </ul>
+        </div>
       </div>
   
       <!-- Examples -->
@@ -68,4 +77,3 @@
     </div>
   </section>
 </template>
-  

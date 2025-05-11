@@ -1,16 +1,18 @@
 <template>
   <section class="container mx-auto px-8 my-15 font-serif">
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Editor Information</h1>
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Editor Information</h1>
+    <h2 class="text-xl font-medium text-gray-500 -mt-2">Insecta Mundi</h2>
+
     <div class="flex justify-between gap-x-4 my-6">
       <!-- Left-side content for the text -->
-      <div class="flex flex-col gap-4 w-full sm:max-w-[60%] lg:max-w-[70%] mt-2 text-justify">
+      <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed w-full sm:max-w-[60%] lg:max-w-[70%] mt-2">
         <p>
           In 2014, several core members of our small editorial team experienced major life changes and had to step away from their roles. 
           With fewer hands on deck, the remaining editors faced an overwhelming manuscript load. To move forward, the Editorial Board 
           initiated a complete overhaul of our workflow and began expanding our team of dedicated volunteers. These improvements are outlined in 
           our <a href="/PDF/insectamundi/InsectaMundi_FlowChart_2014.pdf" target="_blank" class="internal-link">
-  2014 Manuscript Processing Flow
-</a>
+            2014 Manuscript Processing Flow
+          </a>
           and the <a href="/PDF/insectamundi/InsectaMundi_ReorganizationDetails_2014.pdf" target="_blank" class="internal-link">2014 Reorganization Proposal</a>.
         </p>
 
@@ -53,8 +55,6 @@
   </section>
 </template>
 
-
 <script setup>
 import InsectaMundiEditorRightSidebar from './InsectaMundiEditorRightSidebar.vue';
 </script>
-
