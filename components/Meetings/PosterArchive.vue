@@ -31,7 +31,7 @@
                   target="_blank"
                   class="text-gray-800 hover:underline hover:text-yellow-600"
                 >
-                  <h3 class="text-xl font-medium">{{ poster.title }}</h3>
+                  <h3 class=" font-medium">{{ poster.title }}</h3>
                 </a>
               </div>
 
