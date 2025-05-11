@@ -1,48 +1,70 @@
 // ArchivePosterData.js (Your Data File)
 export default {
     posters: [
-        {
-            year: 2025,
-            title: "Darwin Wasp sex",
-            authors: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
-            pdf: "poster1.pdf"
-          },
       {
-        year: 2025,
-        title: "Darwin Wasp",
-        authors: "Ivana Lorena Araujo, Juan Manuel Coronel, and Clara Etcheverry",
-        pdf: "poster1.pdf"
+        title: "Chilean DarwinWasps (Ichneumonidae): Biogeographic relationships and distribution patterns",
+        pdf: "https://drive.google.com/file/d/1GWKqS-oouml9z8Yjp_STm8S726MzTv3S",
+        image: "/images/meetings/Posters/2025CSE_poster_Araujoetal.png",
+        authors: "Araujo et al.",
+        award: "",
+        year: 2025
       },
       {
-        year: 2024,
+        title: "Unwelcome guests: Active adaptation of invasive pentastomes in South Florida",
+        pdf: "https://drive.google.com/file/d/1rLOdWuRVZ8qboA7dvlSlBC3mUnZIKzR2/view?usp=sharing",
+        authors: "Dwyer et al.",
+        image: "/images/meetings/Posters/2025CSE_poster_MatthewR.Dwyeretal.png",
+        award: "",
+        year: 2025
+      },
+      {
         title: "Diversity of Isoptera in Livestock Areas of the Espinal Region of Northeast Argentina",
-        authors: "Araujo, Ivana Lorena; Coronel, Juan Manuel & Etcheverry, Clara",
-        pdf: "poster1.pdf"
+        pdf: "https://drive.google.com/file/d/1dAYjWYEkDW7o6QZongq6jbwpEVccJvrw/view?usp=sharing",
+        authors: "Araujo et al.",
+        image: "/images/meetings/Posters/CSE_2024_poster_Araujo.png",
+        award: "",
+        year: 2024
       },
-      {
-        year: 2024,
-        title: "Florencia Monti Areco and Juan Manuel Coronel",
-        authors: "Florencia Monti Areco and Juan Manuel Coronel",
-        pdf: "poster2.pdf"
+            {
+        title: "Beyond the roots: Unraveling the insect (and other invertebrates) fauna associated with Podostemaceae in northeast Argentina",
+        pdf: "https://drive.google.com/file/d/1R8IAI7we8SyX3IGBEO3oMe5fwy4DgxIE/view?usp=sharing",
+        authors: "Monti Areco, F. & Coronel, J.M.",
+        image: "/images/meetings/Posters/CSE_2024_poster_Areco.png",
+        award: "",
+        year: 2024
       },
-      {
-        year: 2024,
-        title: "Guillermo Luis Avalos, Darío Daniel Larrea, and Juan Manuel Coronel",
-        authors: "Guillermo Luis Avalos, Darío Daniel Larrea, and Juan Manuel Coronel",
-        pdf: "poster3.pdf"
+            {
+        title: "First contribution to the Plant‐bee (Apoidea) interaction network of ‘El Impenetrable’ National Park, Chaco, Argentina",
+        pdf: "https://drive.google.com/file/d/1ZrHlqWyETbF5xbbqILpX-erY-0P1ojIM/view?usp=sharing",
+        authors: "Avalos et al.",
+        image: "/images/meetings/Posters/CSE_2024_poster_Avalos.png",
+        award: "",
+        year: 2024
       },
-      {
-        year: 2024,
-        title: "Kaloyan Ivanov, Liberty Hightower, Jaclspm Means, and Nathan Jones",
-        authors: "Kaloyan Ivanov, Liberty Hightower, Jaclspm Means, and Nathan Jones",
-        pdf: "poster4.pdf"
+                  {
+        title: "The terrestrial isopod fauna (Isopoda: Oniscidea) of Virginia",
+        pdf: "https://drive.google.com/file/d/1c9kiRNKo_s-vf86ENMfInsRY2v0u0VdT/view?usp=sharing",
+        authors: "Ivanov et al.",
+        image: "/images/meetings/Posters/CSE_2024_poster_Ivanov.png",
+        award: "",
+        year: 2024
       },
-      {
-        year: 2024,
-        title: "Alex Rodriguez, David Serrano, and Sebastian Palmieri",
-        authors: "Alex Rodriguez, David Serrano, and Sebastian Palmieri",
-        pdf: "poster5.pdf"
-      }
+       {
+        title: "Progress of the Broward College Insect Collection current goals, focuses, and undergraduate research project",
+        pdf: "https://drive.google.com/file/d/1yxpLMD-MsU2YMADEEa6Y_YMrTVBEo1pt/view?usp=sharing",
+        authors: "Rodriguez et al.",
+        image: "/images/meetings/Posters/CSE_2024_poster_Rodriguez.jpeg",
+        award: "",
+        year: 2024
+      },
+             {
+        title: "Progress of the Broward College Insect Collection current goals, focuses, and undergraduate research project",
+        pdf: "https://drive.google.com/file/d/1yxpLMD-MsU2YMADEEa6Y_YMrTVBEo1pt/view?usp=sharing",
+        authors: "Rodriguez et al.",
+        image: "/images/meetings/Posters/CSE_2024_poster_Rodriguez.jpeg",
+        award: "",
+        year: 2024
+      },
     ]
   };
   

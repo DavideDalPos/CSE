@@ -1,12 +1,12 @@
 <template>
-  <section id="posterarchive" class="container mx-auto px-12 py-11 font-serif">
+  <section id="posterarchive" class="container mx-auto px-12 py-16 font-serif">
     <div class="my-8">
-      <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Poster Archive</h1>
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-8 text-center tracking-wide">Poster Archive</h1>
       <MeetingArchive :meetings="meetings" />
     </div>
 
     <!-- Grid layout for years -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Loop through each grouped year -->
       <div
         v-for="([year, yearPosters]) in groupedPosters"
@@ -14,73 +14,104 @@
         class="mb-8"
       >
         <!-- Year Title -->
-        <h2 class="text-3xl font-bold py-2 text-center text-yellow-600" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">{{ year }}</h2>
-
-
-
+        <h2 class="text-4xl font-semibold text-center text-yellow-600 py-2 mb-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">{{ year }}</h2>
 
         <!-- Poster List for the Year -->
-        <div class="flex flex-col gap-3">
-          <div
-            v-for="poster in yearPosters"
-            :key="poster.title"
-             class="bg-secondary p-4 rounded-lg shadow-md border border-primary"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <a
-                :href="poster.pdf"
-                target="_blank"
-                class="text-gray-800 hover:underline hover:text-yellow-600"
+        <div
+          v-for="poster in yearPosters"
+          :key="poster.title"
+          class="bg-white p-6 rounded-xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300"
+        >
+          <div class="flex items-start gap-6">
+            <!-- Text content -->
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <a
+                  :href="poster.pdf"
+                  target="_blank"
+                  class="text-gray-800 hover:underline hover:text-yellow-600"
+                >
+                  <h3 class="text-xl font-medium">{{ poster.title }}</h3>
+                </a>
+              </div>
+
+              <p class="text-sm text-yellow-800">{{ poster.authors }}</p>
+
+              <span
+                v-if="poster.award"
+                class="inline-block mt-2 bg-yellow-400 py-1 px-3 rounded-md font-semibold text-xs"
               >
-                <h3 class="text-xl">{{ poster.title }}</h3>
-              </a>
-              <!-- Replace the PDF image with the SVG link -->
-              <a
-                :href="poster.pdf"
-                target="_blank"
-                class="internal-link flex items-center"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                     viewBox="0 0 24 24" 
-                     fill="none" 
-                     stroke="currentColor" 
-                     class="w-6 h-6 text-yellow-800 hover:text-quaternary transition duration-200">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-                </svg>
-              </a>
+                {{ poster.award }}
+              </span>
             </div>
-            <p class="text-sm text-yellow-800">{{ poster.authors }}</p>
-            <span
-              v-if="poster.award"
-              class="inline-block mt-2 bg-yellow-400 py-1 px-3 rounded-md font-semibold text-xs"
-            >
-              {{ poster.award }}
-            </span>
+          </div>
+
+          <!-- Horizontal Line Between Image and Text -->
+          <div class="border-t border-gray-300 my-4"></div>
+
+          <!-- Thumbnail image below the text content -->
+          <div class="mt-4 flex items-center gap-6">
+
+            <!-- Download Poster Button -->
+              <div
+                v-if="poster.pdf"
+                class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-white group-hover:text-primary transition duration-200"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+                  />
+                </svg>
+                <a :href="poster.pdf" target="_blank">Download PDF</a>
+              </div>
+ <img
+              v-if="poster.image"
+              :src="poster.image"
+              alt="Poster thumbnail"
+              class="w-52 h-32 object-cover rounded-md cursor-pointer transform hover:scale-110 transition duration-300 ml-auto"
+              @click="openModal(poster.image)"
+            />
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      v-if="showModal"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+      @click.self="closeModal"
+    >
+      <img
+        :src="modalImage"
+        alt="Enlarged Poster"
+        class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl transition-transform duration-300"
+      />
     </div>
   </section>
 </template>
 
 
-
 <script setup>
-// Importing computed from Vue to handle reactive data
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 
-// Receiving props from the parent (which should pass the posters data)
 const props = defineProps({
   posters: Array
 });
 
-// Compute the sorted posters first
 const sortedPosters = computed(() => {
-  return props.posters.sort((a, b) => b.year - a.year); // Sorting by year in descending order
+  return props.posters.sort((a, b) => b.year - a.year);
 });
 
-// Now group posters by year
 const groupedPosters = computed(() => {
   const groups = {};
   sortedPosters.value.forEach((poster) => {
@@ -90,18 +121,23 @@ const groupedPosters = computed(() => {
     groups[poster.year].push(poster);
   });
 
-  // Sort each year's posters alphabetically by title
   Object.keys(groups).forEach((year) => {
     groups[year].sort((a, b) => a.title.localeCompare(b.title));
   });
 
-  // Convert to array and sort by year descending
   return Object.entries(groups).sort((a, b) => b[0] - a[0]);
 });
 
+const showModal = ref(false);
+const modalImage = ref(null);
 
+const openModal = (image) => {
+  modalImage.value = image;
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+  modalImage.value = null;
+};
 </script>
-
-<style scoped>
-/* Styling for the Archive Section */
-</style>

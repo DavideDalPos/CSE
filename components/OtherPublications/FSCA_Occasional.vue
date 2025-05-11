@@ -84,7 +84,7 @@
         d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
       />
     </svg>
-    <a :href="book.pdfhigh" target="_blank">Download High Resolution PDF</a>
+    <a :href="book.pdfhigh" target="_blank">Download High Res PDF</a>
   </div>
 </div>
 

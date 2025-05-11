@@ -7,7 +7,7 @@
     <section class="bg-gradient-to-br from-gray-100 to-quaternary/30 border-t border-b border-yellow-600">
     <Archive />
   </section>  
-  <section class="bg-gradient-to-br from-gray-100 to-foreground">
+  <section class="bg-gradient-to-br from-gray-100 to-secondary">
     <ArchivePoster />
   </section>
   <section class="bg-gradient-to-br from-gray-100 to-senary/20 border-t border-gray-300">

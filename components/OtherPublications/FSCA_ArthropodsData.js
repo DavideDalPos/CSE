@@ -5,7 +5,7 @@ export default [
       title: 'Lepidoptera of Florida',
       year: '1965',
       image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1965_001.png',
-      pdf: '/PDF/2024_DorisLagos.pdf',
+      pdf: 'https://drive.google.com/file/d/1umIctT5WaspLgPzpfgtwHUNEIoARd1Rs/view?usp=sharing',
     },
     {
         volume: 'Vol. 2',
@@ -13,7 +13,7 @@ export default [
         title: 'The Widow Spider of Florida',
         year: '1965',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1965_002.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1eLUqjj36NOjygbaRnk62nuM-E94xhhFz/view?usp=sharing',
       },
       {
         volume: 'Vol. 3',
@@ -21,7 +21,7 @@ export default [
         title: 'The Armored Scale Insects',
         year: '1965, revised 1976',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1965_003.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1Lxb_yRNqhW1PatbelocrZjsUL7h4InWV/view?usp=sharing',
       },
       {
         volume: 'Vol. 4',
@@ -29,7 +29,7 @@ export default [
         title: 'Scorpions, Whip Scorpions, and Wind Scorpions of Florida',
         year: '1967',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1967_004.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1aumGE2Rs1oYIS0AN9WmoGKo9VB9iGyM9/view?usp=sharing',
       },
       {
         volume: 'Vol. 5',
@@ -37,7 +37,7 @@ export default [
         title: 'Synoptic Review of North American, Central American and West Indian Solpugida',
         year: '1970',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1970_005.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1KWglSO197ecmO4OAg1W1Lsr84Y7dG5dG/view?usp=sharing',
       },
       {
         volume: 'Vol. 6',
@@ -45,7 +45,7 @@ export default [
         title: 'Phytoseiidae of Florida',
         year: '1970',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1970_006.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1uLvAB8gaGSlufPY7rBrXXQaX8c3qE2UY/view?usp=sharing',
       },
       {
         volume: 'Vol. 7',
@@ -53,7 +53,7 @@ export default [
         title: 'Agromyzidae of Florida',
         year: '1973',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_007.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1Et02j0YQ7TWW3uhl0SJiA3K9SWR4d9qB/view?usp=sharing',
       },
       {
         volume: 'Vol. 8',
@@ -61,7 +61,7 @@ export default [
         title: 'Scarab Beetles of Florida, Part. I, The Laparosticti',
         year: '1973',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_008.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/19h8tFpDaq-fNwMRg52LwhfN1w9ytgoGB/view?usp=sharing',
       },
       {
         volume: 'Vol. 9',
@@ -69,7 +69,7 @@ export default [
         title: 'Ichneumoninae of Florida and Neighboring States',
         year: '1977',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1977_009.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1dKxGc5sAknsq9lfuPSOrFQ71nKgQcyZi/view?usp=sharing',
       },
       {
         volume: 'Vol. 10',
@@ -77,7 +77,7 @@ export default [
         title: 'Sand Flies of Florida',
         year: '1979',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1979_010.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/13TkoOc9qoQPLQcEu5N7voIRMDDS5tehE/view?usp=sharing',
       },
       {
         volume: 'Vol. 11',
@@ -85,7 +85,7 @@ export default [
         title: 'Soft Scale Insects of Florida',
         year: '1984',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1984_011.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/13P5VROw78mGwZzTyp-6xtSBGpKtaU06g/view?usp=sharing',
       },
       {
         volume: 'Vol. 12',
@@ -93,7 +93,7 @@ export default [
         title: 'Coreidae of Florida',
         year: '1986',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1986_012.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1ChY1djxNtFuu1CckcCYA2hTkdOBu2Ota/view?usp=sharing',
       },
       {
         volume: 'Vol. 13',
@@ -101,7 +101,7 @@ export default [
         title: 'Scarab Beetles of Florida, Part II, May or June Beetles (Genus Phyllophaga)',
         year: '1989',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1989_013.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1ySK-ZbggeiZQoCx0tjUAGHPLeVTSUIA7/view?usp=sharing',
       },
       {
         volume: 'Vol. 14',
@@ -109,7 +109,7 @@ export default [
         title: 'Lygaeidae of Florida (Hemiptera: Heteroptera)',
         year: '1990',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1990_014.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1NkN0RIfuZQWS2g-0HtsFpfx3k5RuiAHO/view?usp=sharing',
       },
       {
         volume: 'Vol. 15',
@@ -117,7 +117,7 @@ export default [
         title: 'The Flat Bark Beetles of Florida',
         year: '1993',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1993_015.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1TPb9SwAz4cw0RZqWcHf-FAZqKt3ZYv9O/view?usp=sharing',
       },
       {
         volume: 'Vol. 16',
@@ -125,7 +125,7 @@ export default [
         title: 'A Distributional Checklist of the Beetles (Coleoptera) of Florida',
         year: '1998',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1998_016.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1mUywdpsl3k9y6-JXU5xBsMb_VNLLruh9/view?usp=sharing',
       },
       {
         volume: 'Vol. 17',
@@ -133,7 +133,7 @@ export default [
         title: 'Lepidoptera of Florida. Part 1. Introduction and Catalog',
         year: 'released 2003, printed 2007',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_2003_017.png',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1i9qBoKDw4h6Lc6pC2O49LbnbOQOSoIoW/view?usp=sharing',
       },
       {
         volume: 'Vol. 18',
@@ -141,7 +141,7 @@ export default [
         title: 'A Checklist of the Beetles of Cuba with Data on Distributions and Bionomics (Insecta Coleoptera)',
         year: '2005',
         image: '/images/otherpubs/FSCA_Arthropods/AFNLA_2005_018.jpg',
-        pdf: '/PDF/2024_DorisLagos.pdf',
+        pdf: 'https://drive.google.com/file/d/1QoSHGmuEvIW2hT7Bcb70G8HEb9TI9Gco/view?usp=sharing',
       },
   ]  
     
