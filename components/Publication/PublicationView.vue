@@ -1,21 +1,28 @@
 <template>
   <section class="container mx-auto flex my-10 justify-between px-8">
     <article>
-      <div class="text-[35px]">
-        <span
-          class="font-bold"
-          v-html="publication.title"
-        />
-        <template v-if="publication?.categories?.length">
-          <span> – </span>
-          <VTag
-            v-for="category in publication?.categories"
-            class="bg-setenary/90 text-white inline-block text-[11px] py-1 mr-1"
-          >
-            {{ category }}
-          </VTag>
-        </template>
-      </div>
+<div class="space-y-1">
+  <!-- Title -->
+  <h2
+    class="font-serif font-semibold text-[30px] leading-tight text-otenary transition-colors"
+    v-html="publication.title"
+  ></h2>
+
+  <!-- Categories -->
+  <div
+    v-if="publication?.categories?.length"
+    class="flex flex-wrap gap-1 mt-3"
+  >
+    <VTag
+      v-for="category in publication.categories"
+      :key="category"
+      class="bg-primary/90 text-white text-[11px] py-0.5 px-2 rounded"
+    >
+      {{ category }}
+    </VTag>
+  </div>
+</div>
+
       <div class="flex flex-row justify-between gap-4">
         <div>
           <div class="flex flex-row justify-between my-4 gap-4 text-gray-800">
@@ -47,7 +54,7 @@
                 :href="publication.doi"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-quinary hover:text-quaternary hover:underline cursor-pointer"
+                class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
                 >
                 {{ publication.doi }}
               </a>  
@@ -61,7 +68,7 @@
                 :href="zoobankUrl(publication.zoobank)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-quinary hover:text-quaternary hover:underline cursor-pointer"
+                class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
               >
                 {{ publication.zoobank }}
               </a>  
@@ -106,11 +113,11 @@
                     >: {{ reference.pages }}. </span
                   >
                   <span v-if="reference.doi">
-                    <a :href="reference.doi" target="_blank" rel="noopener noreferrer" class="text-quinary hover:text-quaternary hover:underline cursor-pointer">{{ reference.doi }}</a>
+                    <a :href="reference.doi" target="_blank" rel="noopener noreferrer" class="text-novenary hover:text-quaternary hover:underline cursor-pointer">{{ reference.doi }}</a>
                   </span>
                   <span v-if="reference.url">
                      Available at <a :href="reference.url" target="_blank" rel="noopener noreferrer"
-                     class="text-quinary hover:text-quaternary hover:underline cursor-pointer">{{ reference.url }} </a> 
+                     class="text-novenary hover:text-quaternary hover:underline cursor-pointer">{{ reference.url }} </a> 
                   </span>&nbsp;
                   <span v-if="reference.access">{{ reference.access }}</span>
                 </li>
@@ -121,31 +128,10 @@
 
         <!-- RIGHT COLUMN with gray background -->
         <div class="flex flex-col gap-3 max-w-96 mt-6 bg-setenary/10 p-4">
-          <div v-if="publication.date"
-              class="border border-senary bg-senary/10 px-4 rounded shadow max-w-[300px]">
-              <p class="text-white bg-senary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1">Publication</p> 
-              <div class="mb-1">
-                <span class="text-[15px] text-black/80">{{ publication.issue }}</span>
-              </div>
-          </div>
-          <div v-if="publication.date"
-              class="border border-quaternary bg-tertiary/40 px-4 rounded shadow max-w-[300px]">
-              <p class="text-white bg-quaternary/90 px-4 w-[calc(100%+2rem)]  -mx-4 border-quaternary py-1 mb-1">Published</p> 
-              <div class="mb-1">
-                <span class="text-[15px] text-black/80">{{ publication.date }}</span>
-              </div>
-          </div>
-          <div class="border border-primary px-4 rounded bg-secondary/70 shadow max-w-[300px] ">
-            <h3 class="text-lg text-white bg-primary/70 px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2">
-              How to cite
-            </h3>
-            <div class="mb-2">
-              <PublicationCite class="text-sm text-black/80 mt-2" :publication="publication" />
-            </div>
-          </div>
           <div
             v-if="publication.download"
-            class="group border border-gray-500 text-foreground bg-gray-500 px-4 py-[0.5px] text-lg rounded flex items-center space-x-2 hover:bg-gray-400  transition duration-200 max-w-[300px] shadow"
+            class="group border border-quaternary text-foreground bg-quaternary px-4 py-[0.5px] text-lg 
+            rounded flex items-center space-x-1 hover:bg-tertiary  transition duration-200 max-w-[300px] shadow"
           >
           <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 
@@ -155,13 +141,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                 d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
             </svg>
-            <a :href="publication.download">Dowload PDF</a>
+            <a :href="publication.download">Dowloand PDF</a>
           </div>
           <div
              v-for="(supp, index) in publication.supplementary"
             :key="index"
-            class="group border border-quinary/50 text-gray-800 bg-quinary/80 px-4 py-[0.5px] rounded
-            flex items-center space-x-2 hover:bg-quinary/40 transition duration-200 max-w-[300px] shadow text-[17px]"
+            class="group border border-priamry text-gray-800 bg-primary px-4 py-[0.5px] rounded
+            flex items-center space-x-2 hover:bg-secondary transition duration-200 max-w-[300px] shadow text-[17px]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -179,6 +165,29 @@
               </svg>
                 <a :href="supp" target="_blank" rel="noopener">Suppl. Material {{ index + 1 }}</a>
           </div>
+          <div v-if="publication.date"
+              class="border border-gray-400 bg-gray-200 px-4 rounded shadow max-w-[300px]">
+              <p class="text-white bg-gray-400 px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1">Publication</p> 
+              <div class="mb-1">
+                <span class="text-[15px] text-gray-900">{{ publication.issue }}</span>
+              </div>
+          </div>
+          <div v-if="publication.date"
+              class="border border-gray-400 bg-gray-200 px-4 rounded shadow max-w-[300px]">
+              <p class="text-white bg-gray-400 px-4 w-[calc(100%+2rem)]  -mx-4 border-quaternary py-1 mb-1">Published</p> 
+              <div class="mb-1">
+                <span class="text-[15px] text-black/80">{{ publication.date }}</span>
+              </div>
+          </div>
+          <div class="border px-4 rounded border-gray-400 bg-gray-200 shadow max-w-[300px] ">
+            <h3 class="text-lg text-white bg-gray-400 px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2">
+              How to cite
+            </h3>
+            <div class="mb-2">
+              <PublicationCite class="text-sm text-black/80 mt-2" :publication="publication" />
+            </div>
+          </div>
+
 
         </div>
 

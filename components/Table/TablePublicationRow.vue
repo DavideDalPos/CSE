@@ -4,21 +4,23 @@
       :to="publication._path"
       class="flex justify-between items-center"
     >
-      <div class="flex-1">
-        <h2
-          class="font-bold text-senary/90 text-[18px] text-justify hover:text-quaternary/80 pr-5"
-          v-html="publication.title"
-        ></h2>
-        <div class="flex flex-row flex-wrap gap-1">
-          <VTag
-            v-for="category in publication.categories"
-            :key="category"
-            class="bg-quinary/45 text-gray-700 inline-block"
-          >
-            {{ category }}
-          </VTag>
-        </div>
-      </div>
+<div class="flex-1">
+  <h2
+    class="font-serif font-semibold text-[18px] text-otenary leading-snug text-shadow-sm hover:text-quaternary transition-colors duration-200 pr-5"
+    v-html="publication.title"
+  ></h2>
+
+  <div class="flex flex-wrap gap-2 mt-2">
+    <VTag
+      v-for="category in publication.categories"
+      :key="category"
+      class="bg-primary text-white px-2 py-0.5 rounded-full text-xs shadow-sm"
+    >
+      {{ category }}
+    </VTag>
+  </div>
+</div>
+
     </NuxtLink>
     <p class="text-gray-600 text-sm mt-1">
       {{ makeAuthorsLabel(publication.authors) }}
@@ -30,7 +32,7 @@
       <p>
         <span class="text-gray-700">DOI: </span>
         <span
-          class="text-primary hover:text-tertiary hover:underline cursor-pointer"
+          class="text-quinary hover:text-tertiary hover:underline cursor-pointer"
         >
           {{ publication.doi }}
         </span>
@@ -39,7 +41,7 @@
     <div class="flex flex-wrap gap-1 mt-1">
       <div
         v-if="publication.download"
-        class="group shadow px-2 py-1 text-xs rounded bg-setenary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
+        class="group shadow px-2 py-1 text-xs rounded bg-quaternary/90 w-max text-white flex items-center space-x-1 hover:text-primary hover:bg-tertiary transition duration-200 mt-1 shadow-sm"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
