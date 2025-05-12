@@ -50,9 +50,26 @@ const filteredList = computed(() =>
           <td class="px-4 py-3 wrap-content" v-html="item.title"></td>
           <td class="px-4 py-3 wrap-content" v-html="item.taxon"></td>
           <td class="px-4 py-3 wrap-content">
-            <a :href="item.pdf" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800">
-              <img src="/images/PDF_file_icon.svg" alt="PDF" class="w-6 h-6" />
-            </a>
+      <div
+        v-if="item.pdf"
+        class="group shadow px-2 py-1 text-xs rounded bg-novenary w-max text-white flex items-center space-x-1 hover:text-primary hover:bg-tertiary transition duration-200 mt-1 shadow-sm"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          class="w-4 h-4 text-white group-hover:text-primary transition duration-200"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+          />
+        </svg>
+        <a :href="item.pdf">PDF</a>
+      </div>
           </td>
         </tr>
       </tbody>

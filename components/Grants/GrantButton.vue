@@ -4,14 +4,14 @@
         <a 
         href="https://drive.google.com/file/d/1GJ3-z9Qhgpo4U25dgzsAJubAan7m_Bku/view?usp=sharing" 
         target="_blank"
-          class="px-6 py-2 bg-senary text-white rounded hover:bg-quaternary transition disabled:opacity-30"
+          class="px-6 py-2 bg-red-800 text-white rounded hover:bg-quaternary transition disabled:opacity-30"
         >
           Dowload Report
         </a>
         
         <a 
           href="/images/guatemala.zip" 
-          class="px-6 py-2 bg-setenary text-white rounded hover:bg-setenary/50 transition disabled:opacity-30 flex items-center space-x-2"
+          class="px-6 py-2 bg-gray-800 text-white rounded hover:bg-setenary/50 transition disabled:opacity-30 flex items-center space-x-2"
           download="guatemala_images.zip"
         >
          Download Images

@@ -14,7 +14,7 @@
   </div>
 
   <!-- Subtitle -->
-  <div class="mt-3 text-secondary md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
+  <div class="mt-3 text-primary md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
     Advancing Insect Systematics
   </div>
 </div>

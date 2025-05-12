@@ -49,7 +49,7 @@
       'px-6 py-2 rounded transition',
       currentPage >= slideChunks.length - 1
         ? 'bg-gray-400 cursor-not-allowed text-white'
-        : 'bg-senary text-white hover:bg-quaternary'
+        : 'bg-otenary text-white hover:bg-quaternary'
     ]"
       >
         Next
