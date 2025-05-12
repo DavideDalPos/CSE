@@ -86,6 +86,26 @@
                 {{ label }}
               </NuxtLink>
             </template>
+
+<!-- Vertical Divider -->
+<div class="w-px h-6 bg-white/30 self-center"></div>
+
+<!-- Facebook Icon -->
+ <div class="flex items-center gap-2 text-white">
+<NuxtLink to="https://www.facebook.com/CSE.InsectaMundi" target="_blank" class="text-white hover:text-quaternary">
+  <IconFacebook class="w-5 h-5" />
+</NuxtLink>
+<NuxtLink
+    to="https://twitter.com/SystematicEnto"
+    target="_blank"
+    class="hover:text-quaternary"
+    title="Follow us on X (Twitter)"
+  >
+    <IconX class="w-5 h-5" />
+  </NuxtLink>
+</div>
+
+
           </nav>
         </div>
 
@@ -97,6 +117,8 @@
 </template>
 
 <script setup>
+import IconX from '../Icon/IconX.vue';
+
 const menu = [
   {
     label: 'Home',
