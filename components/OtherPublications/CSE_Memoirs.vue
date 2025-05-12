@@ -7,7 +7,7 @@
           <div
             v-for="(book, index) in books"
             :key="index"
-            class="bg-gray-200 shadow-sm rounded-lg overflow-hidden flex flex-col md:flex-row gap-2 p-3"
+            class="bg-gray-100 border border-gray-300 shadow-sm rounded-lg overflow-hidden flex flex-col md:flex-row gap-2 p-3"
           >
             <!-- Left Column (Image) -->
             <div class="flex-shrink-0 bg-secondary/70 p-2 group relative">
@@ -26,7 +26,7 @@
             <!-- Right Column (Info) -->
             <div class="flex-1 p-2 space-y-2">
               <!-- Volume -->
-              <div class="text-sm text-senary font-semibold">
+              <div class="text-sm text-quaternary font-semibold">
                 {{ book.volume }}
               </div>
   
@@ -46,7 +46,7 @@
               <!-- PDF Download Button -->
               <div
                 v-if="book.pdf"
-                class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
+                class="group shadow px-2 py-1 text-xs rounded bg-otenary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

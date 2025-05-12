@@ -5,7 +5,7 @@
         <div
           v-for="(book, index) in books"
           :key="index"
-          class="rounded-xl bg-gray-200 shadow-md hover:shadow-lg transition p-6 flex flex-col items-center text-center group"
+          class="rounded-xl bg-gray-100 border border-gray-300 shadow-md hover:shadow-lg transition p-6 flex flex-col items-center text-center group"
         >
           <div @click="openModal(book.image)" class="w-full cursor-pointer overflow-hidden rounded-lg">
             <img
@@ -45,7 +45,7 @@
             <NuxtLink
               v-if="book.link"
               :to="book.link"
-              class="inline-block text-[12px] bg-quinary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
+              class="inline-block text-[12px] bg-otenary text-white rounded-full px-5 py-2 hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg"
             >
               See Full Festschrift
            </NuxtLink>

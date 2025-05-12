@@ -13,7 +13,7 @@ import newsletterData from './CSE_NewsLetterData.js'; // Importing the data
         :key="index"
         class="bg-gray-100 border border-gray-300 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-102"
       >
-        <h3 class="text-lg font-semibold text-quaternary mb-1">{{ newsletter.title }}</h3>
+        <h3 class="text-lg font-semibold text-otenary mb-1">{{ newsletter.title }}</h3>
         
         <!-- PDF link with refined style -->
         <div class="mt-1">

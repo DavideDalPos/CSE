@@ -15,15 +15,15 @@ import CSE_IMIntro from './CSE_IMIntro.vue';
       </div>
   <div class="flex gap-10">
     <!-- Left side: CSE_Memoirs and CSE_Festschrift (takes 2/3 of the page) -->
-    <div class="flex-2">
+    <div class="flex-2 border-t border-gray-300 mb-10">
       <CSE_IMIntro />
-
-      <div class="mb-10">
-        <CSE_Memoirs />
-      </div>
       <div id="festschrifts" class="border-t border-gray-300 mb-10">
       <CSE_Festschrift />
         </div>
+      <div class="border-t border-gray-300 mb-10">
+        <CSE_Memoirs />
+      </div>
+      
       <div class="border-t border-gray-300 mb-5">
       <CSE_NewsLetter />
     </div>
