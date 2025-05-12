@@ -18,7 +18,7 @@ authors:
     affiliation: 'Programa de Biología Universidad Pedagógica y Tecnológica de Colombia Avenida Central del Norte 39–115 Sede Central – Tunja, Boyacá, Colombia'
     email: 'hector.gasca@uptc.edu.co'
 
-download: ''
+download: 'https://drive.google.com/file/d/19g1NWA85QrPq32ca0BrNGYKQB0S3d_TU/view?usp=sharing'
 
 supplementary: ''
 

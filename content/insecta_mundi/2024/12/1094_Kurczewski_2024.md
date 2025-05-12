@@ -13,7 +13,7 @@ authors:
     affiliation: '1188 Converse Drive NE Atlanta, GA 30324'
     email: 'kurczewskifrank@gmail.com'
 
-download: ''
+download: 'https://drive.google.com/file/d/1NlVwQANaVUlUVZYOiyBUKQR_Gfpy5P5k/view?usp=sharing'
 
 supplementary: ''
 

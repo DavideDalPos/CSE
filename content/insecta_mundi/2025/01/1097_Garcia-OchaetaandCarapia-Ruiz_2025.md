@@ -20,7 +20,7 @@ authors:
     email: 'vicente.carapia@uaem.mx'
     orcid: 'https://orcid.org/0000-0002-5370-0399'
 
-download: ''
+download: 'https://drive.google.com/file/d/1ajotbEDnRqHeBIKXoyVaoyzi61Nvsotg/view?usp=sharing'
 
 supplementary: ''
 

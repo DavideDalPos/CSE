@@ -18,7 +18,7 @@ authors:
     affiliation: 'USDA APHIS PPQ South Florida P.O. Box 660520 Miami, FL 33266, USA'
     email: 'william.tang@usda.gov'
 
-download: ''
+download: 'https://drive.google.com/file/d/1td5r2ag3MLfJGhZx3Kpk6vehU8a8efzt/view?usp=sharing'
 
 supplementary: ''
 

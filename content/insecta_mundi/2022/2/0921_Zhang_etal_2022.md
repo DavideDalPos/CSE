@@ -24,7 +24,7 @@ authors:
     last_name: 'Grishin'
     affiliation: 'Howard Hughes Medical Institute and Departments of Biophysics and Biochemistry University of Texas Southwestern Medical Center 5323 Harry Hines Blvd., Dallas, TX, 75390-9050 USA'
 
-download: ''
+download: 'https://drive.google.com/file/d/1e8gzOEQP-1IrIabv4yBL5QXbmU163KKR/view?usp=sharing'
 
 supplementary: ''
 

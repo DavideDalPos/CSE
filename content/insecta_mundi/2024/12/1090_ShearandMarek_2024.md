@@ -20,7 +20,7 @@ authors:
     email: 'pmarek@vt.edu'
     orcid: 'https://orcid.org/0000-0002-7048-2514'
 
-download: ''
+download: 'https://drive.google.com/file/d/192NrKYz3-SO2oHMGUAdhju9hSuO4GAfJ/view?usp=sharing'
 
 supplementary: ''
 

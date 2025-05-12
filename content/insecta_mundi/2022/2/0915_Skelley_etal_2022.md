@@ -26,7 +26,7 @@ authors:
     email: 'okeller1977@gmail.com'
     orcid: 'https://orcid.org/0000-0001-5067-3316'
 
-download: ''
+download: 'https://drive.google.com/file/d/1mRrxJfHediC6suu5SwDu--tQjkmvpd1t/view?usp=sharing'
 
 supplementary: ''
 

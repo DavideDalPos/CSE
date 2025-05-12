@@ -22,7 +22,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods, Division of Plant Industry, Florida Department of Agriculture and Consumer Services, 1911 SW 34th St., Gainesville, FL 32608'
     email: 'kathryn.daly@fdacs.gov'
 
-download: ''
+download: 'https://drive.google.com/file/d/1MhM2AAzQ4n8K62I3x3pcGySkfJMisJnt/view?usp=sharing'
 supplementary: ''
 keywords:
   - Chaetotaxy

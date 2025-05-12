@@ -11,7 +11,7 @@ authors:
     affiliation: 'Division of Entomology, Pennsylvania Department of Agriculture, 2301 N. Cameron Street, Harrisburg, PA 17110 USA'
     email: 'lbarringer@pa.gov'
 
-download: 'https://journals.flvc.org/mundi/article/view/0399/81426'
+download: 'https://drive.google.com/file/d/14R4TGt6Qa45wodBD2gDNTCKAP5vzgT9s/view?usp=sharing'
 
 zoobank: 'urn:lsid:zoobank.org:pub:48D75CE5-1194-4349-A1D3-94722783FCFE'
 

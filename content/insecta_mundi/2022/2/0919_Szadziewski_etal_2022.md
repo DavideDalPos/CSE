@@ -25,7 +25,7 @@ authors:
     last_name: 'Bojarski'
     affiliation: 'Department of Invertebrate Zoology and Parasitology University of Gdańsk, Wita Stwosza 59, 80-308 Gdańsk, Poland'
 
-download: ''
+download: 'https://drive.google.com/file/d/1EEJRXgCjLdCfhEEj25JH67kw_uoeC_d8/view?usp=sharing'
 
 supplementary: ''
 

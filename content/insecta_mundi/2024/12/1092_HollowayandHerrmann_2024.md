@@ -20,7 +20,7 @@ authors:
     email: 'herrmann@coleopterologie.de'
     orcid: 'https://orcid.org/0000-0001-5700-1125'
 
-download: ''
+download: 'https://drive.google.com/file/d/1OJbzHkqaH_tlvhGg1XXsFWGw3ivaKmzp/view?usp=sharing'
 
 supplementary: ''
 

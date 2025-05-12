@@ -13,7 +13,7 @@ authors:
     email: 'John.M.Leavengood@usda.gov'
     orcid: 'https://orcid.org/0000-0003-3223-455X'
 
-download: ''
+download: 'https://drive.google.com/file/d/1HK2C4J2GAkRSQPobiCgeLXJocOUd4KXJ/view?usp=sharing'
 
 supplementary:
 

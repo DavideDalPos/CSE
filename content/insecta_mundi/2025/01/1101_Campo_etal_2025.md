@@ -22,7 +22,7 @@ authors:
     affiliation: 'Systematic Entomology Laboratory, Agricultural Research Service, USDA, Rm. 328, Bldg. 003, Beltsville, MD 20705, USA'
     email: 'rtchok@gmail.com'
 
-download: ''
+download: 'https://drive.google.com/file/d/1cqyotk3QDuQgU4M3Xpb9VKOMHggWG1rG/view?usp=sharing'
 
 supplementary:
 

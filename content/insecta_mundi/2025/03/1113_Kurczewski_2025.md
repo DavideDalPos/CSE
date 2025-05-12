@@ -13,7 +13,7 @@ authors:
     email: 'kurczewskifrank@gmail.com'
     orcid: ''
 
-download: ''
+download: 'https://drive.google.com/file/d/1AgogdiuxcvINve_GA1NvLDjVj-5Fcbao/view?usp=sharing'
 supplementary: ''
 keywords:
   - Exoskeletal ridges grooves, and pubescence

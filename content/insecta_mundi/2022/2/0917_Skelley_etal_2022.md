@@ -20,7 +20,7 @@ authors:
     last_name: 'Pérez-Farrera'
     affiliation: 'Herbario Eizi Matuda, Laboratorio de Ecología Evolutiva, Instituto de Ciencias Biologicas, Universidad de Ciencias y Artes de Chiapas Libramiento Norte Poniente 1150, Col. Lajas-Maciel CP 29039, Tuxtla Gutierrez, Chiapas, Mexico'
 
-download: ''
+download: 'https://drive.google.com/file/d/17o58zmf9KmYuoT8lr0SYZLob_8XxAK8s/view?usp=sharing'
 
 supplementary: ''
 

@@ -20,7 +20,7 @@ authors:
     email: 'asmith@nature.ca'
     orcid: 'https://orcid.org/0000-0002-8059-5133'
 
-download: ''
+download: 'https://drive.google.com/file/d/1TJEseYTj8wCqE6_K-VF3_eCHHo45HJ2p/view?usp=sharing'
 
 supplementary: ''
 

@@ -27,7 +27,7 @@ authors:
     orcid: 'https://orcid.org/0009-0007-8471-1991'
 
 
-download: ''
+download: 'https://drive.google.com/file/d/19zw9ZuYw2bvfGQVrbQ9cbNAyKm8UlNqi/view?usp=sharing'
 
 supplementary: ''
 

@@ -13,7 +13,7 @@ authors:
     affiliation: 'Laboratorio de Diagnóstico Fitosanitario, Ministerio de Agricultura Ganadería y Alimentación, Petén, Guatemala'
     email: 'jfranciscogarciaochaeta@gmail.com'
 
-download: ''
+download: 'https://drive.google.com/file/d/1xKIhCcSnNEAdUltwXfu5Jt4hYx4uIKuQ/view?usp=sharing'
 
 supplementary: ''
 
