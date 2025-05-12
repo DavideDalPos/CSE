@@ -3,7 +3,8 @@ import newsletterData from './CSE_NewsLetterData.js'; // Importing the data
 </script>
 
 <template>
-    <h2 class= "text-3xl font-semibold text-senary leading-relaxed max-w-3xl mb-4 mt-10">CSE Newsletters</h2>
+                    <h1 class="text-4xl font-extrabold text-gray-800 mb-2 mt-7">Newsletter</h1>
+               <h2 class="text-xl font-medium text-gray-500 -mt-2 mb-4">CSE Publications</h2>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
       <!-- Loop through each newsletter entry and display it -->

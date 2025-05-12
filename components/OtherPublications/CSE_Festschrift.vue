@@ -1,5 +1,6 @@
 <template>
-         <h2 class= "text-3xl font-semibold text-senary leading-relaxed max-w-3xl mb-2 mt-10 font-serif">Festschrift - <i>Insecta Mundi</i> Special Pubications</h2>
+                    <h1 class="text-4xl font-extrabold text-gray-800 mb-2 mt-7">Festschrifts</h1>
+               <h2 class="text-xl font-medium text-gray-500 -mt-2">Insecta Mundi Special Publications</h2>
         <div class=" mt-4 grid grid-cols-2 md:grid-cols-3 gap-10">
         <div
           v-for="(book, index) in books"

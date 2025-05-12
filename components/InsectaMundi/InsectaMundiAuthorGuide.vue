@@ -6,7 +6,7 @@
     <!-- Resources and Contacts boxes placed here between the title and text -->
     <div class="flex flex-col lg:flex-row items-start gap-12 mt-5">
       <!-- Left-side content for the text -->
-      <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify">
+      <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify mt-15">
         <!-- New div here for additional text content -->
         <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
           <p class="leading-relaxed">
