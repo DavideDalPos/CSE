@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import FSCA_ArthropodsButton from './FSCA_ArthropodsButton.vue';
-import FSCA_OccasionalButton from './FSCA_OccasionalButton.vue';
 import InsectaMundiButton from './InsectaMundiButton.vue';
 import InsectaMundiButtonNew from './InsectaMundiButtonNew.vue';
 
@@ -17,7 +16,6 @@ import InsectaMundiButtonNew from './InsectaMundiButtonNew.vue';
 
     </div>
       <FSCA_ArthropodsButton />
-      <FSCA_OccasionalButton />
       <InsectaMundiButton />
       <InsectaMundiButtonNew />
     </div>

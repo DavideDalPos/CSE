@@ -14,9 +14,9 @@ import InsectaMundiButtonNew from './InsectaMundiButtonNew.vue';
   Click the buttons below to browse our latest work
 </p>
 
-    </div>
-      <InsectaMundiButton />
-      <InsectaMundiButtonNew />
+    </div> 
       <CSE_PapersButton />
+      <InsectaMundiButton />
+      <InsectaMundiButtonNew /> 
     </div>
   </template>

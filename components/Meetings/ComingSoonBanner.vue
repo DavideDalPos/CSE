@@ -28,7 +28,7 @@
   <div v-else
  class="bg-gray-100 border-l-4 border-[#7ca2a1] p-8 rounded-lg max-w-3xl mx-auto shadow-lg transform transition-transform hover:scale-105"
 >
-  <div class="text-3xl font-semibold text-[#7ca2a1] mb-3">
+  <div class="text-3xl font-semibold text-novenary mb-3">
     2026 Conference Date Coming Soon
   </div>
   <div class="text-lg text-[#5f7a79] mb-6">
@@ -49,7 +49,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2026-02-15T14:00:00Z'), // 09:00 AM Gainesville (UTC-5) = 14:00 UTC
+      deadline: new Date('2025-02-15T14:00:00Z'), // 09:00 AM Gainesville (UTC-5) = 14:00 UTC
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 },
     };
