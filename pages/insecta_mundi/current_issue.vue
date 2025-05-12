@@ -27,7 +27,7 @@
           <p v-if="list.length === 0">No articles found.</p>
         </div>
       </div>
-
+<div class="hidden lg:block w-[1px] bg-gray-300 self-stretch"></div>
       <!-- RIGHT COLUMN -->
       <InsectaMundiRightColumn />
 
