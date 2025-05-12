@@ -10,10 +10,10 @@
         <VCard class="bg-foreground max-w-md w-full py-8 p-6 rounded-2xl shadow-lg flex flex-col justify-between text-center">
           <div>
             <h3 class="text-2xl font-bold flex justify-center items-center gap-2 mb-3 text-gray-800">
-              May 2025 Publications
+              {{ monthYear }} Publications
               <span class="text-xs bg-red-600 text-white rounded-full px-2 py-0.5 animate-pulse">New</span>
             </h3>
-            <span class="text-gray-500 text-sm mb-4 block">Published on May 23, 2025</span>
+            <span class="text-gray-500 text-sm mb-4 block">Published on {{ latestPubDate || '...' }} </span>
             <p class="text-base text-muted mb-6">
               Browse this month's publications in <i>Insecta Mundi</i>
             </p>
@@ -21,7 +21,7 @@
           <div class="flex justify-center">
             <NuxtLink
               href="/insecta_mundi/current_issue"
-              class="no-underline inline-flex items-center gap-2 rounded-full bg-senary/90 px-6 py-2 text-white text-sm shadow-lg hover:bg-quinary/80 transition"
+              class="no-underline inline-flex items-center gap-2 rounded-full bg-otenary/90 px-6 py-2 text-white text-sm shadow-lg hover:bg-quinary/80 transition"
             >
               View New Publications
             </NuxtLink>
@@ -55,4 +55,38 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue'
+
+const latestPubDate = ref('')
+const monthYear = ref('')
+
+// Fetch the latest date
+onMounted(async () => {
+  try {
+    const latest = await queryContent('insecta_mundi')
+      .where({ date: { $ne: null } })
+      .sort({ date: -1 })
+      .limit(1)
+      .only(['date'])
+      .findOne()
+
+    const dateObj = new Date(latest.date)
+    latestPubDate.value = dateObj.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    })
+
+    // Set the monthYear after dateObj is defined
+    monthYear.value = dateObj.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long'
+    })
+
+  } catch (error) {
+    console.error('Failed to load latest publication date:', error)
+  }
+})
 </script>
+
+
