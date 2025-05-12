@@ -17,7 +17,7 @@ authors:
     affiliation: 'University of Florida Department of Entomology and Nematology Building 970, Natural Area Dr. Gainesville, FL 32611, USA'
     email: 'jhfrank@ufl.edu'
 
-download: ''
+download: 'https://drive.google.com/file/d/1UMhzhep1O9cQrzdq4CG_Kqy6tneFwhlU/view?usp=sharing'
 
 supplementary: ''
 

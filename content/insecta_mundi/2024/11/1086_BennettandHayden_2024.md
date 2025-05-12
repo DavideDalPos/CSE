@@ -16,7 +16,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods, Florida Department of Agriculture – Division of Plant Industry, 1911 SW 34th St., Gainesville, FL 32608 USA'
     email: 'james.hayden@fdacs.gov'
 
-download:
+download: 'https://drive.google.com/file/d/1gB48Ij-5K6XKZjek3L8x3P4j3g8fjMD_/view?usp=sharing'
 
 zoobank: 'urn:lsid:zoobank.org:pub:3A1AD0AF-0026-470A-8D9B-1C70B9CF3B37'
 

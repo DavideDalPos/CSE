@@ -18,7 +18,7 @@ authors:
     affiliation: 'Finca Las Cusingas Buenos Aires de Jiménez, Costa Rica'
     email: 'bkohlmann64@gmail.com'
 
-download: ''
+download: 'https://drive.google.com/file/d/1yW8AUCU_2TTcRBOYcy5uIoj-epcac8bw/view?usp=sharing'
 
 supplementary: ''
 

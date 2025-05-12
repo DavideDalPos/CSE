@@ -12,7 +12,7 @@ authors:
     affiliation: 'Laboratorio de Diagnóstico Fitosanitario Ministerio de Agricultura, Ganadería y Alimentación (MAGA), Petén, Guatemala'
     email: 'jfranciscogarciaochaeta@gmail.com'
 
-download: ''
+download: 'https://drive.google.com/file/d/1u_iMJAk9oQ3Gl8Q53FYyDJskUShtxnJs/view?usp=sharing'
 
 supplementary: ''
 

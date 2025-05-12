@@ -12,7 +12,7 @@ authors:
   - name: José Luis Lencina Gutierrez
     affiliation: 'Grupo de investigación Filogenia y Evolución Animal. Departamento de Zoología y Antropología Física, Área de Biología Animal, Facultad de Veterinaria, Universidad de Murcia. Campus de Espinardo 30100 Murcia, Spain'
 
-download:
+download: 'https://drive.google.com/file/d/1Z8Jd_E1RzZLD3J80diBoyLP_3w4sl64E/view?usp=sharing'
 keywords:
   - Coleoptera
   - Scarabaeoidea

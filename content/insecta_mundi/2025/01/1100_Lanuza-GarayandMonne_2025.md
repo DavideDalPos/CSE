@@ -19,7 +19,7 @@ authors:
     affiliation: 'Museu Nacional, Universidade Federal do Rio de Janeiro, Quinta da Boa Vista, 20940-040, Rio de Janeiro, RJ, Brazil'
     orcid: 'https://orcid.org/0000-0001-8825-3122'
 
-download: ''
+download: 'https://drive.google.com/file/d/156HVSd9k4KKxejufaTHpgzC1rhiOdyaE/view?usp=sharing'
 
 supplementary: ''
 

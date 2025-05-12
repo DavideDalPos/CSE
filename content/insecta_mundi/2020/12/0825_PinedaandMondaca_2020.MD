@@ -18,7 +18,7 @@ authors:
     affiliation: 'Servicio Agrícola y Ganadero (SAG), Camino La Pólvora Km 12,7, Valparaíso, Chile'
     email: 'jose.mondaca@sag.gob.cl'
 
-download: ''
+download: 'https://drive.google.com/file/d/154ClU08_MV6pCOlexbXMqYpVO8TKPh1a/view?usp=sharing'
 
 supplementary: ''
 

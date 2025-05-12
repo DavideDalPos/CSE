@@ -19,7 +19,7 @@ authors:
     email: 'leblancl@uidaho.edu'
     orcid:
 
-download: ''
+download: 'https://drive.google.com/file/d/1B2hoenHYBfgDUi_W2pT0lPns128oq-Qx/view?usp=sharing'
 
 supplementary:
 

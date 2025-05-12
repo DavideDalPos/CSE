@@ -13,7 +13,7 @@ authors:
     affiliation: 'Australian National Insect Collection, CSIRO GPO Box 1700 Canberra, 2601 ACT, Australia'
     email: 'Adam.Slipinski@csiro.au'
 
-download: ''
+download: 'https://drive.google.com/file/d/1MJz5AodnsnXHWMS481lp-4OcWZyQ4qx8/view?usp=sharing'
 
 supplementary: ''
 

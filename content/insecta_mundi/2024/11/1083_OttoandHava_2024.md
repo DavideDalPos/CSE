@@ -12,7 +12,7 @@ authors:
   - name: 'Jiří Háva'
     affiliation: 'Private Entomological Laboratory & Collection, Rýznerova 37/37, CZ-252 62 Únětice u Prahy, Prague-west Czech Republic'
 
-download:
+download: 'https://drive.google.com/file/d/1IeGLUD_UtjWh5FPR4n40dEVSQqeCbDIo/view?usp=sharing'
 keywords:
   - Fauna
   - China

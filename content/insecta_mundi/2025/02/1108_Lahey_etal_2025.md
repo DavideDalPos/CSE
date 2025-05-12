@@ -25,7 +25,7 @@ authors:
     email: 'sharon.andreason@usda.gov'
     orcid: 'https://orcid.org/0000-0002-8261-7623'
 
-download: ''
+download: 'https://drive.google.com/file/d/13sJq46URwrHzaTyKSRUDg0sUdSgpYRLz/view?usp=sharing'
 
 supplementary:
 

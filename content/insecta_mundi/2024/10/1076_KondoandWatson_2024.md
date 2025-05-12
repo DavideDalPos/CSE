@@ -14,7 +14,7 @@ authors:
     affiliation: 'Department of Life Sciences, the Natural History Museum, Cromwell Road, London SW7 5BD, UK.'
     email: 'gillian.watson@nhm.ac.uk'
 
-download:
+download: 'https://drive.google.com/file/d/1hEyyAogK2JplrAOlu7rhjCAdr-nx4m1A/view?usp=sharing'
 keywords:
   - Hemiptera
   - Sternorrhyncha

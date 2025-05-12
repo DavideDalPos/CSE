@@ -17,7 +17,7 @@ authors:
   - name: Kajla Seheli
     affiliation: 'Insect Biotechnology Division, Institute of Food and Radiation Biology, Bangladesh Atomic Energy Commission, Dhaka-1349, Bangladesh'
 
-download:
+download: 'https://drive.google.com/file/d/1eiXnyFZ3PHrUV705gzEtHu8oDcZIXLEU/view?usp=sharing'
 keywords:
   - Fruit flies
   - distribution

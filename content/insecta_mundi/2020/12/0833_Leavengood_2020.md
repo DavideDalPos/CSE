@@ -12,7 +12,7 @@ authors:
     affiliation: 'United States Department of Agriculture, Animal and Plant Health Inspection Service, Plant Protection and Quarantine, 9325 Bay Plaza Blvd, Suite 206, Tampa, Florida, USA 33619'
     email: 'John.M.Leavengood@usda.gov'
 
-download: ''
+download: 'https://drive.google.com/file/d/1nQl6bpjADYayZWsT8BDyylYgejSRQmPZ/view?usp=sharing'
 
 supplementary: ''
 

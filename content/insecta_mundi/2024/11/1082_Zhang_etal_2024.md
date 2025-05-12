@@ -21,7 +21,7 @@ authors:
   - name: 'Nick V. Grishin'
     affiliation: 'Departments of Biophysics and Biochemistry University of Texas Southwestern Medical Center 5323 Harry Hines Blvd., Dallas, TX, 75390-9050 USA'
 
-download:
+download: 'https://drive.google.com/file/d/1nZUmYLvaC-NPa_a_eVekjFwmYFSCsPPB/view?usp=sharing'
 keywords:
   - Cryptic species
   - biodiversity

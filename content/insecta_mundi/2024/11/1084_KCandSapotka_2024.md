@@ -18,7 +18,7 @@ authors:
     email: 'anishasapkota363@gmail.com'
     orcid: 'https://orcid.org/0000-0002-4351-6213'
 
-download:
+download: 'https://drive.google.com/file/d/1rLuigTDBrNRf2jG7kbb5YLh-eedQRXXq/view?usp=sharing'
 keywords:
   - Butterflies
   - maguey worm

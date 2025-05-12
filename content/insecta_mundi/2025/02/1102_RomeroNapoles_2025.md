@@ -12,7 +12,7 @@ authors:
     affiliation: 'Especialidad de Entomología y Acarología, Postgrado en Fitosanidad, Colegio de Postgraduados, Montecillo, Estado de México, Mexico'
     email: 'jnapoles@colpos.mx'
 
-download: ''
+download: 'https://drive.google.com/file/d/1TWVM614l5PVFbpy6KPfFVeQ-NRus-gVn/view?usp=sharing'
 
 supplementary:
 

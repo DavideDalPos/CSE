@@ -18,7 +18,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods Florida Department of Agriculture and Consumer Services Gainesville, FL, USA'
     email: 'keschnepp@gmail.com'
 
-download: ''
+download: 'https://drive.google.com/file/d/1u4EQnUjKk5xGA3lfvyzUjXsXsuEyaAHk/view?usp=sharing'
 
 supplementary: ''
 

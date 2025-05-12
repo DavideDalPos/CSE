@@ -74,7 +74,7 @@ authors:
     orcid: ''
 
 
-download: ''
+download: 'https://drive.google.com/file/d/1G0u_0uM61Gl2hAyR3W5UyYiM8aoVMpmS/view?usp=sharing'
 
 supplementary:
 
