@@ -69,7 +69,7 @@ export default {
           {
             name: "Alessandra Pandolfi",
             period: "2024-2026",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/AlessandraPandolfi.jpg",
             profileUrl: "https://scholar.google.com/citations?hl=en&user=tkQVCYkAAAAJ"
           },
           {
