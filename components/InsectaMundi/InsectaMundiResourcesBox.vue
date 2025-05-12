@@ -1,14 +1,14 @@
 <template>
   <!-- Sidebar Wrapper with Decorative Left Border -->
-  <div class="flex w-full sm:max-w-[30%] lg:max-w-[25%] font-serif">
+  <div class="flex flex-col w-full sm:max-w-[30%] lg:max-w-[25%] font-serif">
     <!-- Left Border Accent -->
-    <div class="mr-5"></div>
+    <div class="mr-3"></div>
 
     <!-- Content Boxes -->
     <div class="flex flex-col gap-6 w-full">
       <!-- Resource Box -->
       <div class="bg-gray-200 border border-gray-400 rounded shadow-md p-5">
-        <h3 class="text-xl font-semibold  text-gray-700 mb-4 border-b pb-2">
+        <h3 class="text-2xl font-semibold  text-gray-700 mb-4 border-b pb-2">
           Resources
         </h3>
         <ul class="space-y-2">

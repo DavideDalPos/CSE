@@ -18,7 +18,7 @@
             <!-- Text -->
             <a :href="item.link"
                target="_blank"
-               class=" font-medium text-senary group-hover:text-gray-600 transition duration-200">
+               class=" font-medium text-otenary group-hover:text-gray-600 transition duration-200">
               {{ item.text }}
             </a>
           </div>

@@ -48,7 +48,7 @@
           Below, you'll find a visual overview of the entire workflow.
         </p>
       </div>
-
+      <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch mx-6"></div>
       <!-- Right Sidebar component -->
       <InsectaMundiEditorRightSidebar />
     </div>

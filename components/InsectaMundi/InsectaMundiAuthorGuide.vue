@@ -1,10 +1,10 @@
 <template>
-  <section class="container mx-auto px-8 my-15 font-serif">
+  <section class="container mx-auto px-8 my-10 font-serif">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Author Instructions</h1>
     <h2 class="text-xl font-medium text-gray-500 -mt-2">Insecta Mundi</h2>
 
     <!-- Resources and Contacts boxes placed here between the title and text -->
-    <div class="flex flex-col lg:flex-row items-start gap-12 mt-5">
+    <div class="flex flex-col lg:flex-row items-start mt-5">
       <!-- Left-side content for the text -->
       <div class="w-full lg:flex-1 flex flex-col gap-8 text-justify mt-15">
         <!-- New div here for additional text content -->
@@ -45,8 +45,12 @@
         </div>
       </div>
 
+      <!-- Vertical line between the columns -->
+      <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch mx-8"></div>
+
+
       <!-- Resources Box on the right -->
-      <InsectaMundiResourcesBox class="lg:basis-[35%] lg:ml-8 mt-8 lg:mt-0" />
+      <InsectaMundiResourcesBox />
     </div>
   </section>
 </template>

@@ -1,10 +1,10 @@
 <template>
     <section class="container mx-auto px-8 py-10 text-justify font-serif">
         <h1 class="text-5xl font-extrabold text-gray-800 mb-2 text-center">
-          Insecta Mundi
+            Insecta Mundi
         </h1>
         <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
-          A Peer-Reviewed Journal for <span class="font-semibold text-gray-700">Insect and Arthropod Systematics</span>
+            A Peer-Reviewed Journal for <span class="font-semibold text-gray-700">Insect and Arthropod Systematics</span>
         </h2>
 
         <div class="flex gap-10 mt-5">
@@ -46,6 +46,11 @@
                     <NuxtLink href="/about#editorialstaff" class="internal-link">here</NuxtLink>.
                 </p>
             </div>
+
+            <!-- Vertical line between the columns -->
+            <div class="hidden lg:block w-[1px] bg-gray-300 mx-3"></div>
+
+            <!-- Right-side content: 1/3 width -->
             <InsectaMundiIntroRightColumn />
         </div>
     </section>
