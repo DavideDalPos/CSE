@@ -20,7 +20,7 @@
             {{ member.name }}
             <span
               v-if="member.deceased"
-              class="text-gray-500 ml-2 text-sm"
+              class="text-gray-500 text-sm"
               aria-label="Deceased Member"
               title="Deceased Member"
             >
@@ -51,7 +51,10 @@
 import { lifetimeMembers } from './MembershipLifetimeMembersData.js';
 
 // Sort lifetime members by yearOfMembership in descending order
-const sortedLifetimeMembers = lifetimeMembers.sort((a, b) => b.yearOfMembership - a.yearOfMembership);
+const sortedLifetimeMembers = lifetimeMembers.sort((a, b) => {
+  return new Date(b.yearOfMembership).getTime() - new Date(a.yearOfMembership).getTime();
+});
+
 </script>
 
 <style scoped>
