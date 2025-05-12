@@ -33,7 +33,7 @@
           <p>
             Annual membership is <strong>only $40</strong> for individuals and institutions alike.
             Download the membership form 
-            <a href="/PDF/CSE_MembershipForm_2021.pdf?dl=0" target="_blank" class="text-blue-700 underline">here</a>.
+            <a href="/PDF/CSE_MembershipForm_2021.pdf?dl=0" target="_blank" class="internal-link">here</a>.
           </p>
           <p>
             Whether you're <strong>joining for the first time</strong> or <strong>renewing</strong>, you can securely pay using PayPal below.
