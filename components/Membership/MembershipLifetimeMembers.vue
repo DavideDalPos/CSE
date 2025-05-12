@@ -1,7 +1,7 @@
 <template>
   <div class="mb-8 text-center">
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Lifetime Members</h1>
-    <h2 class="text-base font-medium text-gray-500 mb-8">
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-1">Lifetime Members</h1>
+    <h2 class="text-sm font-medium text-gray-500 mb-8">
       Members awarded for their contributions to Entomology and CSE
     </h2>
     

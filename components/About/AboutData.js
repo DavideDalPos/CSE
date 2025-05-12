@@ -87,7 +87,7 @@ export default {
           {
             name: "Davide Dal Pos",
             period: "2023-2025",
-            imageUrl: "/images/DavideDalPos.jpg",
+            imageUrl: "/images/boardmembers/DavideDalPos.jpg",
             profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
           },
           {
@@ -153,7 +153,7 @@ export default {
                 name: "Davide Dal Pos",
                 role: "CSE President",
                 period: "2023",
-                imageUrl: "/images/DavideDalPos.jpg",
+                imageUrl: "/images/boardmembers/DavideDalPos.jpg",
                 profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
               },
     ]
