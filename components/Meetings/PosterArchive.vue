@@ -1,20 +1,24 @@
 <template>
-  <section id="posterarchive" class="container mx-auto px-12 py-10 font-serif">
+  <section
+    id="posterarchive"
+    class="container mx-auto px-12 py-10 font-serif"
+  >
     <div>
       <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Poster</h1>
       <h2 class="text-xl font-medium text-gray-500 -mt-2">Archive</h2>
-      <MeetingArchive :meetings="meetings" />
     </div>
 
     <!-- Per-Year Poster Layout -->
     <div class="space-y-5 mt-3">
       <div
-        v-for="([year, yearPosters]) in groupedPosters"
+        v-for="[year, yearPosters] in groupedPosters"
         :key="`year-${year}`"
       >
         <!-- Year Heading -->
-        <h2 class="text-4xl font-semibold text-otenary py-2"
-            style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">
+        <h2
+          class="text-4xl font-semibold text-otenary py-2"
+          style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)"
+        >
           {{ year }}
         </h2>
 
@@ -72,7 +76,11 @@
                     d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
                   />
                 </svg>
-                <a :href="poster.pdf" target="_blank">Download PDF</a>
+                <a
+                  :href="poster.pdf"
+                  target="_blank"
+                  >Download PDF</a
+                >
               </div>
 
               <img
@@ -103,46 +111,46 @@
   </section>
 </template>
 
-
-
-
 <script setup>
-import { computed, ref } from 'vue';
+import { computed, ref } from 'vue'
 
 const props = defineProps({
-  posters: Array
-});
+  posters: {
+    type: Array,
+    default: () => []
+  }
+})
 
 const sortedPosters = computed(() => {
-  return props.posters.sort((a, b) => b.year - a.year);
-});
+  return props.posters.sort((a, b) => b.year - a.year)
+})
 
 const groupedPosters = computed(() => {
-  const groups = {};
+  const groups = {}
   sortedPosters.value.forEach((poster) => {
     if (!groups[poster.year]) {
-      groups[poster.year] = [];
+      groups[poster.year] = []
     }
-    groups[poster.year].push(poster);
-  });
+    groups[poster.year].push(poster)
+  })
 
   Object.keys(groups).forEach((year) => {
-    groups[year].sort((a, b) => a.title.localeCompare(b.title));
-  });
+    groups[year].sort((a, b) => a.title.localeCompare(b.title))
+  })
 
-  return Object.entries(groups).sort((a, b) => b[0] - a[0]);
-});
+  return Object.entries(groups).sort((a, b) => b[0] - a[0])
+})
 
-const showModal = ref(false);
-const modalImage = ref(null);
+const showModal = ref(false)
+const modalImage = ref(null)
 
 const openModal = (image) => {
-  modalImage.value = image;
-  showModal.value = true;
-};
+  modalImage.value = image
+  showModal.value = true
+}
 
 const closeModal = () => {
-  showModal.value = false;
-  modalImage.value = null;
-};
+  showModal.value = false
+  modalImage.value = null
+}
 </script>

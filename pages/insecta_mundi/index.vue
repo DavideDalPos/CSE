@@ -1,16 +1,17 @@
 <template>
   <section>
     <div class="container mx-auto px-8 my-10 font-serif">
-<div class="relative">
-  <div>
-    <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
-    <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">Publication Archive</h2>
-  </div>
-  <div class="mt-2 text-sm text-gray-400 italic">
-    paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
-  </div>
-</div>
-
+      <div class="relative">
+        <div>
+          <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
+          <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">
+            Publication Archive
+          </h2>
+        </div>
+        <div class="mt-2 text-sm text-gray-400 italic">
+          paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
+        </div>
+      </div>
 
       <div class="flex-1">
         <!-- 🔍 BANNER SEARCH + FILTER -->
@@ -29,7 +30,7 @@
           >
             <option value="">All Dates</option>
             <option
-              v-for="({ date, label }) in monthYearOptions"
+              v-for="{ date, label } in monthYearOptions"
               :key="month"
               :value="date"
             >
@@ -39,47 +40,62 @@
         </div>
       </div>
       <div class="flex flex-col lg:flex-row lg:items-stretch gap-8">
-  <!-- LEFT COLUMN: Publications -->
-  <div class="w-full">
-    <ul class="w-full space-y-4">
-      <template v-for="[year, yearGroup] in groupByYearAndMonth" :key="year">
-        <li>
-          <!-- Year header with toggle -->
-          <div
-            class="flex items-center justify-between px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
-            @click="toggleYear(year)"
-          >
-            <h2 class="text-lg text-gray-800 font-medium">{{ year }}</h2>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 transform transition-transform duration-300"
-              :class="{ 'rotate-180': openYears.has(year) }"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+        <!-- LEFT COLUMN: Publications -->
+        <div class="w-full">
+          <ul class="w-full space-y-4">
+            <template
+              v-for="[year, yearGroup] in groupByYearAndMonth"
+              :key="year"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-            </svg>
-          </div>
+              <li>
+                <!-- Year header with toggle -->
+                <div
+                  class="flex items-center justify-between px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
+                  @click="toggleYear(year)"
+                >
+                  <h2 class="text-lg text-gray-800 font-medium">{{ year }}</h2>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 transform transition-transform duration-300"
+                    :class="{ 'rotate-180': openYears.has(year) }"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 15l7-7 7 7"
+                    />
+                  </svg>
+                </div>
 
-          <!-- Conditionally rendered month/year groups -->
-          <div v-show="openYears.has(year)">
-            <template v-for="[monthYear, group] in yearGroup" :key="monthYear">
-              <TablePublications class="my-2" :list="group" :date="monthYear" />
+                <!-- Conditionally rendered month/year groups -->
+                <div v-show="openYears.has(year)">
+                  <template
+                    v-for="[monthYear, group] in yearGroup"
+                    :key="monthYear"
+                  >
+                    <TablePublications
+                      class="my-2"
+                      :list="group"
+                      :date="monthYear"
+                    />
+                  </template>
+                </div>
+              </li>
             </template>
-          </div>
-        </li>
-      </template>
-    </ul>
+          </ul>
 
-    <template v-if="!publications.length">
-      <p>No articles found.</p>
-    </template>
-  </div>
+          <template v-if="!publications.length">
+            <p>No articles found.</p>
+          </template>
+        </div>
 
-  <!-- RIGHT COLUMN: Contact + Author Guidelines -->
-  <InsectaMundiRightColumn />
-</div>
+        <!-- RIGHT COLUMN: Contact + Author Guidelines -->
+        <InsectaMundiRightColumn />
+      </div>
     </div>
   </section>
 </template>
@@ -108,7 +124,7 @@ function toggleYear(year) {
 const groupByYearAndMonth = computed(() => {
   const sortedGrouped = groupByDate(filteredList.value, 4)
 
-  sortedGrouped.forEach(group => {
+  sortedGrouped.forEach((group) => {
     group[1] = groupByDate(group[1], 7)
   })
 
@@ -133,25 +149,25 @@ function groupByDate(list, sliceEnd) {
 // Get list of month-year options available in the data
 const monthYearOptions = computed(() => {
   // Extract 'YYYY-MM' from 'YYYY-MM-DD'
-  const months = publications.map(
-    (item) => item.date?.slice(0, 7)
-  );
+  const months = publications.map((item) => item.date?.slice(0, 7))
 
   // Get unique months and sort by the full 'YYYY-MM' format
-  const sortedMonths = [...new Set(months)].sort((a, b) => b.localeCompare(a));
+  const sortedMonths = [...new Set(months)].sort((a, b) => b.localeCompare(a))
 
   // Now, format them as "Month YYYY"
-  const formattedMonths = sortedMonths.map(month => {
-    const date = new Date(`${month}-01T00:00:00`); // Append "01" to make it a valid date
+  const formattedMonths = sortedMonths.map((month) => {
+    const date = new Date(`${month}-01T00:00:00`) // Append "01" to make it a valid date
     return {
-      label: date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' }),
+      label: date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long'
+      }),
       date: month
     }
-  });
+  })
 
-  return formattedMonths;
-});
-
+  return formattedMonths
+})
 
 // Placeholder to hold the full list (used in monthYearOptions)
 
@@ -175,15 +191,18 @@ const filteredList = computed(() => {
   })
 })
 
-
-watch(groupByYearAndMonth, newVal => {
-  openYears.value = new Set()
-  newVal.forEach(([year]) => {
-    if (!openYears.value.has(year)) {
-    openYears.value.add(year)
-    }
-  })
-}, {
-  deep: true
-})
+watch(
+  groupByYearAndMonth,
+  (newVal) => {
+    openYears.value = new Set()
+    newVal.forEach(([year]) => {
+      if (!openYears.value.has(year)) {
+        openYears.value.add(year)
+      }
+    })
+  },
+  {
+    deep: true
+  }
+)
 </script>

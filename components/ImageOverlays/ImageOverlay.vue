@@ -6,7 +6,6 @@
     >
       <div class="absolute inset-0 bg-black/55"></div>
 
-
       <div
         v-if="copyright"
         class="bottom-4 right-4 text-white absolute opacity-75 z-10"
@@ -16,7 +15,6 @@
     </div>
   </section>
 </template>
-
 
 <script setup>
 defineProps({
@@ -34,8 +32,7 @@ defineProps({
   },
   copyright: {
     type: String,
-    required: true
+    default: ''
   }
 })
 </script>
-

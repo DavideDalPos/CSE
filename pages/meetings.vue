@@ -1,26 +1,20 @@
 <template>
-  <div>    
+  <div>
     <section class="bg-foreground">
-    <TitleMeeting />
-    <IntroMeeting />
+      <MeetingsTitleMeeting />
+      <MeetingsIntroMeeting />
     </section>
-    <section class="bg-gradient-to-br from-gray-100 to-tertiary/30 border-t border-b border-yellow-600">
-    <Archive />
-  </section>  
-  <section class="bg-gradient-to-br from-gray-100 to-secondary/30">
-    <ArchivePoster />
-  </section>
-  <section class="bg-gradient-to-br from-gray-100 to-senary/20 border-t border-gray-300">
-  <MeetingSlider />
-  </section>
+    <section
+      class="bg-gradient-to-br from-gray-100 to-tertiary/30 border-t border-b border-yellow-600"
+    >
+      <MeetingsSectionArchive />
+    </section>
+    <section class="bg-gradient-to-br from-gray-100 to-secondary/30"></section>
+    <section
+      class="bg-gradient-to-br from-gray-100 to-senary/20 border-t border-gray-300"
+    >
+      <MeetingsSlider />
+    </section>
+    <MeetingsArchivePoster />
   </div>
-
 </template>
-
-<script setup>
-import Archive from '~/components/Meetings/Archive.vue'
-import ArchivePoster from '~/components/Meetings/ArchivePoster.vue'
-import IntroMeeting from '~/components/Meetings/IntroMeeting.vue'
-import MeetingSlider from '~/components/Meetings/MeetingSlider.vue'
-import TitleMeeting from '~/components/Meetings/TitleMeeting.vue'
-</script>

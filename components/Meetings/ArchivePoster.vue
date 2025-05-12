@@ -1,20 +1,8 @@
 <template>
-    <PosterArchive :posters="posters" />
+  <PosterArchive :posters="posters" />
+</template>
 
-  </template>
-  
-<script>
-  import ArchivePosterData from './ArchivePosterData.js';
-import PosterArchive from './PosterArchive.vue';
-  
-  export default {
-    components: {
-      PosterArchive
-    },
-    data() {
-      return {
-        posters: ArchivePosterData.posters
-      };
-    }
-  };
+<script setup>
+import posters from './ArchivePosterData.js'
+import PosterArchive from './PosterArchive.vue'
 </script>
