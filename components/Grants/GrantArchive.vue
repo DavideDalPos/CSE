@@ -1,7 +1,8 @@
 <template>
     <section class="container mx-auto px-8 py-10 -mb-8 font-serif">
-      <h1 class="text-4xl font-semibold text-gray-800 mb-8">Other Grants Archive</h1>
-      <div class="flex flex-col gap-4 my-8">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Other Grants</h1>
+          <h2 class="text-xl font-medium text-gray-500 -mt-2 "> Archive</h2>
+      <div class="flex flex-col gap-4 my-8 text-lg text-gray-700 text-justify leading-relaxed">
         <p>
           Since 1991, numerous other grants have been awarded. Recipients include:
         </p>

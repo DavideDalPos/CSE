@@ -6,17 +6,17 @@
   v-if="timeRemaining.Days > 0 || timeRemaining.Hours > 0 || timeRemaining.Minutes > 0 || timeRemaining.Seconds > 0"
   class="bg-gray-100 border-l-4 border-[#7ca2a1] p-8 rounded-lg max-w-3xl mx-auto shadow-lg transform transition-transform hover:scale-105"
 >
-  <div class="conference-date text-2xl font-semibold text-senary mb-2">
+  <div class="conference-date text-2xl font-semibold text-otenary mb-2">
     📅 February 15, 2026 – 09:00 AM
   </div>
-  <div class="text-lg text-[#5f7a79] mb-6">
-    Join us in Gainesville, Florida for the annual CSE Conference!
+  <div class="text-lg text-gray-500 mb-6">
+    Join us online or in Gainesville (Florida) for the annual CSE Conference!
   </div>
   <NuxtLink
     href="/comingsoon"
     target="_blank"
     rel="noopener"
-    class="inline-block px-6 py-3 bg-quaternary/90 text-white rounded-lg hover:bg-tertiary transition duration-200 shadow"
+    class="inline-block px-6 py-3 bg-quaternary/90 text-white rounded-lg hover:bg-tertiary transition duration-200 shadow-lg"
   >
     Learn More
   </NuxtLink>

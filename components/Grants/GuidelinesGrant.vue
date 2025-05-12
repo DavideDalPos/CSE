@@ -2,10 +2,9 @@
   <section class="font-serif bg-gradient-to-br from-gray-100 to-secondary/70 border-t border-b border-primary">
     <div
       id="grantguidelines"
-      class="container mx-auto px-12 py-5 mb-8 scroll-m-18"
-    >
-      <h1 class="text-4xl font-semibold text-gray-800 mb-8">Guidelines</h1>
-
+      class="container mx-auto px-12 py-5 mb-8 scroll-m-18">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Guidelines</h1>
+    <h2 class="text-xl font-medium text-gray-500 -mt-2 mb-5">The Peck Fund</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Eligibility Section -->
         <div

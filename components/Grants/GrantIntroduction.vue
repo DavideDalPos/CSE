@@ -1,9 +1,15 @@
 <template>
   <section class="container mx-auto px-8 py-12 text-justify font-serif">
-    <h1 class="text-4xl font-semibold text-gray-800 mb-8">The Peck Collection Enhancement Endowment</h1>
-    <div class="flex gap-10">
+            <h1 class="text-5xl font-extrabold text-gray-800 mb-2 text-center">
+          The Peck Collection Enhancement Endowment
+        </h1>
+        <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
+          Established in 2021 by Stewart and Jarmila Peck
+        </h2>
+    
+    <div class="flex gap-10 ">
       <!-- Left-side content for the text -->
-      <div class="w-full lg:w-3/4 flex flex-col gap-8 text-justify ">
+      <div class="w-full lg:w-3/4 flex flex-col gap-8 text-justify flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
       <p class="text leading-relaxed">
         In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> 
         (aka the <b>Peck Fund</b>) with the Center for Systematic Entomology (CSE). 
@@ -13,8 +19,8 @@
       </p>
 
     <!-- Enhanced Curation Section -->
-      <p class="-mb-5">Enhanced curation could include:</p>
-      <ul class="list-disc list-inside pl-7 mb-3">
+      <p class="-mb-7">Enhanced curation could include:</p>
+      <ul class="list-disc list-inside pl-7 text-base">
         <li><b>Specimen sorting and identification</b></li>
         <li><b>Designation of types</b></li>
         <li><b>Updated taxonomy</b></li>
@@ -30,7 +36,7 @@
 
     <!-- Proposal Requirements -->
       <p class="-mb-5">Applicants should submit a short (1–2 pages) formal proposal composed of the following:</p>
-      <ul class="roman-list list-inside pl-7">
+      <ul class="roman-list list-inside pl-7 text-base">
         <li><b>Title</b></li>
         <li><b>Author(s)</b></li>
         <li><b>Author’s Affiliation & Contact Information</b> – major professor if a student</li>
@@ -43,14 +49,10 @@
     <!-- Proposal Submission Info -->
       <p>
         The proposal must be sent to the <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. 
-        See under <a href="#grantguidelines" class="internal-link">Guidelines</a> (below) the mail and email address.
-      </p>
-
-    <!-- Report Submission -->
-      <p>
-        After the project is completed, a <b>report</b> of the accomplished work with some <b>photographs</b> should be sent to the 
-        <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. 
-        <br>This report will be formatted and posted on the CSE website (See <a href="#reports" class="internal-link">Reports</a> of previous projects). 
+        See under <a href="#grantguidelines" class="internal-link">Guidelines</a> (below) the mail and email address and,
+        after the project is completed, a <b>report</b> of the accomplished work with some <b>photographs</b> should be sent to the 
+        <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. This report will be formatted and posted on the 
+        CSE website (See <a href="#reports" class="internal-link">Reports</a> of previous projects). 
       </p>
 
     <!-- Process Summary -->

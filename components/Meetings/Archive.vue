@@ -2,7 +2,8 @@
     <section id="meetingarchive" class="container mx-auto px-12 py-11 font-serif">
       <!-- Meeting Archive Section -->
       <div>
-        <h1 class="text-4xl font-extrabold text-gray-800 mb-8"> Conference Archive</h1>
+              <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Conference</h1>
+    <h2 class="text-xl font-medium text-gray-500 -mt-2">Archive</h2>
         <MeetingArchive :meetings="meetings" />
       </div>
 
