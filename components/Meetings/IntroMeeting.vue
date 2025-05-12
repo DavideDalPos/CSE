@@ -9,7 +9,7 @@ import ComingSoonBanner from './ComingSoonBanner.vue';
           CSE Annual Conference
         </h1>
         <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
-          In-person & Remote 
+           Join us onsite or virtually from <span class="font-semibold text-gray-700">anywhere in the world</span>
         </h2>
 <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
   <p>

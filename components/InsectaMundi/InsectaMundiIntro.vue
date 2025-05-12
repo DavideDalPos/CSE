@@ -4,7 +4,7 @@
           Insecta Mundi
         </h1>
         <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
-          A Peer-Reviewed Journal for Insect and Arthropod Systematics
+          A Peer-Reviewed Journal for <span class="font-semibold text-gray-700">Insect and Arthropod Systematics</span>
         </h2>
 
         <div class="flex gap-10 mt-5">

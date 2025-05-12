@@ -4,7 +4,7 @@
           The Peck Collection Enhancement Endowment
         </h1>
         <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
-          Established in 2021 by Stewart and Jarmila Peck
+          Established in 2021 by <span class="font-semibold text-gray-700">Stewart & Jarmila Peck</span>
         </h2>
     
     <div class="flex gap-10 ">

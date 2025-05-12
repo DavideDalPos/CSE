@@ -4,7 +4,7 @@
       Welcome to the Center for Systematic Entomology (CSE)
     </h1>
     <h2 class="text-xl font-medium text-gray-500 text-center -mt-1 mb-8">
-      Advancing Arthropod Systematics Since 1985
+      Advancing <span class="font-semibold text-gray-700">Arthropod Systematics</span> Since 1985
     </h2>
 
     <!-- Flex container: text left, image right -->

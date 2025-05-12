@@ -1,6 +1,9 @@
 <template>
   <section class="container mx-auto px-12 py-12 font-serif">
     <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">About Us</h1>
+    <h2 class="text-xl font-medium text-gray-500 text-center -mt-4 mb-8">
+ Meet the people behind the <span class="font-semibold text-gray-700">Center for Systematic Entomology</span>
+</h2>
     <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
       <p>
         The <strong>Center for Systematic Entomology (CSE)</strong> is at the forefront of advancing insect systematics, contributing significantly to the global understanding of arthropod diversity and evolution. 

@@ -4,7 +4,7 @@ export default {
         name: "Davide Dal Pos",
         role: "President",
         period: "2024",
-        imageUrl: "/images/DavideDalPos.jpg",
+        imageUrl: "/images/boardmembers/DavideDalPos.jpg",
         profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
       },
       {

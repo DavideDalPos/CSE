@@ -11,11 +11,16 @@ import CSE_IMIntro from './CSE_IMIntro.vue';
     <div>
         <!-- Larger Title -->
         <h1 class="text-5xl font-extrabold text-gray-800 mb-12 text-center">Center for Systematic Entomolocy (CSE) Publications</h1>
+<h2 class="text-xl font-medium text-gray-500 text-center -mt-8 mb-8">
+  Browse our <span class="font-semibold text-gray-700">journal</span> and other works published by the <span class="font-semibold text-gray-700">CSE</span> 
+</h2>
+
+
         <!-- Subtitle (Smaller Title) -->
       </div>
   <div class="flex gap-10">
     <!-- Left side: CSE_Memoirs and CSE_Festschrift (takes 2/3 of the page) -->
-    <div class="flex-2 border-t border-gray-300 mb-10">
+    <div class="flex-2 mb-10">
       <CSE_IMIntro />
       <div id="festschrifts" class="border-t border-gray-300 mb-10">
       <CSE_Festschrift />
@@ -30,7 +35,7 @@ import CSE_IMIntro from './CSE_IMIntro.vue';
     </div>
 
     <!-- Right side: CSE_MemoirsRightColumn (takes 1/3 of the page) -->
- 
+ <div class="hidden md:block border-r border-gray-300"></div>
     <CSE_MemoirsRightColumn /> 
   </div>
   
