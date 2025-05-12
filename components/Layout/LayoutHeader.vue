@@ -41,7 +41,7 @@
                           {{ item.label }}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 transition-transform group-hover:rotate-180"
+                            class="w-4 h-4 transition-transform rotate-180 group-hover/sub:rotate-0"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
