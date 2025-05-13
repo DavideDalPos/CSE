@@ -4,7 +4,7 @@
       class="fixed w-full z-50 bg-gray-800 backdrop-blur-xl shadow-xl font-serif"
     >
       <div
-        class="container mx-auto h-16 flex justify-between items-center px-8 z-10"
+        class="container mx-auto h-16 flex justify-between items-center z-10"
       >
         <a
           href="/"
