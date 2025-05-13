@@ -50,7 +50,7 @@ const groupedMembers = computed(() => {
   <a
     v-if="member.profileUrl"
     :href="member.profileUrl"
-    class="text-senary hover:underline hover:text-senary/60"
+    class="text-novenary hover:underline hover:text-senary/60"
     target="_blank"
   >
     {{ member.name }}
@@ -99,7 +99,7 @@ const groupedMembers = computed(() => {
   <a
     v-if="member.profileUrl"
     :href="member.profileUrl"
-    class="text-senary hover:underline hover:text-senary/60"
+    class="text-novenary hover:underline hover:text-senary/60"
     target="_blank"
   >
     {{ member.name }}
@@ -147,7 +147,7 @@ const groupedMembers = computed(() => {
   <a
     v-if="member.profileUrl"
     :href="member.profileUrl"
-    class="text-senary hover:underline hover:text-senary/60"
+    class="text-novenary hover:underline hover:text-senary/60"
     target="_blank"
   >
     {{ member.name }}
@@ -194,7 +194,7 @@ const groupedMembers = computed(() => {
   <a
     v-if="member.profileUrl"
     :href="member.profileUrl"
-    class="text-senary hover:underline hover:text-senary/60"
+    class="text-novenary hover:underline hover:text-senary/60"
     target="_blank"
   >
     {{ member.name }}

@@ -119,16 +119,25 @@
                 to="https://www.facebook.com/CSE.InsectaMundi"
                 target="_blank"
                 class="text-white hover:text-quaternary"
+                title="Follow us on Facebook"
               >
-                <IconFacebook class="w-5 h-5" />
+                <IconFacebook class="w-4 h-4" />
               </NuxtLink>
               <NuxtLink
-                to="https://twitter.com/SystematicEnto"
+                to="https://x.com/CSE_at_FSCA"
                 target="_blank"
                 class="hover:text-quaternary"
-                title="Follow us on X (Twitter)"
+                title="Follow us on X"
               >
-                <IconX class="w-5 h-5" />
+                <IconX class="w-4 h-4" />
+              </NuxtLink>
+              <NuxtLink
+                to="https://github.com/DavideDalPos/CSE/issues"
+                target="_blank"
+                class="hover:text-quaternary"
+                title="Submit your issue on the website"
+              >
+                <IconGitHub class="w-4 h-4" />
               </NuxtLink>
             </div>
           </nav>
@@ -142,7 +151,8 @@
 </template>
 
 <script setup>
-import IconX from '../Icon/IconX.vue'
+import IconGitHub from '../Icon/IconGitHub.vue';
+import IconX from '../Icon/IconX.vue';
 
 const menu = [
   {
