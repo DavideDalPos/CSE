@@ -1,5 +1,5 @@
 <template>
-    <RouterLink
+    <NuxtLink
       to="/other_publications/FSCAOccasional"
       class="block w-full"
     >
@@ -9,5 +9,5 @@
     </h2>
   </div>
   
-    </RouterLink>
+    </NuxtLink>
   </template>
