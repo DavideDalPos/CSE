@@ -145,7 +145,7 @@
                 Anyone who suspects an ethical issue, regardless of whether they are an active CSE member, is encouraged to contact us. 
                 The chief editor can be contacted at <a
                   href="mailto:insectamundi@gmail.com"
-                  class="text-blue-600 hover:underline"
+                  class="external-link"
                   >insectamundi@gmail.com</a> 
                   Every suspicion of ethical issues, misconduct or conflict of interest will 
                 be investigated by the journal.

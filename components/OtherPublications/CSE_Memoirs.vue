@@ -1,7 +1,13 @@
 <template>
                     <h1 class="text-4xl font-extrabold text-gray-800 mb-2 mt-7">Memoirs</h1>
                <h2 class="text-xl font-medium text-gray-500 -mt-2 mb-4">CSE Publications</h2>
-      <div class="flex flex-col md:flex-row gap-4">
+       <p class="text-base text-gray-600 mb-4">
+    If you're interested in receiving hard copies of these publications, please contact us at 
+    <a href="mailto:csentomology@gmail.com" class="internal-link">
+      csentomology@gmail.com
+    </a> and we'll ship them to you!
+  </p>
+               <div class="flex flex-col md:flex-row gap-4">
         <!-- Left Column: Book Cards -->
         <div class="flex-1 space-y-4">
           <div
