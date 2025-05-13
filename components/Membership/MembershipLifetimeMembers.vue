@@ -5,7 +5,7 @@
       Members awarded for their contributions to Entomology and CSE
     </h2>
     
-    <ul class="list-none space-y-6">
+    <ul class="list-none space-y-1">
       <li
         v-for="(member, index) in sortedLifetimeMembers"
         :key="index"
@@ -34,7 +34,7 @@
             <a
               :href="member.awardPDF"
               target="_blank"
-              class="inline-block bg-novenary text-white text-xs py-1 px-3 rounded-md border border-novenary hover:bg-novenary/70"
+              class="inline-block bg-novenary text-white text-xs py-1 px-3 rounded-md border border-novenary hover:bg-novenary/70 mb-3"
               title="View Award PDF"
             >
               View Award
