@@ -2,35 +2,41 @@
   <section class="container mx-auto px-12 py-12 font-serif">
     <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">About Us</h1>
     <h2 class="text-xl font-medium text-gray-500 text-center -mt-4 mb-8">
- Meet the people behind the <span class="font-semibold text-gray-700">Center for Systematic Entomology</span>
-</h2>
-    <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
-      <p>
-        The <strong>Center for Systematic Entomology (CSE)</strong> is at the forefront of advancing insect systematics, contributing significantly to the global understanding of arthropod diversity and evolution. 
-        Our work spans numerous projects, collaborations, and educational programs aimed at creating a sustainable future for entomology.
+      Meet the people behind the <span class="font-semibold text-gray-700">Center for Systematic Entomology</span>
+    </h2>
+    <div class="text-lg text-gray-700 text-center text-justify">
+      <p class="mb-4">
+        The Center for Systematic Entomology (CSE) is composed of dedicated individuals who support research and publishing in insect systematics.
+      </p>
+      <p class="mb-4">
+        The CSE is led by four elected <strong>Officers</strong>—President, Vice President, Treasurer, and Secretary—who serve one-year terms and 
+        may be re-elected. Together, these officers also form the <strong>Executive Committee</strong>. 
+        All officers are members of the <strong>Board of Directors</strong>, which guides the organization’s mission and activities.
+      </p>
+      <p class="mb-4">
+        In addition to the Executive Committee, the <strong>Board of Members</strong> includes individuals who serve two-year 
+        terms and contribute to governance and strategic planning.
+      </p>
+      <p class="mb-4">
+        We also have editorial teams for our flagship journal, <strong>Insecta Mundi</strong>, and the <strong>Gifts, Grants, and Endowments (GGE) Committee</strong>, 
+        which is appointed by the Board of Directors. The GGE Committee develops and recommends policies related to donations, tangible gifts, 
+        and grant administration to ensure long-term sustainability.
+      </p>
+      <p class="mb-4">
+        The <strong>Board of Directors</strong> typically meets four times a year. The CSE also holds an <strong>annual business meeting</strong> during the <strong>CSE Annual Meeting</strong>, 
+        which may include a scientific program at the discretion of the Board.
       </p>
       <p>
-        Over the years, our contributions to systematics have led to the discovery of numerous new species and genera, including critical research on previously unexplored areas in insect biodiversity. 
-        We pride ourselves on being a key player in shaping the future of taxonomic classification through open-access publications and expert-curated resources.
-      </p>
-      <p>
-        Our flagship project, the <strong>Insecta Mundi Journal</strong>, continues to be an essential resource for taxonomists and researchers worldwide. The journal serves as a platform for the rapid publication of new taxonomic discoveries, with over 200 articles published annually.
-      </p>
-      <p>
-        <strong>Recognized Excellence:</strong> Our members and editorial staff have been recognized for their contributions to entomology, with multiple awards from organizations like the <strong>Entomological Society of America (ESA)</strong> and the <strong>International Society of Systematic Entomology (ISSE)</strong>.
-      </p>
-      <p>
-        <strong>Educational Outreach:</strong> We are also proud to offer educational programs that connect students and early-career researchers with industry experts. Through workshops, webinars, and collaborative research projects, we are cultivating the next generation of entomologists. 
-        This ensures the continuity of quality entomological research and community building.
-      </p>
-      <p>
-        <strong>Join Our Mission:</strong> We invite entomologists, researchers, and enthusiasts to contribute to our mission. Whether through research collaboration, educational support, or membership, your involvement helps drive our shared goal of advancing insect systematics and fostering a global community of experts.
-      </p>
-      <p>
-        Explore the <a href="/projects" class="external-link">current projects</a> we're leading, and learn more about the ways you can get involved in shaping the future of entomology.
+        Curious about how we operate? 
+        <a href="/PDF/CSE_Bylaws.pdf" target="_blank" class="inline-flex items-center internal-link">
+  
+  Read our full bylaws
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v4a1 1 0 11-2 0V4H5v12h4a1 1 0 110 2H4a1 1 0 01-1-1V3zm9 6a1 1 0 00-2 0v3.586l-.293-.293a1 1 0 00-1.414 1.414l2 2 .007.007a1 1 0 001.4-.007l2-2a1 1 0 00-1.414-1.414L12 12.586V9z" clip-rule="evenodd" />
+  </svg>
+</a>
+ 
       </p>
     </div>
   </section>
 </template>
-
-

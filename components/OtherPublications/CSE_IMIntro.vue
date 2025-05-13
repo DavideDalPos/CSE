@@ -15,7 +15,7 @@
         Stay updated with our newest peer-reviewed articles
       </p>
       <NuxtLink href="/insecta_mundi/current" 
-      class="inline-block bg-quaternary/90 text-white text-sm px-4 py-2 rounded hover:bg-tertiary/80 hover:text-primary transition shadow shadow-lg">
+      class="inline-block bg-quaternary/90 text-white text-sm px-4 py-2 rounded hover:bg-tertiary/80 hover:text-primary transition hover:shadow-lg">
         View Current Publications
       </NuxtLink>
     </div>

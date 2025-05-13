@@ -33,7 +33,7 @@ export default {
       {
         name: "Alexander Orfinger",
         period: "2025-2027",
-        imageUrl: null,
+        imageUrl:  "/images/boardmembers/AlexOrfinger.jpg",
         profileUrl: "https://scholar.google.com/citations?hl=en&user=fcMo3w0AAAAJ"
       },
       {
