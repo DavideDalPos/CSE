@@ -5,7 +5,7 @@
     <div>
       <!-- Larger Title -->
       <h1 class="text-5xl font-extrabold text-gray-800 mb-12 text-center">
-        Center for Systematic Entomolocy (CSE) Publications
+        Center for Systematic Entomology (CSE) Publications
       </h1>
       <h2 class="text-xl font-medium text-gray-500 text-center -mt-8 mb-8">
         Browse our <span class="font-semibold text-gray-700">journal</span> and
