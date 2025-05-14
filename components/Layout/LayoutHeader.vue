@@ -4,7 +4,7 @@
       class="fixed w-full z-50 bg-gray-800 backdrop-blur-xl shadow-xl font-serif"
     >
       <div
-        class="container mx-auto h-16 flex justify-between items-center z-10"
+        class="container mx-auto h-16 flex justify-between items-center px-6 z-10"
       >
         <a
           href="/"
@@ -182,7 +182,7 @@ const menu = [
         ]
       },
       { label: 'Author Instructions', link: '/insecta_mundi/authorguidelines' },
-      { label: 'Editor Information', link: '/insecta_mundi/editorinfo' },
+      { label: 'Editor Guidelines', link: '/insecta_mundi/editorinfo' },
       { label: 'Ethic Statements', link: '/insecta_mundi/ethic' }
     ]
   },
@@ -199,7 +199,7 @@ const menu = [
       { label: 'Peck Grant', link: '/grants' },
       { label: 'Guidelines', link: '/grants#grantguidelines' },
       { label: 'Previous Reports', link: '/grants#reports' },
-      { label: 'Other Grants Archive', link: '/grants#reports' },
+      { label: 'Other Grants Archive', link: '/grants#archive' },
       { label: 'Trip to Guatemala', link: '/grants#guatemala' }
     ]
   },

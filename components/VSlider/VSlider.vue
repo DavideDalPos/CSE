@@ -135,11 +135,11 @@ onBeforeUnmount(() => clearInterval(interval))
 }
 
 .fade-slide-enter-active {
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 6s ease-in-out, opacity 2s ease-in-out;
 }
 
 .fade-slide-leave-active {
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 6s ease-in-out, opacity 2s ease-in-out;
   position: absolute;
 }
 

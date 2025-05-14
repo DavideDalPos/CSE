@@ -1,5 +1,5 @@
 <template>
-    <section id="guatemala" class="font-serif container mx-auto px-8 py-10">
+    <section id="guatemala" class="scroll-mt-28 font-serif container mx-auto px-8 py-10">
       <h1 class="text-4xl font-extrabold text-gray-800 mb-2">A trip to Guatemala!</h1>
         <div class="flex flex-col gap-4 my-8 text-lg text-gray-700 text-justify leading-relaxed">
             <p>

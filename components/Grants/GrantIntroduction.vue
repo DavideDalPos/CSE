@@ -28,8 +28,9 @@
 
     <!-- Grant Proposal Evaluation -->
       <p>
-        Grant awards are limited, and proposals will be evaluated by the <NuxtLink href="/about#gge" target="_blank" class="internal-link">Gifts, Grants and Endowment (GGE) Committee</NuxtLink> 
-        semiannually (<b>January 15th</b> and <b>July 15th</b>) and approved by the <a href="about#board" target="_blank" class="internal-link">CSE Board of Directors</a>.
+        Grant awards are limited, and proposals will be evaluated by the <NuxtLink href="/about#gge"  class="internal-link">Gifts, Grants and Endowment (GGE) Committee</NuxtLink> 
+        semiannually (<b>January 15th</b> and <b>July 15th</b>) and approved by the <NuxtLink href="/about#board" class="internal-link">
+          CSE Board of Directors</NuxtLink>.
         Applicants must be CSE members and should contact the appropriate curator at the FSCA to inquire about potential work.
       </p>
 
@@ -48,10 +49,10 @@
 
     <!-- Proposal Submission Info -->
       <p>
-        The proposal must be sent to the <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. 
+        The proposal must be sent to the <NuxtLink href="/about#gge" class="internal-link">GGE Committee</NuxtLink>. 
         See under <a href="#grantguidelines" class="internal-link">Guidelines</a> (below) the mail and email address and,
         after the project is completed, a <b>report</b> of the accomplished work with some <b>photographs</b> should be sent to the 
-        <NuxtLink href="/about#gge" target="_blank" class="internal-link">GGE Committee</NuxtLink>. This report will be formatted and posted on the 
+        <NuxtLink href="/about#gge" class="internal-link">GGE Committee</NuxtLink>. This report will be formatted and posted on the 
         CSE website (See <a href="#reports" class="internal-link">Reports</a> of previous projects). 
       </p>
 

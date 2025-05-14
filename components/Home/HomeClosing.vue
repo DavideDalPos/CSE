@@ -12,7 +12,7 @@
           href="/about"
           class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/70 transition duration-200 shadow"
         >
-          📬 Contact Us
+          📬 About Us
       </NuxtLink>
 
         <!-- Join Us -->

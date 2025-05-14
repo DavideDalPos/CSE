@@ -1,7 +1,7 @@
 <template>
   <section
     id="meetingarchive"
-    class="container mx-auto px-12 py-11 font-serif"
+    class="scroll-mt-28 container mx-auto px-12 py-11 font-serif"
   >
     <!-- Meeting Archive Section -->
     <div>

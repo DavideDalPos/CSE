@@ -14,7 +14,7 @@
       <p class="text-sm text-gray-600 mb-4">
         Stay updated with our newest peer-reviewed articles
       </p>
-      <NuxtLink href="/insecta_mundi/current" 
+      <NuxtLink href="/insecta_mundi/current_issue" 
       class="inline-block bg-quaternary/90 text-white text-sm px-4 py-2 rounded hover:bg-tertiary/80 hover:text-primary transition hover:shadow-lg">
         View Current Publications
       </NuxtLink>
@@ -26,7 +26,7 @@
       <p class="text-sm text-gray-600 mb-4">
         Check our full list of publicationse and browse by author, taxon, or keywords
       </p>
-      <NuxtLink href="/insecta_mundi/current" 
+      <NuxtLink href="/insecta_mundi" 
       class="inline-block bg-primary/90 text-white text-sm px-4 py-2 rounded hover:bg-primary/40 hover:text-quaternary transition hover:shadow-lg">
         Browse Archive
       </NuxtLink>

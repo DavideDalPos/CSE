@@ -24,7 +24,7 @@ const groupedMembers = computed(() => {
 
       <!-- Officers Section -->
       <div>
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Officers</h2>
+        <h2 id="board" class="scroll-mt-28 text-3xl font-bold text-gray-800 mb-6">Officers</h2>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div
             v-for="member in officers"
@@ -120,8 +120,8 @@ const groupedMembers = computed(() => {
 
 
       <!-- Insecta Mundi Editorial Team Section -->
-      <div id="editorialstaff" class="border-t border-primary">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6 mt-8"><i>Insecta Mundi</i> Editorial Team</h2>
+      <div class="border-t border-primary">
+        <h2 id="editorialstaff" class="scroll-mt-28 text-3xl font-bold text-gray-800 mb-6 mt-8"><i>Insecta Mundi</i> Editorial Team</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
             v-for="member in insectamundiTeam"
@@ -167,8 +167,8 @@ const groupedMembers = computed(() => {
 
 <!-- GGE Section -->
 
-      <div id="gge" class="border-t border-primary">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6 mt-8">Gift, Grants & Endowment (GGE) Committee</h2>
+      <div class="border-t border-primary">
+        <h2 id="gge" class="scroll-mt-28 text-3xl font-bold text-gray-800 mb-6 mt-8">Gift, Grants & Endowment (GGE) Committee</h2>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div
             v-for="member in grantCommittee"
