@@ -23,8 +23,8 @@
   </div>
 </div>
 
-      <div class="flex flex-row justify-between gap-4">
-        <div>
+      <div class="flex flex-row justify-between gap-8 ">
+        <div class="w-[calc(100%-26rem)] max-w-[65rem]">
           <div class="flex flex-row justify-between my-4 gap-4 text-gray-800">
             <div>
               <ul v-if="publication.authors">
