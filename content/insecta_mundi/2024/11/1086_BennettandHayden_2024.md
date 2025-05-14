@@ -26,6 +26,11 @@ keywords:
   - sacculus
   - vinculum
 
+categories:
+  - Lepidoptera
+  - Gelechiidae
+  - Apatetrinae
+
 references:
   - authors: Adobe Systems.
     year: 2012

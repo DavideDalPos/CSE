@@ -37,6 +37,11 @@ keywords:
   - 'Hogna carolinensis'
   - 'Hogna ?reducta'
 
+categories:
+  - Hymenoptera
+  - Pompiliade
+  - Pepsinae
+
 references:
   - authors: Alayo PD.
     year: 1969

@@ -28,6 +28,10 @@ keywords:
   - range extension
   - Wallacean shortfall
 
+categories:
+  - Lepidoptera
+  - Hesperiidae
+
 references:
   - authors: Bonebrake TC, Ponisio LC, Boggs CL, Ehrlich PR.
     year: 2010
