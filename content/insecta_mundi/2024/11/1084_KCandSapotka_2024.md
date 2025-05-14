@@ -20,9 +20,7 @@ authors:
 
 download: 'https://drive.google.com/file/d/1rLuigTDBrNRf2jG7kbb5YLh-eedQRXXq/view?usp=sharing'
 
-supplementary:
-  - https://drive.google.com/file/d/1rLuigTDBrNRf2jG7kbb5YLh-eedQRXXq/view?usp=sharing
-
+supplementary: ''
 
 keywords:
   - Butterflies
