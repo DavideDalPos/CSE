@@ -21,7 +21,7 @@
         <CSE_IMIntro />
         <div
           id="festschrifts"
-          class="border-t border-gray-300 mb-10"
+          class="scroll-mt-28 border-t border-gray-300 mb-10"
         >
           <CSE_Festschrift />
         </div>

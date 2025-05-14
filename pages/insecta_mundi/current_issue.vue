@@ -20,7 +20,7 @@
         </div>
 
         <!-- Table Component or List -->
-        <TablePublicationCurrent :list="list" class="my-2" />
+        <TablePublicationCurrent :list="publications" class="my-2" />
 
         <!-- Fallback message -->
         <div class="px-4">
@@ -36,50 +36,40 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
 import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue'
 import TablePublicationCurrent from '~/components/Table/TablePublicationCurrent.vue'
 
-const list = ref([])
-const formattedDate = ref('')
+const { data: list } = await useAsyncData('insecta-mundi', async () => {
+  const latestPublication = await queryContent('insecta_mundi')
+    .where({ date: { $ne: null } })
+    .sort({ date: -1 })
+    .limit(1)
+    .only(['date'])
+    .findOne()
 
-// Fetch data on mounted
-onMounted(async () => {
-  try {
-    const latestPublication = await queryContent('insecta_mundi')
-      .where({ date: { $ne: null } })
-      .sort({ date: -1 })
-      .limit(1)
-      .only(['date'])
-      .findOne()
+  const dateObj = new Date(latestPublication.date)
+  const formattedDate = dateObj.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
 
-    // Get the full formatted date
-    const dateObj = new Date(latestPublication.date)
-    formattedDate.value = dateObj.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
+  const yearAndMonth = latestPublication.date.slice(
+    0,
+    latestPublication.date.lastIndexOf('-')
+  )
+
+  const response = await queryContent('insecta_mundi')
+    .where({
+      date: {
+        $contains: yearAndMonth
+      }
+    })
+    .find()
+
+  return { formattedDate, response }
 })
 
-    // Get only the year and month
-    const yearAndMonth = latestPublication.date.slice(
-      0,
-      latestPublication.date.lastIndexOf('-')
-    )
-
-    // Query for current volume (same year-month)
-    const response = await queryContent('insecta_mundi')
-      .where({
-        date: {
-          $contains: yearAndMonth
-        }
-      })
-      .find()
-
-    list.value = response
-
-  } catch (error) {
-    console.error('Error fetching data:', error)
-  }
-})
+const formattedDate = computed(() => list.value?.formattedDate || '')
+const publications = computed(() => list.value?.response || [])
 </script>

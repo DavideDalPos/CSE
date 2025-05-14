@@ -12,22 +12,17 @@
       <!-- Left side: text -->
       <div class="flex-1 space-y-8 mt-5">
         <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
-          <p>
-            For the past 35+ years the
-            <b>Center for Systematic Entomology (CSE)</b> has served as a non-profit
-            organization designed to further systematics in its broadest sense. It
-            has supported the
-            <a
-              href="https://thefsca.org"
-              target="_blank"
-              class="external-link"
-              >Florida State Collection of Arthropods (FSCA)</a
-            >.
-            The CSE has also provided a number of grants for specialists to study at
-            the FSCA. Because the Research Associate program supports insect
-            systematics in many of the same ways, we believe that membership in CSE
-            provides another way that Research Associates can assist.
-          </p>
+<p>
+  For over 35 years, the <b>Center for Systematic Entomology (CSE)</b> has operated as a non-profit organization 
+  dedicated to advancing systematics in its broadest sense. The CSE has supported the 
+  <a href="https://thefsca.org" target="_blank" class="external-link">
+    Florida State Collection of Arthropods (FSCA)
+  </a> 
+  and awarded numerous grants to specialists conducting research there. 
+  Given that the Research Associate program shares a similar mission to promote insect systematics, 
+  CSE membership offers an additional avenue for Research Associates to contribute meaningfully to the field.
+</p>
+
 
           <p>Publications of the CSE include:</p>
           <ul class="list-disc list-inside pl-6">

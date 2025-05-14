@@ -33,37 +33,23 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-import TableFeischrift from '~/components/Table/TableFeischrift.vue';
+import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue'
+import TableFeischrift from '~/components/Table/TableFeischrift.vue'
 
-// Define the ref variable to store the list of publications
-const list = ref([]);
-
-// Fetch data for publications when the component is mounted
-onMounted(async () => {
-  const query = {
-    path: '/insecta_mundi',  // Path of the content you want to query (update based on your content structure)
-    where: [
-      {
-        issue: {  // Assuming 'issue' is a field in your content files
-          $in: [
-            '0908', '0909', '0910', '0911', '0912', '0913', '0914', '0915', '0916', '0917', '0918', '0919'
-          ]
-        }
+const { data: listData } = await useAsyncData('festschrift-issues', async () => {
+  const response = await queryContent('insecta_mundi')
+    .where({
+      issue: {
+        $in: [
+          '0908', '0909', '0910', '0911', '0912', '0913',
+          '0914', '0915', '0916', '0917', '0918', '0919'
+        ]
       }
-    ]
-  };
+    })
+    .find()
+  return response
+})
 
-  try {
-    // Query the content directly without needing an API
-    const response = await queryContent('insecta_mundi')  // Replace with your actual collection name
-      .where(query.where)  // Apply the filtering criteria
-      .find();
-
-    list.value = response;  // Assign the response to the list
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-});
-
+const list = computed(() => listData.value || [])
 </script>
+
