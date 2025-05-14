@@ -101,7 +101,7 @@ const resetInterval = () => {
   clearInterval(interval)
   interval = setInterval(() => {
     nextSlide()
-  }, 5000)
+  }, 7000)
 }
 
 onMounted(() => {
@@ -135,11 +135,11 @@ onBeforeUnmount(() => clearInterval(interval))
 }
 
 .fade-slide-enter-active {
-  transition: transform 6s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
 }
 
 .fade-slide-leave-active {
-  transition: transform 6s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
   position: absolute;
 }
 
