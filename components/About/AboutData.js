@@ -11,14 +11,14 @@ export default {
         name: "Felipe Soto-Adames",
         role: "Vice President",
         period: "2024",
-        imageUrl: null,
+        imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
         profileUrl: "https://scholar.google.com/citations?hl=en&user=6eYGsisAAAAJ"
       },
       {
         name: "Paul Skelley",
         role: "Treasurer",
         period: "2024",
-        imageUrl: null,
+        imageUrl: "/images/boardmembers/PaulSkelley.jpg",
         profileUrl: "https://scholar.google.com/citations?hl=en&user=l-pEQHEAAAAJ"
       },
       {
@@ -51,7 +51,7 @@ export default {
       {
         name: "Felipe Soto-Adames",
         period: "2025-2027",
-        imageUrl: null,
+        imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
         profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
       },
       {
@@ -75,7 +75,7 @@ export default {
           {
             name: "David Serrano",
             period: "2024-2026",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/DavidSerrano.jpg",
             profileUrl: "https://start.broward.edu/directory/faculty.aspx?UserName=dserrano"
           },
           {
@@ -93,7 +93,7 @@ export default {
           {
             name: "Erin Powell",
             period: "2023-2025",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/ErinPowell.jpg",
             profileUrl: "https://scholar.google.co.nz/citations?user=x-rdi2wAAAAJ&hl=en"
           },
           {
@@ -107,7 +107,7 @@ export default {
             name: "Paul Skelley",
             period: "2023-2025",
             comment: "Voted in 2024",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/PaulSkelley.jpg",
             profileUrl: "https://scholar.google.com/citations?hl=en&user=l-pEQHEAAAAJ"
           },
     ],
@@ -123,7 +123,7 @@ export default {
             name: "Paul Skelley",
             role: "Chief Editor",
             period: "2015",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/PaulSkelley.jpg",
             profileUrl: "https://scholar.google.com/citations?hl=en&user=l-pEQHEAAAAJ"
           },
           {
@@ -146,7 +146,7 @@ export default {
               name: "Felipe Soto-Adames",
               role: "CSE Vice-President",
               period: "2023",
-              imageUrl: null,
+              imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
               profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
             },
               {
