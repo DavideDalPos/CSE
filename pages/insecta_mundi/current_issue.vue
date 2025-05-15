@@ -26,6 +26,9 @@
           class="my-2"
         />
 
+      <!-- Debug output -->
+<pre>{{ publications }}</pre>
+
         <!-- Fallback message -->
         <div class="px-4">
           <p v-if="publications.length === 0">No articles found.</p>
