@@ -264,7 +264,7 @@
               Published
             </p>
             <div class="mb-1">
-              <span class="text-[15px] text-black/80">{{
+              <span class="text-[15px] text-black/70">{{
                 publication.date
               }}</span>
             </div>
