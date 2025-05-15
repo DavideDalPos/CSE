@@ -5,7 +5,6 @@
 }
 
 @theme {
-  --font-serif: 'Roboto', sans-serif;
   --font-sans: 'Roboto', sans-serif;
   --color-background: #ffffff;
   --color-foreground: oklch(98.5% 0 0);

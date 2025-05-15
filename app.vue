@@ -30,7 +30,7 @@ useHead({
     lang: 'en'
   },
   bodyAttrs: {
-    class: `bg-background-color font-sans`
+    class: `bg-background-color`
   }
 })
 
