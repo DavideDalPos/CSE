@@ -1,29 +1,27 @@
 <template>
-    <section class="relative overflow-hidden">
+  <section class="relative overflow-hidden">
+    <ClientOnly>
       <VSliderMini
         class="h-[calc(80vh-100px)]"
         :slides="slides"
       />
-    </section>
-  </template>
-  
-  <script setup>
-  import Collage_1 from '~/public/images/meetings/Collage_1.png'
-import Collage_2 from '~/public/images/meetings/Collage_2.png'
-import Collage_3 from '~/public/images/meetings/Collage_3.png'
-  
-  const slides = [
+    </ClientOnly>
+  </section>
+</template>
+
+<script setup>
+const slides = [
   {
-      img: Collage_1,
-      copyright: ''
-    },
-    {
-      img: Collage_2,
-      copyright: ''
-    },
-    {
-      img: Collage_3,
-      copyright: ''
-    }
-  ]
-  </script>
+    img: '/images/meetings/Collage_1.png',
+    copyright: ''
+  },
+  {
+    img: '/images/meetings/Collage_2.png',
+    copyright: ''
+  },
+  {
+    img: '/images/meetings/Collage_3.png',
+    copyright: ''
+  }
+]
+</script>
