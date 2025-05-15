@@ -30,7 +30,7 @@ useHead({
     lang: 'en'
   },
   bodyAttrs: {
-    class: `bg-background-color`
+    class: `bg-background-color font-sans`
   }
 })
 
@@ -73,8 +73,6 @@ async function onAfterEnter() {
   text-decoration: underline;
 }
 
-
-
 .internal-link {
   color: #c2410c; /* Tailwind's orange-700 */
   font-weight: 600;
@@ -84,6 +82,4 @@ async function onAfterEnter() {
   text-decoration: underline;
   color: #dfa75a; /* brighter orange for hover */
 }
-
-
 </style>

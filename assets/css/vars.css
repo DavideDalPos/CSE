@@ -5,6 +5,7 @@
 }
 
 @theme {
+  --font-serif: 'Roboto', sans-serif;
   --font-sans: 'Roboto', sans-serif;
   --color-background: #ffffff;
   --color-foreground: oklch(98.5% 0 0);
@@ -17,5 +18,5 @@
   --color-senary: #a3652e;
   --color-setenary: #5f7a79;
   --color-otenary: #7d4b4b;
-  --color-novenary: #a1675e; 
+  --color-novenary: #a1675e;
 }
