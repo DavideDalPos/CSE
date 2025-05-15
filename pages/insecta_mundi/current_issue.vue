@@ -28,7 +28,7 @@
 
         <!-- Fallback message -->
         <div class="px-4">
-          <p v-if="list?.length === 0">No articles found.</p>
+          <p v-if="publications?.length === 0">No articles found.</p>
         </div>
       </div>
       <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch"></div>
@@ -39,43 +39,41 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref } from 'vue'
 import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue'
 import TablePublicationCurrent from '~/components/Table/TablePublicationCurrent.vue'
 
 const formattedDate = ref('')
 const publications = ref([])
 
-onMounted(async () => {
-  const latestPublication = await queryContent('insecta_mundi')
-    .where({ date: { $ne: null } })
-    .sort({ date: -1 })
-    .limit(1)
-    .only(['date'])
-    .findOne()
+const latestPublication = await queryContent('insecta_mundi')
+  .where({ date: { $ne: null } })
+  .sort({ date: -1 })
+  .limit(1)
+  .only(['date'])
+  .findOne()
 
-  if (latestPublication?.date) {
-    const dateObj = new Date(latestPublication.date)
-    formattedDate.value = dateObj.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+if (latestPublication?.date) {
+  const dateObj = new Date(latestPublication.date)
+  formattedDate.value = dateObj.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+
+  const yearAndMonth = latestPublication.date.slice(
+    0,
+    latestPublication.date.lastIndexOf('-')
+  )
+
+  const response = await queryContent('insecta_mundi')
+    .where({
+      date: {
+        $contains: yearAndMonth
+      }
     })
+    .find()
 
-    const yearAndMonth = latestPublication.date.slice(
-      0,
-      latestPublication.date.lastIndexOf('-')
-    )
-
-    const response = await queryContent('insecta_mundi')
-      .where({
-        date: {
-          $contains: yearAndMonth
-        }
-      })
-      .find()
-
-    publications.value = response
-  }
-})
+  publications.value = response
+}
 </script>
