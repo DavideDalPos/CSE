@@ -95,6 +95,7 @@ export default {
 <style scoped>
 /* Base Section Styles */
 section {
+  font-family: 'Helvetica Neue', sans-serif;
   background-color: #f9f9f9;
 }
 
