@@ -4,12 +4,14 @@
 
 
     <div
-      class="relative overflow-hidden mx-auto "
+      class="relative overflow-hidden mx-auto"
       :style="{ height: imageHeight }"
     >
       <img
         :src="slide.img"
-        class="object-contain mx-auto max-h-[250px] border"
+          class="object-contain mx-auto max-h-[600px] rounded-xl shadow-lg hover:shadow-2xl ring-1 ring-gray-200 transition duration-300 ease-in-out hover:scale-105"
+
+
         :style="{ maxHeight: imageHeight }"
       />
 

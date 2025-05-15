@@ -156,6 +156,22 @@ export default {
               imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
               profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
             }
-    ]
+    ],
+    webmaster: [
+            {
+              name: "José Luis Pereira",
+              role: "Webmaster Supervisor",
+              period: "2025",
+              imageUrl: "/images/boardmembers/JosePereira.jpg",
+              profileUrl: "https://www.linkedin.com/in/jos%C3%A9-luis-pereira-a4750bb7/"
+            },
+            {
+                name: "Davide Dal Pos",
+                role: "Webmaster Associate",
+                period: "2025",
+                imageUrl: "/images/boardmembers/DavideDalPos.jpg",
+                profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+              },
+  ]
   }
   
