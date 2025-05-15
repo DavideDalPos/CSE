@@ -13,7 +13,7 @@
       <div class="flex-1 space-y-8 mt-5">
         <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
 <p>
-  For over 35 years, the <b>Center for Systematic Entomology (CSE)</b> has operated as a non-profit organization 
+  For over 40 years, the <b>Center for Systematic Entomology (CSE)</b> has operated as a non-profit organization 
   dedicated to advancing systematics in its broadest sense. The CSE has supported the 
   <a href="https://thefsca.org" target="_blank" class="external-link">
     Florida State Collection of Arthropods (FSCA)
@@ -32,7 +32,7 @@
           </ul>
 
           <p class="text-justify">
-            One of the advantages of membership is 
+            One of the advantages of becoming a <strong>CSE member</strong> is 
             publishing in <b><i>Insecta Mundi</i></b> without page charges. We urge all 
             Research Associates to support the CSE and simultaneously support FSCA 
             and its various systematics projects. 

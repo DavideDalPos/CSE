@@ -50,7 +50,6 @@ export const reviewEditors = ref([
 ]);
 
 export const layoutEditors = ref('Robert Forsyth (Royal British Columbia Museum, Canada)');
-export const webmaster = ref('Eugenio H. Nearns (USDA-APHIS-PPQ, USA)');
 export const postProduction = ref('Paul E. Skelley (Florida Department of Agriculture and Consumer Services, USA)');
 
 // Sorted versions

@@ -23,8 +23,7 @@
         and grant administration to ensure long-term sustainability.
       </p>
       <p class="mb-4">
-        The <strong>Board of Directors</strong> typically meets four times a year. The CSE also holds an <strong>annual business meeting</strong> during the <strong>CSE Annual Meeting</strong>, 
-        which may include a scientific program at the discretion of the Board.
+        The <strong>Board of Directors</strong> typically meets four times a year. The CSE also holds an <strong>annual business meeting</strong> during the <strong>CSE Annual Conference</strong>.
       </p>
       <p>
         Curious about how we operate? 

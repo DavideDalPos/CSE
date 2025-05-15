@@ -8,10 +8,10 @@
 </template>
 
 <script setup>
-import CSELogo from '~/assets/images/IM_Skelley.png'
+import CSELogo from '~/assets/images/IM_Skelley1.png'
 import IMLogo from '~/assets/images/IM_logo2.png'
-import conference2025 from '~/assets/images/conference2025.avif'
 import grantImage from '~/assets/images/collection.webp'
+import conference2025 from '~/assets/images/conference2025.avif'
 
 const slides = [
 {

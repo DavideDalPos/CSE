@@ -50,7 +50,6 @@
       Submit Proposal to the
       <NuxtLink
         href="/about#gge"
-        target="_blank"
         class="internal-link"
         >GGE Committee</NuxtLink
       >:
@@ -107,7 +106,6 @@
               Send it to the
               <NuxtLink
                 href="/about#gge"
-                target="_blank"
                 class="internal-link"
                 >GGE Committee</NuxtLink
               >

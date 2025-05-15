@@ -35,7 +35,7 @@
 
           <p class="leading-relaxed">
             Before submission, all manuscripts should be carefully reviewed — ideally by colleagues or mentors — and should comply with 
-            our presubmission checklist. Submissions that do not meet these basic requirements will be returned without review.
+            our <NuxtLink href="/insecta_mundi/authorguidelines#checklist" class="internal-link">presubmission checklist</NuxtLink>. Submissions that do not meet these basic requirements will be returned without review.
           </p>
 
           <p class="leading-relaxed">

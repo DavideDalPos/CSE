@@ -39,7 +39,8 @@
         <h3 class="text-2xl font-semibold text-gray-800 mb-2">3. Submission Contract</h3>
         <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
           <p>
-            Authors must submit a signed <b>Submission Contract</b> confirming they have followed the manuscript preparation guidelines. Authors are fully responsible for the content, organization, and technical accuracy of their manuscript.
+            Authors must submit a signed <a href="/PDF/insectamundi/InsectaMundi_SubmissionContract_2014.doc" class='internal-link'>Submission Contract</a> c
+            onfirming they have followed the manuscript preparation guidelines. Authors are fully responsible for the content, organization, and technical accuracy of their manuscript.
           </p>
         </div>
       </div>

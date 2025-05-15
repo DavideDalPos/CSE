@@ -42,7 +42,7 @@
                     <b><i>Insecta Mundi</i></b>'s open accessible electronic publication to be the form validating each articles publication date. 
                     In 2014, manuscript submissions to <b><i>Insecta Mundi</i></b> has grown to a volume that we suffered a staffing crisis 
                     and had to reorganize our manuscript processing. The primarily difference is that we increased the number of volunteer
-                    Editors and changed manuscript submission requirements. Our current editorial staff is listed also
+                    Editors and changed manuscript submission requirements. Our current editorial team is listed also
                     <NuxtLink href="/about#editorialstaff" class="internal-link">here</NuxtLink>.
                 </p>
             </div>

@@ -135,7 +135,7 @@
                 to="https://github.com/DavideDalPos/CSE/issues"
                 target="_blank"
                 class="hover:text-quaternary"
-                title="Submit your issue on the website"
+                title="Submit your issue on GitHub"
               >
                 <IconGitHub class="w-4 h-4" />
               </NuxtLink>
@@ -151,8 +151,8 @@
 </template>
 
 <script setup>
-import IconGitHub from '../Icon/IconGitHub.vue'
-import IconX from '../Icon/IconX.vue'
+import IconGitHub from '../Icon/IconGitHub.vue';
+import IconX from '../Icon/IconX.vue';
 
 const menu = [
   {
@@ -183,7 +183,7 @@ const menu = [
       },
       { label: 'Author Instructions', link: '/insecta_mundi/authorguidelines' },
       { label: 'Editor Guidelines', link: '/insecta_mundi/editorinfo' },
-      { label: 'Ethic Statements', link: '/insecta_mundi/ethic' }
+      { label: 'Ethic Statement', link: '/insecta_mundi/ethic' }
     ]
   },
   {

@@ -9,13 +9,13 @@
       </div>
   
       <div class="mb-3 text-center">
-        <p class="text-sm text-gray-700 font-semibold">Felipe Soto-Adames</p>
-        <p class="text-xs text-gray-600 italic font-medium">CSE Vice-President</p>
+        <p class="text-sm text-gray-700 font-semibold">Davide Dal Pos</p>
+        <p class="text-xs text-gray-600 italic font-medium">CSE President</p>
       </div>
 
       <div class="mb-3 text-center">
-        <p class="text-sm text-gray-700 font-semibold">Davide Dal Pos</p>
-        <p class="text-xs text-gray-600 italic font-medium">CSE President</p>
+        <p class="text-sm text-gray-700 font-semibold">Felipe Soto-Adames</p>
+        <p class="text-xs text-gray-600 italic font-medium">CSE Vice-President</p>
       </div>
     </div>
   </template>

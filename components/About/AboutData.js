@@ -25,7 +25,7 @@ export default {
         name: "Gary J. Steck",
         role: "Secretary",
         period: "2024",
-        imageUrl: null,
+        imageUrl: "/images/boardmembers/GarySteck.jpg",
         profileUrl: ""
       },
     ],
@@ -39,7 +39,7 @@ export default {
       {
         name: "David Plotkin",
         period: "2025-2027",
-        imageUrl: null,
+        imageUrl: "/images/boardmembers/DavidPlotkin.jpg",
         profileUrl: "https://scholar.google.com/citations?hl=en&user=OjvtqRQAAAAJ"
       },
       {
@@ -57,13 +57,13 @@ export default {
       {
         name: "Sandor Kelly ",
         period: "2024-2026",
-        imageUrl: null,
+        imageUrl: "/images/boardmembers/ShawnKelly.jpg",
         profileUrl: "https://sciences.ucf.edu/biology/bugcloset/people/kelly/"
       },
         {
             name: "Gary J. Steck ",
             period: "2024-2026",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/GarySteck.jpg",
             profileUrl: ""
           },
           {
@@ -81,7 +81,7 @@ export default {
           {
             name: "Kyle Schnepp",
             period: "2023-2025",
-            imageUrl: null,
+            imageUrl: "/images/boardmembers/KyleSchnepp.jpg",
             profileUrl: "https://scholar.google.com/citations?hl=en&user=5heYqsoAAAAJ"
           },
           {
@@ -116,7 +116,7 @@ export default {
             name: "David Plotkin",
             role: "Chief Editor",
             period: "2015",
-            imageUrl: null,
+            imageUrl: '/images/boardmembers/DavidPlotkin.jpg',
             profileUrl: "https://scholar.google.com/citations?hl=en&user=OjvtqRQAAAAJ"
           },
           {
@@ -139,23 +139,23 @@ export default {
               name: "Sandor Kelly ",
               role: "Chair & FSCA Representative",
               period: "2023",
-              imageUrl: null,
+              imageUrl: "/images/boardmembers/ShawnKelly.jpg",
               profileUrl: "https://sciences.ucf.edu/biology/bugcloset/people/kelly/"
             },
             {
-              name: "Felipe Soto-Adames",
-              role: "CSE Vice-President",
-              period: "2023",
-              imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
-              profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
-            },
-              {
                 name: "Davide Dal Pos",
                 role: "CSE President",
                 period: "2023",
                 imageUrl: "/images/boardmembers/DavideDalPos.jpg",
                 profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
               },
+            {
+              name: "Felipe Soto-Adames",
+              role: "CSE Vice-President",
+              period: "2023",
+              imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
+              profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+            }
     ]
   }
   

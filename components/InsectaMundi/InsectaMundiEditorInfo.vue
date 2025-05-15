@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-8 my-15 font-serif">
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Editor Information</h1>
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Editor Guidelines</h1>
     <h2 class="text-xl font-medium text-gray-500 -mt-2">Insecta Mundi</h2>
 
     <div class="flex justify-between gap-x-4 my-6">
@@ -24,7 +24,7 @@
               See our <NuxtLink to="/insecta_mundi/authorguidelines" class="internal-link">Author Instructions</NuxtLink> for full details.
             </li>
             <li>
-              <b>Review Editors</b> – We expanded the number and responsibilities of our <i>Review Editors</i> 
+              <b>Review Editors</b> – We expanded the number and responsibilities of our <NuxtLink href="/insecta_mundi/journal#revieweditors" class="internal-link">Review Editors</NuxtLink> 
               (formerly Subject Editors) to ensure quality and consistency throughout the publication process.
             </li>
           </ul>

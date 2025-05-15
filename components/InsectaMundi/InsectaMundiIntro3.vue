@@ -3,9 +3,8 @@
     <EditorListSection title="Editorial Board" :items="sortedEditorialBoard" />
     <EditorSingleLineSection title="Chief Editor" :item="chiefEditor" />
     <EditorListSection title="Founding Editors" :items="sortedFoundingEditors" />
-    <EditorListSection title="Review Editors" :items="sortedReviewEditors" />
+    <EditorListSection id="revieweditors" class="scroll-mt-28" title="Review Editors" :items="sortedReviewEditors" />
     <EditorSingleLineSection title="Layout Editors" :item="layoutEditors" />
-    <EditorSingleLineSection title="Webmaster" :item="webmaster" />
     <EditorSingleLineSection title="Post Production" :item="postProduction" />
 
     <section>
@@ -23,8 +22,7 @@ import {
   postProduction,
   sortedEditorialBoard,
   sortedFoundingEditors,
-  sortedReviewEditors,
-  webmaster
+  sortedReviewEditors
 } from './InsectaMundiIntro3Data';
 
 import EditorListSection from './EditorListSection.vue';

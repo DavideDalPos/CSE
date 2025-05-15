@@ -7,21 +7,21 @@
         </p>
   
         <div class="flex justify-center gap-6 flex-wrap">
-          <!-- Archive -->
-          <NuxtLink
-            href="/insecta_mundi"
-            class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/70 transition duration-200 shadow"
-          >
-          📰 Visit Our Archive
-        </NuxtLink>
-  
-          <!-- New Publications -->
+
           <NuxtLink
             href="/insecta_mundi/current_issue"
-            class="inline-block px-6 py-3 bg-quaternary/90 text-white rounded-lg hover:bg-tertiary transition duration-200 shadow"
+            class="inline-block px-6 py-3 bg-quaternary/90 text-white rounded-lg hover:bg-tertiary transition duration-200 shadow-lg"
           >
             📢 View New Publications
           </NuxtLink>
+          <!-- Archive -->
+          <NuxtLink
+            href="/insecta_mundi"
+            class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/70 transition duration-200 shadow-lg"
+          >
+          📰 Visit Our Archive
+        </NuxtLink>
+
         </div>
       </div>
     </section>

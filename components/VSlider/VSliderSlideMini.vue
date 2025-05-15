@@ -9,20 +9,11 @@
     >
       <img
         :src="slide.img"
-        class="object-contain mx-auto max-h-full"
+        class="object-contain mx-auto max-h-[250px] border"
         :style="{ maxHeight: imageHeight }"
       />
 
-      <div class="absolute w-full h-full bg-black/65 -z-10" />
-
-      <!-- Copyright section positioned below the image and centered -->
-      <div
-        v-if="slide.copyright"
-        class="absolute bottom-[3px] left-0 right-0 text-center text-white opacity-75"
-      >
-        {{ slide.copyright }}
       </div>
-    </div>
 </section>
 </template>
 
