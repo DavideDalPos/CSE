@@ -73,7 +73,7 @@
                         </NuxtLink>
 
                         <ul
-                          class="absolute left-full top-0 mt-0 ml-1 w-40 shadow-md bg-primary text-foreground hidden group-hover/sub:block"
+                          class="absolute left-full top-0 mt-0 w-40 shadow-md bg-primary text-foreground hidden group-hover/sub:block"
                         >
                           <li
                             v-for="(subItem, subIndex) in item.submenu"
@@ -151,8 +151,8 @@
 </template>
 
 <script setup>
-import IconGitHub from '../Icon/IconGitHub.vue';
-import IconX from '../Icon/IconX.vue';
+import IconGitHub from '../Icon/IconGitHub.vue'
+import IconX from '../Icon/IconX.vue'
 
 const menu = [
   {
