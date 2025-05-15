@@ -34,7 +34,7 @@
             <a
               :href="member.awardPDF"
               target="_blank"
-              class="inline-block bg-novenary text-white text-xs py-1 px-3 rounded-md border border-novenary hover:bg-novenary/70 mb-3"
+              class="inline-block bg-novenary text-white text-xs py-1 px-3 rounded-md border border-novenary hover:bg-novenary/70 mb-3 shadow-lg"
               title="View Award PDF"
             >
               View Award

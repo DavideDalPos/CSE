@@ -177,7 +177,7 @@
             class="download-section border-b border-gray-400 pb-5 mb-2"
           >
             <div
-              class="group text-foreground bg-quaternary/90 px-4 py-2 text-[16px] rounded-sm flex items-center hover:text-primary hover:bg-tertiary justify-center space-x-2 hover:bg-secondary hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
+              class="group text-foreground bg-gray-700 px-4 py-2 text-[16px] rounded-sm flex items-center hover:text-primary hover:bg-tertiary justify-center space-x-2 hover:bg-secondary hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -215,7 +215,8 @@
             <div
               v-for="(supp, index) in publication.supplementary"
               :key="index"
-              class="group bg-primary px-4 py-2 rounded-sm flex text-white items-center justify-center space-x-2 hover:shadow-lg hover:text-senary/80 hover:bg-primary/50 transition-all duration-200 w-max mx-auto mb-3 shadow-sm"
+              class="group bg-primary px-4 py-2 rounded-sm flex text-white items-center justify-center 
+              space-x-2 hover:shadow-lg hover:text-senary/80 hover:bg-primary/50 transition-all duration-200 w-max mx-auto mb-3 shadow-sm"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -240,10 +241,10 @@
           </div>
           <div
             v-if="publication.date"
-            class="border border-gray-400 bg-gray-200 px-4 rounded shadow max-w-[300px]"
+            class="border border-otenary/80 bg-gray-200 px-4 rounded shadow max-w-[300px]"
           >
             <p
-              class="text-white bg-gray-400 px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1"
+              class="text-white bg-otenary px-4 w-[calc(100%+2rem)] -mx-4 border-otenary py-1 mb-1"
             >
               Publication
             </p>
@@ -255,10 +256,10 @@
           </div>
           <div
             v-if="publication.date"
-            class="border border-gray-400 bg-gray-200 px-4 rounded shadow max-w-[300px]"
+            class="border border-quaternary/80 bg-gray-200 px-4 rounded shadow max-w-[300px]"
           >
             <p
-              class="text-white bg-gray-400 px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1"
+              class="text-white bg-quaternary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1"
             >
               Published
             </p>
@@ -269,10 +270,10 @@
             </div>
           </div>
           <div
-            class="border px-4 rounded border-gray-400 bg-gray-200 shadow max-w-[300px]"
+            class="border px-4 rounded border-primary/80 bg-gray-200 shadow max-w-[300px]"
           >
             <h3
-              class="text-lg text-white bg-gray-400 px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2"
+              class="text-lg text-white bg-primary px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2"
             >
               How to cite
             </h3>
