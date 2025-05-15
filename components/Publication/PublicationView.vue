@@ -177,14 +177,16 @@
             class="download-section border-b border-gray-400 pb-5 mb-2"
           >
             <div
-              class="group text-foreground bg-gray-700 px-4 py-2 text-[16px] rounded-sm flex items-center hover:text-primary hover:bg-tertiary justify-center space-x-2 hover:bg-secondary hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
+              class="group text-foreground bg-gray-700 px-4 py-2 text-[16px] rounded-sm flex 
+              items-center hover:text-white justify-center space-x-2 hover:bg-gray-500 
+              hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                class="w-5 h-5 group-hover:text-primary transition font-semibold duration-200 text-white"
+                class="w-5 h-5 group-hover:text-white transition font-semibold duration-200 text-white"
               >
                 <path
                   stroke-linecap="round"
