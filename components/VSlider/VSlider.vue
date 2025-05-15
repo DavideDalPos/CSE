@@ -2,28 +2,27 @@
   <div class="relative w-full min-h-screen">
     <!-- Banner Block -->
     <div
-  class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
-  bg-gradient-to-r from-gray-700/60 via-gray-500/60 to-gray-700/60 backdrop-blur-sm 
-  px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto max-w-6xl shadow-xl shadow-black/40 animate-fade-in"
->
-  <!-- Title -->
-  <div
-    class="text-quaternary text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-wide whitespace-nowrap"
-  >
-    Center for Systematic Entomology (CSE)
-  </div>
+      class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
+      bg-gradient-to-r from-gray-700/60 via-gray-500/60 to-gray-700/60 backdrop-blur-sm 
+      px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto max-w-6xl shadow-xl shadow-black/40 animate-fade-in"
+    >
+      <!-- Title -->
+      <div
+        class="text-quaternary text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-wide whitespace-nowrap"
+      >
+        Center for Systematic Entomology (CSE)
+      </div>
 
-  <!-- Subtitle -->
-  <div class="mt-3 text-primary md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
-    Advancing Insect Systematics
-  </div>
-</div>
-
+      <!-- Subtitle -->
+      <div class="mt-3 text-primary md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
+        Advancing Insect Systematics
+      </div>
+    </div>
 
     <!-- Main Content (Slider) -->
     <div class="relative w-full h-[95%]">
       <TransitionGroup
-        name="fade-slide"
+        :name="direction === 'next' ? 'fade-slide-next' : 'fade-slide-prev'"
         tag="div"
         class="relative flex flex-row w-full h-full"
       >
@@ -35,7 +34,7 @@
       </TransitionGroup>
 
       <!-- Navigation Arrows -->
-      <div class="absolute inset-y-1/2 w-full flex justify-between items-center px-4 z-40">
+      <div class="absolute top-1/2 left-0 right-0 flex justify-between items-center px-4 z-40 -translate-y-1/2">
         <button
           @click="prevSlide"
           class="text-white bg-primary/30 hover:bg-primary/50 rounded-full p-3 text-3xl transition"
@@ -68,6 +67,8 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+
 const props = defineProps({
   slides: {
     type: Array,
@@ -76,23 +77,28 @@ const props = defineProps({
 })
 
 const currentIndex = ref(0)
+const direction = ref('next') // 'next' or 'prev'
 let interval
 
 const currentSlide = computed(() => [props.slides[currentIndex.value]])
 
 const nextSlide = () => {
+  direction.value = 'next'
   currentIndex.value =
     currentIndex.value < props.slides.length - 1 ? currentIndex.value + 1 : 0
   resetInterval()
 }
 
 const prevSlide = () => {
+  direction.value = 'prev'
   currentIndex.value =
     currentIndex.value > 0 ? currentIndex.value - 1 : props.slides.length - 1
   resetInterval()
 }
 
 const goToSlide = (index) => {
+  // Determine direction based on index relative to currentIndex
+  direction.value = index > currentIndex.value ? 'next' : 'prev'
   currentIndex.value = index
   resetInterval()
 }
@@ -101,7 +107,7 @@ const resetInterval = () => {
   clearInterval(interval)
   interval = setInterval(() => {
     nextSlide()
-  }, 6000)
+  }, 6500)
 }
 
 onMounted(() => {
@@ -128,28 +134,42 @@ onBeforeUnmount(() => clearInterval(interval))
 }
 
 /* Slider Transitions */
-.slide {
+
+/* Next (right arrow) */
+.fade-slide-next-enter-active,
+.fade-slide-next-leave-active {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.fade-slide-enter-active {
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
-}
-
-.fade-slide-leave-active {
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
-  position: absolute;
-}
-
-.fade-slide-enter-from {
+.fade-slide-next-enter-from {
   transform: translateX(100%);
   opacity: 0;
 }
 
-.fade-slide-leave-to {
+.fade-slide-next-leave-to {
   transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Prev (left arrow) */
+.fade-slide-prev-enter-active,
+.fade-slide-prev-leave-active {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-slide-prev-enter-from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.fade-slide-prev-leave-to {
+  transform: translateX(100%);
   opacity: 0;
 }
 </style>
