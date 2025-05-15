@@ -1,9 +1,7 @@
 <template>
   <div>
     <ImageOverlay
-      imageSrc="/images/jarmila_and_stewart_peck.jpg"
-  
-      copyright="Pierre Poirier © Canadian Museum of Nature"
+      imageSrc="/images/donations1.webp"
     />
   </div>
 </template>

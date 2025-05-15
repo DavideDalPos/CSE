@@ -10,29 +10,100 @@
     <div class="flex gap-10 ">
       <!-- Left-side content for the text -->
       <div class="w-full lg:w-3/4 flex flex-col gap-8 text-justify flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
-      <p class="text leading-relaxed">
-        In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> 
-        (aka the <b>Peck Fund</b>) with the Center for Systematic Entomology (CSE). 
-        The primary purpose of the <b>Peck Fund</b> is to facilitate research travels to 
-        the <a href="https://thefsca.org" target="_blank" class="external-link">Florida State Collection of Arthropods (FSCA)</a>
-        to work with and ultimately improve the collections.
-      </p>
+      <!-- Intro Paragraph with Side Image -->
 
-    <!-- Enhanced Curation Section -->
-      <p class="-mb-7">Enhanced curation could include:</p>
-      <ul class="list-disc list-inside pl-7 text-base">
-        <li><b>Specimen sorting and identification</b></li>
-        <li><b>Designation of types</b></li>
-        <li><b>Updated taxonomy</b></li>
-      </ul>
+<div class="text-lg leading-relaxed text-gray-700">
+<div class="float-left mr-8 w-[400px] cursor-pointer" @click="showModal = true">
+<div
+  class="relative w-full max-w-[450px] rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform"
+  @click="showModal = true"
+>
+  <img 
+    src="/images/jarmila_and_stewart_peck.avif" 
+    alt="Stewart and Jarmila Peck" 
+    class="w-full rounded-lg"
+  />
+  <p class="absolute top-2 left-2 text-white font-semibold text-sm bg-black/60 rounded px-2 py-0.5">
+    Jarmila & Stewart Peck
+  </p>
+  <p class="absolute bottom-2 right-2 text-[9px] text-white bg-black/60 rounded px-1">
+    &copy; Pierre Poirier, Canadian Museum of Nature
+  </p>
+</div>
+
+
+
+
+</div>
+  
+  <p class="mb-6 -mt-2">
+    In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the
+    <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> 
+    (aka the <b>Peck Fund</b>) with the Center for Systematic Entomology (CSE).
+    The primary purpose of the <b>Peck Fund</b> is to facilitate research travels to the 
+    <a href="https://thefsca.org" target="_blank" class="external-link">
+      Florida State Collection of Arthropods (FSCA)
+    </a>
+    to work with and ultimately improve the collections.
+  </p>
+  
+<div class="text-center">
+  <p class="text-lg font-semibold tracking-wide mb-5 border-b border-gray-300 inline-block pb-1">
+    Enhanced curation could include:
+  </p>
+
+<div class="flex justify-center items-center text-base border border-gray-300 rounded-lg overflow-hidden max-w-xl mx-auto">
+  <div class="px-6 py-1 hover:bg-gray-50 cursor-default">Specimen sorting &amp; identification</div>
+  <div class="border-l border-gray-300 h-6"></div>
+  <div class="px-6 py-1 hover:bg-gray-50 cursor-default">Designation of types</div>
+  <div class="border-l border-gray-300 h-6"></div>
+  <div class="px-6 py-1 hover:bg-gray-50 cursor-default">Taxonomy updates</div>
+</div>
+
+</div>
+
+
+  <p class="mt-8">
+    Grant awards are limited, and proposals will be evaluated by the 
+    <NuxtLink href="/about#gge" class="internal-link">Gifts, Grants and Endowment (GGE) Committee</NuxtLink> 
+    semiannually (<b>January 15th</b> and <b>July 15th</b>) and approved by the 
+    <NuxtLink href="/about#board" class="internal-link">CSE Board of Directors</NuxtLink>.
+    Applicants must be CSE members and should contact the appropriate curator at the FSCA to inquire about potential work.
+  </p>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal Viewer -->
+<div
+  v-if="showModal"
+  class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+  @click.self="showModal = false"
+>
+  <div class="relative max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl">
+    <img
+      src="/images/jarmila_and_stewart_peck.avif"
+      alt="Stewart and Jarmila Peck"
+      class="rounded-lg max-h-[90vh] max-w-[90vw]"
+    />
+    <p class="absolute top-3 left-3 text-white font-semibold text-lg bg-black/60 rounded px-2 py-0.5 select-none pointer-events-none">
+      Jarmila & Stewart Peck
+    </p>
+    <p class="absolute bottom-3 right-2 text-[15px] text-white bg-black/60 rounded px-2 py-0.5 select-none pointer-events-none">
+      &copy; Pierre Poirier, Canadian Museum of Nature
+    </p>
+  </div>
+</div>
+
+
 
     <!-- Grant Proposal Evaluation -->
-      <p>
-        Grant awards are limited, and proposals will be evaluated by the <NuxtLink href="/about#gge"  class="internal-link">Gifts, Grants and Endowment (GGE) Committee</NuxtLink> 
-        semiannually (<b>January 15th</b> and <b>July 15th</b>) and approved by the <NuxtLink href="/about#board" class="internal-link">
-          CSE Board of Directors</NuxtLink>.
-        Applicants must be CSE members and should contact the appropriate curator at the FSCA to inquire about potential work.
-      </p>
+
 
 
     <!-- Proposal Requirements -->
@@ -103,17 +174,11 @@
 </style>
 
 
-<script>
-
+<script setup lang="ts">
 import GrantAcknowledge from '@/components/Grants/GrantAcknowledge.vue';
-import Counter from './Counter.vue';
+import { ref } from 'vue';
 import GrantRightColumn from './GrantRightColumn.vue';
 
-export default {
-  components: {
-    GrantAcknowledge,
-    Counter,
-    GrantRightColumn
-  }
-}
+const showModal = ref(false);
+
 </script>

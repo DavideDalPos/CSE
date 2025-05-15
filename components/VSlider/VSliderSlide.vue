@@ -15,7 +15,7 @@
             v-html="slide.description"
           />
           <NuxtLink
-            class="bg-otenary text-white px-4 py-2 no-underline hover:bg-quaternary"
+            class="bg-otenary text-white px-4 py-2 rounded-sm no-underline hover:bg-quaternary"
             :to="slide.link.href"
           >
             {{ slide.link.label }}
