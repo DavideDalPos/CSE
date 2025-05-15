@@ -52,7 +52,7 @@ export default {
         name: "Felipe Soto-Adames",
         period: "2025-2027",
         imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
-        profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+        profileUrl: "https://scholar.google.com/citations?hl=en&user=6eYGsisAAAAJ"
       },
       {
         name: "Sandor Kelly ",
@@ -154,7 +154,7 @@ export default {
               role: "CSE Vice-President",
               period: "2023",
               imageUrl: "/images/boardmembers/FelipeSotoAdames.jpg",
-              profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
+              profileUrl: "https://scholar.google.com/citations?hl=en&user=6eYGsisAAAAJ"
             }
     ],
     webmaster: [
