@@ -26,9 +26,6 @@
           class="my-2"
         />
 
-      <!-- Debug output -->
-<pre>{{ publications }}</pre>
-
         <!-- Fallback message -->
         <div class="px-4">
           <p v-if="publications.length === 0">No articles found.</p>
@@ -42,10 +39,14 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted } from 'vue'
 import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue'
 import TablePublicationCurrent from '~/components/Table/TablePublicationCurrent.vue'
 
-const { data: list } = await useAsyncData('insecta-mundi', async () => {
+const formattedDate = ref('')
+const publications = ref([])
+
+onMounted(async () => {
   const latestPublication = await queryContent('insecta_mundi')
     .where({ date: { $ne: null } })
     .sort({ date: -1 })
@@ -53,29 +54,28 @@ const { data: list } = await useAsyncData('insecta-mundi', async () => {
     .only(['date'])
     .findOne()
 
-  const dateObj = new Date(latestPublication.date)
-  const formattedDate = dateObj.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-
-  const yearAndMonth = latestPublication.date.slice(
-    0,
-    latestPublication.date.lastIndexOf('-')
-  )
-
-  const response = await queryContent('insecta_mundi')
-    .where({
-      date: {
-        $contains: yearAndMonth
-      }
+  if (latestPublication?.date) {
+    const dateObj = new Date(latestPublication.date)
+    formattedDate.value = dateObj.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     })
-    .find()
 
-  return { formattedDate, response }
+    const yearAndMonth = latestPublication.date.slice(
+      0,
+      latestPublication.date.lastIndexOf('-')
+    )
+
+    const response = await queryContent('insecta_mundi')
+      .where({
+        date: {
+          $contains: yearAndMonth
+        }
+      })
+      .find()
+
+    publications.value = response
+  }
 })
-
-const formattedDate = computed(() => list.value?.formattedDate || '')
-const publications = computed(() => list.value?.response || [])
 </script>
