@@ -13,7 +13,7 @@
       <div class="flex-1 space-y-8 mt-5">
         <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
 <p>
-  For over <span>{{ years }}</span> years, the <b>Center for Systematic Entomology (CSE)</b> has operated as a non-profit organization 
+  For <span class="font-bold">{{ years }}</span> years, the <b>Center for Systematic Entomology (CSE)</b> has operated as a non-profit organization 
   dedicated to advancing systematics in its broadest sense. The CSE has supported the 
   <a href="https://thefsca.org" target="_blank" class="external-link">
     Florida State Collection of Arthropods (FSCA)
