@@ -1,14 +1,15 @@
 <template>
   <section class="container mx-auto px-8 my-10 font-serif">
-  <div>
-    <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
-    <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">Current Publications</h2>
-  </div>
-  <div class="mt-2 text-sm text-gray-400 italic mb-10">
-    paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
-  </div>
+    <div>
+      <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
+      <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">
+        Current Publications
+      </h2>
+    </div>
+    <div class="mt-2 text-sm text-gray-400 italic mb-10">
+      paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
+    </div>
     <div class="flex flex-col lg:flex-row gap-8">
-      
       <!-- LEFT COLUMN: Publications -->
       <div>
         <div
@@ -20,17 +21,19 @@
         </div>
 
         <!-- Table Component or List -->
-        <TablePublicationCurrent :list="publications" class="my-2" />
+        <TablePublicationCurrent
+          :list="publications"
+          class="my-2"
+        />
 
         <!-- Fallback message -->
         <div class="px-4">
-          <p v-if="list.length === 0">No articles found.</p>
+          <p v-if="list?.length === 0">No articles found.</p>
         </div>
       </div>
-<div class="hidden lg:block w-[1px] bg-gray-300 self-stretch"></div>
+      <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch"></div>
       <!-- RIGHT COLUMN -->
       <InsectaMundiRightColumn />
-
     </div>
   </section>
 </template>
