@@ -1,5 +1,6 @@
 <template>
-    <section class="relative overflow-hidden">
+  <section class="relative overflow-hidden">
+    <ClientOnly>
       <VSliderMini
         class="h-[calc(80vh-100px)]"
         :slides="slides"
