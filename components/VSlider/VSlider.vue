@@ -101,7 +101,7 @@ const resetInterval = () => {
   clearInterval(interval)
   interval = setInterval(() => {
     nextSlide()
-  }, 7000)
+  }, 6000)
 }
 
 onMounted(() => {
