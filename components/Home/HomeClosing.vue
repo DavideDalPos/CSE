@@ -10,7 +10,7 @@
         <!-- Contact Us -->
         <NuxtLink
           href="/about"
-          class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/70 transition duration-200 shadow"
+          class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/70 transition duration-200 shadow-lg"
         >
           📬 About Us
       </NuxtLink>
@@ -18,7 +18,7 @@
         <!-- Join Us -->
         <NuxtLink
           href="/membership"
-          class="inline-block px-6 py-3 bg-quinary text-white rounded-lg hover:bg-quinary/60 transition duration-200 shadow"
+          class="inline-block px-6 py-3 bg-quinary text-white rounded-lg hover:bg-quinary/60 transition duration-200 shadow-lg"
         >
           🤝 Become a Member
       </NuxtLink>
@@ -26,7 +26,7 @@
         <!-- Newsletter or Follow Us (optional) -->
         <NuxtLink
           href="/insecta_mundi/journal"
-          class="inline-block px-6 py-3 bg-quaternary text-white rounded-lg hover:bg-tertiary transition duration-200 shadow"
+          class="inline-block px-6 py-3 bg-quaternary text-white rounded-lg hover:bg-tertiary transition duration-200 shadow-lg"
         >
           📰 Publish with Us
         </NuxtLink>

@@ -5,6 +5,7 @@
         class="h-[calc(80vh-100px)]"
         :slides="slides"
       />
+    </ClientOnly>
     </section>
   </template>
   
