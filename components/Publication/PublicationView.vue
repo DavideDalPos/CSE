@@ -154,12 +154,13 @@
                   <span v-if="reference.url">
                     Available at
                     <a
-                      :href="reference.url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
-                      >{{ reference.url }}
-                    </a> </span
+  :href="normalizedUrl(reference.url)"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
+>
+  {{ reference.url }}
+</a> </span
                   >&nbsp;
                   <span v-if="reference.access">{{ reference.access }}</span>
                 </li>
@@ -307,10 +308,18 @@ defineProps({
     required: true
   }
 })
+
 const zoobankUrl = (lsid) => {
   const parts = lsid.split(':')
   const idPart = parts.slice(4).join(':')
   return `https://zoobank.org/References/${idPart}`
 }
 
+function normalizedUrl(url) {
+  if (!url) return ''
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url
+  }
+  return 'https://' + url
+}
 </script>
