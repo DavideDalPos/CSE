@@ -31,8 +31,8 @@ const slides = [
     title: 'The Peck Fund Travel Grant',
     description: `
     <p>Made possible by a generous gift from Stewart Peck, Ph.D., and Jarmila Peck, Ph.D., of Ottawa, Canada, through a donation to the Nature Foundation, the 
-      Canadian Museum of Nature and the Beaty Centre for Species Discovery are pleased to award the annual Stewart and Jarmila Peck Visiting-Scientist Awards in Entomology.</p>
-    <p>These annual travel grants facilitate research in the study of beetle systematics and fossil insects in the museum’s world-class beetle and paleoentomology collections.</p>`,
+      Canadian Museum of Nature and the Beaty Centre for Species Discovery are pleased to award the Stewart and Jarmila Peck Visiting-Scientist Awards in Entomology.</p>
+    <p>These travel grants facilitate research in the study of beetle systematics and fossil insects in the museum’s world-class beetle and paleoentomology collections.</p>`,
     img: grantImage,
     copyright: '',
     link: {
