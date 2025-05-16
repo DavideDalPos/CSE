@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="container mx-auto px-8 my-10 font-serif">
-      <div class="relative">
-        <div>
+      <div class="relative"> 
+        <div><InsectaMundiTemporaryBanner />
           <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
           <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">
             Publication Archive
@@ -12,6 +12,7 @@
           paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
         </div>
       </div>
+
 
       <div class="flex-1">
         <!-- 🔍 BANNER SEARCH + FILTER -->
@@ -50,7 +51,7 @@
               <li>
                 <!-- Year header with toggle -->
                 <div
-                  class="flex items-center justify-between px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
+                  class="flex items-center justify-between px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer rounded-sm"
                   @click="toggleYear(year)"
                 >
                   <h2 class="text-lg text-gray-800 font-medium">{{ year }}</h2>
@@ -101,6 +102,8 @@
 </template>
 
 <script setup>
+import InsectaMundiTemporaryBanner from '~/components/InsectaMundi/InsectaMundiTemporaryBanner.vue'
+
 import { computed, ref, watch } from 'vue'
 
 const publications = await queryContent('insecta_mundi')
