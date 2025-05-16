@@ -4,12 +4,10 @@
 
 <script setup>
 const route = useRoute()
-const { data } = await useAsyncData('publication', () =>
-  queryContent(
-    'insecta_mundi',
-    route.params.year,
-    route.params.month,
-    route.params.slug
-  ).findOne()
-)
+const data = await queryContent(
+  'insecta_mundi',
+  route.params.year,
+  route.params.month,
+  route.params.slug
+).findOne()
 </script>
