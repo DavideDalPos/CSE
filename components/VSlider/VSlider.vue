@@ -9,7 +9,7 @@
 >
   <!-- Title -->
   <div
-    class="font-serif text-quaternary text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-semibold 
+    class="font-serif text-quaternary text-xl sm:text-base md:text-2xl lg:text-3xl xl:text-6xl font-semibold 
     tracking-wide whitespace-nowrap"
   >
     Center for Systematic Entomology (CSE)
