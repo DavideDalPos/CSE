@@ -4,7 +4,8 @@
 <div
   class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
   bg-gradient-to-r from-gray-700/60 via-gray-500/60 to-gray-700/60 backdrop-blur-sm 
-  px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto w-fit shadow-xl shadow-black/40 animate-fade-in"
+  px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-6 rounded-md ring-1 ring-white/10 
+  mx-auto w-[90%] sm:w-fit shadow-xl shadow-black/40 animate-fade-in"
 >
   <!-- Title -->
   <div
