@@ -86,8 +86,8 @@ keywords:
   - distribution
 
 categories:
-  - Coleoptera
-  - Eucnemidae
+  - Hemiptera
+  - Cicadellidae
   
 references:
   - authors: Bahlai CA, Schaafsma AW, Lagos DM, Voegtlin DJ, Smith JL, Welsman JA, Xue Y, DiFonzo C, Hallett RH.
