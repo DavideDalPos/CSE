@@ -22,6 +22,8 @@ download: 'https://drive.google.com/file/d/1rLuigTDBrNRf2jG7kbb5YLh-eedQRXXq/vie
 
 supplementary: ''
 
+zoobank: 'urn:lsid:zoobank.org:pub:88F08FB8-4284-4E64-B73A-FFCAD5634038'
+
 keywords:
   - Butterflies
   - maguey worm
