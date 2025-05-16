@@ -191,6 +191,7 @@ const filteredList = computed(() => {
   })
 })
 
+
 watch(
   groupByYearAndMonth,
   (newVal) => {

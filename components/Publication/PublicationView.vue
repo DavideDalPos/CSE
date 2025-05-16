@@ -312,4 +312,5 @@ const zoobankUrl = (lsid) => {
   const idPart = parts.slice(4).join(':')
   return `https://zoobank.org/References/${idPart}`
 }
+
 </script>

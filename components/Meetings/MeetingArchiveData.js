@@ -51,7 +51,7 @@ export const meetings = [
     organizer: "Julieta Brambila",
     date: "January 18, 2020",
     pdfLink: "https://drive.google.com/file/d/1V0ShzRFe85Kb_GW6IT2wZF4L1rzKOmUC/view?usp=sharing",
-    image: "",
+    image: "https://drive.google.com/file/d/18FutFuKq8qxEXJEWbBEm6vqn-k3Av5VU/view?usp=sharing",
     secondPdfLink: "https://drive.google.com/file/d/1V0ShzRFe85Kb_GW6IT2wZF4L1rzKOmUC/view?usp=sharing",
     video: "",
     isNew: false
