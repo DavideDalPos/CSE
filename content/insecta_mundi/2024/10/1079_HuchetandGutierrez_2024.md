@@ -25,7 +25,7 @@ keywords:
   - Scarabaeoidea
   - Ochodaeidae
   - Ochodaeinae
-  - taxonom
+  - taxonomy
   - Spain
   
 categories:
