@@ -688,7 +688,7 @@ references:
     title: 
     pages: 
     doi: 
-    url: weeds.org.au.
+    url: [weeds.org.au](https://weeds.org.au/)
     access: (Last accessed February 2024.)
 
   - authors: Weise J.
