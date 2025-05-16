@@ -1,23 +1,25 @@
 <template>
   <div class="relative w-full min-h-screen">
     <!-- Banner Block -->
-    <div
-      class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
-      bg-gradient-to-r from-gray-700/60 via-gray-500/60 to-gray-700/60 backdrop-blur-sm 
-      px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto max-w-6xl shadow-xl shadow-black/40 animate-fade-in"
-    >
-      <!-- Title -->
-      <div
-        class="text-quaternary text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-wide whitespace-nowrap"
-      >
-        Center for Systematic Entomology (CSE)
-      </div>
+<div
+  class="absolute top-10 left-0 right-0 z-30 flex flex-col items-center text-center 
+  bg-gradient-to-r from-gray-700/60 via-gray-500/60 to-gray-700/60 backdrop-blur-sm 
+  px-6 py-6 rounded-md ring-1 ring-white/10 mx-auto w-fit shadow-xl shadow-black/40 animate-fade-in"
+>
+  <!-- Title -->
+  <div
+    class="font-serif text-quaternary text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-semibold 
+    tracking-wide whitespace-nowrap"
+  >
+    Center for Systematic Entomology (CSE)
+  </div>
 
-      <!-- Subtitle -->
-      <div class="mt-3 text-primary md:text-xl lg:text-2xl font-light animate-fade-in delay-500">
-        Advancing Insect Systematics
-      </div>
-    </div>
+  <!-- Subtitle -->
+  <div class="mt-3 text-primary sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light animate-fade-in delay-500">
+    Advancing Insect Systematics
+  </div>
+</div>
+
 
     <!-- Main Content (Slider) -->
     <div class="relative w-full h-[95%]">
