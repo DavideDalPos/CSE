@@ -9,7 +9,7 @@
         <div class="flex justify-center gap-6 flex-wrap">
 
           <NuxtLink
-            href="/insecta_mundi/current_issue"
+            href="/insecta_mundi/current"
             class="inline-block px-6 py-3 bg-quaternary/90 text-white rounded-lg hover:bg-tertiary transition duration-200 shadow-lg"
           >
             📢 View New Publications

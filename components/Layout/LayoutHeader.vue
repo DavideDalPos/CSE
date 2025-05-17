@@ -172,7 +172,7 @@ const menu = [
         submenu: [
           {
             label: 'Current Publications',
-            link: '/insecta_mundi/current_issue'
+            link: '/insecta_mundi/current'
           },
           { label: 'All Publications', link: '/insecta_mundi' },
           {
