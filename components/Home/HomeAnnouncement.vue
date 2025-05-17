@@ -20,7 +20,7 @@
           </div>
           <div class="flex justify-center">
             <NuxtLink
-              href="/insecta_mundi/current_issue"
+              href="/insecta_mundi/current"
               class="no-underline inline-flex items-center gap-2 rounded-full bg-otenary/90 px-6 py-2 text-white text-sm shadow-lg hover:bg-quinary/80 transition"
             >
               View New Publications
