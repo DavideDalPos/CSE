@@ -11,10 +11,12 @@ authors:
   - first_name: 'Marc F.'
     last_name: 'DiGirolomo'
     affiliation: 'USDA Forest Service, Forest Health Protection Durham, New Hampshire, 03824, U.S.A.'
+    email: 'marc.f.digirolomo@usda.gov'
 
   - first_name: 'Michael J.' 
     last_name: 'Bohne'
     affiliation: 'USDA Forest Service, Forest Health Protection Durham, New Hampshire, 03824, U.S.A.'
+    email: 'michael.bohne@usda.gov'
 
 download: 'https://drive.google.com/file/d/1a-aStf9KUE84Nil2WGaS-yMGTFtxW01-/view?usp=sharing'
 
