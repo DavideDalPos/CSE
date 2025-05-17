@@ -205,6 +205,7 @@
               <a
                 :href="publication.download"
                 class="text-base"
+                target="_blank"
               >
                 Full-text PDF
               </a>
