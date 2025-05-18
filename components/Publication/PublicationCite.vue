@@ -16,17 +16,26 @@ const cite = computed(() => {
   const year = new Date(props.publication.date).getFullYear()
   const { title, journal, authors, issue, pagination, doi } = props.publication
 
-  return `${authors
+  const authorList = authors
     .map((item) => {
       const initials =
         item.first_name
           ?.split(' ')
-          .map((name) => name.charAt(0))
-          .join('.') + '.'
+          .map((namePart) =>
+            namePart
+              .split('-')
+              .map((subPart) => subPart.charAt(0))
+              .join('-')
+          )
+          .join('') + ''
 
-      return initials ? `${item.last_name}, ${initials}` : item.last_name
+      return initials
+        ? `${item.last_name} ${initials}`
+        : `${item.last_name}`
     })
-    .join(', ')} (${year}). ${title}. <i>${journal}</i>, ${
+    .join(', ')
+
+  return `<b>${authorList}.</b> <b>${year}</b>. ${title}. ${journal} ${
     issue || ''
   }: ${pagination}. ${doi}`
 })
