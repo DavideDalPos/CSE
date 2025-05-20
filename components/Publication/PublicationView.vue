@@ -139,18 +139,21 @@
                   <span class="font-bold"
                     >{{ reference.authors }} {{ reference.year }}.
                   </span>
-                  <span v-html="reference.title" /><span v-if="reference.pages"
-                    >: {{ reference.pages }}.
-                  </span>
-                  <span v-if="reference.doi">
-                    <a
-                      :href="reference.doi"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
-                      >{{ reference.doi }}</a
-                    >
-                  </span>
+<span v-html="reference.title" />
+<span v-if="reference.pages">
+  <template v-if="/p/i.test(reference.pages)">. {{ reference.pages }}</template>
+  <template v-else>: {{ reference.pages }}.</template>
+</span>
+<span v-if="reference.doi">
+  <a
+    :href="'https://doi.org/' + reference.doi"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
+  >
+    {{ reference.doi }}
+  </a>
+</span>
                   <span v-if="reference.url">
                     Available at
                     <a
