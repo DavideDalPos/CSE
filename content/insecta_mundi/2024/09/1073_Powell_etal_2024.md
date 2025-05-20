@@ -38,7 +38,7 @@ authors:
     email: 'gregory.a.evans@usda.gov'
     orcid: 'https://orcid.org/0000-0002-2165-3292'
 
-download: 'https://drive.google.com/file/d/1zTjv_doBiavJznt2mF4Gop9vijr98MB7/view?usp=sharing'
+download: 'https://drive.google.com/file/d/1JMXIh6s0MXSegHV-drSHrf4fWTkrQV9x'
 
 supplementary: ''
 
