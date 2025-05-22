@@ -57,7 +57,7 @@
             d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
           />
         </svg>
-        <a :href="publication.download">Download PDF</a>
+        <a :href="publication.download" target="_blank">Download PDF</a>
       </div>
       <div
         v-for="(supp, index) in publication.supplementary"
