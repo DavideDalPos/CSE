@@ -142,7 +142,7 @@
 <span v-html="reference.title" />
 <span v-if="reference.pages">
   <template v-if="/p/i.test(reference.pages)">. {{ reference.pages }}</template>
-  <template v-else>: {{ reference.pages }}.</template>
+  <template v-else>: {{ reference.pages }}. </template>
 </span>
 <span v-if="reference.doi">
   <a
