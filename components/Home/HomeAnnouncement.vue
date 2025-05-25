@@ -71,11 +71,12 @@ onMounted(async () => {
       .findOne()
 
     const dateObj = new Date(latest.date)
-    latestPubDate.value = dateObj.toLocaleDateString('en-US', {
+   latestPubDate.value = new Intl.DateTimeFormat('en-US', {
       year: 'numeric',
       month: 'long',
-      day: 'numeric'
-    })
+      day: 'numeric',
+      timeZone: 'UTC'
+    }).format(dateObj)
 
     // Set the monthYear after dateObj is defined
     monthYear.value = dateObj.toLocaleDateString('en-US', {

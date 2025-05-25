@@ -54,12 +54,13 @@ const latestPublication = await queryContent('insecta_mundi')
   .findOne()
 
 if (latestPublication?.date) {
-  const dateObj = new Date(latestPublication.date)
-  formattedDate.value = dateObj.toLocaleDateString('en-US', {
+  // Use UTC-based formatter to prevent timezone shift
+  formattedDate.value = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
-  })
+    day: 'numeric',
+    timeZone: 'UTC'
+  }).format(new Date(latestPublication.date))
 
   const yearAndMonth = latestPublication.date.slice(
     0,
