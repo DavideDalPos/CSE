@@ -139,31 +139,33 @@
                   <span class="font-bold"
                     >{{ reference.authors }} {{ reference.year }}.
                   </span>
-<span v-html="reference.title" />
-<span v-if="reference.pages">
-  <template v-if="/p/i.test(reference.pages)">. {{ reference.pages }}</template>
-  <template v-else>: {{ reference.pages }}. </template>
-</span>
-<span v-if="reference.doi">
-  <a
-    :href="'https://doi.org/' + reference.doi"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
-  >
-    {{ reference.doi }}
-  </a>
-</span>
+                  <span v-html="reference.title" />
+                  <span v-if="reference.pages">
+                    <template v-if="/p/i.test(reference.pages)"
+                      >. {{ reference.pages }}</template
+                    >
+                    <template v-else>: {{ reference.pages }}. </template>
+                  </span>
+                  <span v-if="reference.doi">
+                    <a
+                      :href="'https://doi.org/' + reference.doi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
+                    >
+                      {{ reference.doi }}
+                    </a>
+                  </span>
                   <span v-if="reference.url">
                     Available at
                     <a
-  :href="normalizedUrl(reference.url)"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
->
-  {{ reference.url }}
-</a> </span
+                      :href="normalizedUrl(reference.url)"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
+                    >
+                      {{ reference.url }}
+                    </a> </span
                   >&nbsp;
                   <span v-if="reference.access">{{ reference.access }}</span>
                 </li>
@@ -181,9 +183,7 @@
             class="download-section border-b border-gray-400 pb-5 mb-2"
           >
             <div
-              class="group text-foreground bg-gray-700 px-4 py-2 text-[16px] rounded-sm flex 
-              items-center hover:text-white justify-center space-x-2 hover:bg-gray-500 
-              hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
+              class="group text-foreground bg-gray-700 px-4 py-2 text-[16px] rounded-sm flex items-center hover:text-white justify-center space-x-2 hover:bg-gray-500 hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -222,8 +222,7 @@
             <div
               v-for="(supp, index) in publication.supplementary"
               :key="index"
-              class="group bg-primary px-4 py-2 rounded-sm flex text-white items-center justify-center 
-              space-x-2 hover:shadow-lg hover:text-senary/80 hover:bg-primary/50 transition-all duration-200 w-max mx-auto mb-3 shadow-sm"
+              class="group bg-primary px-4 py-2 rounded-sm flex text-white items-center justify-center space-x-2 hover:shadow-lg hover:text-senary/80 hover:bg-primary/50 transition-all duration-200 w-max mx-auto mb-3 shadow-sm"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -294,24 +293,29 @@
         </div>
       </div>
 
-      <NuxtLink
-        class="uppercase items-center flex my-10 gap-1.5"
-        to="/insecta_mundi"
+      <button
+        type="button"
+        class="uppercase items-center flex my-10 gap-1.5 cursor-pointer"
+        @click="goBack"
       >
         <IconArrowLeft class="h-4 inline-block" />
         <span>Back</span>
-      </NuxtLink>
+      </button>
     </article>
   </section>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
+
 defineProps({
   publication: {
     type: Object,
     required: true
   }
 })
+
+const router = useRouter()
 
 const zoobankUrl = (lsid) => {
   const parts = lsid.split(':')
@@ -325,5 +329,15 @@ function normalizedUrl(url) {
     return url
   }
   return 'https://' + url
+}
+
+function goBack() {
+  if (import.meta.client) {
+    if (window.history.length > 1) {
+      router.back()
+    } else {
+      router.push('/insecta_mundi')
+    }
+  }
 }
 </script>

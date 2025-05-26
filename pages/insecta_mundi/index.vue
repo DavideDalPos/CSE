@@ -1,8 +1,9 @@
 <template>
   <section>
     <div class="container mx-auto px-8 my-10 font-serif">
-      <div class="relative"> 
-        <div><InsectaMundiTemporaryBanner />
+      <div class="relative">
+        <div>
+          <InsectaMundiTemporaryBanner />
           <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
           <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">
             Publication Archive
@@ -12,7 +13,6 @@
           paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
         </div>
       </div>
-
 
       <div class="flex-1">
         <!-- 🔍 BANNER SEARCH + FILTER -->
@@ -29,10 +29,10 @@
             v-model="selectedMonth"
             class="w-full lg:w-1/4 p-1 border border-gray-300 bg-white rounded text-sm"
           >
-            <option value="">All Dates</option>
+            <option :value="undefined">All Dates</option>
             <option
               v-for="{ date, label } in monthYearOptions"
-              :key="month"
+              :key="date"
               :value="date"
             >
               {{ label }}
@@ -103,7 +103,7 @@
 
 <script setup>
 import InsectaMundiTemporaryBanner from '~/components/InsectaMundi/InsectaMundiTemporaryBanner.vue'
-
+import { useRoute, useRouter } from 'vue-router'
 import { computed, ref, watch } from 'vue'
 
 const publications = await queryContent('insecta_mundi')
@@ -111,9 +111,12 @@ const publications = await queryContent('insecta_mundi')
   .sort({ date: -1 })
   .find()
 
+const route = useRoute()
+const router = useRouter()
+
 // State for search and filter
 const searchQuery = ref('')
-const selectedMonth = ref('')
+const selectedMonth = ref()
 const openYears = ref(new Set())
 
 function toggleYear(year) {
@@ -188,12 +191,11 @@ const filteredList = computed(() => {
       )
 
     const matchesMonth =
-      selectedMonth.value === '' || item.date?.startsWith(selectedMonth.value)
+      !selectedMonth.value || item.date?.startsWith(selectedMonth.value)
 
     return matchesQuery && matchesMonth
   })
 })
-
 
 watch(
   groupByYearAndMonth,
@@ -209,4 +211,16 @@ watch(
     deep: true
   }
 )
+
+if (route.query.month) {
+  selectedMonth.value = route.query.month
+}
+
+watch(selectedMonth, (newVal) => {
+  router.replace({
+    query: {
+      month: newVal
+    }
+  })
+})
 </script>
