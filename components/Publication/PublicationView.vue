@@ -144,7 +144,7 @@
   <template v-if="/p/i.test(reference.pages)">. {{ reference.pages }}</template>
   <template v-else>: {{ reference.pages }}. </template>
 </span>
-<span v-if="reference.doi">
+<span v-if="reference.doi">&nbsp;
   <a
     :href="'https://doi.org/' + reference.doi"
     target="_blank"
