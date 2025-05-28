@@ -216,10 +216,15 @@ if (route.query.month) {
   selectedMonth.value = route.query.month
 }
 
-watch(selectedMonth, (newVal) => {
+if (route.query.search) {
+  searchQuery.value = route.query.search
+}
+
+watch([selectedMonth, searchQuery], () => {
   router.replace({
     query: {
-      month: newVal
+      month: selectedMonth.value,
+      search: searchQuery.value
     }
   })
 })
