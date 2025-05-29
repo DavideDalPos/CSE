@@ -11,7 +11,13 @@
           <div>
             <h3 class="text-2xl font-bold flex justify-center items-center gap-2 mb-3 text-gray-800">
               {{ monthYear }} Publications
-              <span class="text-xs bg-red-600 text-white rounded-full px-2 py-0.5 animate-pulse">New</span>
+<span
+  v-if="showNewBadge"
+  class="text-xs bg-red-600 text-white rounded-full px-2 py-0.5 animate-pulse"
+>
+  New
+</span>
+
             </h3>
             <span class="text-gray-500 text-sm mb-4 block">Published on {{ latestPubDate || '...' }} </span>
             <p class="text-base text-muted mb-6">
@@ -59,6 +65,8 @@ import { onMounted, ref } from 'vue'
 
 const latestPubDate = ref('')
 const monthYear = ref('')
+const showNewBadge = ref(false)
+
 
 // Fetch the latest date
 onMounted(async () => {
@@ -83,6 +91,11 @@ onMounted(async () => {
       year: 'numeric',
       month: 'long'
     })
+
+    // Calculate if within 14 days
+    const now = new Date()
+    const diffInDays = (now - dateObj) / (1000 * 60 * 60 * 24)
+    showNewBadge.value = diffInDays <= 14
 
   } catch (error) {
     console.error('Failed to load latest publication date:', error)
