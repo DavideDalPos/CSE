@@ -9,7 +9,7 @@ export const meetings = [
     pdfLink: "https://drive.google.com/file/d/1Fbi2-vW4ZBqFflS3PqToxpD_98hOco-D/view?usp=sharing",
     image: "https://drive.google.com/file/d/1efsJc9CcpYgY_fi6KCOk-Dmf78nOppvu/view?usp=sharing",
     secondPdfLink: "https://drive.google.com/file/d/1kRVtM43AZ6hYJq-iMYANoGjSLYLwECx2/view?usp=sharing",
-    video: "",
+    video: "https://www.youtube.com/watch?v=bT24NRk6ZBo&t=2s",
     isNew: true
   },
       {

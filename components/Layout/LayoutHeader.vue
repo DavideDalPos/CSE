@@ -132,6 +132,14 @@
                 <IconX class="w-4 h-4" />
               </NuxtLink>
               <NuxtLink
+                to="https://www.youtube.com/@CenterforSystematicEntomology"
+                target="_blank"
+                class="hover:text-quaternary"
+                title="Follow us on YT"
+              >
+                <IconYouTube class="w-4 h-7" />
+              </NuxtLink>
+              <NuxtLink
                 to="https://github.com/DavideDalPos/CSE/issues"
                 target="_blank"
                 class="hover:text-quaternary"
@@ -153,6 +161,7 @@
 <script setup>
 import IconGitHub from '../Icon/IconGitHub.vue';
 import IconX from '../Icon/IconX.vue';
+import IconYouTube from '../Icon/IconYouTube.vue';
 
 const menu = [
   {
