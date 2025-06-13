@@ -68,7 +68,7 @@ const filteredList = computed(() =>
             d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
           />
         </svg>
-        <a :href="item.pdf">PDF</a>
+        <a target="_blank" :href="item.pdf">PDF</a>
       </div>
           </td>
         </tr>

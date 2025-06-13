@@ -1,4 +1,11 @@
 export default [
+    {
+    year: '2025',
+    researcher: 'Przybylowicz, Luzasz',
+    title: 'Untangling of the Arctiinae (Lepidoptera: Erebidae) diversity in the collection of the MGCL & FSCA – a hunt for new species',
+    taxon: 'Arctiinae (Lepidoptera)',
+    pdf: 'https://drive.google.com/file/d/1mLIySpf4UDBfuazTnZVL1TL61fno_J9O',
+  },
   {
     year: '2024',
     researcher: 'Lagos-Kutz, Doris',

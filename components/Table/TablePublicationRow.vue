@@ -32,7 +32,7 @@
       <p>
         <span class="text-gray-700">DOI: </span>
         <span
-          class="text-quinary hover:text-tertiary hover:underline cursor-pointer"
+          class="text-primary hover:text-tertiary hover:underline cursor-pointer"
         >
           {{ publication.doi }}
         </span>
