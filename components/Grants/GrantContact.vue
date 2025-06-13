@@ -9,8 +9,8 @@
       </div>
   
       <div class="mb-3 text-center">
-        <p class="text-sm text-gray-700 font-semibold">Davide Dal Pos</p>
-        <p class="text-xs text-gray-600 italic font-medium">CSE President</p>
+        <p class="text-sm text-gray-700 font-semibold">Paul Skelley</p>
+        <p class="text-xs text-gray-600 italic font-medium">CSE Treasurer</p>
       </div>
 
       <div class="mb-3 text-center">

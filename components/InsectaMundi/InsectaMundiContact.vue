@@ -3,7 +3,7 @@
     class="bg-secondary/60 border-gray-200 p-4 border border-primary rounded shadow-md h-max"
   >
     <h2 class="text-lg font-semibold text-gray-700 mb-2 border-b">Contact</h2>
-    <p class="text-sm text-gray-600 font-bold mt-3">David Plotnik</p>
+    <p class="text-sm text-gray-600 font-bold mt-3">David Plotkin</p>
     <p class="text-sm text-gray-600 italic">Chief Editor</p>
     <p class="text-sm text-gray-600">
       Email:

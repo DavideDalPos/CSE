@@ -142,13 +142,13 @@ export default {
               imageUrl: "/images/boardmembers/ShawnKelly.jpg",
               profileUrl: "https://sciences.ucf.edu/biology/bugcloset/people/kelly/"
             },
-            {
-                name: "Davide Dal Pos",
-                role: "CSE President",
-                period: "2023",
-                imageUrl: "/images/boardmembers/DavideDalPos.jpg",
-                profileUrl: "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
-              },
+          {
+            name: "Paul Skelley",
+            role: "CSE Treasurer",
+            period: "2025",
+            imageUrl: "/images/boardmembers/PaulSkelley.jpg",
+            profileUrl: "https://scholar.google.com/citations?hl=en&user=l-pEQHEAAAAJ"
+          },
             {
               name: "Felipe Soto-Adames",
               role: "CSE Vice-President",
