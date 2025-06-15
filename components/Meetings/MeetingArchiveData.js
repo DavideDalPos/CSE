@@ -9,7 +9,7 @@ export const meetings = [
     pdfLink: "https://drive.google.com/file/d/1Fbi2-vW4ZBqFflS3PqToxpD_98hOco-D/view?usp=sharing",
     image: "https://drive.google.com/file/d/1efsJc9CcpYgY_fi6KCOk-Dmf78nOppvu/view?usp=sharing",
     secondPdfLink: "https://drive.google.com/file/d/1kRVtM43AZ6hYJq-iMYANoGjSLYLwECx2/view?usp=sharing",
-    video: "https://www.youtube.com/watch?v=bT24NRk6ZBo&t=2s",
+    video: "https://youtu.be/nGjf70hOgwE",
     isNew: true
   },
       {
@@ -20,18 +20,18 @@ export const meetings = [
     pdfLink: "https://drive.google.com/file/d/1cwEM4wAYJGwqjeuPzm0CJTq_NaTzJ7Rb/view?usp=sharing",
     image: "",
     secondPdfLink: "https://drive.google.com/file/d/1cwEM4wAYJGwqjeuPzm0CJTq_NaTzJ7Rb/view?usp=sharing",
-    video: "https://www.youtube.com/watch?v=SnYFevIEq6o",
+    video: "https://youtu.be/Akoc-j6NEhY",
     isNew: false
   },
     {
     year: 2023,
     title: "CSE Annual Conference",
     organizer: "Julieta Brambila",
-    date: "February 28, 2023",
+    date: "January 28, 2023",
     pdfLink: "https://drive.google.com/file/d/1pelg2Imw9aTNMesGcBeiiXKb_zPhM2pR/view?usp=sharing",
     image: "https://drive.google.com/file/d/1DBmCUfXhGneyJ0wpQQlpCu7f2aN_im3G/view?usp=sharing",
     secondPdfLink: "https://drive.google.com/file/d/1pelg2Imw9aTNMesGcBeiiXKb_zPhM2pR/view?usp=sharing",
-    video: "https://www.youtube.com/watch?v=UEGFzNtekQM",
+    video: "https://youtu.be/VgL9ckH0a8U",
     isNew: false
   },
         {
