@@ -18,6 +18,7 @@ const cite = computed(() => {
 
   const authorList = authors
     .map((item) => {
+      const cleanLastName = item.last_name?.replace(/\./g, '') || ''
       const initials =
         item.first_name
           ?.split(' ')
@@ -30,8 +31,8 @@ const cite = computed(() => {
           .join('') + ''
 
       return initials
-        ? `${item.last_name} ${initials}`
-        : `${item.last_name}`
+        ? `${cleanLastName} ${initials}`
+        : `${cleanLastName}`
     })
     .join(', ')
 
