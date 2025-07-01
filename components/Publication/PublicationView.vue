@@ -245,7 +245,7 @@
           </div>
           <div
             v-if="publication.date"
-            class="border border-otenary/80 bg-gray-200 px-4 rounded shadow max-w-[300px]"
+            class="border border-otenary/80 bg-white px-4 rounded shadow max-w-[300px]"
           >
             <p
               class="text-white bg-otenary px-4 w-[calc(100%+2rem)] -mx-4 border-otenary py-1 mb-1"
@@ -260,7 +260,7 @@
           </div>
           <div
             v-if="publication.date"
-            class="border border-quaternary/80 bg-gray-200 px-4 rounded shadow max-w-[300px]"
+            class="border border-quaternary/80 bg-white px-4 rounded shadow max-w-[300px]"
           >
             <p
               class="text-white bg-quaternary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1"
@@ -274,7 +274,7 @@
             </div>
           </div>
           <div
-            class="border px-4 rounded border-primary/80 bg-gray-200 shadow max-w-[300px]"
+            class="border px-4 rounded border-primary/80 bg-white shadow max-w-[300px]"
           >
             <h3
               class="text-lg text-white bg-primary px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2"
@@ -288,6 +288,12 @@
               />
             </div>
           </div>
+            <div>
+              <PublicationCitationDowload
+                class="text-sm text-black/80"
+                :publication="publication"
+              />
+            </div>
         </div>
       </div>
 
@@ -305,6 +311,7 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
+import PublicationCitationDowload from './PublicationCitationDowload.vue'
 
 defineProps({
   publication: {

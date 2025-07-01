@@ -40,4 +40,6 @@ const cite = computed(() => {
     issue || ''
   }: ${pagination}. ${doi}`
 })
+
+
 </script>
