@@ -213,6 +213,60 @@
             </div>
           </div>
 
+
+          <div
+            v-if="publication.revised"
+            class="download-section border-b border-gray-400 pb-5 mb-2"
+          >
+            <div
+              class="group text-foreground bg-rose-900 px-4 py-2 text-[16px] rounded-sm flex items-center hover:text-white justify-center space-x-2 hover:bg-gray-500 hover:shadow-lg transition-all duration-200 shadow-sm w-max mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                class="w-5 h-5 group-hover:text-white transition font-semibold duration-200 text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 13l2 2 2-2m-2 2v6"
+                />
+              </svg>
+              <a
+                :href="publication.revised"
+                class="text-base"
+                target="_blank"
+              >
+                Revised Manuscript
+              </a>
+            </div>
+<p class="text-sm text-gray-600 text-center mt-4 max-w-md mx-auto">
+  See related <b>erratum</b> in publication
+  <NuxtLink
+    :to="publication.linkedissueurl"
+    class="ml-1 inline-block text-xs px-0.5 py-0.5 rounded-sm bg-gray-600 text-white hover:bg-gray-500 transition-all shadow-sm"
+  >
+    {{ publication.linkedissue }}
+  </NuxtLink>
+</p>
+
+          </div>
+
+
+
+
+
+
+
           <div
             v-if="publication.supplementary?.length > 0"
             class="supplementary-section pb-2 mb-2 border-b border-gray-400"
