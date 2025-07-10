@@ -211,6 +211,19 @@
                 Full-text PDF
               </a>
             </div>
+<p
+  v-if="publication.originalissue"
+  class="text-sm text-gray-600 text-center mt-4 max-w-md mx-auto"
+>
+  See related original publication
+  <NuxtLink
+    :to="publication.linkedoriginalurl"
+    class="ml-1 inline-block text-xs px-0.5 py-0.5 rounded-sm bg-gray-700 text-white hover:bg-gray-500 transition-all shadow-sm"
+  >
+    {{ publication.originalissue }}
+  </NuxtLink>
+</p>
+
           </div>
 
 
@@ -253,7 +266,7 @@
   See related <b>erratum</b> in publication
   <NuxtLink
     :to="publication.linkedissueurl"
-    class="ml-1 inline-block text-xs px-0.5 py-0.5 rounded-sm bg-gray-600 text-white hover:bg-gray-500 transition-all shadow-sm"
+    class="ml-1 inline-block text-xs px-0.5 py-0.5 rounded-sm bg-rose-900 text-white hover:bg-gray-500 transition-all shadow-sm"
   >
     {{ publication.linkedissue }}
   </NuxtLink>
@@ -324,6 +337,21 @@
             <div class="mb-1">
               <span class="text-[15px] text-black/80">{{
                 publication.date
+              }}</span>
+            </div>
+          </div>
+                    <div
+            v-if="publication.reviseddate"
+            class="border border-quaternary/80 bg-white px-4 rounded shadow max-w-[300px]"
+          >
+            <p
+              class="text-white bg-quaternary px-4 w-[calc(100%+2rem)] -mx-4 border-quaternary py-1 mb-1"
+            >
+              Unofficial Revised Version
+            </p>
+            <div class="mb-1">
+              <span class="text-[15px] text-black/80">{{
+                publication.reviseddate
               }}</span>
             </div>
           </div>
