@@ -1,7 +1,7 @@
 ---
 title: 'A battle of armies: massive attack of natural enemies to the true armyworm <i>Mythimna unipuncta</i> (Haworth, 1809) (Lepidoptera: Noctuidae) in forage crops'
 date: '2025-06-27'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1130.f7ic3'
 journal: Insecta Mundi
 issue: '1130'
 pagination: '1–13'

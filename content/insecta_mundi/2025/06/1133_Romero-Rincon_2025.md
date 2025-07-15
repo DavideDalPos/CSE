@@ -1,7 +1,7 @@
 ---
 title: 'The millipede genus <i>Alocodesmus</i> Silvestri, 1896 (Polydesmida: Chelodesmidae: Batodesmini): description of a new species from Colombia and the identity of <i>A. hanseni</i> (Silvestri, 1898)'
 date: '2025-06-27'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1133.2v3ke'
 journal: Insecta Mundi
 issue: '1133'
 pagination: '1–11'

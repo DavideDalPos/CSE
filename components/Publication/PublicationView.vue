@@ -144,16 +144,19 @@
   <template v-if="/p/i.test(reference.pages)">. {{ reference.pages }}</template>
   <template v-else>: {{ reference.pages }}. </template>
 </span>
-<span v-if="reference.doi">&nbsp;
+<span v-if="reference.doi">
   <a
-    :href="'https://doi.org/' + reference.doi"
+    :href="'https://doi.org/' + reference.doi.replace(/^doi:\s*/i, '')"
     target="_blank"
     rel="noopener noreferrer"
     class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
   >
-    {{ reference.doi }}
+    {{ 'https://doi.org/' + reference.doi.replace(/^doi:\s*/i, '') }}
   </a>
 </span>
+
+
+
                   <span v-if="reference.url">
                     Available at
                     <a

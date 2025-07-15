@@ -1,7 +1,7 @@
 ---
 title: 'In Memoriam: Donald B. Thomas, Jr., January 26, 1949–November 10, 2024'
 date: '2025-06-27'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1134.wgv98'
 journal: Insecta Mundi
 issue: '1134'
 pagination: '1–20'

@@ -25,19 +25,23 @@
     <p class="text-gray-600 text-sm mt-1">
       {{ makeAuthorsLabel(publication.authors) }}
     </p>
-    <div
-      v-if="publication.doi"
-      class="flex flex-row text-sm justify-between mt-1"
+<div
+  v-if="publication.doi"
+  class="flex flex-row text-sm justify-between mt-1"
+>
+  <p>
+    <span class="text-gray-700">DOI: </span>
+    <a
+      :href="`https://doi.org/${publication.doi}`"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-primary hover:text-tertiary hover:underline cursor-pointer"
     >
-      <p>
-        <span class="text-gray-700">DOI: </span>
-        <span
-          class="text-primary hover:text-tertiary hover:underline cursor-pointer"
-        >
-          {{ publication.doi }}
-        </span>
-      </p>
-    </div>
+      {{ publication.doi }}
+    </a>
+  </p>
+</div>
+
     <div class="flex flex-wrap gap-1 mt-1">
       <div
         v-if="publication.download"
