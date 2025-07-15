@@ -1,7 +1,7 @@
 ---
 title: 'Erratum to Golovatch et al. (2025): Contributions to the taxonomy of the Neotropical millipede genus <i>Iulidesmus</i> Silvestri, 1895 (Diplopoda: Polydesmida: Paradoxosomatidae: Catharosomatini)'
 date: '2025-07-11'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1136.u510a'
 journal: Insecta Mundi
 issue: '1136'
 pagination: '1–13'
