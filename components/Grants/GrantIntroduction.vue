@@ -36,7 +36,7 @@
 
 </div>
   
-  <p class="mb-6 -mt-2">
+  <p class="mb-6 mt-1">
     In 2021, <b>Stewart</b> and <b>Jarmila Peck</b> established the
     <b>Stewart and Jarmila Peck Collection Enhancement Endowment</b> 
     (aka the <b>Peck Fund</b>) with the Center for Systematic Entomology (CSE).
@@ -111,8 +111,10 @@
       <ul class="roman-list list-inside pl-7 text-base">
         <li><b>Title</b></li>
         <li><b>Author(s)</b></li>
-        <li><b>Author’s Affiliation & Contact Information</b> – major professor if a student</li>
+        <li><b>Author’s Affiliation & Contact Information</b> – <u>include</u> major professor if a student</li>
         <li><b>FSCA Contact/Collaborator</b></li>
+        <li><b>Proposed dates of travel (can change)</b></li>
+        <li><b>Project background/justification</b></li>
         <li><b>Contribution to FSCA Improvement</b></li>
         <li><b>Budget and justification (itemized)</b> – limited to $<u>2000</u></li>
         <li><b>References</b></li>
