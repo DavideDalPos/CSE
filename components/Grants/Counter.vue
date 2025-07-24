@@ -1,14 +1,15 @@
 <template>
   <section class="text-center font-serif">
-    <div class=" bg-gray-200 border-2 border-gray-300 rounded-lg p-5 shadow-lg max-w-md mx-auto">
+    <div class="bg-gray-200 border-2 border-gray-300 rounded-lg p-5 shadow-lg max-w-md mx-auto">
       <h2 class="text-lg font-serif text-gray-800 mb-2 border-b pb-2 text-center">Next Deadline</h2>
+
       <div class="text-xl font-serif text-senary mb-5">
-        <div>July 15, 2025</div>
-     
-      <div class="text-lg font-normal text-gray-600 mt-1">
-        11:59 PM – Eastern Time
-      </div> 
-    </div>
+        <div>{{ formattedDeadline }}</div>
+        <div class="text-lg font-normal text-gray-600 mt-1">
+          11:59 PM – Eastern Time
+        </div>
+      </div>
+
       <div class="flex justify-center gap-6 text-center font-mono text-2xl text-gray-800 tracking-widest">
         <div class="flex flex-col items-center">
           <span class="tabular-nums">{{ timeRemaining.Days }}</span>
@@ -34,23 +35,47 @@
   </section>
 </template>
 
-
 <script>
 export default {
   data() {
     return {
-      deadline: new Date('2025-07-15T04:00:00Z'), // midnight ET
+      deadline: null,
       timer: null,
       timeRemaining: { Days: '00', Hours: '00', Minutes: '00', Seconds: '00' },
     };
   },
+  computed: {
+    formattedDeadline() {
+      return this.deadline
+        ? this.deadline.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })
+        : '';
+    },
+  },
   methods: {
+    getNextDeadline() {
+      const now = new Date();
+      const year = now.getFullYear();
+
+      const jan15 = new Date(`${year}-01-15T04:00:00Z`);
+      const jul15 = new Date(`${year}-07-15T04:00:00Z`);
+
+      if (now < jul15) {
+        return jul15;
+      } else {
+        // Jan 15 of the next year
+        return new Date(`${year + 1}-01-15T04:00:00Z`);
+      }
+    },
     updateCountdown() {
       const now = new Date();
       const diff = this.deadline - now;
 
       if (diff <= 0) {
-        clearInterval(this.timer);
+        this.deadline = this.getNextDeadline();
         return;
       }
 
@@ -63,6 +88,7 @@ export default {
     },
   },
   mounted() {
+    this.deadline = this.getNextDeadline();
     this.updateCountdown();
     this.timer = setInterval(this.updateCountdown, 1000);
   },
