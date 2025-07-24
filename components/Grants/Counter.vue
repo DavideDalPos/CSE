@@ -56,20 +56,20 @@ export default {
     },
   },
   methods: {
-    getNextDeadline() {
-      const now = new Date();
-      const year = now.getFullYear();
+getNextDeadline() {
+  const now = new Date();
+  const year = now.getFullYear();
 
-      const jan15 = new Date(`${year}-01-15T04:00:00Z`);
-      const jul15 = new Date(`${year}-07-15T04:00:00Z`);
+  const jan15 = new Date(year, 0, 15, 0, 0, 0);  // Jan 15, 00:00 local time
+  const jul15 = new Date(year, 6, 15, 0, 0, 0);  // Jul 15, 00:00 local time
 
-      if (now < jul15) {
-        return jul15;
-      } else {
-        // Jan 15 of the next year
-        return new Date(`${year + 1}-01-15T04:00:00Z`);
-      }
-    },
+  if (now < jul15) {
+    return jul15;
+  } else {
+    return new Date(year + 1, 0, 15, 0, 0, 0); // Next Jan 15
+  }
+}
+,
     updateCountdown() {
       const now = new Date();
       const diff = this.deadline - now;
