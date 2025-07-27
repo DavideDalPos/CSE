@@ -6,8 +6,8 @@ issue: '1084'
 journal: Insecta Mundi
 pagination: '1–6'
 authors:
-  - first_name: 'K. C.'
-    last_name: 'Sajan'
+  - first_name: 'Sajan'
+    last_name: 'KC'
     affiliation: 'Department of Biology, Eastern New Mexico University, 1500 S Avenue K Portales, NM 88130'
     email: 'sajankc143@gmail.com'
     orcid: 'https://orcid.org/0000-0002-2749-0738'
