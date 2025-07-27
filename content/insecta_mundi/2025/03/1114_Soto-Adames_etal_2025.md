@@ -1,7 +1,7 @@
 ---
 title: 'Three new species of <i>Lepidocyrtus</i> Bourlet (Collembola: Entomobryidae) from Florida, USA, and descriptive notes on <i>Lepidocyrtus floridensis</i> Snider'
 date: '2025-03-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1114.j8u4y'
 journal: Insecta Mundi
 issue: '1114'
 pagination: '1–25'

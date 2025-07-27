@@ -1,7 +1,7 @@
 ---
 title: 'Holarctic spider wasps (Hymenoptera: Pompilidae) in the Nearctic Region'
 date: '2025-04-25'
-doi: 
+doi: 'https://doi.org/10.64338/im.1120.sswhb'
 journal: Insecta Mundi
 issue: '1120'
 pagination: '1–7'

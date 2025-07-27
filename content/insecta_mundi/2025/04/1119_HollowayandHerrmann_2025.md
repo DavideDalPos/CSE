@@ -1,7 +1,7 @@
 ---
 title: '<i>Anthrenus</i> (<i>Anthrenus</i>) <i>sexmaculatus</i> (Coleoptera: Dermestidae: Megatominae), a new species from Turkmenistan'
 date: '2025-04-25'
-doi: 
+doi: 'https://doi.org/10.64338/im.1119.o8sjl'
 journal: Insecta Mundi
 issue: '1119'
 pagination: '1–12'

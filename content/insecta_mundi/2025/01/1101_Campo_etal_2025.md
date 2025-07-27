@@ -1,7 +1,7 @@
 ---
 title: 'A taxonomic note on <i>Lecanium vaccinii macrocarpum</i> Goethe, 1884 (Hemiptera: Coccidae): Rationale for <i>nomen dubium</i> status'
 date: '2025-01-31'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1101.pts9w'
 journal: Insecta Mundi
 issue: '1101'
 pagination: '1–2'

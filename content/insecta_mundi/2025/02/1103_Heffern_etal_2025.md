@@ -1,7 +1,7 @@
 ---
 title: 'A review of the genus <i>Necydalis</i> Linnaeus (Coleoptera: Cerambycidae) from North America with proposed subgeneric reclassification'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1103.yda69'
 journal: Insecta Mundi
 issue: '1103'
 pagination: '1–29'

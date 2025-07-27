@@ -1,7 +1,7 @@
 ---
 title: 'New state and adult host records for species of <i>Anthaxia</i> DeGeer and <i>Melanophila</i> Eschscholtz (Coleoptera: Buprestidae) in the Western United States'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1107.3gub4'
 journal: Insecta Mundi
 issue: '1107'
 pagination: '1–3'

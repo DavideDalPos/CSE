@@ -1,7 +1,7 @@
 ---
 title: 'An annotated and illustrated checklist of Hong Kong aculeate wasps (Hymenoptera: Apoid wasps; Pompilioidea; Scolioidea; Thynnoidea; Tiphioidea; Vespoidea; Chrysidoidea)'
 date: '2025-04-25'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1115.6o00c'
 journal: Insecta Mundi
 issue: '1115'
 pagination: '1–230'

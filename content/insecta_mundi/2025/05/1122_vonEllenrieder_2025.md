@@ -1,7 +1,7 @@
 ---
 title: 'Four synonyms of <i>Tetraleurodes mori</i> (Quaintance, 1899) (Hemiptera: Sternorrhyncha: Aleyrodidae)'
 date: '2025-05-30'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1122.1xty5'
 journal: Insecta Mundi
 issue: '1122'
 pagination: '1–9'

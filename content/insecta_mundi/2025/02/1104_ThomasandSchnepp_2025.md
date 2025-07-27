@@ -1,7 +1,7 @@
 ---
 title: 'Descriptions of four new species of <i>Leptophloeus</i> Casey (Coleoptera: Laemophloeidae) from the United States'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1104.x7sx7'
 journal: Insecta Mundi
 issue: '1104'
 pagination: '1–13'

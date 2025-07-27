@@ -2,7 +2,7 @@
 title: 'Contributions to the taxonomy of the Neotropical millipede genus <i>Iulidesmus</i> Silvestri, 1895 (Diplopoda: Polydesmida: Paradoxosomatidae: Catharosomatini)'
 date: '2025-05-30'
 reviseddate: '2025-07-11'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1126.2o2ss'
 journal: Insecta Mundi
 issue: '1126'
 pagination: '1–13'

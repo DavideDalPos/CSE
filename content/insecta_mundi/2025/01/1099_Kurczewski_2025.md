@@ -1,7 +1,7 @@
 ---
 title: 'Habitat definition for <i>Pepsis elegans</i> Lepeletier (Hymenoptera: Pompilidae: Pepsinae)'
 date: '2025-01-10'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1099.0h6nh'
 journal: Insecta Mundi
 issue: '1099'
 pagination: '1–7'

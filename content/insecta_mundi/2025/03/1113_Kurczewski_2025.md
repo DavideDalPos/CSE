@@ -1,7 +1,7 @@
 ---
 title: 'Blue exoskeleton, aridity, and thermoregulation in some western Nearctic spider wasps (Hymenoptera: Pompilidae)'
 date: '2025-03-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1113.clj98'
 journal: Insecta Mundi
 issue: '1113'
 pagination: '1–6'

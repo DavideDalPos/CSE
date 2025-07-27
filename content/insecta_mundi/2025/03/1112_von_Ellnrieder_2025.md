@@ -1,7 +1,7 @@
 ---
 title: '<i>Tetraleurodes gilli</i> (Hemiptera: Sternorrhyncha: Aleyrodidae), a new whitefly species on <i>Quercus</i> L. from California'
 date: '2025-03-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1112.4lowi'
 journal: Insecta Mundi
 issue: '1112'
 pagination: '1–22'

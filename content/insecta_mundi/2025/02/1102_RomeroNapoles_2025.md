@@ -1,7 +1,7 @@
 ---
 title: 'New host record of <i>Dahlibruchus</i> Bridwell, 1931 on cultivated <i>Dahlia</i> Cav. in Mexico and description of two new species (Coleoptera: Bruchidae)'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1102.s6mzb'
 journal: Insecta Mundi
 issue: '1102'
 pagination: '1–10'

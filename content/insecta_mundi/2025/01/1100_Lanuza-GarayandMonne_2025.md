@@ -1,7 +1,7 @@
 ---
 title: 'Checklist of the Cerambycidae (Coleoptera) of Panama'
 date: '2025-01-31'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1100.7cuyh'
 journal: Insecta Mundi
 issue: '1100'
 pagination: '1–46'

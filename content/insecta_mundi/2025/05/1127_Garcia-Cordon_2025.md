@@ -1,7 +1,7 @@
 ---
 title: 'Melittological notes from Guatemala (Hymenoptera: Anthophila), 2. New country records for Apidae (Anthophorini and Centridini) and Halictidae (Augochlorini)'
 date: '2025-05-30'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1127.by5kg'
 journal: Insecta Mundi
 issue: '1127'
 pagination: '1–8'

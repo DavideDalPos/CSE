@@ -1,7 +1,7 @@
 ---
 title: 'First report of corn leafhopper (Hemiptera: Cicadellidae) in the USA Midwest Suction Trap Network'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1110.uwo2d'
 journal: Insecta Mundi
 issue: '1110'
 pagination: '1–10'

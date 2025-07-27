@@ -1,7 +1,7 @@
 ---
 title: 'Living a lie: The truth behind <i>Isohydnocera curtipennis</i> (Newman) and other historically confused species of <i>Phyllobaenus</i> Dejean, with the description of the new genus <i>Neohydnocera</i> (Coleoptera: Cleridae: Clerinae: Hydnocerini: Hydnocerina)'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1105.orr2v'
 journal: Insecta Mundi
 issue: '1105'
 pagination: '1–17'

@@ -1,7 +1,7 @@
 ---
 title: 'Descripción de una nueva especie de <i>Tetralicia</i> Harrison (Hemiptera: Aleyrodidae) de Petén, Guatemala'
 date: '2025-01-10'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1097.3v5o9'
 journal: Insecta Mundi
 issue: '1097'
 pagination: '1–9'

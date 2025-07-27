@@ -1,7 +1,7 @@
 ---
 title: 'New species of <i>Phaea</i> Newman (Coleoptera: Cerambycidae: Lamiinae: Tetraopini), with notes on some known species and new records'
 date: '2025-05-30'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1124.i7hme'
 journal: Insecta Mundi
 issue: '1124'
 pagination: '1–24'

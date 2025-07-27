@@ -1,7 +1,7 @@
 ---
 title: 'Distributional records of false click beetles (Coleoptera: Eucnemidae) from western North Carolina'
 date: '2025-03-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1111.dvl3h'
 journal: Insecta Mundi
 issue: '1111'
 pagination: '1–4'

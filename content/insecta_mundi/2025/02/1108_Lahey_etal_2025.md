@@ -1,7 +1,7 @@
 ---
 title: 'The first species of <i>Prococcophagus</i> Silvestri (Hymenoptera: Aphelinidae) from America north of Mexico'
 date: '2025-02-28'
-doi: ''
+doi: 'https://doi.org/10.64338/im.1108.drjbj'
 journal: Insecta Mundi
 issue: '1108'
 pagination: '1–10'
