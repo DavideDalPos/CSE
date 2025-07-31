@@ -23,22 +23,14 @@
       v-if="isMenuVisible"
       class="absolute top-full left-0 w-full z-50 bg-white text-base-content block shadow-md lg:hidden"
     >
-      <nav class="font-normal container mx-auto">
-        <ul class="flex flex-col m-0 p-0 border-t border-base-border">
-          <li
-            v-for="{ label, link } in menu"
-            :key="link"
-            class="border-b border-base-border"
-          >
-            <a
-              :href="link"
-              class="text-base-content w-full p-4 pt-3 pb-3 block box-border"
-              @click="isMenuVisible = false"
-            >
-              {{ label }}
-            </a>
-          </li>
-        </ul>
+      <nav class="font-normal">
+        <div class="flex flex-col m-0 p-0 border-t border-base-border">
+          <MobileNavbarSubmenu
+            class="bg-setenary"
+            :menu="menu"
+            @close="() => (isMenuVisible = false)"
+          />
+        </div>
       </nav>
     </div>
   </AnimationOpacity>

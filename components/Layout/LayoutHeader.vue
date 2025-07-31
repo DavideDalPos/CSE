@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="fixed w-full z-50 bg-gray-800 backdrop-blur-xl shadow-xl font-serif"
+      class="fixed top-0 w-screen z-50 bg-gray-800 backdrop-blur-xl shadow-xl font-serif"
     >
       <div
         class="container mx-auto h-16 flex justify-between items-center px-6 z-10"
@@ -159,9 +159,9 @@
 </template>
 
 <script setup>
-import IconGitHub from '../Icon/IconGitHub.vue';
-import IconX from '../Icon/IconX.vue';
-import IconYouTube from '../Icon/IconYouTube.vue';
+import IconGitHub from '../Icon/IconGitHub.vue'
+import IconX from '../Icon/IconX.vue'
+import IconYouTube from '../Icon/IconYouTube.vue'
 
 const menu = [
   {

@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="container mx-auto px-6 py-10 font-sans text-justify font-serif"
-  >
+  <section class="container mx-auto px-6 py-10 text-justify font-serif">
     <!-- Header -->
     <h1 class="text-5xl font-extrabold text-gray-800 mb-2 text-center">
       Membership & Donations
