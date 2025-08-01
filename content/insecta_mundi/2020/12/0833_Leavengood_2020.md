@@ -7,8 +7,9 @@ issue: '0833'
 pagination: '1–6'
 zoobank: 'urn:lsid:zoobank.org:pub:4D0A52BA-A515-438C-ADDD-E339CF5A6B2D'
 authors:
-  - first_name: 'John M., Jr'
+  - first_name: 'John M.'
     last_name: 'Leavengood'
+    suffix: 'Jr.'
     affiliation: 'United States Department of Agriculture, Animal and Plant Health Inspection Service, Plant Protection and Quarantine, 9325 Bay Plaza Blvd, Suite 206, Tampa, Florida, USA 33619'
     email: 'John.M.Leavengood@usda.gov'
 

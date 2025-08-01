@@ -32,14 +32,15 @@
                   v-for="{
                     first_name,
                     last_name,
+                    suffix,
                     affiliation,
                     orcid
                   } in publication.authors"
                   class="py-2"
                 >
-                  <p class="font-bold text-[20px]">
-                    {{ first_name }} {{ last_name }}
-                  </p>
+<p class="font-bold text-[20px]">
+  {{ first_name }} {{ last_name }}<span v-if="suffix">, {{ suffix }}</span>
+</p>
                   <p class="text-[15px] text-gray-500 prose leading-tight">
                     {{ affiliation }}
                   </p>

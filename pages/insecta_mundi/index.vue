@@ -102,9 +102,9 @@
 </template>
 
 <script setup>
-import InsectaMundiTemporaryBanner from '~/components/InsectaMundi/InsectaMundiTemporaryBanner.vue'
-import { useRoute, useRouter } from 'vue-router'
 import { computed, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import InsectaMundiTemporaryBanner from '~/components/InsectaMundi/InsectaMundiTemporaryBanner.vue'
 
 const publications = await queryContent('insecta_mundi')
   .where({ date: { $ne: null } })
@@ -186,8 +186,8 @@ const filteredList = computed(() => {
       searchQuery.value === '' ||
       item.title?.toLowerCase().includes(inputValue) ||
       item.categories?.some((cat) => cat.toLowerCase().includes(inputValue)) ||
-      item.authors?.some(({ first_name, last_name }) =>
-        `${first_name} ${last_name}`.toLowerCase().includes(inputValue)
+      item.authors?.some(({ first_name, last_name, suffix }) =>
+        `${first_name} ${last_name} ${suffix}`.toLowerCase().includes(inputValue)
       )
 
     const matchesMonth =

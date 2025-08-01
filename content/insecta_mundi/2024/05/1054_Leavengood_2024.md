@@ -9,7 +9,8 @@ zoobank: 'urn:lsid:zoobank.org:pub:EF3E45B5-6EA6-41AB-B92F-DB4ABF9D8215'
 
 authors:
   - first_name: 'John M.' 
-    last_name: 'Leavengood, Jr.'
+    last_name: 'Leavengood'
+    suffix: 'Jr.'
     affiliation: 'United States Department of Agriculture, APHIS, PPQ 9325 Bay Plaza Blvd, Suite 206, Tampa, FL 33619, USA'
     email: 'John.M.Leavengood@usda.gov'
     orcid: 'https://orcid.org/0000-0003-3223-455X'

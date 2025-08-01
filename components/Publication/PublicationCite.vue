@@ -17,23 +17,22 @@ const cite = computed(() => {
   const { title, journal, authors, issue, pagination, doi } = props.publication
 
   const authorList = authors
-    .map((item) => {
-      const cleanLastName = item.last_name?.replace(/\./g, '') || ''
-      const initials =
-        item.first_name
-          ?.split(' ')
-          .map((namePart) =>
-            namePart
-              .split('-')
-              .map((subPart) => subPart.charAt(0))
-              .join('-')
-          )
-          .join('') + ''
+.map((item) => {
+  const lastName = item.last_name?.replace(/\./g, '') || ''
+  const initials = item.first_name
+    ?.split(' ')
+    .map(namePart =>
+      namePart
+        .split('-')
+        .map(subPart => subPart.charAt(0))
+        .join('-')
+    )
+    .join('') || ''
+  return item.suffix
+    ? `${lastName} ${initials} ${item.suffix}`
+    : `${lastName} ${initials}`
+})
 
-      return initials
-        ? `${cleanLastName} ${initials}`
-        : `${cleanLastName}`
-    })
     .join(', ')
 
   return `<b>${authorList}.</b> <b>${year}</b>. ${title}. ${journal} ${
