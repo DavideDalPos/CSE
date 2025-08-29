@@ -54,7 +54,7 @@ const latestPublication = await queryContent('insecta_mundi')
   .findOne()
 
 if (latestPublication?.date) {
-  // Use UTC-based formatter to prevent timezone shift
+  // Format date for display
   formattedDate.value = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
@@ -62,19 +62,14 @@ if (latestPublication?.date) {
     timeZone: 'UTC'
   }).format(new Date(latestPublication.date))
 
-  const yearAndMonth = latestPublication.date.slice(
-    0,
-    latestPublication.date.lastIndexOf('-')
-  )
-
+  // Now fetch ALL publications with that same exact date
   const response = await queryContent('insecta_mundi')
     .where({
-      date: {
-        $contains: yearAndMonth
-      }
+      date: latestPublication.date
     })
     .find()
 
   publications.value = response
 }
 </script>
+

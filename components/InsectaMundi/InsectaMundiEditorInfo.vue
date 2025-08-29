@@ -38,7 +38,7 @@
 
         <p class="mt-4">
           To support both authors and editors, we provide detailed resources such as our 
-          <a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="internal-link">Manuscript Preparation Rules & Guidelines</a> 
+          <a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2025.pdf" target="_blank" class="internal-link">Manuscript Preparation Rules & Guidelines</a> 
           and <a href="/PDF/insectamundi/InsectaMundi_EditorGuidelines_2014.pdf" target="_blank" class="internal-link">Editor Guidelines</a>. 
           We encourage everyone involved in the publication process to review these documents to better understand our expectations and workflow.
         </p>

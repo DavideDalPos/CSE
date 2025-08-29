@@ -57,8 +57,8 @@ import InsectaMundiContact from './InsectaMundiContact.vue';
       return {
         resources: [
           {
-            text: "Manuscript Preparation Rules & Guidelines (updated 2024)",
-            link: "/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf",
+            text: "Manuscript Preparation Rules & Guidelines (updated 2025)",
+            link: "/PDF/insectamundi/InsectaMundi_FullGuidelines_2025.pdf",
           },
           {
             text: "Common Problems Checklist (Lista de Problemas Frecuentes)",

@@ -26,7 +26,7 @@
             To assist with this, please refer to:
           </p>
           <ul class="list-disc list-inside text-[17px] px-3">
-            <li><a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2024.pdf" target="_blank" class="text-otenary hover:underline hover:text-quaternary">
+            <li><a href="/PDF/insectamundi/InsectaMundi_FullGuidelines_2025.pdf" target="_blank" class="text-otenary hover:underline hover:text-quaternary">
               Manuscript Preparation Rules & Guidelines</a></li>
             <li><a href="/PDF/insectamundi/InsectaMundi_CommonProblemsChecklist_2014.pdf" target="_blank" class="text-otenary hover:underline hover:text-quaternary">
               Common Problems Checklist</a></li>
@@ -48,16 +48,18 @@
       <!-- Literature Cited Update -->
       <div class="mt-2">
 <h3 class="text-2xl font-semibold text-gray-800 mb-2">
-  <span class="bg-secondary text-red-800 font-extrabold px-2 py-1 rounded animate-pulse">📢 Update</span>
+  <span class="bg-secondary text-red-800 font-extrabold px-2 py-1 rounded animate-pulse">📢 Update 2025</span>
   <div class="mt-2">4. Literature Cited Format</div>
 </h3>
 
 
         <div class="flex flex-col gap-6 text-lg text-gray-700 text-justify leading-relaxed">
           <p>
-            <b>(Effective April 2020)</b> The editorial board of Insecta Mundi has adopted minor changes to the formatting of the Literature Cited section. These include:
+            <b>(Effective September 2025)</b> The editorial board of Insecta Mundi has adopted minor changes to the formatting of the Literature Cited section. These include:
           </p>
-          <ul class="list-disc list-inside text-[17px] text-gray-700 mt-1 px-6 space-y-1">
+          <ul class="list-disc list-outside text-[17px] text-gray-700 mt-1 px-12 space-y-1 max-w-7xl">
+            <li class="relative"> If a journal article, book chapter, or other type of reference has a <strong>digital object identifier (DOI)</strong>, the DOI must be included at the end of the reference (after the page range) 
+              <span class="ml-2 px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-xs font-semibold animate-pulse">NEW</span></li>
             <li>No periods between initials</li>
             <li>No comma between surnames and initials</li>
             <li>Omission of the word <i>"and"</i> in author/editor lists</li>
@@ -69,15 +71,30 @@
       <!-- Examples -->
       <div>
         <h4 class="text-lg font-semibold text-gray-700 mb-2">Examples:</h4>
-        <pre class="bg-gray-100 text-sm p-4 rounded-md overflow-x-auto text-gray-700 font-mono leading-relaxed">
-  <b>Arnett RH Jr, Samuelson GA, Nishida GN. 1993.</b> The insect and spider collections of the world (second edition). Flora and fauna handbook no. 11. Sandhill Crane Press; Gainesville, FL. 310 p.
+<div class="bg-gray-100 text-sm p-4 rounded-md overflow-x-auto text-gray-700 font-mono leading-relaxed max-w-6xl mx-auto">
+  <div class="pl-6 text-justify [text-indent:-1.5rem]">
+    <b>Arnett RH Jr, Samuelson GA, Nishida GN. 1993.</b> The insect and spider collections of the world (second edition). Flora and fauna handbook no. 11. Sandhill Crane Press; Gainesville, FL. 310 p.
+  </div>
   
-  <b>Gordon RD, Skelley PE. 2007.</b> A monograph of the Aphodiini inhabiting the United States and Canada (Coleoptera: Scarabaeidae: Aphodiinae). Memoirs of the American Entomological Institute 79: 1–580.
+  <div class="pl-6 text-justify [text-indent:-1.5rem] mt-4">
+    <b>Gordon RD, Skelley PE. 2007.</b> A monograph of the Aphodiini inhabiting the United States and Canada (Coleoptera: Scarabaeidae: Aphodiinae). Memoirs of the American Entomological Institute 79: 1–580.
+  </div>
   
-  <b>Skelley PE, Gordon RD. 2002.</b> Family 37. Scarabaeidae. V. Subfamily Aphodiinae. p. 42–48. In: Arnett RH Jr, Thomas MC, Skelley PE, Frank JH (eds.). American beetles, Vol. 2. CRC Press; Boca Raton, FL. 861 p.
+  <div class="pl-6 text-justify [text-indent:-1.5rem] mt-4">
+    <b>Dal Pos D, Carpenter JM, Uliana M. 2023.</b> The Giordani Soika collection of Eumeninae at the Natural History Museum of Venice Giancarlo Ligabue: catalogue of species and type specimens (Insecta, Hymenoptera, Vespidae). Zootaxa 5137: 1–111. 
+    <a href="https://doi.org/10.11646/zootaxa.5137.1.1" class="text-blue-600 hover:underline">https://doi.org/10.11646/zootaxa.5137.1.1</a>
+  </div>
+
+  <div class="pl-6 text-justify [text-indent:-1.5rem] mt-4">
+    <b>Skelley PE, Gordon RD. 2002.</b> Family 37. Scarabaeidae. V. Subfamily Aphodiinae. p. 42–48. In: Arnett RH Jr, Thomas MC, Skelley PE, Frank JH (eds.). American beetles, Vol. 2. CRC Press; Boca Raton, FL. 861 p.
+  </div>
   
-  <b>Perkins P. 2006.</b> MCZ Type Database @ Harvard University. Available at http://mcz-28168.oeb.harvard.edu/mcz/ (Last accessed February 2007.)
-        </pre>
+  <div class="pl-6 text-justify [text-indent:-1.5rem] mt-4">
+    <b>Perkins P. 2006.</b> MCZ Type Database @ Harvard University. Available at 
+    <a href="http://mcz-28168.oeb.harvard.edu/mcz/" class="text-blue-600 hover:underline">http://mcz-28168.oeb.harvard.edu/mcz/</a> (Last accessed February 2007.)
+  </div>
+</div>
+
       </div>
   
     </div>
