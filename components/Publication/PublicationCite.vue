@@ -17,28 +17,30 @@ const cite = computed(() => {
   const { title, journal, authors, issue, pagination, doi } = props.publication
 
   const authorList = authors
-.map((item) => {
-  const lastName = item.last_name?.replace(/\./g, '') || ''
-  const initials = item.first_name
-    ?.split(' ')
-    .map(namePart =>
-      namePart
-        .split('-')
-        .map(subPart => subPart.charAt(0))
-        .join('-')
-    )
-    .join('') || ''
-  return item.suffix
-    ? `${lastName} ${initials} ${item.suffix}`
-    : `${lastName} ${initials}`
-})
-
+    .map((item) => {
+      const lastName = item.last_name?.replace(/\./g, '') || ''
+      const initials = item.first_name
+        ?.split(' ')
+        .map(namePart =>
+          namePart
+            .split('-')
+            .map(subPart => subPart.charAt(0))
+            .join('-')
+        )
+        .join('') || ''
+      return item.suffix
+        ? `${lastName} ${initials} ${item.suffix}`
+        : `${lastName} ${initials}`
+    })
     .join(', ')
+
+  // Replace hyphens between numbers with en dashes
+  const formattedPagination = pagination
+    ? pagination.replace(/(\d)-(\d)/g, '$1–$2')
+    : ''
 
   return `<b>${authorList}.</b> <b>${year}</b>. ${title}. ${journal} ${
     issue || ''
-  }: ${pagination}. ${doi}`
+  }: ${formattedPagination}. ${doi}`
 })
-
-
 </script>

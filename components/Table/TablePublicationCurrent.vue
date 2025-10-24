@@ -4,29 +4,41 @@
       <tr
         class="px-4 text-gray-800 mt-4 bg-gray-100 border-l-4 border-primary/80 text-sm"
       >
-        <th class="px-4 py-2 font-normal w-full">Published: {{ sortedList[0]?.date }}</th>
+        <th class="px-4 py-2 font-normal w-full">
+          Published: {{ sortedList[0]?.date }}
+        </th>
         <th class="px-2 py-2 font-normal">Pages</th>
         <th class="px-2 py-2 font-normal text-center">Publication</th>
         <th class="px-2 py-2 font-normal">Date</th>
       </tr>
     </thead>
     <tbody>
-      <template
-        v-for="(item, index) in sortedList"
-        :key="item._path"
-      >
+      <template v-for="(item, index) in sortedList" :key="item._path">
         <tr>
           <td class="py-2 px-4">
             <TablePublicationRow :publication="item" />
           </td>
+
+          <!-- Pagination column with automatic en dash replacement -->
           <td class="px-2">
-            <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.pagination" />
+            <span
+              class="text-xs text-gray-500 whitespace-nowrap"
+              v-text="formatPagination(item.pagination)"
+            />
           </td>
+
           <td class="px-2 text-center">
-            <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.issue" />
+            <span
+              class="text-xs text-gray-500 whitespace-nowrap"
+              v-text="item.issue"
+            />
           </td>
+
           <td class="px-2">
-            <span class="text-xs text-gray-500 whitespace-nowrap" v-text="item.date" />
+            <span
+              class="text-xs text-gray-500 whitespace-nowrap"
+              v-text="item.date"
+            />
           </td>
         </tr>
 
@@ -40,7 +52,6 @@
   </table>
 </template>
 
-  
 <script setup>
 import { computed } from 'vue'
 
@@ -62,6 +73,9 @@ const sortedList = computed(() => {
     return Number(b.issue) - Number(a.issue)
   })
 })
-</script>
 
-  
+// Replace hyphens between numbers with en dashes in pagination
+function formatPagination(pagination) {
+  return pagination ? pagination.replace(/(\d)-(\d)/g, '$1–$2') : ''
+}
+</script>
