@@ -15,7 +15,7 @@
         class="bg-gray-100 border-l-4 border-[#7ca2a1] p-8 rounded-lg max-w-3xl mx-auto shadow-lg transform transition-transform hover:scale-105"
       >
         <div class="conference-date text-2xl font-semibold text-otenary mb-2">
-          📅 February 15, 2026 – 09:00 AM
+          📅 January 17, 2026 – 09:00 AM
         </div>
         <div class="text-lg text-gray-500 mb-6">
           Join us online or in Gainesville (Florida) for the annual CSE
@@ -56,7 +56,7 @@
 export default {
   data() {
     return {
-      deadline: new Date('2025-02-15T14:00:00Z'), // 09:00 AM Gainesville (UTC-5) = 14:00 UTC
+      deadline: new Date('2025-01-17T14:00:00Z'), // 09:00 AM Gainesville (UTC-5) = 14:00 UTC
       timer: null,
       timeRemaining: { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 }
     }

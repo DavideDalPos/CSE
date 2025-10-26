@@ -5,18 +5,28 @@
 
       <h1 class="text-4xl font-bold text-gray-800 mb-2">CSE 2026 Conference</h1>
       <h2 class="text-xl text-gray-600 mb-4">Details Coming Soon</h2>
-      <p class="text-gray-500">Spring 2026 · Gainesville, FL</p>
+      <p class="text-gray-500">January 17, 2026 · Gainesville, FL</p>
 
       <!-- Contact Us button -->
       <div class="mt-6">
         <a
-          href="mailto:alessandra.pandolfi@csentomology.com"
+          href="mailto:conference@csentomology.com"
           class="inline-block w-full bg-novenary text-white py-2 rounded-md hover:bg-novenary/70 transition shadow-lg"
         >
           Contact Us
         </a>
       </div>
+
+      <!-- Download Form button -->
+      <div class="mt-4">
+        <a
+          href="/PDF/conference/CSE_SubmissionForm.docx"
+          download
+          class="inline-block w-full bg-quaternary text-white py-2 rounded-md hover:bg-quaternary/70 hover:text-white transition shadow-lg"
+        >
+          Download Submission Form
+        </a>
+      </div>
     </div>
   </div>
 </template>
-

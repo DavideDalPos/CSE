@@ -1,8 +1,14 @@
+<script setup lang="ts">
+import { MeetingsIntroMeeting, MeetingsMeetingInfoBanner } from '#components';
+
+</script>
+
 <template>
   <div>
     <section class="bg-foreground">
       <MeetingsTitleMeeting />
       <MeetingsIntroMeeting />
+      <MeetingsMeetingInfoBanner />
     </section>
     <section
       class="bg-gradient-to-br from-gray-100 to-tertiary/30 border-t border-b border-yellow-600"

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ComingSoonBanner from './ComingSoonBanner.vue';
 
 </script>
 
@@ -16,19 +15,12 @@ import ComingSoonBanner from './ComingSoonBanner.vue';
     Every year, the Center for Systematic Entomology organizes its Annual Conference, held both in-person (in Gainesville) and via Zoom. 
     The presentations are diverse, covering a wide range of arthropod taxa and research topics.
   </p>
-  <p>
-    The <b>2025 Annual Conference</b> has just concluded. You can view the full program here: 
-    <a href="https://drive.google.com/file/d/1kRVtM43AZ6hYJq-iMYANoGjSLYLwECx2/view?usp=sharing" target="_blank" class="internal-link" rel="noopener noreferrer">
-      2025 Annual Conference Program
-    </a>
-  </p>
-  <p>
-    Stay tuned for details on the <b>2026 Annual Conference</b>—coming soon!
-  </p>
+<p>
+        The <b>2026 Annual Conference</b> has just been announced for <b>January 17, 2026</b>.
+      </p>
 </div>
 
-      
-       <ComingSoonBanner />
+<!-- <ComingSoonBanner /> -->
 
    </section>
 </template>
