@@ -51,7 +51,7 @@
 
 <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
   <li>
-    <a href="https://forms.gle/kT3Ydxq8mPmnfpu79" target="_blank" class="internal-link font-semibold hover:underline">Submit via Google Form</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeQTYjJtXy69-M8GzCHQ6Ap9ZcyjIidJ01-ASXcbKkFAYCgQ/viewform?usp=header" target="_blank" class="internal-link font-semibold hover:underline">Submit via Google Form</a>
   </li>
   <li>
     <a href="/PDF/conference/CSE_SubmissionForm.docx" target="_blank" download class="internal-link font-semibold hover:underline">
