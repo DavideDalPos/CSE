@@ -6,9 +6,14 @@
       <h1 class="text-4xl font-bold text-gray-800 mb-2">CSE 2026 Conference</h1>
       <h2 class="text-xl text-gray-600 mb-4">January 17, 2026 · Gainesville, FL</h2>
 <p class="text-gray-500">
-  For more details, <NuxtLink to="/meetings" class="text-novenary hover:text-novenary/70 hover:underline">
-    click here
-  </NuxtLink>
+  For more details, <NuxtLink
+  to="/meetings"
+  class="text-novenary hover:text-novenary/70 hover:underline hover:[text-decoration-novenary/70)]"
+>
+  click here
+</NuxtLink>
+
+
 </p>
 
       <!-- Contact Us button -->
