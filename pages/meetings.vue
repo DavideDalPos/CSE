@@ -17,7 +17,7 @@ import { MeetingsIntroMeeting, MeetingsMeetingInfoBanner } from '#components';
     </section>
     <section class="bg-gradient-to-br from-gray-100 to-secondary/30"></section>
     <section
-      class="bg-gradient-to-br from-gray-100 to-senary/20 border-t border-gray-300"
+      class="bg-gradient-to-br from-gray-100 to-senary/20 border-t border-gray-300 mb-10"
     >
       <MeetingsSlider />
     </section>
