@@ -61,7 +61,7 @@ const slides = [
     img: conference2025,
     link: {
       label: 'Learn More',
-      href: '/'
+      href: '/meetings'
     }
   }
 ]
