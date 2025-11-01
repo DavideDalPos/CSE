@@ -4,7 +4,7 @@
       <img
         :src="modalImage"
         alt="CSE Logo"
-        class="rounded shadow-md w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
+        class="rounded mt-7 w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
         @click="isModalOpen = true"
       />
   
@@ -33,7 +33,7 @@
   
   <script setup>
   import { onMounted, ref } from 'vue';
-  
+
   const isModalOpen = ref(false);
   const modalImage = ref('/images/Logo_CSE.png');
   

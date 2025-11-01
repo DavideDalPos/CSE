@@ -5,7 +5,7 @@ import MembershipLogo from './MembershipLogo.vue';
 
 <template>
   <div class="space-y-6">
-    <div class="logo-container bg-gray-100 p-4 rounded-md">
+    <div class="logo-container p-4 rounded-md">
       <MembershipLogo />
     </div>
     <hr class="border-gray-300" />
@@ -14,9 +14,6 @@ import MembershipLogo from './MembershipLogo.vue';
 </template>
 
 <style scoped>
-.logo-container {
-  margin-bottom: 24px; /* Adjust as needed */
-}
 
 hr {
   margin-top: 0; /* To make sure the divider aligns well */

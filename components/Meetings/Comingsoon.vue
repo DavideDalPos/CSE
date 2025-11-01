@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-secondary">
     <div class="text-center bg-white p-8 rounded-2xl shadow-xl max-w-md w-full">
-      <img src="/images/Logo_CSE.png" alt="CSE Logo" class="mx-auto mb-6 w-50 h-48 rounded" />
+      <img src="/public/images/Logo_CSE.png" alt="CSE Logo" class="mx-auto mb-6 w-70 h-70" />
 
       <h1 class="text-4xl font-bold text-gray-800 mb-2">CSE 2026 Conference</h1>
       <h2 class="text-xl text-gray-600 mb-4">January 17, 2026 · Gainesville, FL</h2>
