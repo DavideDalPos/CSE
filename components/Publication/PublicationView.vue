@@ -146,15 +146,15 @@
   <template v-else>: {{ reference.pages }}. </template>
 </span>
 <span v-if="reference.doi">
-  <a
-    :href="'https://doi.org/' + reference.doi.replace(/^doi:\s*/i, '')"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
-  >
-    {{ 'https://doi.org/' + reference.doi.replace(/^doi:\s*/i, '') }}
-  </a>
-</span>
+                    <a
+                      :href="normalizedDoi(reference.doi)"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
+                    >
+                      {{ normalizedDoi(reference.doi) }}
+                    </a>
+                  </span>
 
 
 
@@ -420,6 +420,17 @@ function normalizedUrl(url) {
     return url
   }
   return 'https://' + url
+}
+function normalizedDoi(doi) {
+  if (!doi) return ""
+
+  const clean = doi.replace(/^doi:\s*/i, "").trim()
+
+  if (clean.startsWith("http://") || clean.startsWith("https://")) {
+    return clean
+  }
+
+  return `https://doi.org/${clean}`
 }
 
 function goBack() {
