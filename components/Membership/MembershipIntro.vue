@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <section class="container mx-auto px-6 py-10 text-justify font-serif">
     <!-- Header -->

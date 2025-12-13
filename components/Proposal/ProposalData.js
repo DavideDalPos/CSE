@@ -25,7 +25,7 @@ export default [
     researcher: 'Solomon, Hendrix',
     title: 'Cixiid planthopper genus <i>Melanoliarus</i>',
     taxon: 'Cixiidae (Hemiptera)',
-    pdf: 'https://drive.google.com/file/d/1GJ3-z9Qhgpo4U25dgzsAJubAan7m_Bku/view?usp=sharing',
+    pdf: 'https://drive.google.com/file/d/1B8FlRHfR5TA9vlqzZM6P31XKTm3142Ve',
   },
   {
     year: '2023',
