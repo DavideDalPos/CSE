@@ -6,6 +6,13 @@ export const editorialBoard = ref([
   'David Plotkin (University of Florida, USA)',
   'Paul E. Skelley (Florida Department of Agriculture and Consumer Services, USA)',
   'Felipe Soto-Adames (Florida Department of Agriculture and Consumer Services, USA)',
+  'Alexander Orfinger (Dalton State College, USA)',
+  'José I. Martinez-Nobel (Florida Department of Agriculture and Consumer Services, USA)'
+]);
+
+export const digitalRegistration = ref([
+  'Davide Dal Pos (DOI Registration)',
+  'Erin Powell (Zoobank Registration)'
 ]);
 
 export const chiefEditor = ref('David Plotkin (University of Florida, USA)');
