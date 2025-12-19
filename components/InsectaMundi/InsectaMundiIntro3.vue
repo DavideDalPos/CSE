@@ -1,7 +1,8 @@
 <template>
   <div class="container mx-auto px-6 sm:px-10 py-12 space-y-12 font-serif">
-    <EditorListSection title="Editorial Board" :items="sortedEditorialBoard" />
     <EditorSingleLineSection title="Chief Editor" :item="chiefEditor" />
+    <EditorListSection title="Editorial Board" :items="sortedEditorialBoard" />
+    <EditorListSection title="Digital Registration Editoris" :items="digitalRegistration" />
     <EditorListSection title="Founding Editors" :items="sortedFoundingEditors" />
     <EditorListSection id="revieweditors" class="scroll-mt-28" title="Review Editors" :items="sortedReviewEditors" />
     <EditorSingleLineSection title="Layout Editors" :item="layoutEditors" />
@@ -18,6 +19,7 @@
 <script setup>
 import {
   chiefEditor,
+  digitalRegistration,
   layoutEditors,
   postProduction,
   sortedEditorialBoard,
