@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import FSCA_Arthropods from '~/components/OtherPublications/FSCA_Arthropods.vue';
-import FSCA_Occasional from '~/components/OtherPublications/FSCA_Occasional.vue';
+import FSCA_Occasional from '~/components/OtherPublications/OccasionalPapers/FSCA_Occasional.vue';
 import FSCA_ArthropodsTitle from './FSCA_ArthropodsTitle.vue';
 import FSCA_RightColumn from './FSCA_RightColumn.vue';
 </script>
