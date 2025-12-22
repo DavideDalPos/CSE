@@ -42,27 +42,29 @@
           <div class="flex-1 p-2 space-y-2">
             <!-- Volume -->
             <div class="text-sm text-senary font-semibold">
-              {{ book.volume }}
+              Volume {{ book.volume }}
             </div>
 
             <!-- Title & Year -->
-            <h2 class="text-sm text-gray-800 break-words">
-              <a
-                :href="book.pdf"
-                target="_blank"
-                class="font-bold text-gray-800 hover:text-quinary transition-colors"
-              >
-                <span v-html="book.title" class="font-bold"></span>
-              </a>
-              <span class="block text-sm text-gray-500">
-                ({{ book.year }})
-              </span>
-            </h2>
+<h2 class="text-sm text-gray-800 break-words">
+<NuxtLink
+  :to="book._path"
+  class="font-bold text-gray-800 hover:text-quinary transition-colors"
+>
+
+    <span v-html="book.title" class="font-bold"></span>
+  </NuxtLink>
+  <span class="block text-sm text-gray-500">
+    ({{ book.year }})
+  </span>
+</h2>
+
 
             <!-- Author -->
-            <p class="text-sm text-gray-600">
-              {{ book.author }}
-            </p>
+<p class="text-sm text-gray-600">
+  {{ formatAuthor(book.authors) }}
+</p>
+
 
             <!-- PDF Buttons -->
             <div class="flex space-x-2">
@@ -136,18 +138,14 @@
 
 
 <script setup>
-import { ref } from 'vue'
-import FSCA_OccasionalData from '~/components/OtherPublications/FSCA_OccasionalData.js'
+import { computed, ref } from 'vue'
 
-const books = FSCA_OccasionalData
-
-// Modal logic
-const showList = ref(false) // Initialize the list as visible
+const showList = ref(false)
 const isModalOpen = ref(false)
 const modalImage = ref('')
 
 function toggleList() {
-  showList.value = !showList.value // Toggle visibility of the list
+  showList.value = !showList.value
 }
 
 function openModal(imageUrl) {
@@ -159,7 +157,34 @@ function closeModal() {
   isModalOpen.value = false
   modalImage.value = ''
 }
+
+/* 🔑 Nuxt Content query */
+const { data } = await useAsyncData('fsca-occasional', () =>
+  queryContent('occasional_papers')
+    .sort({ year: -1 })
+    .find()
+)
+
+function getInitials(name) {
+  if (!name) return ''
+  return name
+    .split(' ')
+    .map(n => n[0] + '.')
+    .join(' ')
+}
+
+function formatAuthor(authors) {
+  if (!authors || !Array.isArray(authors)) return ''
+  return authors
+    .map(a => `${a.last_name}, ${getInitials(a.first_name)}`)
+    .join('; ')
+}
+
+
+/* 🔑 Keep the SAME variable name your template expects */
+const books = computed(() => data.value || [])
 </script>
+
 
 <style scoped>
 .fade-enter-active,

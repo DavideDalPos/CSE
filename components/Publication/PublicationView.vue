@@ -51,7 +51,7 @@
                     target="_blank"
                   >
                     <img
-                      src="/images/orcid.svg"
+                      src="/public/images/orcid.svg"
                       alt="ORCID icon"
                       class="w-4 h-4"
                     />
