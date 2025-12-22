@@ -3,15 +3,17 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
-import FSCA_OccasionalView from '~/components/OtherPublications/OccasionalPapers/FSCA_OccasionalView.vue';
+import { useRoute } from 'vue-router'
+import FSCA_OccasionalView from '~/components/OtherPublications/OccasionalPapers/FSCA_OccasionalView.vue'
 
 const route = useRoute()
+const year = route.params.year
+const slug = route.params.slug.toLowerCase() // normalize slug to lowercase
 
-// 🔹 Use _path for production-safe query
+// 🔹 Case-insensitive query
 const { data: publication } = await useAsyncData(() =>
-  queryContent()
-    .where({ _path: `/occasional_papers/${route.params.year}/${route.params.slug}` })
+  queryContent('occasional_papers')
+    .where({ _path: { $regex: new RegExp(`/occasional_papers/${year}/${slug}`, 'i') } })
     .findOne()
 )
 </script>
