@@ -109,7 +109,7 @@
                     d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
                   />
                 </svg>
-                <a :href="book.pdfhigh" target="_blank">Download High Res PDF</a>
+                <a :href="book.pdfhigh" target="_blank">High Res PDF</a>
               </div>
             </div>
           </div>
@@ -161,9 +161,10 @@ function closeModal() {
 /* 🔑 Nuxt Content query */
 const { data } = await useAsyncData('fsca-occasional', () =>
   queryContent('occasional_papers')
-    .sort({ year: -1 })
     .find()
 )
+
+
 
 function getInitials(name) {
   if (!name) return ''
@@ -182,7 +183,19 @@ function formatAuthor(authors) {
 
 
 /* 🔑 Keep the SAME variable name your template expects */
-const books = computed(() => data.value || [])
+const books = computed(() => {
+  return (data.value || []).sort((a, b) => {
+    // Sort by year descending
+    const yearA = a.year || 0
+    const yearB = b.year || 0
+    if (yearB !== yearA) return yearB - yearA
+
+    // Sort by volume descending (convert to number)
+    const volA = Number(a.volume) || 0
+    const volB = Number(b.volume) || 0
+    return volB - volA
+  })
+})
 </script>
 
 
