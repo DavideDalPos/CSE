@@ -1,23 +1,48 @@
 <template>
-  <div
-    class=" rounded-md bg-white shadow-sm max-w-[420px] mx-auto"
-  >
-    <!-- Header -->
-    <h3
-      class="text-sm font-semibold text-white bg-primary px-4 py-1 rounded-t-md"
-    >
-      How to cite
-    </h3>
+  <div class="border border-gray-400 rounded-lg shadow-md max-w-[420px] mx-auto overflow-hidden relative">
+    <!-- Header with copy icon -->
+    <div class="bg-primary/90 px-4 py-2 flex justify-between items-center">
+      <h3 class="text-gray-100 font-semibold text-lg">How to cite</h3>
 
-    <!-- Citation -->
-    <div class="px-4 py-3 text-sm text-gray-700 leading-relaxed text-left">
-      <span v-html="cite" />
+      <!-- Copy Icon -->
+      <div class="relative">
+<button 
+  @click="copyCitation" 
+  title="Copy citation" 
+  class=" p-1 rounded hover:bg-gray-200 transition group"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+       class="w-6 h-6 stroke-white group-hover:stroke-gray-700 transition">
+    <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/>
+  </svg>
+</button>
+
+
+        <!-- Tooltip -->
+        <div v-show="copied" class="absolute -bottom-6 right-0 bg-gray-500 text-white text-xs px-2 py-1 rounded opacity-90">
+          Copied!
+        </div>
+      </div>
+    </div>
+
+    <!-- Citation Body -->
+    <div class="px-4 py-4 text-gray-700 bg-white text-sm leading-relaxed space-y-2">
+      <div v-html="formattedCitation" class="break-words"></div>
+
+      <!-- DOI link if available -->
+      <div v-if="props.publication.doi" class="mt-2 text-gray-600 text-xs hover:underline">
+        DOI: 
+        <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`" target="_blank" class="text-gray-700 hover:text-gray-900">
+          {{ props.publication.doi }}
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const props = defineProps({
   publication: {
@@ -26,29 +51,41 @@ const props = defineProps({
   }
 })
 
-const cite = computed(() => {
+// Tooltip state
+const copied = ref(false)
+
+// Formatted citation
+const formattedCitation = computed(() => {
   const year = props.publication.year || new Date(props.publication.date).getFullYear()
-  const { title, journal, authors, issue, volume, pagination, doi } = props.publication
+  const { title, journal, authors, issue, volume, pagination } = props.publication
 
   const authorList = authors
-    .map((item) => {
-      const lastName = item.last_name?.replace(/\./g, '') || ''
-      const initials = item.first_name
+    .map(a => {
+      const last = a.last_name?.replace(/\./g, '') || ''
+      const initials = a.first_name
         ?.split(' ')
-        .map(n =>
-          n.split('-').map(s => s.charAt(0)).join('-')
-        )
+        .map(n => n.split('-').map(s => s.charAt(0)).join('-'))
         .join('') || ''
-      return item.suffix
-        ? `${lastName} ${initials} ${item.suffix}`
-        : `${lastName} ${initials}`
+      return a.suffix ? `${last} ${initials} ${a.suffix}` : `${last} ${initials}`
     })
     .join(', ')
 
-  const formattedPagination = pagination
-    ? pagination.replace(/(\d)-(\d)/g, '$1–$2')
-    : ''
+  const page = pagination ? pagination.replace(/(\d)-(\d)/g, '$1–$2') : ''
 
-  return `<b>${authorList}.</b> <b>${year}</b>. ${title}. ${journal}${volume ? ', Volume ' + volume : ''}${issue ? ', issue ' + issue : ''}: ${formattedPagination}. ${doi || ''}`
+  return `<span class="font-bold">${authorList}.</span> <span class="font-semibold">${year}</span>. ${title}. <i>${journal}</i>${volume ? ', Volume ' + volume : ''}${issue ? ', Issue ' + issue : ''}${page ? ': ' + page : ''}.`
 })
+
+// Copy to clipboard
+function copyCitation() {
+  navigator.clipboard.writeText(formattedCitation.value.replace(/<[^>]+>/g, ''))
+  copied.value = true
+  setTimeout(() => (copied.value = false), 1500)
+}
 </script>
+
+<style scoped>
+/* Optional: smooth tooltip fade */
+[tooltip] {
+  transition: opacity 0.3s ease;
+}
+</style>
