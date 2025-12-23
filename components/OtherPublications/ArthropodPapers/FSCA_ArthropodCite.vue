@@ -60,7 +60,7 @@ const copied = ref(false)
 // Formatted citation
 const formattedCitation = computed(() => {
   const year = props.publication.year || new Date(props.publication.date).getFullYear()
-  const { title, journal, authors, issue, volume, pagination } = props.publication
+  const { title, journal, authors, issue, volume, pagination, doi } = props.publication
 
   const authorList = authors
     .map(a => {
@@ -78,17 +78,17 @@ const formattedCitation = computed(() => {
   return `<span class="font-bold">${authorList}.</span> <span class="font-semibold">${year}</span>. ${title}. <i>${journal}</i>${volume ? ', Volume ' + volume : ''}${issue ? ', Issue ' + issue : ''}${page ? ': ' + page : ''}.`
 })
 
-// Copy to clipboard
+// Copy to clipboard including DOI
 function copyCitation() {
-  navigator.clipboard.writeText(formattedCitation.value.replace(/<[^>]+>/g, ''))
+  let citationText = formattedCitation.value.replace(/<[^>]+>/g, '')
+  if (props.publication.doi) {
+    const cleanDoi = props.publication.doi.replace(/^doi:\s*/i, '')
+    citationText += ` DOI: https://doi.org/${cleanDoi}`
+  }
+
+  navigator.clipboard.writeText(citationText)
   copied.value = true
   setTimeout(() => (copied.value = false), 1500)
 }
 </script>
 
-<style scoped>
-/* Optional: smooth tooltip fade */
-[tooltip] {
-  transition: opacity 0.3s ease;
-}
-</style>

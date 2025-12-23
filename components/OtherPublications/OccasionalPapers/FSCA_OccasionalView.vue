@@ -1,8 +1,7 @@
 <script setup>
 import IconArrowLeft from '@/components/Icon/IconArrowLeft.vue'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-
 // Citation components
 import FSCA_OccasionalCitation from './FSCA_OccasionalCitation.vue'
 import FSCA_OccasionalCite from './FSCA_OccasionalCite.vue'
@@ -13,9 +12,18 @@ const props = defineProps({
     required: true
   }
 })
-
+const copied = ref(false)       // tooltip state if you want to show it
+const copiedMessage = ref('')   // to differentiate DOI / Zoobank copied
 const paper = computed(() => props.publication)
 const router = useRouter()
+
+function copyToClipboard(text, label = 'Copied') {
+  if (!text) return
+  navigator.clipboard.writeText(text)
+  copiedMessage.value = label
+  copied.value = true
+  setTimeout(() => (copied.value = false), 1500)
+}
 
 function goBack() {
   if (import.meta.client) {
@@ -117,23 +125,32 @@ const isAbstractLong = computed(() => {
   <!-- DOI -->
   <div class="flex flex-col">
     <span class="text-sm font-semibold text-gray-600 uppercase mb-1">DOI</span>
-    <div class="flex items-center justify-between gap-2">
-      <a v-if="paper.doi"
-         :href="normalizedDoi(paper.doi)"
-         target="_blank"
-         class="text-novenary text-md font-medium hover:underline break-words flex-1">
-        {{ paper.doi }}
-      </a>
-      <button v-if="paper.doi" @click="copyToClipboard(paper.doi)" 
-              class="p-1 rounded hover:bg-gray-100 transition" title="Copy DOI">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-             stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
-        </svg>
-      </button>
-      <span v-else class="text-gray-400 italic text-sm">No DOI available</span>
-    </div>
+ <div class="relative flex items-center">
+  <a v-if="paper.doi"
+     :href="normalizedDoi(paper.doi)"
+     target="_blank"
+     class="text-novenary text-md font-medium hover:underline break-words flex-1">
+    {{ paper.doi }}
+  </a>
+
+  <button v-if="paper.doi" 
+          @click="copyToClipboard(normalizedDoi(paper.doi), 'DOI copied!')" 
+          class="p-1 rounded hover:bg-gray-100 transition ml-2"
+          title="Copy DOI">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+         stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+    </svg>
+  </button>
+
+  <!-- Tooltip -->
+  <div v-if="copied && copiedMessage === 'DOI copied!'" 
+       class="absolute -top-6 right-0 bg-gray-600 text-white text-xs px-2 py-1 rounded opacity-90 whitespace-nowrap">
+    {{ copiedMessage }}
+  </div>
+</div>
+
   </div>
 
   <hr class="border-gray-200" />
@@ -141,23 +158,32 @@ const isAbstractLong = computed(() => {
   <!-- Zoobank -->
   <div class="flex flex-col">
     <span class="text-sm font-semibold text-gray-600 uppercase mb-1">Zoobank</span>
-    <div class="flex items-center justify-between gap-2">
-      <a v-if="paper.zoobank"
-         :href="zoobankUrl(paper.zoobank)"
-         target="_blank"
-         class="text-novenary text-md font-medium hover:underline break-words flex-1">
-        {{ paper.zoobank }}
-      </a>
-      <button v-if="paper.zoobank" @click="copyToClipboard(paper.zoobank)" 
-              class="p-1 rounded hover:bg-gray-100 transition" title="Copy Zoobank LSID">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-             stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
-        </svg>
-      </button>
-      <span v-else class="text-gray-400 italic text-sm">No LSID number</span>
-    </div>
+<div class="relative flex items-center mt-2">
+  <a v-if="paper.zoobank"
+     :href="zoobankUrl(paper.zoobank)"
+     target="_blank"
+     class="text-novenary text-md font-medium hover:underline break-words flex-1">
+    {{ paper.zoobank }}
+  </a>
+
+  <button v-if="paper.zoobank" 
+          @click="copyToClipboard(paper.zoobank, 'Zoobank LSID copied!')" 
+          class="p-1 rounded hover:bg-gray-100 transition ml-2"
+          title="Copy Zoobank LSID">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+         stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+    </svg>
+  </button>
+
+  <!-- Tooltip -->
+  <div v-if="copied && copiedMessage === 'Zoobank LSID copied!'" 
+       class="absolute -top-6 right-0 bg-gray-600 text-white text-xs px-2 py-1 rounded opacity-90 whitespace-nowrap">
+    {{ copiedMessage }}
+  </div>
+</div>
+
   </div>
 
 </div>
