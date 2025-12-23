@@ -8,13 +8,17 @@ import FSCA_ArthropodView from '~/components/OtherPublications/ArthropodPapers/F
 
 const route = useRoute()
 
-// 🔹 Mimic insecta_mundi query: pass segments directly
-const { data: publication } = await useAsyncData(() =>
-  queryContent(
+const { data: publication } = await useAsyncData(
+  () => `arthropod-paper-${route.params.slug}`,  // unique key
+  () => queryContent(
     'arthropod_papers',
     route.params.year,
     route.params.slug
-  ).findOne()
+  ).findOne(),
+  {
+    watch: [() => route.params.slug]   // ⚡ refetch when slug changes
+  }
 )
+
 </script>
 
