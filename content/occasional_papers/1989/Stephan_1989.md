@@ -8,7 +8,7 @@ authors:
     last_name: 'Stephan'
     affiliation: 'Route 1, Box 913, Red Oak, Oklahoma 74563'
 year: '1989'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1989_006.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1989_006.jpg'
 pdf: 'https://drive.google.com/file/d/1xo5I2yTD-07_b250Et7KAgERoXjWDAKl'
 zoobank: ''
 doi: ''

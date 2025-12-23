@@ -13,7 +13,7 @@ authors:
     affiliation: 'Division of Plant Industry Gainesville, Florida 32601'
 
 year: '1970'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1970_006.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1970_006.jpg'
 pdf: 'https://drive.google.com/file/d/1uLvAB8gaGSlufPY7rBrXXQaX8c3qE2UY'
 zoobank: ''
 doi: ''

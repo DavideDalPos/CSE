@@ -10,7 +10,7 @@ authors:
 
 year: '1965'
 yearrevised: '1976'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1965_003.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1965_003.jpg'
 pdf: 'https://drive.google.com/file/d/1Lxb_yRNqhW1PatbelocrZjsUL7h4InWV'
 zoobank: ''
 doi: ''

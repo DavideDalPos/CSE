@@ -13,7 +13,7 @@ authors:
     affiliation: 'Systematic Entomology Laboratory, IIBIII, USDA, c/o United States National Museum of Natural History Washington, D. C. 20560'
 
 year: '1979'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1979_010.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1979_010.jpg'
 pdf: 'https://drive.google.com/file/d/13TkoOc9qoQPLQcEu5N7voIRMDDS5tehE'
 zoobank: ''
 doi: ''

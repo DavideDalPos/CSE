@@ -8,7 +8,7 @@ authors:
     last_name: 'Denmark'
     affiliation: 'FDACS Bureau of Entomology P.O. Box 147100, Gainesville, FL 32614-7100'
 year: '1992'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1992_007.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1992_007.jpg'
 pdf: 'https://drive.google.com/file/d/1_WdUev5L3F9JI4QaUSYc_e1maZHqZRW3'
 zoobank: ''
 doi: ''

@@ -10,7 +10,7 @@ authors:
 
 
 year: '1993'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1993_015.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1993_015.jpg'
 pdf: 'https://drive.google.com/file/d/1TPb9SwAz4cw0RZqWcHf-FAZqKt3ZYv9O'
 zoobank: ''
 doi: ''

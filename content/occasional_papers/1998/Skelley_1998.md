@@ -10,7 +10,7 @@ authors:
     email: ''
     orcid: 'https://orcid.org/0000-0003-2687-6740'
 year: '1998'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1998_009.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1998_009.jpg'
 pdf: 'https://drive.google.com/file/d/1mlWwj5b3bRCM50iGulAkLDsGwGCeNlPT'
 zoobank: ''
 doi: ''

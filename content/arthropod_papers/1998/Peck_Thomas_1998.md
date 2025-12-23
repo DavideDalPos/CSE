@@ -15,7 +15,7 @@ authors:
 
 
 year: '1998'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1998_016.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1998_016.jpg'
 pdf: 'https://drive.google.com/file/d/1mUywdpsl3k9y6-JXU5xBsMb_VNLLruh9'
 zoobank: ''
 doi: ''

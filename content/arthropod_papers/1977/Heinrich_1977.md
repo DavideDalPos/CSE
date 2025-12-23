@@ -9,7 +9,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods, Dryden, Maine, U.S.A.'  
 
 year: '1977'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1977_009.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1977_009.jpg'
 pdf: 'https://drive.google.com/file/d/1dKxGc5sAknsq9lfuPSOrFQ71nKgQcyZi'
 zoobank: ''
 doi: ''

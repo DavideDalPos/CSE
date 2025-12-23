@@ -9,7 +9,7 @@ authors:
     affiliation: 'Department of Entomology Cornell University Ithaca, New York 14853'
     email: ''
 year: '1999'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1999_010.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1999_010.jpg'
 pdf: 'https://drive.google.com/file/d/12u7B6B0hbhGSy9weJufu9wV6teaeRM-o'
 zoobank: ''
 doi: ''

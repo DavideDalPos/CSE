@@ -13,7 +13,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods Florida Department of Agriculture and Consumer Services, Division of Plant Industry 1911 SW 34th Street, Gainesville, FL 32608, USA'
     orcid: 'https://orcid.org/0000-0002-2483-1883'
 year: '2025'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_2025_014.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_2025_014.jpg'
 pdf: 'https://drive.google.com/file/d/1mUnEYpdhxTwzOCYEw1sxVVzQ9qVBP9wC'
 zoobank: 'urn:lsid:zoobank.org:pub:8E5C65B4-B2F4-4136-A7B4-C074983C98F8'
 doi: ''

@@ -9,7 +9,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods, FDACS Adjunct Professor, University of Florida Research Associate, Smithsonian Institution'
 year: '2003'
 yearrevised: '2007'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_2003_017.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_2003_017.jpg'
 pdf: 'https://drive.google.com/file/d/1i9qBoKDw4h6Lc6pC2O49LbnbOQOSoIoW'
 zoobank: ''
 doi: ''

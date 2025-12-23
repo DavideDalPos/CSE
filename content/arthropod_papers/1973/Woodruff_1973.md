@@ -13,7 +13,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods P.O. Box 147100 Gainesville, Florida, 32614-7100, U.S.A.'
 
 year: '1973'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_008.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_008.jpg'
 pdf: 'https://drive.google.com/file/d/19h8tFpDaq-fNwMRg52LwhfN1w9ytgoGB'
 zoobank: ''
 doi: ''

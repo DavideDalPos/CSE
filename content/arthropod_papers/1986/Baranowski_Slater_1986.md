@@ -13,7 +13,7 @@ authors:
     affiliation: 'University of Connecticut Department of Ecology and Evolutionary Biology Storrs, Connecticut 06268'
 
 year: '1986'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1986_012.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1986_012.jpg'
 pdf: 'https://drive.google.com/file/d/1ChY1djxNtFuu1CckcCYA2hTkdOBu2Ota'
 zoobank: ''
 doi: ''

@@ -13,7 +13,7 @@ authors:
     affiliation: 'Department of Zoology - Entomology Auburn University, Auburn, Alabama 36830'
 
 year: '1984'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1984_011.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1984_011.jpg'
 pdf: 'https://drive.google.com/file/d/13P5VROw78mGwZzTyp-6xtSBGpKtaU06g'
 zoobank: ''
 doi: ''

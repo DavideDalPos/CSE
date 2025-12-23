@@ -8,7 +8,7 @@ authors:
     last_name: 'Frank'
     affiliation: 'Florida Medical Entomology Laboratory Institute of Food and Agricultural Sciences University of Florida Post Office Box 520, Vero Beach, Florida 32960'
 year: '1981'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1981_001.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1981_001.jpg'
 pdf: 'https://drive.google.com/file/d/1kWKivw4-ljhiLbzKa3bEYybdWYIg7UPi'
 zoobank: ''
 doi: ''

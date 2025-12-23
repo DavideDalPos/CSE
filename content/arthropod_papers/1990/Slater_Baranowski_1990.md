@@ -13,7 +13,7 @@ authors:
     affiliation: 'University of Florida Institute of Food and Agricultural Sciences Tropical Research and Education Center Homestead, Florida 33031'
 
 year: '1990'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1990_014.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1990_014.jpg'
 pdf: 'https://drive.google.com/file/d/1NkN0RIfuZQWS2g-0HtsFpfx3k5RuiAHO'
 zoobank: ''
 doi: ''

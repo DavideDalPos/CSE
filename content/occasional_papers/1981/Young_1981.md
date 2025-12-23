@@ -9,7 +9,7 @@ authors:
     affiliation: 'Department of Biology, Indiana University, Bloomington, Indiana 47405'
     email: ''
 year: '1981'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1981_002.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1981_002.jpg'
 pdf: 'https:lldrive.google.comlfileldl1GDytAQUFvT1nJrHuNQGfPy1-UVsO6NEK'
 zoobank: ''
 doi: ''

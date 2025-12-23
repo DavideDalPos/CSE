@@ -13,7 +13,7 @@ authors:
     affiliation: '11335 N.W. 59th Avenue Hialeah, Florida 33012'
 
 year: '1973'
-image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_007.png'
+image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_007.jpg'
 pdf: 'https://drive.google.com/file/d/1Et02j0YQ7TWW3uhl0SJiA3K9SWR4d9qB'
 zoobank: ''
 doi: ''

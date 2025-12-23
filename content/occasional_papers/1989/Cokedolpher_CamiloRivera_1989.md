@@ -13,7 +13,7 @@ authors:
     affiliation: 'Department of Agronomy, Horticulture and Entomology Texas Tech University Lubbock, Texas 79409'
 
 year: '1989'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1989_005.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1989_005.jpg'
 pdf: 'https://drive.google.com/file/d/1qHcfMK4qGlLNq_-4ZuyD__SDW89rZeaM'
 zoobank: ''
 doi: ''

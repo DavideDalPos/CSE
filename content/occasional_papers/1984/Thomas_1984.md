@@ -8,7 +8,7 @@ authors:
     last_name: 'Thomas'
     affiliation: 'Department of Entomology and Nematology Institute of Food and Agricultural Sciences University of Florida 3102 McCarty Hall Gainesville, Florida 32611'
 year: '1989'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1984_003.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1984_003.jpg'
 pdf: 'https://drive.google.com/file/d/1qY2XpQbt0_Akquli8e9iUjXNuEihK9ze'
 zoobank: ''
 doi: ''
