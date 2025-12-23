@@ -12,6 +12,6 @@ year: '1965'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1965_001.jpg'
 pdf: 'https://drive.google.com/file/d/1umIctT5WaspLgPzpfgtwHUNEIoARd1Rs'
 zoobank: ''
-doi: ''
+doi: 'https://doi.org/10.64338/fsca.af.1.4fnk1'
 abstract: ''
 ---

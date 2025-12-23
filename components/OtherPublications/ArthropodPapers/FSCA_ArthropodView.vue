@@ -131,7 +131,7 @@ const isAbstractLong = computed(() => {
   
   <!-- DOI -->
   <div class="flex flex-col">
-    <span class="text-sm font-semibold text-gray-600 uppercase mb-1">DOI</span>
+    <span class="text-md font-semibold text-gray-600 uppercase mb-1">DOI</span>
     <div class="flex items-center justify-between gap-2">
       <a v-if="paper.doi"
          :href="normalizedDoi(paper.doi)"
@@ -155,7 +155,7 @@ const isAbstractLong = computed(() => {
 
   <!-- Zoobank -->
   <div class="flex flex-col">
-    <span class="text-sm font-semibold text-gray-600 uppercase mb-1">Zoobank</span>
+    <span class="text-md font-semibold text-gray-600 uppercase mb-1">Zoobank</span>
     <div class="flex items-center justify-between gap-2">
       <a v-if="paper.zoobank"
          :href="zoobankUrl(paper.zoobank)"

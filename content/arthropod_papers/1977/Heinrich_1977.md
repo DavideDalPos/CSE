@@ -12,6 +12,6 @@ year: '1977'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1977_009.jpg'
 pdf: 'https://drive.google.com/file/d/1dKxGc5sAknsq9lfuPSOrFQ71nKgQcyZi'
 zoobank: ''
-doi: ''
+doi: 'https://doi.org/10.64338/fsca.af.9.s2q56'
 abstract: ''
 ---

@@ -16,6 +16,6 @@ year: '1986'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1986_012.jpg'
 pdf: 'https://drive.google.com/file/d/1ChY1djxNtFuu1CckcCYA2hTkdOBu2Ota'
 zoobank: ''
-doi: ''
+doi: 'https://doi.org/10.64338/fsca.af.12.hpn12'
 abstract: ''
 ---
