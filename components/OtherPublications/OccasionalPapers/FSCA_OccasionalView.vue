@@ -92,14 +92,14 @@ const isAbstractLong = computed(() => {
       </div>
 
       <!-- Two-column layout: Image + DOI/Zoobank/Citations/PDFs -->
-      <div class="flex flex-col md:flex-row gap-6 md:px-8 max-w-7xl bg-gray-100 p-6 rounded-lg border border-gray-300">
+      <div class="flex flex-col md:flex-row gap-6 md:px-8 max-w-7xl p-6 rounded-lg ">
         <!-- Left: Image -->
 <div class="md:w-1/2 flex items-center justify-center">
-  <a v-if="paper.pdf" :href="paper.pdf" target="_blank" class="w-full flex justify-center">
+  <a v-if="paper.pdf" :href="paper.pdf" target="_blank" class=" w-full flex justify-center">
     <img
       v-if="paper.image"
       :src="paper.image"
-      class="rounded shadow-md max-w-lg w-full object-contain cursor-pointer transform transition-transform duration-200 hover:scale-105"
+      class="rounded border shadow-xl max-w-lg w-full object-contain cursor-pointer transform transition-transform duration-200 hover:scale-105"
     />
   </a>
   <img
@@ -112,7 +112,7 @@ const isAbstractLong = computed(() => {
         <!-- Right: Structured column -->
         <div class="md:w-1/2 flex flex-col">
           <!-- Top: DOI & Zoobank -->
-         <div class="bg-white border border-gray-200 rounded-xl shadow-md p-5 max-w-3xl mx-auto space-y-5">
+         <div class="bg-white border border-gray-200 rounded-md shadow-xl p-4 max-w-3xl mx-auto space-y-5">
   
   <!-- DOI -->
   <div class="flex flex-col">
@@ -121,7 +121,7 @@ const isAbstractLong = computed(() => {
       <a v-if="paper.doi"
          :href="normalizedDoi(paper.doi)"
          target="_blank"
-         class="text-novenary text-sm font-medium hover:underline break-words flex-1">
+         class="text-novenary text-md font-medium hover:underline break-words flex-1">
         {{ paper.doi }}
       </a>
       <button v-if="paper.doi" @click="copyToClipboard(paper.doi)" 
@@ -145,7 +145,7 @@ const isAbstractLong = computed(() => {
       <a v-if="paper.zoobank"
          :href="zoobankUrl(paper.zoobank)"
          target="_blank"
-         class="text-novenary text-sm font-medium hover:underline break-words flex-1">
+         class="text-novenary text-md font-medium hover:underline break-words flex-1">
         {{ paper.zoobank }}
       </a>
       <button v-if="paper.zoobank" @click="copyToClipboard(paper.zoobank)" 
@@ -174,7 +174,7 @@ const isAbstractLong = computed(() => {
           <!-- Bottom: PDFs -->
 <div class="flex gap-4 justify-center">
   <a v-if="paper.pdf" :href="paper.pdf" target="_blank"
-     class="px-6 py-3 shadow-lg text-base bg-quaternary text-white rounded-lg hover:bg-tertiary transition">
+     class="px-6 py-3 shadow-lg text-base bg-quaternary/80 border border-quaternary text-white rounded-lg hover:bg-tertiary transition">
     Download PDF
   </a>
   <a v-if="paper.pdfhigh" :href="paper.pdfhigh" target="_blank"
@@ -188,7 +188,7 @@ const isAbstractLong = computed(() => {
 
 <!-- Abstract: After all sections -->
 <div v-if="paper.abstract"
-     class="abstract-container p-6 bg-gray-100 rounded-lg text-gray-700 max-w-5xl mx-auto leading-relaxed text-justify border border-gray-300">
+     class="abstract-container p-6 rounded-lg text-gray-700 max-w-5xl mx-auto leading-relaxed text-justify ">
   <!-- Abstract Title -->
   <h2 class="font-semibold text-center text-3xl mb-4 text-otenary">Abstract</h2>
 

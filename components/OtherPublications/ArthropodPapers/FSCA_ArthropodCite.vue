@@ -1,5 +1,5 @@
 <template>
-  <div class="border border-gray-400 rounded-lg shadow-md max-w-[420px] mx-auto overflow-hidden relative">
+  <div class="border border-gray-400 rounded-lg shadow-xl max-w-[430px] mx-auto overflow-hidden relative">
     <!-- Header with copy icon -->
     <div class="bg-primary/90 px-4 py-2 flex justify-between items-center">
       <h3 class=" text-gray-100 text-lg ml-35">How to cite</h3>
@@ -27,17 +27,20 @@
     </div>
 
     <!-- Citation Body -->
-    <div class="px-4 py-4 text-gray-700 bg-white text-sm leading-relaxed space-y-2">
-      <div v-html="formattedCitation" class="break-words"></div>
+<!-- Citation Body -->
+<div class="px-4 py-4 text-gray-700 bg-white text-sm text-left leading-relaxed">
+  <span v-html="formattedCitation" class="break-words"></span>
+  &nbsp;
 
-      <!-- DOI link if available -->
-      <div v-if="props.publication.doi" class="mt-2 text-gray-600 text-xs hover:underline">
-        DOI: 
-        <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`" target="_blank" class="text-gray-700 hover:text-gray-900">
-          {{ props.publication.doi }}
-        </a>
-      </div>
-    </div>
+  <!-- DOI link if available -->
+  <span v-if="props.publication.doi" class="ml-1 underline text-novenary hover:text-novenary/40">
+    <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`" target="_blank">
+      {{ props.publication.doi }}
+    </a>
+  </span>
+</div>
+
+
   </div>
 </template>
 

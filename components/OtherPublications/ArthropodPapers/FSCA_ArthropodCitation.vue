@@ -6,7 +6,7 @@
         <button
           @click="toggleDropdown"
           type="button"
-          class="inline-flex justify-center items-center rounded-md bg-white border border-gray-400 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-0 transition" 
+          class="inline-flex justify-center items-center rounded-md bg-white border border-gray-400 px-4 py-2 text-sm font-medium text-gray-700 shadow-xl hover:bg-gray-100 focus:outline-none focus:ring-0 transition" 
           aria-haspopup="true"
           :aria-expanded="open.toString()"
         >
