@@ -1,5 +1,7 @@
 <template>
-  <FSCA_ArthropodView v-if="publication" :publication="publication" />
+  <FSCA_ArthropodView v-if="publication"
+  :key="route.params.slug" 
+  :publication="publication" />
 </template>
 
 <script setup>
@@ -8,17 +10,13 @@ import FSCA_ArthropodView from '~/components/OtherPublications/ArthropodPapers/F
 
 const route = useRoute()
 
-const { data: publication } = await useAsyncData(
-  () => `arthropod-paper-${route.params.slug}`,  // unique key
-  () => queryContent(
+// 🔹 Mimic insecta_mundi query: pass segments directly
+const { data: publication } = await useAsyncData(() =>
+  queryContent(
     'arthropod_papers',
     route.params.year,
     route.params.slug
-  ).findOne(),
-  {
-    watch: [() => route.params.slug]   // ⚡ refetch when slug changes
-  }
+  ).findOne()
 )
-
 </script>
 
