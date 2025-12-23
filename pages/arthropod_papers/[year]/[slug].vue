@@ -1,20 +1,17 @@
-<template>
-  <FSCA_ArthropodView v-if="publication" :publication="publication" />
-</template>
-
 <script setup>
 import { useRoute } from 'vue-router';
 import FSCA_ArthropodView from '~/components/OtherPublications/ArthropodPapers/FSCA_ArthropodView.vue';
 
 const route = useRoute()
 
-// 🔹 Mimic insecta_mundi query: pass segments directly
-const { data: publication } = await queryContent(() =>
-  queryContent(
-    'arthropod_papers',
-    route.params.year,
-    route.params.slug
-  ).findOne()
-)
+// Directly fetch publication (like insecta_mundi)
+const publication = await queryContent(
+  'arthropod_papers',
+  route.params.year,
+  route.params.slug
+).findOne()
 </script>
 
+<template>
+  <FSCA_ArthropodView :publication="publication" />
+</template>
