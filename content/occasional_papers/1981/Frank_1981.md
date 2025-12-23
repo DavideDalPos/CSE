@@ -1,5 +1,5 @@
 ---
-title: 'A revision of the New World species of the genus <i>Neobisnius</i> Ganglbauer (Coleoptera: Staphylinidae)'
+title: 'A Revision of the New World Species of the Genus <i>Neobisnius</i> Ganglbauer (Coleoptera: Staphylinidae)'
 journal: 'Occasional Papers of the Florida State Collection of Arthropods'
 volume: '1'
 pagination: '1-60'

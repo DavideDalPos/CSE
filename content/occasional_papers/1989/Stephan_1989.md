@@ -1,5 +1,5 @@
 ---
-title: 'The Bothrideridae and Colydiidae of America north of Mexico (Coleoptera: Clavicornia and Heteromera)'
+title: 'The Bothrideridae and Colydiidae of America North of Mexico (Coleoptera: Clavicornia and Heteromera)'
 journal: 'Occasional Papers of the Florida State Collection of Arthropods'
 volume: '6'
 pagination: '1-65'

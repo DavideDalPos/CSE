@@ -1,5 +1,5 @@
 ---
-title: 'A revision of the New World species of <i>Placonotus</i> Macleay (Coleoptera: Cucujidae: Laemophloeinae)'
+title: 'A Revision of the New World Species of <i>Placonotus</i> Macleay (Coleoptera: Cucujidae: Laemophloeinae)'
 journal: 'Occasional Papers of the Florida State Collection of Arthropods'
 volume: '3'
 pagination: '1-28'

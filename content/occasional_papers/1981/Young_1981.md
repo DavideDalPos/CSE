@@ -1,5 +1,5 @@
 ---
-title: 'Predacious water beetles of the genus <i>Desmopachria</i>: The <i>convexa-grana</i> Group (Coleoptera: Dytiscidae)'
+title: 'Predacious Water Beetles of the Genus <i>Desmopachria</i>: The <i>convexa-grana</i> Group (Coleoptera: Dytiscidae)'
 journal: 'Occasional Papers of the Florida State Collection of Arthropods'
 volume: '2'
 pagination: '1-11'

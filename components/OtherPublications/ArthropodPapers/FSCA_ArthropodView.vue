@@ -4,8 +4,8 @@ import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 
 // Citation components
-import FSCA_OccasionalCitation from './FSCA_OccasionalCitation.vue'
-import FSCA_OccasionalCite from './FSCA_OccasionalCite.vue'
+import FSCA_ArthropodCitation from './FSCA_ArthropodCitation.vue'
+import FSCA_ArthropodCite from './FSCA_ArthropodCite.vue'
 
 const props = defineProps({
   publication: {
@@ -20,7 +20,7 @@ const router = useRouter()
 function goBack() {
   if (import.meta.client) {
     if (window.history.length > 1) router.back()
-    else router.push('/occasional_papers')
+    else router.push('/arthropod_papers')
   }
 }
 
@@ -67,13 +67,26 @@ const isAbstractLong = computed(() => {
       </p>
 
       <!-- Volume & Year -->
-      <div class="flex justify-center mt-2">
-        <span class="px-3 py-1 rounded-full bg-gray-200 text-gray-600 font-semibold text-sm">
-          <span v-if="paper.volume">Volume {{ paper.volume }}</span>
-          <span v-if="paper.volume && paper.year"> | </span>
-          <span v-if="paper.year">{{ paper.year }}</span>
-        </span>
-      </div>
+<div class="flex justify-center mt-2">
+  <span class="px-3 py-1 rounded-full bg-gray-200 text-gray-600 font-semibold text-sm">
+
+    <span v-if="paper.volume">
+      Volume {{ paper.volume }}
+    </span>
+
+    <span v-if="paper.volume && paper.year"> | </span>
+
+    <span v-if="paper.year">
+      {{ paper.year }} <span v-if="paper.yearrevised && paper.year"> (original) </span>
+      <span v-if="paper.yearrevised && paper.year"> | </span>
+      <span v-if="paper.yearrevised">
+        {{ paper.yearrevised }} (revised)
+      </span>
+    </span>
+
+  </span>
+</div>
+
 
       <!-- Authors -->
       <div class="flex flex-col items-center gap-2 text-gray-700">
@@ -93,7 +106,7 @@ const isAbstractLong = computed(() => {
 
       <!-- Two-column layout: Image + DOI/Zoobank/Citations/PDFs -->
       <div class="flex flex-col md:flex-row gap-6 md:px-8 max-w-7xl bg-gray-100 p-6 rounded-lg border border-gray-300">
-        <!-- Left: Image -->
+<!-- Left: Image -->
 <div class="md:w-1/2 flex items-center justify-center">
   <a v-if="paper.pdf" :href="paper.pdf" target="_blank" class="w-full flex justify-center">
     <img
@@ -108,6 +121,8 @@ const isAbstractLong = computed(() => {
     class="rounded shadow-md max-w-lg w-full object-contain"
   />
 </div>
+
+
 
         <!-- Right: Structured column -->
         <div class="md:w-1/2 flex flex-col">
@@ -167,8 +182,8 @@ const isAbstractLong = computed(() => {
 
           <!-- Center: Citations -->
           <div class="flex-1 flex flex-col items-center justify-center gap-4 py-6">
-            <FSCA_OccasionalCite :publication="paper" />
-            <FSCA_OccasionalCitation :publication="paper" />
+            <FSCA_ArthropodCite :publication="paper" />
+            <FSCA_ArthropodCitation :publication="paper" />
           </div>
 
           <!-- Bottom: PDFs -->

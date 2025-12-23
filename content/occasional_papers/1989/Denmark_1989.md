@@ -1,5 +1,5 @@
 ---
-title: 'A Revision of the genus <i>Amblyseius</i> Berlese, 1914 (Acari: Phytoseiidae)'
+title: 'A Revision of the Genus <i>Amblyseius</i> Berlese, 1914 (Acari: Phytoseiidae)'
 journal: 'Occasional Papers of the Florida State Collection of Arthropods'
 volume: '4'
 pagination: '1-149'

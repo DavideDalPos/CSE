@@ -1,5 +1,5 @@
 ---
-title: 'Annotated bibliography to the Harvestmen of the West Indies (Arachnida: Opiliones)'
+title: 'Annotated Bibliography to the Harvestmen of the West Indies (Arachnida: Opiliones)'
 journal: 'Occasional Papers of the Florida State Collection of Arthropods'
 volume: '5'
 pagination: '1-20'
