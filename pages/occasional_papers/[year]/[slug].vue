@@ -8,13 +8,10 @@ import FSCA_OccasionalView from '~/components/OtherPublications/OccasionalPapers
 
 const route = useRoute()
 
-// 🔹 Mimic insecta_mundi query: pass segments directly
-const { data: publication } = await useAsyncData(() =>
-  queryContent(
-    'occasional_papers',
-    route.params.year,
-    route.params.slug
-  ).findOne()
-)
+// 🔹 Directly fetch publication (no useAsyncData)
+const publication = await queryContent(
+  'occasional_papers',
+  route.params.year,
+  route.params.slug
+).findOne()
 </script>
-
