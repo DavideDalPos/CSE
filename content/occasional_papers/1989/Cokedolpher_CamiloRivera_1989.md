@@ -16,6 +16,6 @@ year: '1989'
 image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1989_005.jpg'
 pdf: 'https://drive.google.com/file/d/1qHcfMK4qGlLNq_-4ZuyD__SDW89rZeaM'
 zoobank: ''
-doi: ''
+doi: 'https://doi.org/10.64338/fsca.op.5.foaxe'
 abstract: ''
 ---
