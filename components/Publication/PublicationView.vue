@@ -61,22 +61,22 @@
               </ul>
             </div>
           </div>
-          <div
-            v-if="publication.doi"
-            class="flex flex-row justify-between my-4 gap-4"
-          >
-            <p>
-              <span class="text-gray-700 font-bold">DOI: </span>
-              <a
-                :href="publication.doi"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
-              >
-                {{ publication.doi }}
-              </a>
-            </p>
-          </div>
+            <div
+              v-if="publication.doi"
+              class="flex flex-row justify-between my-4 gap-4"
+            >
+              <p>
+                <span class="text-gray-700 font-bold">DOI: </span>
+                <a
+                  :href="publication.doi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-novenary hover:text-quaternary hover:underline cursor-pointer"
+                >
+                  {{ publication.doi }}
+                </a>
+              </p>
+            </div>
 
           <div
             v-if="publication.zoobank"
@@ -359,21 +359,49 @@
               }}</span>
             </div>
           </div>
-          <div
-            class="border px-4 rounded border-primary/80 bg-white shadow max-w-[300px]"
-          >
-            <h3
-              class="text-lg text-white bg-primary px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2"
-            >
-              How to cite
-            </h3>
-            <div class="mb-2">
-              <PublicationCite
-                class="text-sm text-black/80 mt-2"
-                :publication="publication"
-              />
-            </div>
-          </div>
+<div
+  class="border px-4 rounded border-primary/80 bg-white shadow max-w-[300px]"
+>
+  <!-- HEADER: text + copy icon -->
+  <div
+    class="bg-primary px-4 w-[calc(100%+2rem)] -mx-4 border-primary py-1 mb-2 flex items-center"
+  >
+    <h3 class="text-lg text-white">
+      How to cite
+    </h3>
+
+    <div class="ml-auto relative">
+      <button
+        @click="copyCitation"
+        title="Copy citation"
+        class="p-1 rounded hover:bg-white/20 transition group"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+           class="w-5 h-5 stroke-white group-hover:stroke-gray-700 transition">
+        <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/>
+      </svg>
+      </button>
+
+      <div
+        v-show="copied"
+        class="absolute -bottom-6 right-0 bg-gray-600 text-white text-xs px-3 py-1.5 rounded whitespace-nowrap"
+      >
+        Citation Copied!
+      </div>
+    </div>
+  </div>
+
+  <!-- THIS STAYS EXACTLY HERE -->
+<div class="mb-2" ref="citationRef">
+  <PublicationCite
+    class="text-sm text-black/80 mt-2"
+    :publication="publication"
+  />
+</div>
+
+</div>
+
             <div>
               <PublicationCitationDowload
                 class="text-sm text-black/80"
@@ -396,6 +424,7 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import PublicationCitationDowload from './PublicationCitationDowload.vue'
 
@@ -407,6 +436,9 @@ defineProps({
 })
 
 const router = useRouter()
+
+const citationRef = ref(null)
+const copied = ref(false)
 
 const zoobankUrl = (lsid) => {
   const parts = lsid.split(':')
@@ -431,6 +463,19 @@ function normalizedDoi(doi) {
   }
 
   return `https://doi.org/${clean}`
+}
+
+function copyCitation() {
+  if (!citationRef.value) return
+
+  const text = citationRef.value.innerText.trim()
+
+  navigator.clipboard.writeText(text).then(() => {
+    copied.value = true
+    setTimeout(() => {
+      copied.value = false
+    }, 1500)
+  })
 }
 
 function goBack() {
