@@ -66,6 +66,18 @@
 </p>
 
 
+<p class="text-sm">
+  <span class="text-gray-600">DOI: </span>
+  <a
+    :href="normalizedDoi(book.doi)"
+    class="text-novenary hover:underline"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {{ book.doi }}
+  </a>
+</p>
+
             <!-- PDF Buttons -->
             <div class="flex space-x-2">
               <!-- Regular PDF -->
@@ -164,6 +176,13 @@ const { data } = await useAsyncData('fsca-occasional', () =>
     .find()
 )
 
+function normalizedDoi(doi) {
+  if (!doi) return ""
+  const clean = doi.replace(/^doi:\s*/i, "").trim()
+  return clean.startsWith("http://") || clean.startsWith("https://")
+    ? clean
+    : `https://doi.org/${clean}`
+}
 
 
 function getInitials(name) {

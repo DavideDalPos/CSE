@@ -9,7 +9,7 @@ authors:
     affiliation: 'Florida State Collection of Arthropods FDACS, Division of Plant Industry Bureau of Entomology, Nematology, and Plant Pathology P. O. Box 147100, 1911 SW 34th Street Gainesville, Florida 32614-7100 USA'
     email: ''
 year: '2004'
-image: '/images/otherpubs/FSCA_Occasional/OPFSCA_2004_011.png'
+image: '/images/otherpubs/FSCA_Occasional/OPFSCA_2004_011.jpg'
 pdf: 'https://drive.google.com/file/d/1_2oXn70hYbJwf7Zg50vX0-MXECIo2tR0'
 zoobank: ''
 doi: 'https://doi.org/10.64338/fsca.op.11.marpx'

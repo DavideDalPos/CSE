@@ -64,6 +64,20 @@
   {{ formatAuthor(book.authors) }}
 </p>
 
+<p class="text-sm">
+  <span class="text-gray-600">DOI: </span>
+  <a
+    :href="normalizedDoi(book.doi)"
+    class="text-novenary hover:underline"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {{ book.doi }}
+  </a>
+</p>
+
+
+
 
             <!-- PDF Buttons -->
             <div class="flex space-x-2">
@@ -180,6 +194,13 @@ function formatAuthor(authors) {
     .join('; ')
 }
 
+function normalizedDoi(doi) {
+  if (!doi) return ""
+  const clean = doi.replace(/^doi:\s*/i, "").trim()
+  return clean.startsWith("http://") || clean.startsWith("https://")
+    ? clean
+    : `https://doi.org/${clean}`
+}
 
 /* 🔑 Keep the SAME variable name your template expects */
 const books = computed(() => {
