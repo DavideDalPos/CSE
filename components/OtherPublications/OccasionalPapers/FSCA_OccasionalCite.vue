@@ -9,11 +9,23 @@
 
   <!-- Spacer pushes icon to the right -->
   <div class="ml-auto relative">
-    <button 
-      @click="copyCitation" 
-      title="Copy citation" 
-      class="p-1 rounded hover:bg-gray-200 transition group"
-    >
+<button
+  @click="copyCitation"
+  title="Copy citation"
+  class="
+    p-1 rounded
+    bg-transparent
+    transition
+    active:translate-y-[1px]
+    active:scale-95
+    active:bg-gray-300
+    active:shadow-inner
+    hover:bg-gray-200
+    focus:outline-none
+    group
+  "
+>
+
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
            class="w-6 h-6 stroke-white group-hover:stroke-gray-700 transition">
         <path stroke-linecap="round" stroke-linejoin="round" 

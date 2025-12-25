@@ -135,7 +135,18 @@ const isAbstractLong = computed(() => {
 
   <button v-if="paper.doi" 
           @click="copyToClipboard(normalizedDoi(paper.doi), 'DOI copied!')" 
-          class="p-1 rounded hover:bg-gray-100 transition ml-2"
+  class="
+    p-1 rounded
+    bg-transparent
+    transition
+    active:translate-y-[1px]
+    active:scale-95
+    active:bg-gray-300
+    active:shadow-inner
+    hover:bg-gray-200
+    focus:outline-none
+    group
+  "
           title="Copy DOI">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
          stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
@@ -168,7 +179,18 @@ const isAbstractLong = computed(() => {
 
   <button v-if="paper.zoobank" 
           @click="copyToClipboard(paper.zoobank, 'Zoobank LSID copied!')" 
-          class="p-1 rounded hover:bg-gray-100 transition ml-2"
+  class="
+    p-1 rounded
+    bg-transparent
+    transition
+    active:translate-y-[1px]
+    active:scale-95
+    active:bg-gray-300
+    active:shadow-inner
+    hover:bg-gray-200
+    focus:outline-none
+    group
+  "
           title="Copy Zoobank LSID">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
          stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
