@@ -11,7 +11,7 @@ authors:
 year: '1981'
 image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1981_002.jpg'
 pdf: 'https:lldrive.google.comlfileldl1GDytAQUFvT1nJrHuNQGfPy1-UVsO6NEK'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:B5C2F88A-193C-4628-8DD3-90A412761AA9'
 doi: 'https://doi.org/10.64338/fsca.op.2.ij51d'
 abstract: 'Four described and 7 new species of the <i>Desmopachria convexa-grana </i>group are characterized and discussed. All are remarkably similar on superficial examination, but the male external genitalia are distinct. All are distinguishable from other members of <i>Desmopachria </i>(s. str.) by the leaf-like spurs on the parameres of the male external genitalia. New species described are <i>aspera </i>(Florida), <i>cenchramis </i>(Florida), <i>defloccata </i>(Texas, Mexico), <i>isthmia </i>(Panama and Canal Zone), <i>laesslei </i>(Jamaica), <i>lewisi </i>(Jamaica), and <i>glabella </i>(Cuba). A key and illustrations of male genitalia are given to aid in identification'
 ---

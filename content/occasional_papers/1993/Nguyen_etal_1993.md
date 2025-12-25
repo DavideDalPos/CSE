@@ -19,7 +19,7 @@ authors:
 year: '1993'
 image: '/images/otherpubs/FSCA_Occasional/OPFSCA_1993_008.jpg'
 pdf: 'https://drive.google.com/file/d/1qQoT5-qtI7QHkHH2DYcG7kjxFZQ9hnd-'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:C3E52BCB-1710-49C7-BB62-0CACF9B942D0'
 doi: 'https://doi.org/10.64338/fsca.op.8.jypjm'
 abstract: ''
 ---
