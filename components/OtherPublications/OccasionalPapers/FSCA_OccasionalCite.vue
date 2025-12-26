@@ -9,9 +9,9 @@
 
   <!-- Spacer pushes icon to the right -->
   <div class="ml-auto relative">
-<button
-  @click="copyCitation"
-  title="Copy citation"
+    <button 
+      @click="copyCitation" 
+      title="Copy citation" 
   class="
     p-1 rounded
     bg-transparent
@@ -25,7 +25,6 @@
     group
   "
 >
-
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
            class="w-6 h-6 stroke-white group-hover:stroke-gray-700 transition">
         <path stroke-linecap="round" stroke-linejoin="round" 
@@ -44,17 +43,16 @@
 
     <!-- Citation Body -->
 <!-- Citation Body -->
-<!-- Citation Body -->
 <div class="px-4 py-4 text-gray-700 bg-white text-sm text-left leading-relaxed">
   <span v-html="formattedCitation" class="break-words"></span>
-  &nbsp;
 
   <!-- DOI link if available -->
-  <span v-if="props.publication.doi" class="ml-1 underline text-novenary hover:text-novenary/40">
-    <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`" target="_blank">
-      {{ props.publication.doi }}
-    </a>
-  </span>
+<span v-if="props.publication.doi" class="underline text-novenary ml-1">
+  <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`">
+    {{ props.publication.doi }}
+  </a>.
+</span>
+
 </div>
 
 
@@ -100,7 +98,7 @@ function copyCitation() {
   let citationText = formattedCitation.value.replace(/<[^>]+>/g, '')
   if (props.publication.doi) {
     const cleanDoi = props.publication.doi.replace(/^doi:\s*/i, '')
-    citationText += ` DOI: https://doi.org/${cleanDoi}`
+    citationText += ` https://doi.org/${cleanDoi}`
   }
 
   navigator.clipboard.writeText(citationText)

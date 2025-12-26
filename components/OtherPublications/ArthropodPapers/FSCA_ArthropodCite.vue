@@ -45,14 +45,14 @@
 <!-- Citation Body -->
 <div class="px-4 py-4 text-gray-700 bg-white text-sm text-left leading-relaxed">
   <span v-html="formattedCitation" class="break-words"></span>
-  &nbsp;
 
   <!-- DOI link if available -->
-  <span v-if="props.publication.doi" class="ml-1 underline text-novenary hover:text-novenary/40">
-    <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`" target="_blank">
-      {{ props.publication.doi }}
-    </a>
-  </span>
+<span v-if="props.publication.doi" class="underline text-novenary ml-1">
+  <a :href="`https://doi.org/${props.publication.doi.replace(/^doi:\s*/i, '')}`">
+    {{ props.publication.doi }}
+  </a>.
+</span>
+
 </div>
 
 
@@ -98,7 +98,7 @@ function copyCitation() {
   let citationText = formattedCitation.value.replace(/<[^>]+>/g, '')
   if (props.publication.doi) {
     const cleanDoi = props.publication.doi.replace(/^doi:\s*/i, '')
-    citationText += ` DOI: https://doi.org/${cleanDoi}`
+    citationText += ` https://doi.org/${cleanDoi}`
   }
 
   navigator.clipboard.writeText(citationText)

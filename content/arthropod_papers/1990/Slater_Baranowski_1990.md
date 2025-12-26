@@ -15,7 +15,7 @@ authors:
 year: '1990'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1990_014.jpg'
 pdf: 'https://drive.google.com/file/d/1NkN0RIfuZQWS2g-0HtsFpfx3k5RuiAHO'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:D5DF9268-A9CD-4EB5-91FE-B781D0F9B3D0'
 doi: 'https://doi.org/10.64338/fsca.af.14.ml2jn'
 abstract: ''
 ---

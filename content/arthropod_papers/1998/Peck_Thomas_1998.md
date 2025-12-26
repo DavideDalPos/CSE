@@ -17,7 +17,7 @@ authors:
 year: '1998'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1998_016.jpg'
 pdf: 'https://drive.google.com/file/d/1mUywdpsl3k9y6-JXU5xBsMb_VNLLruh9'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:EA8E7BFF-E769-4D8F-B074-72D2DFD13B24'
 doi: 'https://doi.org/10.64338/fsca.af.16.1dv2h'
 abstract: 'An annotated list of the species of beetles (Coleoptera) of Florida is presented. It includes 4,675 species, of which 559 are thought to be endemic (restricted to the state); 220 have been accidentally (immigrant) or intentionally introduced to Florida; and 59 are listed based on their occurrence in neighboring states. Known distributions within Florida are listed for each species, as well as its extralimital distribution. Host information is listed where known. This data base can serve as a species information storage system, and an inventory of the diversity of the beetle fauna of Florida. Such a data base can be used in analyses of distributional, evolutionary, and ecological patterns. An annotated list of the twisted-wing insects (Strepsiptera), thought by some to be the sister group to the beetles, is also presented. It lists 11 species for the state, of which two are endemic, and one has been intentionally introduced.'
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Agromyzidae of Florida'
+title: 'Agromyzidae of Florida with a Supplement on Species from the Carribean'
 journal: 'Arthropods of Florida and Neighboring Land Areas'
 volume: '7'
 pagination: '1-205'
@@ -15,7 +15,7 @@ authors:
 year: '1973'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1973_007.jpg'
 pdf: 'https://drive.google.com/file/d/1Et02j0YQ7TWW3uhl0SJiA3K9SWR4d9qB'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:91834675-9FC1-469D-867D-A305A9803DC2'
 doi: 'https://doi.org/10.64338/fsca.af.7.8rju2'
 abstract: ''
 ---

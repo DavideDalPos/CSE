@@ -15,7 +15,7 @@ authors:
 year: '1970'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1970_006.jpg'
 pdf: 'https://drive.google.com/file/d/1uLvAB8gaGSlufPY7rBrXXQaX8c3qE2UY'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:05CA80D6-2B84-4F77-9907-89A2803A0D9C'
 doi: 'https://doi.org/10.64338/fsca.af.6.s3rjg'
 abstract: ''
 ---

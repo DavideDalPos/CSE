@@ -1,5 +1,5 @@
 ---
-title: 'Coreidae of Florida'
+title: 'Coreidae of Florida (Hemiptera: Heteroptera)'
 journal: 'Arthropods of Florida and Neighboring Land Areas'
 volume: '12'
 pagination: '1-82'
@@ -15,7 +15,7 @@ authors:
 year: '1986'
 image: '/images/otherpubs/FSCA_Arthropods/AFNLA_1986_012.jpg'
 pdf: 'https://drive.google.com/file/d/1ChY1djxNtFuu1CckcCYA2hTkdOBu2Ota'
-zoobank: ''
+zoobank: 'urn:lsid:zoobank.org:pub:8BEB8046-F997-4CF1-A14B-120DA9E508D0'
 doi: 'https://doi.org/10.64338/fsca.af.12.hpn12'
 abstract: ''
 ---
