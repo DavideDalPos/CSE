@@ -1,5 +1,5 @@
 ---
-title: 'A taxonomic note on <i>Rhizococcus wangi</i> (Miller and Gimpel, 1996), a replacement name for <i>Rhizococcus rugosus</i> (Wang, 1982) (Hemiptera: Coccomorpha: Eriococcidae).'
+title: 'A taxonomic note on <i>Rhizococcus wangi</i> (Miller and Gimpel, 1996), a replacement name for <i>Rhizococcus rugosus</i> (Wang, 1982) (Hemiptera: Coccomorpha: Eriococcidae)'
 date: '2025-12-19'
 doi: 'https://doi.org/10.64338/im.1165.kc9au'
 journal: Insecta Mundi
