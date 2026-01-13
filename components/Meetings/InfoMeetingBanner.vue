@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const pdfUrl = '/PDF/conference/CSE2026_Program.pdf';
 </script>
 
 <template>
@@ -27,22 +28,30 @@
         Conference Program &amp; Schedule
       </h3>
 
-      <p class="text-gray-700 mb-6 text-justify">
+      <p class="text-gray-700 mb-4 text-justify">
         The full conference schedule, including presentation times, poster sessions,
         and breaks, is available below:
       </p>
 
-      <ul class="list-disc list-inside text-gray-700 mb-8 space-y-3">
-        <li>
-          <a
-            href="https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw"
-            target="_blank"
-            class="internal-link font-semibold hover:underline"
-          >
-            📘 Download the Full Conference Program (PDF)
-          </a>
-        </li>
-      </ul>
+      <!-- Fullscreen button -->
+      <div class="flex justify-center mb-4">
+        <a
+          :href="pdfUrl"
+          target="_blank"
+          class="inline-block bg-primary text-white py-1 px-3 rounded-md hover:bg-primary/70 transition shadow-md"
+        >
+          Dowload the Full Conference Program (PDF)
+        </a>
+      </div>
+
+      <!-- PDF Preview -->
+      <div class="mx-auto w-full max-w-4xl h-[50vh] md:h-[60vh] rounded-xl overflow-hidden shadow-xl border-2 border-primary mb-8">
+        <iframe
+          :src="pdfUrl"
+          class="w-full h-full"
+          frameborder="0"
+        ></iframe>
+      </div>
 
       <!-- Logistics -->
       <h4 class="text-2xl font-semibold text-gray-800 mb-3">
@@ -69,4 +78,9 @@
 </template>
 
 <style scoped>
+/* Optional: subtle internal link style */
+.internal-link {
+  color: #3b82f6; /* Tailwind blue-500 or replace with your color */
+  text-decoration: underline;
+}
 </style>
