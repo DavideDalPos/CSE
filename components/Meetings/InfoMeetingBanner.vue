@@ -35,7 +35,7 @@
       <ul class="list-disc list-inside text-gray-700 mb-8 space-y-3">
         <li>
           <a
-            href="/PDF/conference/CSE2026_Program.pdf"
+            href="https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw"
             target="_blank"
             class="internal-link font-semibold hover:underline"
           >

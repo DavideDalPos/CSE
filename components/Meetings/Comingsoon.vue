@@ -38,7 +38,7 @@
       <!-- Program download -->
       <div class="mt-4">
         <a
-          href="/PDF/conference/CSE2026_Program.pdf"
+          href="https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw"
           target="_blank"
           class="inline-block w-full bg-primary text-white py-2 rounded-md hover:bg-primary/70 transition shadow-lg"
         >
