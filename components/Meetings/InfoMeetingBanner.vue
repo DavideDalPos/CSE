@@ -40,17 +40,16 @@ const pdfUrl = '/PDF/conference/CSE2026_Program.pdf';
           target="_blank"
           class="inline-block bg-primary text-white py-1 px-3 rounded-md hover:bg-primary/70 transition shadow-md"
         >
-          Dowload the Full Conference Program (PDF)
+          Download the Full Conference Program (PDF)
         </a>
       </div>
 
       <!-- PDF Preview -->
       <div class="mx-auto w-full max-w-4xl h-[50vh] md:h-[60vh] rounded-xl overflow-hidden shadow-xl border-2 border-primary mb-8">
-        <iframe
-          :src="pdfUrl"
-          class="w-full h-full"
-          frameborder="0"
-        ></iframe>
+<client-only>
+  <iframe :src="pdfUrl" class="w-full h-full" frameborder="0"></iframe>
+</client-only>
+
       </div>
 
       <!-- Logistics -->

@@ -58,13 +58,16 @@
       </div>
 
       <!-- PDF Preview -->
-      <div class="w-full h-[80vh] rounded-xl overflow-hidden shadow-lg border border-gray-300">
-        <iframe
-          src="/PDF/conference/CSE2026_Program.pdf"
-          class="w-full h-full"
-          frameborder="0"
-        ></iframe>
-      </div>
+<div class="w-full h-[80vh] rounded-xl overflow-hidden shadow-lg border border-gray-300">
+  <client-only>
+    <iframe
+      src="/PDF/conference/CSE2026_Program.pdf"
+      class="w-full h-full"
+      frameborder="0"
+    ></iframe>
+  </client-only>
+</div>
+
     </div>
   </section>
 </template>
