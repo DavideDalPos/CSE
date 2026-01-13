@@ -26,12 +26,12 @@
       <!-- Link to meeting page -->
       <p class="text-gray-500 mb-6">
         For full details, schedule, and logistics,
-<a
-  href="/meetings"
+<NuxtLink
+  to="/meetings"
   class="text-novenary font-semibold hover:text-novenary/70 hover:underline"
 >
   click here
-</a>
+</NuxtLink>
 
       </p>
 
