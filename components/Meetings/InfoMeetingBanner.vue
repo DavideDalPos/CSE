@@ -3,35 +3,33 @@ import { onMounted, ref } from 'vue';
 
 const pdfUrl = '/PDF/conference/CSE2026_Program.pdf';
 
-const conferenceStart = new Date('2026-01-17T09:30:00-05:00'); // 9:30 AM ET
-const conferenceEnd = new Date('2026-01-17T18:30:00-05:00');   // 6:30 PM ET
+// Countdown units
+const countdownDays = ref('0');
+const countdownHours = ref('0');
+const countdownMinutes = ref('0');
+const countdownSeconds = ref('0');
+const statusMessage = ref('Countdown:');
 
-const countdown = ref('');
+// Conference start & end
+const conferenceStart = new Date('2026-01-17T09:30:00-05:00'); // 9:30 AM ET
+const conferenceEnd = new Date('2026-01-17T18:30:00-05:00');
 
 const updateCountdown = () => {
   const now = new Date();
 
   if (now < conferenceStart) {
     const diff = conferenceStart.getTime() - now.getTime();
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-
-    // HTML with colors for numbers vs labels
-countdown.value = `
-  <span class="text-gray-700 font-bold">Countdown:</span>
-  <span class="text-quaternary font-bold">${days}</span> <span class="text-gray-700">days</span>,
-  <span class="text-quaternary font-bold">${hours}</span> <span class="text-gray-700">hours</span>,
-  <span class="text-quaternary font-bold">${minutes}</span> <span class="text-gray-700">minutes</span>,
-  <span class="text-quaternary font-bold">${seconds}</span> <span class="text-gray-700">seconds</span>
-`;
-
-
+    countdownDays.value = Math.floor(diff / (1000 * 60 * 60 * 24)).toString();
+    countdownHours.value = Math.floor((diff / (1000 * 60 * 60)) % 24).toString();
+    countdownMinutes.value = Math.floor((diff / (1000 * 60)) % 60).toString();
+    countdownSeconds.value = Math.floor((diff / 1000) % 60).toString();
+    statusMessage.value = 'Countdown:';
   } else if (now >= conferenceStart && now <= conferenceEnd) {
-    countdown.value = `<span class="text-green-600 font-bold">Ongoing – Ends at 6:30 PM ET</span>`;
+    countdownDays.value = countdownHours.value = countdownMinutes.value = countdownSeconds.value = '';
+    statusMessage.value = 'Ongoing – Enjoy the Conference!';
   } else {
-    countdown.value = `<span class="text-gray-500 font-semibold">Conference Ended</span>`;
+    countdownDays.value = countdownHours.value = countdownMinutes.value = countdownSeconds.value = '';
+    statusMessage.value = 'Conference Ended';
   }
 };
 
@@ -48,8 +46,33 @@ onMounted(() => {
         2026 Center for Systematic Entomology Annual Conference
       </h2>
 
-      <!-- Colored Countdown -->
-      <div class="text-center text-xl mb-6 " v-html="countdown"></div>
+      <!-- Countdown Circles / Status -->
+      <div class="flex justify-center gap-4 mb-6 mt-2">
+        <!-- Show circles if countdown exists -->
+        <template v-if="countdownDays">
+          <div class="flex flex-col items-center border border-gray-400 shadow-lg rounded-full w-20 h-20 justify-center shadow">
+            <span class="text-quaternary font-bold text-xl">{{ countdownDays }}</span>
+            <span class="text-gray-500 text-sm">days</span>
+          </div>
+          <div class="flex flex-col items-center border border-gray-400 shadow-lg rounded-full w-20 h-20 justify-center shadow">
+            <span class="text-quaternary font-bold text-xl">{{ countdownHours }}</span>
+            <span class="text-gray-500 text-sm">hours</span>
+          </div>
+          <div class="flex flex-col items-center border border-gray-400 shadow-lg rounded-full w-20 h-20 justify-center shadow">
+            <span class="text-quaternary font-bold text-xl">{{ countdownMinutes }}</span>
+            <span class="text-gray-500 text-sm">minutes</span>
+          </div>
+          <div class="flex flex-col items-center border border-gray-400 shadow-lg rounded-full w-20 h-20 justify-center shadow">
+            <span class="text-quaternary font-bold text-xl">{{ countdownSeconds }}</span>
+            <span class="text-gray-500 text-sm">seconds</span>
+          </div>
+        </template>
+
+        <!-- Show status message if during/after conference -->
+        <template v-else>
+          <span class="text-quaternary font-bold text-xl">{{ statusMessage }}</span>
+        </template>
+      </div>
 
       <div class="text-lg text-gray-700 leading-relaxed text-center mb-6">
         <p><b>Date:</b> Saturday, January 17, 2026</p>
