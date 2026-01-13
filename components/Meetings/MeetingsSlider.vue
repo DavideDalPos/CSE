@@ -10,8 +10,9 @@
   </template>
   
   <script setup>
-  import people from '~/public/images/meetings/people.jpg'
-import people2 from '~/public/images/meetings/people2.jpg'
+import people from '~/components/VSlider/VSliderMini.vue'
+
+  import people2 from '~/public/images/meetings/people2.jpg'
 import people3 from '~/public/images/meetings/people3.jpg'
 import people4 from '~/public/images/meetings/people4.jpg'
 import poster from '~/public/images/meetings/poster.jpg'
