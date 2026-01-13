@@ -10,7 +10,7 @@ export const meetings = [
     image: "https://drive.google.com/file/d/1efsJc9CcpYgY_fi6KCOk-Dmf78nOppvu/view?usp=sharing",
     secondPdfLink: "https://drive.google.com/file/d/1kRVtM43AZ6hYJq-iMYANoGjSLYLwECx2/view?usp=sharing",
     video: "https://youtu.be/nGjf70hOgwE",
-    isNew: true
+    isNew: false
   },
       {
     year: 2024,
