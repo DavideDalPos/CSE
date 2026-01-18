@@ -1,4 +1,5 @@
 export const formerBoardMembers = [
+    { period: '2023–2025', members: ['Davide Dal Pos', 'Kyle Schnepp', 'Paul Skelley', 'Erin Powell', 'Oliver Keller (resigned 2023)'] },
     { period: '2021–2023', members: ['Mark Rothschild', 'Gary J. Steck', 'Alessandra Pandolfi', 'David Serrano'] },
     { period: '2020–2022', members: ['Kyle Schnepp', 'John Leavengood', 'Davide Dal Pos', 'Oliver Keller'] },
     { period: '2019–2021', members: ['Felipe Soto-Adames', 'Krystal Ashman', 'David Plotkin', 'Julieta Brambila'] },

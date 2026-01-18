@@ -38,7 +38,7 @@
         class="bg-gray-100 border-l-4 border-[#7ca2a1] p-8 rounded-lg max-w-3xl mx-auto shadow-lg transform transition-transform hover:scale-105"
       >
         <div class="text-3xl font-semibold text-novenary mb-3">
-          2026 Conference Date Coming Soon
+          2027 Conference Date Coming Soon
         </div>
         <div class="text-lg text-[#5f7a79] mb-6">
           We're excited to announce that more details are coming soon. Stay

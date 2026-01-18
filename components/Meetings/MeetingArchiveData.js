@@ -1,6 +1,17 @@
 // MeetingArchiveData.js
 
 export const meetings = [
+    {
+    year: 2026,
+    title: "CSE Annual Conference",
+    organizer: "Alessandra Pandolfi",
+    date: "January 17, 2026",
+    pdfLink: "https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw/view?usp=sharing",
+    image: "",
+    secondPdfLink: "",
+    video: "",
+    isNew: true
+  },
   {
     year: 2025,
     title: "CSE Annual Conference",

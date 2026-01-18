@@ -159,9 +159,9 @@
 </template>
 
 <script setup>
-import IconGitHub from '../Icon/IconGitHub.vue'
-import IconX from '../Icon/IconX.vue'
-import IconYouTube from '../Icon/IconYouTube.vue'
+import IconGitHub from '../Icon/IconGitHub.vue';
+import IconX from '../Icon/IconX.vue';
+import IconYouTube from '../Icon/IconYouTube.vue';
 
 const menu = [
   {
@@ -216,7 +216,7 @@ const menu = [
     label: 'Annual Conference',
     submenu: [
       { label: 'CSE Conference', link: '/meetings' },
-      { label: '2026 Conference', link: '/comingsoon' },
+      { label: '2027 Conference', link: '/conference' },
       { label: 'Conference Archive', link: '/meetings#meetingarchive' },
       { label: 'Poster Archive', link: '/meetings#posterarchive' }
     ]

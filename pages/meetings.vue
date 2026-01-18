@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ArchivePoster from '~/components/Meetings/ArchivePoster.vue';
-import InfoMeetingBanner from '~/components/Meetings/InfoMeetingBanner.vue';
+import ComingSoonBanner from '~/components/Meetings/ComingSoonBanner.vue';
 import IntroMeeting from '~/components/Meetings/IntroMeeting.vue';
 import MeetingsSlider from '~/components/Meetings/MeetingsSlider.vue';
 import SectionArchive from '~/components/Meetings/SectionArchive.vue';
@@ -13,7 +13,7 @@ import TitleMeeting from '~/components/Meetings/TitleMeeting.vue';
     <section class="bg-foreground">
       <TitleMeeting />
       <IntroMeeting />
-      <InfoMeetingBanner />
+      <ComingSoonBanner />
     </section>
     <section
       class="bg-gradient-to-br from-gray-100 to-tertiary/30 border-t border-b border-yellow-600"
