@@ -36,7 +36,7 @@
         <!-- Buttons -->
         <div class="flex flex-col md:flex-row gap-4 justify-center">
           <a
-            href="/PDF/conference/CSE2026_Program.pdf"
+            href="https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw/view?usp=sharing"
             target="_blank"
             class="inline-block bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/70 transition shadow-lg"
           >

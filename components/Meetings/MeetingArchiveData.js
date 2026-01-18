@@ -6,9 +6,9 @@ export const meetings = [
     title: "CSE Annual Conference",
     organizer: "Alessandra Pandolfi",
     date: "January 17, 2026",
-    pdfLink: "https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw/view?usp=sharing",
+    pdfLink: "https://drive.google.com/file/d/1AJFS-lj1x4CXMp9JkTi7ztZbTLeDFR44/view?usp=sharing",
     image: "",
-    secondPdfLink: "",
+    secondPdfLink: "https://drive.google.com/file/d/1QDAIaEGeWXvcSgvlWKyrE1JHYhP59kBw/view?usp=sharing",
     video: "",
     isNew: true
   },
