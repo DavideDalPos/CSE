@@ -1,9 +1,9 @@
 ---
 title: ''
 date: ''
-doi: 'https://doi.org/10.64338/im.1168.5stu4'
+doi: 'https://doi.org/10.64338/im.1170.vr6f5'
 journal: Insecta Mundi
-issue: '1168'
+issue: '1170'
 pagination: ''
 zoobank: ''
 authors:
