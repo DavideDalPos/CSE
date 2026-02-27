@@ -8,7 +8,7 @@ pagination: '1-6'
 zoobank: 'urn:lsid:zoobank.org:pub:480B168A-F8B9-4B52-AC75-AEDB0306F03A'
 authors:
   - first_name: 'Claudia A.'
-    last_name: 'Median-Uribe'
+    last_name: 'Medina-Uribe'
     affiliation: 'Center for Nature-Based Solutions, Instituto de Investigación de Recursos Biológicos Alexander von Humboldt Villa de Leyva Boyacá, Colombi'
     email: 'camedina@humboldt.org.co'
     orcid: 'https://orcid.org/0000-0002-7714-9220'
