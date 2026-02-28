@@ -19,7 +19,7 @@ authors:
     orcid: 'https://orcid.org/0009-0008-2207-9991'
 
   - first_name: 'Steven'
-    last_name: 'Colling'
+    last_name: 'Collins'
     affiliation: '324 W. Hornbeam Drive, Longwood, FL 32779'
     email: 'scollins@mailbox.org'
 
