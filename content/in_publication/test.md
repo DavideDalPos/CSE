@@ -7,6 +7,11 @@ issue: ''
 pagination: ''
 zoobank: ''
 authors:
+  - first_name: ''
+    last_name: ''
+    affiliation: ''
+    email: ''
+    orcid: ''
 
 
 
@@ -17,9 +22,10 @@ revised: ''
 supplementary: ''
 
 keywords: 
+  - 
 
 categories:
-
+  - 
   
 references:
 
