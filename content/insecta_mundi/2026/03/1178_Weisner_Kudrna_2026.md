@@ -1,5 +1,5 @@
 ---
-title: 'Discovery of the male of <i>Therates ottomerkli</i> Wiesner, 1999, a note on <i>Therates yunnanensis</i> Wiesner and Xiong, 2024, and keys to the <i>chennelli</i> group and to the tuberosus group of the genus <i>Therates</i> Latreille, 1816 (Coleoptera: Cicindelidae)'
+title: 'Discovery of the male of <i>Therates ottomerkli</i> Wiesner, 1999, a note on <i>Therates yunnanensis</i> Wiesner and Xiong, 2024, and keys to the <i>chennelli</i> group and to the <i>tuberosus</i> group of the genus <i>Therates</i> Latreille, 1816 (Coleoptera: Cicindelidae)'
 date: '2026-03-27'
 doi: 'https://doi.org/10.64338/im.1178.dtstg'
 journal: Insecta Mundi
