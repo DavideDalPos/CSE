@@ -87,10 +87,11 @@ onMounted(async () => {
     }).format(dateObj)
 
     // Set the monthYear after dateObj is defined
-    monthYear.value = dateObj.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long'
-    })
+monthYear.value = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  timeZone: 'UTC'
+}).format(dateObj)
 
     // Calculate if within 14 days
     const now = new Date()
