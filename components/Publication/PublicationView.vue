@@ -112,6 +112,18 @@
             </div>
           </template>
 
+          <template v-if="publication.comment">
+  <div class="mt-4 mb-4 p-4 border-l-4 border-amber-500 bg-amber-50 rounded">
+    <h3 class="text-xl font-semibold text-amber-700 mb-1">
+      Note
+    </h3>
+    <p
+      v-html="publication.comment"
+      class="text-justify text-gray-800"
+    />
+  </div>
+</template>
+
           <div class="prose w-full max-w-[65rem]">
             <template v-if="publication.abstract">
               <h3 class="text-2xl">Abstract</h3>
