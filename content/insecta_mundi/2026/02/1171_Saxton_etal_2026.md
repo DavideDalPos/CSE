@@ -26,9 +26,9 @@ authors:
 
 comment: 'The penultimate line on page 10 of the revised pdf has been corrected to say that <i>Tremembasis</i> is a "Replacement name for <i>Microbasis</i> Martins-Neto, 1998". This revision (created in May 2026) is not an official Insecta Mundi publication; future references to this text should cite the original manuscript published in February 2026.'
 
-download: 'https://drive.google.com/file/d/1rTdhuLLs8XDFB3CS366_OU7U4DdP1AtO'
+download: 'https://drive.google.com/file/d/1TG5zE7B8BKWbfbC0XMSv71GviQel4E8U'
 
-revised: ''
+revised: 'https://drive.google.com/file/d/1rTdhuLLs8XDFB3CS366_OU7U4DdP1AtO/view?usp=sharing'
 
 supplementary: ''
 

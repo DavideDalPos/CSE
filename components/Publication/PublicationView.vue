@@ -278,7 +278,7 @@
                 Revised Manuscript
               </a>
             </div>
-<p class="text-sm text-gray-600 text-center mt-4 max-w-md mx-auto">
+<p  v-if="publication.linkedissueurl" class="text-sm text-gray-600 text-center mt-4 max-w-md mx-auto">
   See related <b>erratum</b> in publication
   <NuxtLink
     :to="publication.linkedissueurl"
