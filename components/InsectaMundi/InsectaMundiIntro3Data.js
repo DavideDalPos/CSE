@@ -54,6 +54,7 @@ export const reviewEditors = ref([
   'Gary Steck (Florida Department of Agriculture and Consumer Services, USA)',
   'Elijah Talamas* (Florida Department of Agriculture and Consumer Services, USA)',
   'Kevin Williams* (California Department of Food and Agriculture, USA)',
+  'Md Jahir Rayhan (University of Florida, USA)'
 ]);
 
 export const layoutEditors = ref('Robert Forsyth (Royal British Columbia Museum, Canada)');
