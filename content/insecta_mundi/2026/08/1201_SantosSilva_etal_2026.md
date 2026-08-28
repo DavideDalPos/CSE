@@ -47,6 +47,6 @@ categories:
 references:
 
 
-abstract: 'Tirty-fve new records of Cerambycidae and Disteniidae (Coleoptera) for Brazil are provided with notes, of which 32 are new state records and three are new country records. In Cerambycidae, two new species of <i>Scleronotus</i> White, 1855 are described from Brazil: <i>S. ritae</i> Santos-Silva, Nascimento and Flechtmann, new species; and <i>S. tanabeae</i> Santos-Silva, Nascimento and Flechtmann, new species. Te problematic identifcation of <i>S. stupidus</i> Lacordaire, 1872 is discussed. <i>Scleronotus anthribiformis</i> Aurivillius, 1916 is synonymized with <i>S. scabrosus</i> Tomson, 1861.'
+abstract: 'Thirty-fve new records of Cerambycidae and Disteniidae (Coleoptera) for Brazil are provided with notes, of which 32 are new state records and three are new country records. In Cerambycidae, two new species of <i>Scleronotus</i> White, 1855 are described from Brazil: <i>S. ritae</i> Santos-Silva, Nascimento and Flechtmann, new species; and <i>S. tanabeae</i> Santos-Silva, Nascimento and Flechtmann, new species. The problematic identifcation of <i>S. stupidus</i> Lacordaire, 1872 is discussed. <i>Scleronotus anthribiformis</i> Aurivillius, 1916 is synonymized with <i>S. scabrosus</i> Thomson, 1861.'
 
 ---
