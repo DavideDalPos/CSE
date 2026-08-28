@@ -1,11 +1,11 @@
 ---
 title: 'Brazilian Cerambycoidea (Coleoptera): new species, synonymy, notes, and new geographical records'
-date: ''
+date: '2026-08-28'
 doi: 'https://doi.org/10.64338/im.1201.930a6'
 journal: Insecta Mundi
 issue: '1201'
-pagination: ''
-zoobank: ''
+pagination: '1-35'
+zoobank: 'urn:lsid:zoobank.org:pub:D5CA35DC-967C-494B-A011-664653989B98'
 authors:
   - first_name: 'Antonio'
     last_name: 'Santos-Silva'
@@ -28,21 +28,25 @@ authors:
 
 
 
-download: ''
+download: 'https://drive.google.com/file/d/1Ufapo9_b_9B--uIYK5Ctjp_WzK1I17t8'
 
 revised: ''
 
 supplementary: ''
 
 keywords: 
-  - 
+  - America
+  - longhorn beetles
+  - Neotropical region
+  - taxonomy
 
 categories:
-  - 
+  - Coleoptera
+  - Cerambycidae
   
 references:
 
 
-abstract: ''
+abstract: 'Tirty-fve new records of Cerambycidae and Disteniidae (Coleoptera) for Brazil are provided with notes, of which 32 are new state records and three are new country records. In Cerambycidae, two new species of <i>Scleronotus</i> White, 1855 are described from Brazil: <i>S. ritae</i> Santos-Silva, Nascimento and Flechtmann, new species; and <i>S. tanabeae</i> Santos-Silva, Nascimento and Flechtmann, new species. Te problematic identifcation of <i>S. stupidus</i> Lacordaire, 1872 is discussed. <i>Scleronotus anthribiformis</i> Aurivillius, 1916 is synonymized with <i>S. scabrosus</i> Tomson, 1861.'
 
 ---
