@@ -1,6 +1,6 @@
 ---
 title: 'A new species of pasture mealybug, <i>Heliococcus novovillei</i> Powell and Miller (Hemiptera: Pseudococcidae), is responsible for damage of pasture and sugarcane in North America, but <i>Heliococcus summervillei</i> Brookes is here, too'
-date: ''
+date: '2026-09-01'
 doi: 'https://doi.org/10.64338/im.1205.w93uh'
 journal: Insecta Mundi
 issue: '1205'
