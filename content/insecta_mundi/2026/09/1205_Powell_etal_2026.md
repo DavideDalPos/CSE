@@ -4,7 +4,7 @@ date: '2026-09-01'
 doi: 'https://doi.org/10.64338/im.1205.w93uh'
 journal: Insecta Mundi
 issue: '1205'
-pagination: ''
+pagination: '1-27'
 zoobank: 'urn:lsid:zoobank.org:pub:48A8110E-08BE-45E9-BF63-20844AF08BC6'
 authors:
   - first_name: 'Erin C.'
