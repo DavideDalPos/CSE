@@ -83,11 +83,11 @@
           />
         </svg>
         <a
-          :href="supp"
-          target="_blank"
-          rel="noopener"
-          >Suppl. Material {{ index + 1 }}</a
-        >
+          :href="suppUrl(supp)"
+  target="_blank"
+  rel="noopener"
+  >{{ suppShortLabel(supp, index) }}</a
+>
       </div>
     </div>
   </div>
@@ -95,6 +95,21 @@
 
 <script setup>
 import { makeAuthorsLabel } from '~/helpers';
+
+
+function suppUrl(supp) {
+  return typeof supp === 'string' ? supp : supp.url
+}
+
+function suppShortLabel(supp, index) {
+  if (typeof supp === 'string') {
+    return `Suppl. ${index + 1}`
+  }
+  return supp.label
+    .replace(/Supplementary/i, 'Suppl.')
+    .replace(/Figure/i, 'Fig.')
+    .replace(/Table/i, 'Tab.')
+}
 
 const props = defineProps({
   publication: {
