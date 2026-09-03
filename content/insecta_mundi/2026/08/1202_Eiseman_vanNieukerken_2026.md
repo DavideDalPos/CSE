@@ -24,12 +24,15 @@ download: 'https://drive.google.com/file/d/1Eh2TEguYJq7jCSwPkUnEupFcyZrHNqFK'
 
 revised: ''
 
-supplementary: 
- - 'https://drive.google.com/file/d/1W4tAFxQTYbmko9weXcglXciP-a3wbp4m/view?usp=sharing'
- 
- - 'https://docs.google.com/spreadsheets/d/149TedkeFBXinHOi_w79lBQwHfyMFVj79/edit?usp=sharing&ouid=114630757236215114652&rtpof=true&sd=true'
+supplementary:
+  - label: 'Supplementary Figure 1'
+    url: 'https://drive.google.com/file/d/1W4tAFxQTYbmko9weXcglXciP-a3wbp4m/view?usp=sharing'
 
- - 'https://docs.google.com/spreadsheets/d/109M9yEhtPc8_XGF8sLdHbD2VacFEK4FK/edit?usp=sharing&ouid=114630757236215114652&rtpof=true&sd=true'
+  - label: 'Supplementary Table 1'
+    url: 'https://docs.google.com/spreadsheets/d/1nwSZaKDuMD1fWODVYVvYdTL3zxF3ZpJl/edit?usp=sharing&ouid=114630757236215114652&rtpof=true&sd=true'
+
+  - label: 'Supplementary Table 2'
+    url: 'https://docs.google.com/spreadsheets/d/1WwJOxmV6P6_Y_98yu4zeyfERWBZ1luNR/edit?usp=sharing&ouid=114630757236215114652&rtpof=true&sd=true'
 
 keywords: 
   - Grape

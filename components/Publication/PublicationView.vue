@@ -296,36 +296,32 @@
 
 
 
-          <div
-            v-if="publication.supplementary?.length > 0"
-            class="supplementary-section pb-2 mb-2 border-b border-gray-400"
-          >
-            <div
-              v-for="(supp, index) in publication.supplementary"
-              :key="index"
-              class="group bg-primary px-4 py-2 rounded-sm flex text-white items-center justify-center space-x-2 hover:shadow-lg hover:text-senary/80 hover:bg-primary/50 transition-all duration-200 w-max mx-auto mb-3 shadow-sm"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                class="w-5 h-5 group-hover:text-senary/80 transition font-semibold duration-200 text-white"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
-                />
-              </svg>
-              <a
-                :href="supp"
-                rel="noopener"
-                >Suppl. Material {{ index + 1 }}</a
-              >
-            </div>
-          </div>
+<div
+  v-if="publication.supplementary?.length > 0"
+  class="supplementary-section pb-2 mb-2 border-b border-gray-400"
+>
+  <div
+    v-for="(supp, index) in publication.supplementary"
+    :key="index"
+    class="group bg-primary px-4 py-2 rounded-sm flex text-white items-center justify-center space-x-2 hover:shadow-lg hover:text-senary/80 hover:bg-primary/50 transition-all duration-200 w-max mx-auto mb-3 shadow-sm"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      class="w-5 h-5 group-hover:text-senary/80 transition font-semibold duration-200 text-white"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+      />
+    </svg>
+    <a :href="suppUrl(supp)" rel="noopener">{{ suppLabel(supp, index) }}</a>
+  </div>
+</div>
           <div
             v-if="publication.date"
             class="border border-otenary/80 bg-white px-4 rounded shadow max-w-[300px]"
@@ -514,5 +510,15 @@ function goBack() {
       router.push('/insecta_mundi')
     }
   }
+}
+
+function suppUrl(supp) {
+  return typeof supp === 'string' ? supp : supp.url
+}
+
+function suppLabel(supp, index) {
+  return typeof supp === 'string'
+    ? `Suppl. Material ${index + 1}`
+    : supp.label
 }
 </script>
