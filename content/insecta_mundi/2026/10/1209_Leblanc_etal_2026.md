@@ -1,11 +1,11 @@
 ---
 title: 'New state records, annotated checklist, and distribution of <i>Lasioglossum</i> Curtis bees in Idaho (Hymenoptera: Halictidae)'
-date: ''
+date: '2026-10-02'
 doi: 'https://doi.org/10.64338/im.1209.d9ffp'
 journal: Insecta Mundi
 issue: '1209'
-pagination: ''
-zoobank: ''
+pagination: '1-34'
+zoobank: 'urn:lsid:zoobank.org:pub:4B7C9B89-BB2C-4F1A-A793-D5552F429D1F'
 authors:
   - first_name: 'Luc'
     last_name: 'Leblanc'
@@ -44,21 +44,26 @@ authors:
     orcid: ''
 
 
-download: ''
+download: 'https://drive.google.com/file/d/1-pml0FUe-1cF6LGwFUvPNvQEZi30hk1i'
 
 revised: ''
 
 supplementary: ''
 
 keywords: 
-  - 
+  - Biodiversity
+  - sweat bees
+  - Pacifc Northwest
+  - pollinators
+  - taxonomy
 
 categories:
-  - 
+  - Hymenoptera
+  - Halictidae
   
 references:
 
 
-abstract: ''
+abstract: 'An annotated checklist of the 62 species of <i>Lasioglossum</i> Curtis (Hymenoptera: Halictidae) bees present in the state of Idaho is provided, including 35 new state records. The checklist is based on label data from 5,252 preserved museum specimens and 75 additional records from published literature. A detailed distribution map and a phenology graph are provided for each species, in addition to floral association records based on field survey data and museum specimen label data.'
 
 ---
