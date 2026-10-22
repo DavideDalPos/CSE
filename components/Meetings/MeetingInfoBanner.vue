@@ -9,7 +9,7 @@
         2026 Center for Systematic Entomology Annual Conference
       </h2>
       <div class="text-lg text-gray-700 leading-relaxed text-center mb-4">
-        <p><b>Date:</b> Saturday, January 17, 2026</p>
+        <p><b>Date:</b> Saturday, January 16, 2027</p>
         <p><b>Time:</b> 9:00 a.m. – 6:00 p.m. ET</p>
         <p><b>Location:</b> Doyle Conner Building, Gainesville, FL</p>
       </div>
@@ -41,7 +41,7 @@
       <h4 class="text-2xl font-semibold text-gray-800 mb-3">Submission Details</h4>
 <p class="text-gray-700 mb-4 text-justify">
   Submit your presentation or poster proposal by 
-  <span class="text-red-800 font-bold animate-pulse">December 15, 2025</span>:
+  <span class="text-red-800 font-bold animate-pulse">December 15, 2026</span>:
 </p>
 
 

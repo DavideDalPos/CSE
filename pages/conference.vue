@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Comingsoon from '~/components/Meetings/Comingsoon.vue';
+import ConferencePage from '~/components/Meetings/ConferencePage.vue';
 
 </script>
 
 <template>
-  <Comingsoon />
+  <ConferencePage />
 </template>

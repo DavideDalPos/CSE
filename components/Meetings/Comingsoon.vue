@@ -40,7 +40,7 @@
             target="_blank"
             class="inline-block bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/70 transition shadow-lg"
           >
-            View 2026 Program (Archive)
+            View 2027 Program (Archive)
           </a>
           <a
             href="mailto:conference@csentomology.com"

@@ -11,8 +11,8 @@ const countdownSeconds = ref('0');
 const statusMessage = ref('Countdown:');
 
 // Conference start & end
-const conferenceStart = new Date('2026-01-17T09:30:00-05:00'); // 9:30 AM ET
-const conferenceEnd = new Date('2026-01-17T18:30:00-05:00');
+const conferenceStart = new Date('2027-01-16T09:30:00-05:00'); // 9:30 AM ET
+const conferenceEnd = new Date('2027-01-16T18:30:00-05:00');
 
 const updateCountdown = () => {
   const now = new Date();
@@ -43,7 +43,7 @@ onMounted(() => {
   <section class="container mx-auto px-12 py-10 -mt-15 -mb-8 font-serif">
     <div class="bg-gray-100 border-l-4 border-primary p-8 rounded-2xl shadow-md mb-10">
       <h2 class="text-4xl font-bold text-novenary mb-4 text-center">
-        2026 Center for Systematic Entomology Annual Conference
+        2027 Center for Systematic Entomology Annual Conference
       </h2>
 
       <!-- Countdown Circles / Status -->
@@ -75,13 +75,13 @@ onMounted(() => {
       </div>
 
       <div class="text-lg text-gray-700 leading-relaxed text-center mb-6">
-        <p><b>Date:</b> Saturday, January 17, 2026</p>
+        <p><b>Date:</b> Saturday, January 16, 2027</p>
         <p><b>Time:</b> 9:30 a.m. – 6:30 p.m. ET</p>
         <p><b>Location:</b> Doyle Conner Building, Gainesville, FL</p>
       </div>
 
       <p class="text-gray-700 text-justify mb-8">
-        The 2026 CSE Annual Conference will be held at the 
+        The 2027 CSE Annual Conference will be held at the 
         <b>Florida State Collection of Arthropods (FSCA)</b>. 
         Attendees will have the opportunity to visit the collection during the meeting.
       </p>
