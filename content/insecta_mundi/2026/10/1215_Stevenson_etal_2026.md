@@ -1,11 +1,11 @@
 ---
 title: 'Discovery of the relapsing fever tick (<i>Ornithodoros turicata americanus</i> Marx) (Acari: Argasidae) in Georgia, USA'
-date: ''
+date: '2026-10-30'
 doi: 'https://doi.org/10.64338/im.1215.yxeok'
 journal: Insecta Mundi
 issue: '1215'
-pagination: ''
-zoobank: ''
+pagination: '1-10'
+zoobank: 'urn:lsid:zoobank.org:pub:A9ED9012-B2C0-4115-8BD6-BD62B002F3FF'
 authors:
   - first_name: 'Dirk J.'
     last_name: 'Stevenson'
@@ -23,7 +23,7 @@ authors:
     email: 'lancejandrew@gmail.com'
 
 
-download: ''
+download: 'https://drive.google.com/file/d/1r0_VGRMaYeZtMYMAWyBVCCaUEXb5ZBIH'
 
 revised: ''
 

@@ -33,8 +33,8 @@ export default {
 
   // ---- When ------------------------------------------------------------------
   date: '2027-01-16', // YYYY-MM-DD — leave '' while the date is not decided
-  start: '09:30', // 24-hour clock, Eastern Time
-  end: '18:30',
+  start: '09:00', // 24-hour clock, Eastern Time
+  end: '18:00',
 
   // ---- Where -----------------------------------------------------------------
   venue: 'Doyle Conner Building',
@@ -61,7 +61,7 @@ export default {
       'Ongoing or upcoming projects',
       'Morphological discussions and taxonomic work on insects and other arthropods'
     ],
-    form: 'https://docs.google.com/forms/d/e/1FAIpQLSeeQTYjJtXy69-M8GzCHQ6Ap9ZcyjIidJ01-ASXcbKkFAYCgQ/viewform?usp=header',
+    form: 'https://docs.google.com/forms/d/e/1FAIpQLSfKvZSAs5MF-igvVGl7OUlpM1pdj0x8Hi7D8GtTqacs7UaI8w/viewform',
     template: '/PDF/conference/CSE_SubmissionForm.docx'
   },
 
