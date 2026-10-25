@@ -75,9 +75,7 @@
     <div class="border-t border-white/10">
       <div class="container mx-auto px-6 py-4 flex flex-col sm:flex-row gap-2 justify-between text-xs text-white/50">
         <span
-          >© 1988–{{ currentYear }} Center for Systematic Entomology, Inc.<template v-if="visits">
-            · {{ visits }} visits</template
-          ></span
+          >© 1988–{{ currentYear }} Center for Systematic Entomology, Inc.</span
         >
         <span>Website by {{ webTeam.map((p) => p.name).join(' & ') }}</span>
       </div>
@@ -86,8 +84,6 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
-import site from '~/data/site'
 import { webTeam } from '~/helpers/people'
 import IconFacebook from '../Icon/IconFacebook.vue'
 import IconX from '../Icon/IconX.vue'
@@ -96,17 +92,6 @@ import IconGitHub from '../Icon/IconGitHub.vue'
 
 const currentYear = new Date().getFullYear()
 
-// Total visits from GoatCounter (only when switched on in data/site.js)
-const visits = ref('')
-onMounted(async () => {
-  if (!site.goatcounter || !site.showVisits) return
-  try {
-    const r = await $fetch(`https://${site.goatcounter}.goatcounter.com/counter/TOTAL.json`)
-    visits.value = r?.count || ''
-  } catch {
-    /* counter not public yet */
-  }
-})
 
 const links = [
   { label: 'Insecta Mundi — latest issue', to: '/insecta_mundi/current' },
