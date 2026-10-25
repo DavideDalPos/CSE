@@ -1,36 +1,25 @@
 <template>
-  <div class="bg-neutral-100 text-neutral-800 text-base text-center py-2 px-4 border-b border-t border-yellow-900 font-serif flex items-center justify-center space-x-2 mb-10">
-    <svg class="w-4 h-4 text-red-800 flex-shrink-0 animate-pulse" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M7.022 1.566a1.5 1.5 0 0 1 1.956 0l5.853 11.667A1.5 1.5 0 0 1 13.55 16H2.45a1.5 1.5 0 0 1-1.282-2.267L7.022 1.566Z"/>
+  <p class="flex items-start gap-2 text-sm text-ink-soft bg-paper border border-rule rounded-lg px-4 py-3">
+    <svg
+      class="w-4 h-4 mt-0.5 shrink-0 text-quaternary"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+        clip-rule="evenodd"
+      />
     </svg>
-
-    <p class="text-sm text-red-800 font-serif">
-      The <strong class="font-semibold">Insecta Mundi</strong> publication list is currently being uploaded.
-      Not all papers are available just yet, but we're diligently working to add the remaining ones soon.
-      Thanks for your patience and understanding!
-    </p>
-
-    <svg class="w-4 h-4 text-red-800 flex-shrink-0 animate-pulse" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M7.022 1.566a1.5 1.5 0 0 1 1.956 0l5.853 11.667A1.5 1.5 0 0 1 13.55 16H2.45a1.5 1.5 0 0 1-1.282-2.267L7.022 1.566Z"/>
-    </svg>
-  </div>
+    <span>
+      The online archive is still growing: earlier volumes of <i>Insecta Mundi</i> are being added. If a paper you
+      need is missing, write to
+      <a
+        href="mailto:insectamundi@gmail.com"
+        class="text-senary underline underline-offset-2"
+        >insectamundi@gmail.com</a
+      >.
+    </span>
+  </p>
 </template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

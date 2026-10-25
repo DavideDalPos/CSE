@@ -1,229 +1,193 @@
 <template>
-  <header>
-    <div
-      class="fixed top-0 w-screen z-50 bg-gray-800 backdrop-blur-xl shadow-xl font-serif"
-    >
-      <div
-        class="container mx-auto h-16 flex justify-between items-center px-6 z-10"
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-rule">
+    <div class="container mx-auto h-16 flex items-center justify-between gap-4 px-4 sm:px-6">
+      <NuxtLink
+        to="/"
+        class="group flex items-center gap-3 min-w-0"
+        aria-label="Center for Systematic Entomology — home"
       >
-        <a
-          href="/"
-          class="flex flex-row items-center gap-2 text-white hover:text-quaternary"
+        <img
+          src="/images/web/cse-logo-96.webp"
+          alt=""
+          width="54"
+          height="48"
+          class="h-9 sm:h-11 w-auto shrink-0 transition-transform duration-200 group-hover:scale-105"
+        />
+        <span class="leading-tight min-w-0">
+          <span class="block font-serif font-semibold text-[0.9rem] sm:text-[1.05rem] text-ink">Center for Systematic Entomology</span>
+          <span class="hidden sm:block text-[0.7rem] uppercase tracking-[0.14em] text-ink-soft">Gainesville, Florida · since 1985</span>
+        </span>
+      </NuxtLink>
+
+      <nav
+        class="hidden lg:flex items-center gap-1 text-[0.92rem] font-medium text-ink"
+        aria-label="Main"
+      >
+        <template
+          v-for="item in menu"
+          :key="item.label"
         >
-          Center for Systematic Entomology (CSE)
-        </a>
-
-        <div class="lg:flex flex-row gap-6 text-sm hidden text-white">
-          <nav class="flex flex-row gap-8 items-center">
-            <template v-for="{ label, link, submenu } in menu">
-              <div
-                v-if="submenu"
-                class="relative group"
+          <div
+            v-if="item.submenu"
+            class="relative group"
+          >
+            <button
+              type="button"
+              class="flex items-center gap-1 px-3 py-2 rounded-md hover:bg-paper hover:text-senary focus-visible:bg-paper"
+              :class="{ 'text-senary': isActive(item) }"
+              aria-haspopup="true"
+            >
+              {{ item.label }}
+              <svg
+                class="w-3.5 h-3.5 opacity-60 transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
               >
-                <NuxtLink
-                  :to="link"
-                  class="flex items-center gap-1 hover:foreground cursor-pointer"
+                <path
+                  fill-rule="evenodd"
+                  d="M5.3 7.3a1 1 0 011.4 0L10 10.6l3.3-3.3a1 1 0 111.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 010-1.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150 absolute left-0 top-full pt-2"
+            >
+              <ul class="min-w-56 py-2 bg-white rounded-lg shadow-lg ring-1 ring-black/5">
+                <li
+                  v-for="sub in item.submenu"
+                  :key="sub.label"
                 >
-                  <span
-                    class="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-yellow-400 before:w-0 hover:before:w-full hover:text-quaternary before:transition-all before:duration-300"
+                  <NuxtLink
+                    :to="sub.link"
+                    class="block px-4 py-2 text-sm text-ink hover:bg-paper hover:text-senary"
                   >
-                    {{ label }}
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4 transition-transform group-hover:rotate-180"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </NuxtLink>
-
-                <div class="pt-2 absolute hidden group-hover:block">
-                  <ul
-                    class="w-40 py-0 left-0 top-full shadow-md bg-setenary text-white"
-                  >
-                    <li
-                      v-for="(item, index) in submenu"
-                      :key="index"
-                      class="relative group/sub"
+                    {{ sub.label }}
+                    <span
+                      v-if="sub.note"
+                      class="block text-xs text-ink-soft font-normal"
+                      >{{ sub.note }}</span
                     >
-                      <template v-if="item.submenu">
-                        <NuxtLink
-                          :to="item.link"
-                          class="group flex justify-between w-full px-4 py-2 hover:bg-quaternary cursor-pointer"
-                        >
-                          {{ item.label }}
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 transition-transform rotate-180 group-hover/sub:rotate-0"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                              clip-rule="evenodd"
-                            />
-                          </svg>
-                        </NuxtLink>
-
-                        <ul
-                          class="absolute left-full top-0 mt-0 w-40 shadow-md bg-primary text-foreground hidden group-hover/sub:block"
-                        >
-                          <li
-                            v-for="(subItem, subIndex) in item.submenu"
-                            :key="subIndex"
-                          >
-                            <NuxtLink
-                              :to="subItem.link"
-                              class="block px-4 py-2 hover:bg-quaternary"
-                            >
-                              {{ subItem.label }}
-                            </NuxtLink>
-                          </li>
-                        </ul>
-                      </template>
-                      <template v-else>
-                        <NuxtLink
-                          :to="item.link"
-                          class="block px-4 py-2 hover:bg-quaternary"
-                        >
-                          {{ item.label }}
-                        </NuxtLink>
-                      </template>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <NuxtLink
-                v-else
-                :to="link"
-                class="relative hover:foreground before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-yellow-400 before:w-0 hover:before:w-full before:transition-all before:duration-300 hover:text-quaternary"
-              >
-                {{ label }}
-              </NuxtLink>
-            </template>
-
-            <!-- Vertical Divider -->
-            <div class="w-px h-6 bg-white/30 self-center"></div>
-
-            <!-- Facebook Icon -->
-            <div class="flex items-center gap-2 text-white">
-              <NuxtLink
-                to="https://www.facebook.com/CSE.InsectaMundi"
-                target="_blank"
-                class="text-white hover:text-quaternary"
-                title="Follow us on Facebook"
-              >
-                <IconFacebook class="w-4 h-4" />
-              </NuxtLink>
-              <NuxtLink
-                to="https://x.com/CSE_at_FSCA"
-                target="_blank"
-                class="hover:text-quaternary"
-                title="Follow us on X"
-              >
-                <IconX class="w-4 h-4" />
-              </NuxtLink>
-              <NuxtLink
-                to="https://www.youtube.com/@CenterforSystematicEntomology"
-                target="_blank"
-                class="hover:text-quaternary"
-                title="Follow us on YT"
-              >
-                <IconYouTube class="w-4 h-7" />
-              </NuxtLink>
-              <NuxtLink
-                to="https://github.com/DavideDalPos/CSE/issues"
-                target="_blank"
-                class="hover:text-quaternary"
-                title="Submit your issue on GitHub"
-              >
-                <IconGitHub class="w-4 h-4" />
-              </NuxtLink>
+                  </NuxtLink>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+          <NuxtLink
+            v-else
+            :to="item.link"
+            class="px-3 py-2 rounded-md hover:bg-paper hover:text-senary"
+            active-class="text-senary"
+          >
+            {{ item.label }}
+          </NuxtLink>
+        </template>
 
-        <MobileNavbar :menu="menu" />
-      </div>
+        <button
+          type="button"
+          class="ml-1 flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full border border-rule text-ink-soft hover:border-quaternary hover:text-ink"
+          aria-label="Search the website"
+          title="Search (Ctrl+K)"
+          @click="searchOpen = true"
+        >
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+            />
+            <path
+              stroke-linecap="round"
+              d="m20 20-3.5-3.5"
+            />
+          </svg>
+          <kbd class="text-[0.65rem] font-sans px-1.5 py-0.5 rounded bg-paper border border-rule">/</kbd>
+        </button>
+
+        <NuxtLink
+          to="/membership"
+          class="ml-2 px-4 py-2 rounded-full bg-quaternary text-white font-semibold hover:bg-senary transition-colors"
+        >
+          Join the CSE
+        </NuxtLink>
+      </nav>
+
+      <MobileNavbar :menu="mobileMenu" />
     </div>
-    <div class="h-16" />
   </header>
 </template>
 
 <script setup>
-import IconGitHub from '../Icon/IconGitHub.vue';
-import IconX from '../Icon/IconX.vue';
-import IconYouTube from '../Icon/IconYouTube.vue';
+import conference from '~/data/conference'
+
+const route = useRoute()
+const searchOpen = useState('site-search-open', () => false)
 
 const menu = [
-  {
-    label: 'Home',
-    link: '/'
-  },
-  {
-    label: 'About us',
-    link: '/about'
-  },
+  { label: 'About', link: '/about' },
   {
     label: 'Insecta Mundi',
+    base: '/insecta_mundi',
     submenu: [
-      { label: 'Our Journal', link: '/insecta_mundi/journal' },
-      {
-        label: 'Publications',
-        submenu: [
-          {
-            label: 'Current Publications',
-            link: '/insecta_mundi/current'
-          },
-          { label: 'All Publications', link: '/insecta_mundi' },
-          {
-            label: 'Festschrifts',
-            link: '/other_publications/CSE#festschrifts'
-          }
-        ]
-      },
-      { label: 'Author Instructions', link: '/insecta_mundi/authorguidelines' },
-      { label: 'Editor Guidelines', link: '/insecta_mundi/editorinfo' },
-      { label: 'Ethic Statement', link: '/insecta_mundi/ethic' }
+      { label: 'Latest issue', link: '/insecta_mundi/current' },
+      { label: 'All articles', link: '/insecta_mundi', note: 'Search the archive' },
+      { label: 'In numbers', link: '/insecta_mundi/stats', note: 'Orders, families & authors' },
+      { label: 'About the journal', link: '/insecta_mundi/journal' },
+      { label: 'Instructions for authors', link: '/insecta_mundi/authorguidelines' },
+      { label: 'Editor guidelines', link: '/insecta_mundi/editorinfo' },
+      { label: 'Ethics statement', link: '/insecta_mundi/ethic' },
+      { label: 'Festschrifts', link: '/other_publications/CSE#festschrifts' }
     ]
   },
   {
-    label: 'Other Publications',
+    label: 'Publications',
+    base: '/other_publications',
+    bases: ['/arthropod_papers', '/occasional_papers'],
     submenu: [
-      { label: 'CSE Publications', link: '/other_publications/CSE' },
-      { label: 'FSCA Publications', link: '/other_publications/FSCA' }
+      { label: 'CSE publications', link: '/other_publications/CSE' },
+      { label: 'FSCA publications', link: '/other_publications/FSCA' }
     ]
   },
   {
-    label: 'Travel Grants',
+    label: 'Grants',
+    base: '/grants',
     submenu: [
-      { label: 'Peck Grant', link: '/grants' },
+      { label: 'Peck travel grant', link: '/grants' },
       { label: 'Guidelines', link: '/grants#grantguidelines' },
-      { label: 'Previous Reports', link: '/grants#reports' },
-      { label: 'Other Grants Archive', link: '/grants#archive' },
+      { label: 'Previous reports', link: '/grants#reports' },
+      { label: 'Other grants archive', link: '/grants#archive' },
       { label: 'Trip to Guatemala', link: '/grants#guatemala' }
     ]
   },
   {
-    label: 'Annual Conference',
+    label: 'Conference',
+    base: '/meetings',
+    bases: ['/conference'],
     submenu: [
-      { label: 'CSE Conference', link: '/meetings' },
-      { label: '2027 Conference', link: '/conference' },
-      { label: 'Conference Archive', link: '/meetings#meetingarchive' },
-      { label: 'Poster Archive', link: '/meetings#posterarchive' }
+      { label: `${conference.year} conference`, link: '/meetings', note: conference.date ? 'Dates, program & call for talks' : 'Details coming soon' },
+      { label: 'Past conferences', link: '/meetings#meetingarchive' },
+      { label: 'Poster archive', link: '/meetings#posterarchive' },
+      { label: 'Photos', link: '/meetings#photos' }
     ]
-  },
-  {
-    label: 'Membership & Donations',
-    link: '/membership'
   }
 ]
+
+// Mobile menu: same entries, plus Home and Membership
+const mobileMenu = [
+  { label: 'Home', link: '/' },
+  ...menu,
+  { label: 'Membership & donations', link: '/membership' }
+]
+
+function isActive(item) {
+  return [item.base, ...(item.bases || [])].some((b) => b && route.path.startsWith(b))
+}
 </script>

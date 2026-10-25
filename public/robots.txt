@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://centerforsystematicentomology.org/sitemap.xml

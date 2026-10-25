@@ -1,36 +1,63 @@
-<script setup lang="ts">
-import FSCA_Arthropods from '~/components/OtherPublications/ArthropodPapers/FSCA_Arthropods.vue';
-import FSCA_Occasional from '~/components/OtherPublications/OccasionalPapers/FSCA_Occasional.vue';
-import FSCA_ArthropodsTitle from './FSCA_ArthropodsTitle.vue';
-import FSCA_RightColumn from './FSCA_RightColumn.vue';
-</script>
-
 <template>
-  <section class="container mx-auto px-6 py-10 bg-background text-foreground font-serif">
-    <FSCA_ArthropodsTitle class="mb-15" />
-
-    <div class="flex flex-col md:flex-row gap-10">
-      
-      <!-- Left side: 2/3 width -->
-      <div class="w-full pr-10">
-        <div class="mb-10">
-          <FSCA_Arthropods />
-        </div>
-        <div class="border-t border-gray-300 mb-10">
-          <FSCA_Occasional />
-        </div>
+  <div>
+    <PublicationsHeader
+      kicker="Florida State Collection of Arthropods"
+      title="FSCA monograph series"
+      lede="Two long-running series of illustrated monographs, faunal reviews, revisions and checklists published with the Florida State Collection of Arthropods. Every volume is free to download."
+      :covers="['/images/otherpubs/FSCA_Occasional/OPFSCA_2021_013.jpg', '/images/otherpubs/FSCA_Arthropods/AFNLA_1989_013.jpg', '/images/otherpubs/FSCA_Occasional/OPFSCA_2019_012.jpg']"
+    >
+      <div class="mt-6 grid sm:grid-cols-2 gap-3 max-w-2xl">
+        <a
+          v-for="s in series"
+          :key="s.collection"
+          :href="`#${s.collection}`"
+          class="group rounded-xl border border-white/20 bg-white/5 px-4 py-3 hover:bg-white/10"
+        >
+          <span class="block text-[0.7rem] uppercase tracking-[0.16em] text-quaternary font-semibold">ISSN {{ s.issn }}</span>
+          <span class="mt-0.5 block font-serif font-semibold text-white">{{ s.short }}</span>
+          <span class="text-xs text-white/60 group-hover:text-white/80">Jump to the series ↓</span>
+        </a>
       </div>
+    </PublicationsHeader>
 
-      <!-- Vertical Line Separation -->
-      <div class="hidden md:block border-r border-gray-300"></div>
+    <div class="container mx-auto px-6 py-12 space-y-20">
+      <FscaSeries
+        v-for="s in series"
+        :key="s.collection"
+        :series="s.collection"
+        :anchor="s.collection"
+        :limit="10"
+      />
 
-      <!-- Right side: 1/3 width -->
-      <div class="md:w-1/3 w-full">
-        <FSCA_RightColumn />
-      </div>
-
+      <!-- Related -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <NuxtLink
+          to="/insecta_mundi"
+          class="group rounded-xl border border-rule bg-paper p-6 hover:border-quaternary"
+        >
+          <p class="text-xs uppercase tracking-[0.18em] font-semibold text-senary">Our journal</p>
+          <p class="mt-1 font-serif text-2xl font-semibold text-ink group-hover:text-senary"><i>Insecta Mundi</i> →</p>
+          <p class="mt-2 text-sm text-ink-soft">Peer-reviewed articles on the systematics of the world’s non-marine arthropods.</p>
+        </NuxtLink>
+        <NuxtLink
+          to="/other_publications/CSE"
+          class="group rounded-xl border border-rule bg-paper p-6 hover:border-quaternary"
+        >
+          <p class="text-xs uppercase tracking-[0.18em] font-semibold text-senary">More from the Center</p>
+          <p class="mt-1 font-serif text-2xl font-semibold text-ink group-hover:text-senary">CSE publications →</p>
+          <p class="mt-2 text-sm text-ink-soft">Festschrifts, the Memoirs series and the archive of the members’ newsletter.</p>
+        </NuxtLink>
+      </section>
     </div>
-  </section>
+  </div>
 </template>
 
+<script setup>
+import PublicationsHeader from './PublicationsHeader.vue'
+import FscaSeries from './FscaSeries.vue'
+import { FSCA_SERIES } from '~/helpers/fscaSeries'
 
+const series = [FSCA_SERIES.arthropod_papers, FSCA_SERIES.occasional_papers]
+
+useHead({ title: 'FSCA publications' })
+</script>

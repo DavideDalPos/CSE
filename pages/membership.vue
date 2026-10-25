@@ -1,11 +1,8 @@
-<script setup lang="ts">
-import MembershipIntro from '~/components/Membership/MembershipIntro.vue';
-import MembershipStatement from '~/components/Membership/MembershipStatement.vue';
-
-</script>
-
 <template>
-<MembershipIntro />
-<MembershipStatement />
+  <MembershipView />
 </template>
 
+<script setup>
+// Fee, PayPal buttons and lifetime members are set in data/membership.js
+import MembershipView from '~/components/Membership/MembershipView.vue'
+</script>

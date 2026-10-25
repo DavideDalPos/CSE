@@ -1,8 +1,8 @@
-<script setup lang="ts">
-import ConferencePage from '~/components/Meetings/ConferencePage.vue';
-
-</script>
-
 <template>
-  <ConferencePage />
+  <ConferenceView />
 </template>
+
+<script setup>
+// Everything about the conference is set in data/conference.js
+import ConferenceView from '~/components/Meetings/ConferenceView.vue'
+</script>

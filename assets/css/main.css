@@ -1,3 +1,74 @@
+/* Fonts are bundled with the site (no request to Google Fonts): Inter for
+   text, Source Serif 4 for headings and journal titles. */
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/source-serif-4';
+@import '@fontsource-variable/source-serif-4/wght-italic.css';
 @import 'tailwindcss';
 @config "../../tailwind.config.js";
 @import './vars.css';
+
+/* Small screens: narrower side gutters, and never a sideways-scrolling page
+   (wide tables scroll inside their own box instead). */
+@media (max-width: 639px) {
+  .container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+}
+main {
+  overflow-x: clip;
+}
+
+/* Long-form text on the journal pages (About, instructions, guidelines, ethics) */
+.im-text {
+  color: var(--color-ink-soft);
+  font-size: 1.075rem;
+  line-height: 1.75;
+}
+.im-text > * + * {
+  margin-top: 1rem;
+}
+.im-text .lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+.im-text h2 {
+  margin-top: 2.25rem;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-ink);
+}
+.im-text h3 {
+  margin-top: 1.75rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.im-text b,
+.im-text strong {
+  color: var(--color-ink);
+}
+.im-text a {
+  color: var(--color-senary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--color-quaternary) 60%, transparent);
+}
+.im-text a:hover {
+  text-decoration-color: var(--color-senary);
+}
+.im-text ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+.im-text ol {
+  list-style: decimal;
+  padding-left: 1.4rem;
+}
+.im-text li + li {
+  margin-top: 0.35rem;
+}

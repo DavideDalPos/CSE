@@ -11,21 +11,28 @@
 </template>
 
 <script setup>
+import site from '~/data/site'
+
 useHead({
-  title: 'Center for Systematic Entomology',
+  titleTemplate: (t) => (t && t !== site.name ? `${t} · CSE` : site.name),
   meta: [
     {
       name: 'keywords',
-      content:
-        'Florida State Collection of Arthropods, FSCA, systematics, taxonomy, entomology'
+      content: 'Insecta Mundi, Florida State Collection of Arthropods, FSCA, systematics, taxonomy, entomology'
     },
-    {
-      name: 'description',
-      content:
-        'Center for Systematic Entomology (CSE), a non-profit corporation designed to further systematics in its broadest sense'
-    }
+    { name: 'description', content: site.description },
+    // Link previews (email, Slack, social media) — pages can override these
+    { property: 'og:site_name', content: site.name },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: site.name },
+    { property: 'og:description', content: site.description },
+    { property: 'og:image', content: `${site.url}${site.shareImage}` },
+    { name: 'twitter:card', content: 'summary_large_image' }
   ],
-  link: [{ rel: 'icon', type: 'image/png', href: '/favicon.svg' }],
+  link: [
+    { rel: 'icon', href: '/favicon.ico' },
+    { rel: 'alternate', type: 'application/rss+xml', title: 'Insecta Mundi — new articles', href: '/feed.xml' }
+  ],
   htmlAttrs: {
     lang: 'en'
   },
@@ -50,17 +57,19 @@ async function onAfterEnter() {
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.25s ease-out;
+  transition: opacity 0.15s ease-out;
 }
 
-.page-enter-from {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
+.page-enter-from,
 .page-leave-to {
   opacity: 0;
-  transform: translateY(0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter-active,
+  .page-leave-active {
+    transition: none;
+  }
 }
 
 .external-link {

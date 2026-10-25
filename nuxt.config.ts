@@ -9,18 +9,19 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/google-fonts'],
+  modules: ['@nuxt/content'],
 
   css: ['~/assets/css/main.css'],
 
-  googleFonts: {
-    families: {
-      Roboto: true
-    }
-  },
-
   vite: {
     plugins: [tailwindcss()]
+  },
+
+  // Feed and sitemap are generated at build time (see server/routes)
+  nitro: {
+    prerender: {
+      routes: ['/feed.xml', '/sitemap.xml', '/search-index.json', '/im-stats.json']
+    }
   },
 
   compatibilityDate: '2025-03-31'

@@ -39,7 +39,7 @@ keywords:
 
 categories:
   - Hymenoptera
-  - Pompiliade
+  - Pompilidae
   - Pepsinae
 
 references:

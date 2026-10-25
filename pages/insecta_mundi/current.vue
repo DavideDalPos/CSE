@@ -1,75 +1,69 @@
 <template>
-  <section class="container mx-auto px-8 my-10 font-serif">
-    <div>
-      <h1 class="text-4xl font-bold text-gray-800">Insecta Mundi</h1>
-      <h2 class="text-xl text-gray-500 mt-1 tracking-wide italic">
-        Current Publications
-      </h2>
-    </div>
-    <div class="mt-2 text-sm text-gray-400 italic mb-10">
-      paper ISSN 0749-6737 · CD-ROM 1942-1362 · online 1942-1354
-    </div>
-    <div class="flex flex-col lg:flex-row gap-8">
-      <!-- LEFT COLUMN: Publications -->
-      <div>
-        <div
-          class="flex items-center justify-between px-4 py-3 bg-quaternary/20 border-l-4 border-quaternary/80 cursor-pointer"
+  <div>
+    <InsectaMundiHeader
+      kicker="Latest issue"
+      :lede="formattedDate ? `${publications.length} new ${publications.length === 1 ? 'article' : 'articles'}, published ${formattedDate}.` : ''"
+    >
+      <template #title>New in <i>Insecta Mundi</i></template>
+    </InsectaMundiHeader>
+
+    <section class="container mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12">
+      <div class="flex-1 min-w-0">
+        <ul
+          v-if="publications.length"
+          class="divide-y divide-rule"
         >
-          <h2 class="text-lg text-gray-800 font-medium">
-            {{ formattedDate }}
-          </h2>
-        </div>
+          <li
+            v-for="item in sorted"
+            :key="item._path"
+            class="py-5 first:pt-0"
+          >
+            <TablePublicationRow :publication="item" />
+          </li>
+        </ul>
+        <p
+          v-else
+          class="text-ink-soft"
+        >
+          No articles found.
+        </p>
 
-        <!-- Table Component or List -->
-        <TablePublicationCurrent
-          :list="publications"
-          class="my-2"
-        />
-
-        <!-- Fallback message -->
-        <div class="px-4">
-          <p v-if="publications?.length === 0">No articles found.</p>
-        </div>
+        <NuxtLink
+          to="/insecta_mundi"
+          class="mt-8 inline-block font-semibold text-senary hover:underline underline-offset-4"
+          >Browse all earlier articles →</NuxtLink
+        >
       </div>
-      <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch"></div>
-      <!-- RIGHT COLUMN -->
-      <InsectaMundiRightColumn />
-    </div>
-  </section>
+
+      <InsectaMundiSidebar />
+    </section>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import InsectaMundiRightColumn from '~/components/InsectaMundi/InsectaMundiRightColumn.vue'
-import TablePublicationCurrent from '~/components/Table/TablePublicationCurrent.vue'
+import { computed } from 'vue'
+import { IM_LIST_FIELDS } from '~/helpers/contentFields'
+import InsectaMundiHeader from '~/components/InsectaMundi/InsectaMundiHeader.vue'
+import InsectaMundiSidebar from '~/components/InsectaMundi/InsectaMundiSidebar.vue'
+import TablePublicationRow from '~/components/Table/TablePublicationRow.vue'
 
-const formattedDate = ref('')
-const publications = ref([])
+useHead({ title: 'Latest issue · Insecta Mundi' })
 
-const latestPublication = await queryContent('insecta_mundi')
-  .where({ date: { $ne: null } })
-  .sort({ date: -1 })
-  .limit(1)
-  .only(['date'])
-  .findOne()
+// Every article published on the most recent publication date
+const { data: latest } = await useAsyncData('im-current-date', () =>
+  queryContent('insecta_mundi').where({ date: { $ne: null } }).sort({ date: -1 }).limit(1).only(['date']).findOne()
+)
+const { data } = await useAsyncData('im-current', () =>
+  latest.value?.date
+    ? queryContent('insecta_mundi').where({ date: latest.value.date }).only(IM_LIST_FIELDS).find()
+    : Promise.resolve([])
+)
 
-if (latestPublication?.date) {
-  // Format date for display
-  formattedDate.value = new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC'
-  }).format(new Date(latestPublication.date))
-
-  // Now fetch ALL publications with that same exact date
-  const response = await queryContent('insecta_mundi')
-    .where({
-      date: latestPublication.date
-    })
-    .find()
-
-  publications.value = response
-}
+const publications = computed(() => data.value || [])
+const sorted = computed(() => [...publications.value].sort((a, b) => parseInt(b.issue) - parseInt(a.issue)))
+const formattedDate = computed(() =>
+  publications.value[0]?.date
+    ? new Date(`${publications.value[0].date}T00:00:00`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    : ''
+)
 </script>
-

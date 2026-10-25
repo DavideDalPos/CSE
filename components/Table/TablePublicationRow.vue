@@ -1,120 +1,109 @@
 <template>
-  <div class="py-1">
+  <article>
     <NuxtLink
       :to="publication._path"
-      class="flex justify-between items-center"
+      class="block font-serif font-semibold text-lg leading-snug text-ink hover:text-senary"
     >
-<div class="flex-1">
-  <h2
-    class="font-serif font-semibold text-[18px] text-otenary leading-snug text-shadow-sm hover:text-quaternary transition-colors duration-200 pr-5"
-    v-html="publication.title"
-  ></h2>
-
-  <div class="flex flex-wrap gap-2 mt-2">
-    <VTag
-      v-for="category in publication.categories"
-      :key="category"
-      class="bg-primary text-white px-2 py-0.5 rounded-full text-xs shadow-sm"
-    >
-      {{ category }}
-    </VTag>
-  </div>
-</div>
-
+      <span v-html="publication.title" />
     </NuxtLink>
-    <p class="text-gray-600 text-sm mt-1">
-      {{ makeAuthorsLabel(publication.authors) }}
-    </p>
-<div
-  v-if="publication.doi"
-  class="flex flex-row text-sm justify-between mt-1"
->
-  <p>
-    <span class="text-gray-700">DOI: </span>
-    <a
-      :href="`https://doi.org/${publication.doi}`"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-primary hover:text-tertiary hover:underline cursor-pointer"
-    >
-      {{ publication.doi }}
-    </a>
-  </p>
-</div>
+    <p class="mt-1 text-sm text-ink-soft">{{ makeAuthorsLabel(publication.authors) }}</p>
 
-    <div class="flex flex-wrap gap-1 mt-1">
-      <div
-        v-if="publication.download"
-        class="group shadow px-2 py-1 text-xs rounded bg-quaternary/90 w-max text-white flex items-center space-x-1 hover:text-primary hover:bg-tertiary transition duration-200 mt-1 shadow-sm"
+    <div class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-ink-soft">
+      <span
+        v-if="publication.issue"
+        class="font-semibold text-ink"
+        >No. {{ publication.issue }}</span
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          class="w-4 h-4 text-white group-hover:text-primary transition duration-200"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
-          />
-        </svg>
-        <a :href="publication.download" target="_blank">Download PDF</a>
-      </div>
-      <div
-        v-for="(supp, index) in publication.supplementary"
-        :key="index"
-        class="group shadow px-2 py-1 text-xs rounded bg-primary/80 w-max text-white hover:text-primary flex items-center space-x-1 hover:bg-tertiary transition duration-200 mt-1"
+      <span v-if="publication.pagination">pp. {{ formatPagination(publication.pagination) }}</span>
+      <span v-if="publication.date">{{ publication.date }}</span>
+      <a
+        v-if="publication.doi"
+        :href="doiUrl(publication.doi)"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-senary hover:underline"
+        >doi:{{ doiShort(publication.doi) }}</a
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          class="w-4 h-4 text-white group-hover:text-primary transition duration-200"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
-          />
-        </svg>
-        <a
-          :href="suppUrl(supp)"
-  target="_blank"
-  rel="noopener"
-  >{{ suppShortLabel(supp, index) }}</a
->
-      </div>
+      <span
+        v-for="category in publication.categories"
+        :key="category"
+        class="px-2 py-0.5 rounded-full bg-secondary/60 text-ink"
+        >{{ category }}</span
+      >
     </div>
-  </div>
+
+    <div
+      v-if="publication.download || publication.supplementary?.length"
+      class="mt-3 flex flex-wrap gap-2"
+    >
+      <a
+        v-if="publication.download"
+        :href="publication.download"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-quaternary text-white text-xs font-semibold hover:bg-senary transition-colors"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          class="w-3.5 h-3.5"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"
+          />
+        </svg>
+        PDF
+      </a>
+      <a
+        v-for="(supp, index) in publication.supplementary || []"
+        :key="index"
+        :href="suppUrl(supp)"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center px-3 py-1 rounded-full border border-rule text-ink text-xs font-medium hover:border-quaternary hover:text-senary"
+        >{{ suppShortLabel(supp, index) }}</a
+      >
+    </div>
+  </article>
 </template>
 
 <script setup>
-import { makeAuthorsLabel } from '~/helpers';
+import { makeAuthorsLabel } from '~/helpers'
 
+defineProps({
+  publication: {
+    type: Object,
+    required: true
+  }
+})
 
 function suppUrl(supp) {
   return typeof supp === 'string' ? supp : supp.url
 }
 
 function suppShortLabel(supp, index) {
-  if (typeof supp === 'string') {
-    return `Suppl. ${index + 1}`
-  }
-  return supp.label
+  if (typeof supp === 'string') return `Suppl. ${index + 1}`
+  return (supp.label || `Suppl. ${index + 1}`)
     .replace(/Supplementary/i, 'Suppl.')
     .replace(/Figure/i, 'Fig.')
     .replace(/Table/i, 'Tab.')
 }
 
-const props = defineProps({
-  publication: {
-    type: Object,
-    required: true
-  }
-})
+// DOIs are stored either bare (10.xxx) or as full https://doi.org/ links
+function doiShort(doi) {
+  return String(doi).replace(/^(doi:\s*|https?:\/\/(dx\.)?doi\.org\/)/i, '').trim()
+}
+function doiUrl(doi) {
+  return `https://doi.org/${doiShort(doi)}`
+}
+
+// Hyphens between digits become en dashes (pp. 1–4)
+function formatPagination(pagination) {
+  return pagination ? String(pagination).replace(/(\d)-(\d)/g, '$1–$2') : ''
+}
 </script>

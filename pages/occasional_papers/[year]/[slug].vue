@@ -1,17 +1,31 @@
 <template>
-  <FSCA_OccasionalView v-if="publication" :publication="publication" />
+  <FscaPaperView
+    v-if="publication"
+    :publication="publication"
+    series="occasional_papers"
+  />
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
-import FSCA_OccasionalView from '~/components/OtherPublications/OccasionalPapers/FSCA_OccasionalView.vue';
+import FscaPaperView from '~/components/OtherPublications/FscaPaperView.vue'
+import { useScholarMeta } from '~/composables/useScholarMeta'
+import { FSCA_SERIES } from '~/helpers/fscaSeries'
 
 const route = useRoute()
 
-// 🔹 Directly fetch publication (no useAsyncData)
-const publication = await queryContent(
-  'occasional_papers',
-  route.params.year,
-  route.params.slug
-).findOne()
+const { data: publication } = await useAsyncData(`occasional_papers-${route.params.year}-${route.params.slug}`, () =>
+  queryContent('occasional_papers', route.params.year, route.params.slug).findOne()
+)
+
+if (!publication.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Volume not found', fatal: true })
+}
+
+// Google Scholar / reference managers
+useScholarMeta(publication.value, {
+  journal: FSCA_SERIES['occasional_papers'].title,
+  issn: [FSCA_SERIES['occasional_papers'].issn],
+  volume: publication.value.volume,
+  year: publication.value.year
+})
 </script>

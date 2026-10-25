@@ -5,7 +5,12 @@
 }
 
 @theme {
-  --font-sans: 'Roboto', sans-serif;
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --color-ink: #1f2a2e;
+  --color-ink-soft: #55636a;
+  --color-paper: #faf8f3;
+  --color-rule: #e6e1d6;
   --color-background: #ffffff;
   --color-foreground: oklch(98.5% 0 0);
   --color-primary: #7ca2a1;
