@@ -38,7 +38,7 @@
       id="directors"
       class="scroll-mt-32"
     >
-      <p class="text-xs uppercase tracking-[0.18em] font-semibold text-senary">Elected for two-year terms</p>
+      <p class="text-xs uppercase tracking-[0.18em] font-semibold text-senary">Elected for three-year terms</p>
       <h2 class="mt-2 font-serif text-3xl font-bold text-ink">Board members</h2>
       <div class="mt-6 space-y-8">
         <div

@@ -433,10 +433,10 @@ useHead({ title: 'Peck Fund travel grants' })
 // "01-15" → "January 15"
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 const deadlineDays = g.deadlines.map((d) => `${MONTHS[Number(d.slice(0, 2)) - 1]} ${Number(d.slice(3))}`)
-const money = `$${g.maxAward.toLocaleString('en-US')}`
+const money = g.maxAward ? `$${g.maxAward.toLocaleString('en-US')}` : ''
 
 const facts = [
-  { label: 'Award', value: `Up to ${money}` },
+  { label: 'Award', value: money ? `Up to ${money}` : 'Based on your budget' },
   { label: 'Deadlines', value: deadlineDays.map((d) => d.replace(/^(\w{3})\w*/, '$1')).join(' · ') },
   { label: 'Open to', value: 'CSE members' },
   { label: 'Proposal', value: '1–2 pages' }
@@ -482,7 +482,7 @@ const proposal = [
   { title: 'Proposed dates of travel', note: 'can change' },
   { title: 'Project background & justification' },
   { title: 'Contribution to improving the FSCA' },
-  { title: 'Itemized budget & justification', note: `up to ${money}` },
+  { title: 'Itemized budget & justification', note: money ? `up to ${money}` : '' },
   { title: 'References' }
 ]
 

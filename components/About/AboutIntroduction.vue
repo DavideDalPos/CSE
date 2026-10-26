@@ -66,7 +66,7 @@ const structure = [
   },
   {
     title: 'Board of Directors',
-    text: 'The officers and board members, elected for two-year terms, guide the mission and strategy of the CSE. The Board usually meets four times a year.',
+    text: 'The officers and board members, elected for three-year terms, guide the mission and strategy of the CSE. The Board usually meets four times a year.',
     anchor: 'directors'
   },
   {

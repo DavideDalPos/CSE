@@ -17,7 +17,7 @@ export default {
     'felipe-soto-adames': { name: 'Felipe Soto-Adames', photo: '/images/boardmembers/FelipeSotoAdames.jpg', link: 'https://scholar.google.com/citations?hl=en&user=6eYGsisAAAAJ' },
     'evan-waite': { name: 'Evan Waite', photo: '/images/boardmembers/EvanWaite.jpg', link: 'https://scholar.google.com/citations?user=Otu3qVgAAAAJ&hl=en' },
     'erick-rodriguez': { name: 'Erick Rodriguez', photo: '/images/boardmembers/ErickRodriguez.jpg', link: 'https://scholar.google.com/citations?user=-GJHl-cAAAAJ&hl=en' },
-    'gary-j-steck': { name: 'Gary J. Steck', photo: '/images/boardmembers/GarySteck.jpg', link: '' },
+    'gary-j-steck': { name: 'Gary J. Steck', photo: '/images/boardmembers/GarySteck.jpg', link: 'https://scholar.google.com/citations?hl=en&user=fU8gNqYAAAAJ' },
     'erin-powell': { name: 'Erin Powell', photo: '/images/boardmembers/ErinPowell.jpg', link: 'https://scholar.google.co.nz/citations?user=x-rdi2wAAAAJ&hl=en' },
     'paul-skelley': { name: 'Paul Skelley', photo: '/images/boardmembers/PaulSkelley.jpg', link: 'https://scholar.google.com/citations?hl=en&user=l-pEQHEAAAAJ' },
     'alexander-orfinger': { name: 'Alexander Orfinger', photo: '/images/boardmembers/AlexOrfinger.jpg', link: 'https://scholar.google.com/citations?hl=en&user=fcMo3w0AAAAJ' },
@@ -42,7 +42,7 @@ export default {
     ]
   },
 
-  // Board of Directors — two-year terms, newest first
+  // Board of Directors — three-year terms, newest first
   boardTerms: [
     { term: '2026–2028', members: ['erin-powell', 'paul-skelley', 'evan-waite', 'erick-rodriguez'] },
     { term: '2025–2027', members: ['alexander-orfinger', 'david-plotkin', 'emily-roeder', 'felipe-soto-adames'] },

@@ -7,7 +7,8 @@
 // =============================================================================
 
 export default {
-  maxAward: 2000, // US dollars
+  // Maximum award in US dollars. Leave null for no fixed limit (budget is reviewed case by case).
+  maxAward: null,
   // Proposal deadlines (month-day), 11:59 PM Eastern Time
   deadlines: ['01-15', '07-15'],
   email: 'csentomology@gmail.com',

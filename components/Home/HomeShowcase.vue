@@ -194,7 +194,7 @@ const slides = [
     tab: 'Travel grants',
     kicker: 'The Peck Fund',
     title: 'Travel grants to work in the FSCA collections',
-    text: `The Stewart and Jarmila Peck Collection Enhancement Endowment funds research visits to the Florida State Collection of Arthropods that help improve the collection — up to $${grants.maxAward.toLocaleString('en-US')} per award.`,
+    text: `The Stewart and Jarmila Peck Collection Enhancement Endowment funds research visits to the Florida State Collection of Arthropods that help improve the collection${grants.maxAward ? ` — up to $${grants.maxAward.toLocaleString('en-US')} per award` : ''}.`,
     photo: '/images/web/hero-collection.webp',
     alt: 'Aisle of museum cabinets in an insect collection',
     links: [
