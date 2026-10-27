@@ -1,11 +1,11 @@
 ---
 title: 'A review of the North American Juglandaceae-feeding Gracillariidae (Lepidoptera)'
-date: ''
+date: '2026-10-30'
 doi: 'https://doi.org/10.64338/im.1217.8j147'
 journal: Insecta Mundi
 issue: '1217'
-pagination: ''
-zoobank: ''
+pagination: '1-46'
+zoobank: 'urn:lsid:zoobank.org:pub:27F7028D-4C9A-4167-A917-B860FAFA42DF'
 authors:
   - first_name: 'Charles S.'
     last_name: 'Eiseman'
@@ -25,7 +25,7 @@ authors:
     email: 'jim.d.young@usda.gov' 
     orcid: 'https://orcid.org/0000-0002-1096-5821'
 
-download: ''
+download: 'https://drive.google.com/file/d/1VoCgL63lC_EGK7TpOKgy0LubHPQJB-no'
 
 revised: ''
 

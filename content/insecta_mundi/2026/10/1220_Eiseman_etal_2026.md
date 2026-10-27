@@ -1,11 +1,11 @@
 ---
 title: 'Review of the North American species of <i>Rhopobota</i> Lederer (Lepidoptera: Tortricidae: Olethreutinae: Eucosmini), with the description of a new species and a new subspecies mining leaves of hollies (Aquifoliaceae: <i>Ilex</i> Tourn. ex L.)'
-date: ''
+date: '2026-10-30'
 doi: 'https://doi.org/10.64338/im.1220.tcuit'
 journal: Insecta Mundi
 issue: '1220'
-pagination: ''
-zoobank: ''
+pagination: '1-37'
+zoobank: 'urn:lsid:zoobank.org:pub:E5394FB7-7B62-431B-AE8B-C80AA7627AE2'
 authors:
   - first_name: 'Charles S.'
     last_name: 'Eiseman'
@@ -29,7 +29,7 @@ authors:
     email: 'maberto2@ncsu.edu' 
 
 
-download: ''
+download: 'https://drive.google.com/file/d/1NbZO_BTgtEXeg0IZellL7wJb4iB82_qm'
 
 revised: ''
 

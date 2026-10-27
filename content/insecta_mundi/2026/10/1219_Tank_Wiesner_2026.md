@@ -1,11 +1,11 @@
 ---
 title: 'First records of the subspecies <i>Grammognatha euphratica euphratica</i> Latreille and Dejean (Coleoptera: Cicindelidae) from India'
-date: ''
+date: '2026-10-30'
 doi: 'https://doi.org/10.64338/im.1219.ucuzv'
 journal: Insecta Mundi
 issue: '1219'
-pagination: ''
-zoobank: ''
+pagination: '1-6'
+zoobank: 'urn:lsid:zoobank.org:pub:53168D55-2343-4357-AEA6-380DB9066053'
 authors:
   - first_name: 'Parag'
     last_name: 'Tank'
@@ -20,7 +20,7 @@ authors:
     orcid: 'https://orcid.org/0000-0002-7824-166X'
 
 
-download: ''
+download: 'https://drive.google.com/file/d/1-Hm6eD8FfUe41OJcTrhCkEtMWfzMfzxS'
 
 revised: ''
 
