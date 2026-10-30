@@ -24,7 +24,7 @@ authors:
     email: 'smopart@ncsu.edu' 
 
   - first_name: 'Matthew A.'
-    last_name: 'Matthew A.'
+    last_name: 'Bertone'
     affiliation: 'Plant Disease and Insect Clinic, Department of Entomology and Plant Pathology, North Carolina State University, Campus Box 7532, Raleigh, NC 27695 USA'
     email: 'maberto2@ncsu.edu' 
 
