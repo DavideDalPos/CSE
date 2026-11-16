@@ -11,7 +11,7 @@ export default {
   // in the PayPal button settings (paypal.com → Tools → PayPal buttons).
   // The current year is pre-selected automatically.
   paypalMembershipButton: '2NX8BAGBQES2W',
-  paypalYears: [2021, 2022, 2023, 2024, 2025, 2026],
+  paypalYears: [2021, 2022, 2023, 2024, 2025, 2026, 2027],
 
   // PayPal "Donate" button
   paypalDonateButton: 'TSHJD5JGVMV98',

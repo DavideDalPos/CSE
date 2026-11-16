@@ -334,10 +334,13 @@ const benefits = [
   { icon: '✈', title: 'Travel grants', text: 'Only members can apply for Peck Fund grants to visit the FSCA.' }
 ]
 
-// Pre-select the current year when PayPal offers it
+// Pre-select the year people are most likely paying for: the current year,
+// or next year from October on (renewal season), when PayPal offers it
 const yearsDesc = [...m.paypalYears].sort((a, b) => b - a)
-const thisYear = new Date().getFullYear()
-const year = ref(`${m.paypalYears.includes(thisYear) ? thisYear : yearsDesc[0]} Membership`)
+const now = new Date()
+const dueYear = now.getMonth() >= 9 ? now.getFullYear() + 1 : now.getFullYear()
+const preselect = m.paypalYears.includes(dueYear) ? dueYear : m.paypalYears.includes(now.getFullYear()) ? now.getFullYear() : yearsDesc[0]
+const year = ref(`${preselect} Membership`)
 const newMember = ref('no')
 
 const lifetime = computed(() => [...m.lifetimeMembers].sort((a, b) => new Date(b.since) - new Date(a.since)))
